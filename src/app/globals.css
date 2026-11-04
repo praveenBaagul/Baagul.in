@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #f8f2e4;
+  --color-canvas-card: #fffbf2;
+  --color-canvas-alt: #fbf6ea;
+  
+  --color-indigo-main: #121a4a;
+  --color-indigo-deep: #021064;
+  --color-indigo-mid: #1e2a78;
+  --color-indigo-dark: #17193a;
+  --color-indigo-navy: #1b1f5e;
+  
+  --color-terracotta: #c8553d;
+  --color-marigold: #f4a300;
+  --color-marigold-light: #f5a800;
+  --color-peacock: #0e7c6b;
+  --color-peacock-dark: #005145;
+  --color-peacock-light: #d3ebe1;
+  --color-peacock-muted: #cfe8dc;
+  
+  --color-slate-text: #5f6485;
+  --color-muted-border: #dadff4;
+
+  --font-heading: var(--font-gloock), Georgia, serif;
+  --font-serif: var(--font-gloock), Georgia, serif;
+  --font-sans: var(--font-hanken), system-ui, -apple-system, sans-serif;
+  --font-kannada: var(--font-noto-kannada), sans-serif;
+}
+
+:root {
+  --background: #f8f2e4;
+  --foreground: #121a4a;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom dashed running stitch utility */
+.running-stitch-h {
+  border-top-width: 2px;
+  border-top-style: dashed;
+}
+
+.running-stitch-v {
+  border-right-width: 2px;
+  border-right-style: dashed;
+}

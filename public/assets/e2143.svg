@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Background+Border">
+<rect x="0.5" y="0.5" width="23" height="23" rx="11.5" fill="#F4A300"/>
+<rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#121A4A"/>
+<path id="Icon" d="M14.2441 11.748C14.0215 11.4863 13.7891 11.1016 13.5469 10.5938H13.9688C14.4648 11.1758 14.9922 11.6094 15.5508 11.8945V12.1055C14.9922 12.3906 14.4648 12.8242 13.9688 13.4062H13.5469C13.7891 12.8984 14.0215 12.5137 14.2441 12.252H8.44922V11.748H14.2441V11.748" fill="#121A4A"/>
+</g>
+</svg>
