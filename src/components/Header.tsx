@@ -67,8 +67,8 @@ export default function Header({ onNavClick }: HeaderProps) {
         <Link href="/" className="flex items-center group flex-shrink-0" aria-label="Baagul Home">
           <div className="relative w-14 h-14 sm:w-20 sm:h-20 transition-transform duration-200 group-hover:scale-105">
             <Image
-              src="/assets/b33d7.png"
-              alt="Baagul knot motif logo"
+              src="/assets/favicon.png"
+              alt="Baagul logo"
               fill
               priority
               className="object-contain"

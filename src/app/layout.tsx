@@ -25,9 +25,17 @@ const notoKannada = Noto_Serif_Kannada({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  icons: {
+    icon: [
+      { url: "/assets/favicon.png" },
+      { url: "/favicon.png" },
+    ],
+    shortcut: "/assets/favicon.png",
+    apple: "/assets/favicon.png",
+  },
   openGraph: { type: "website", siteName: "Baagul", locale: "en_IN" },
   twitter: { card: "summary_large_image" },
-  title:"Baagul · Digital growth, made in Bengaluru",
+  title: "Baagul · Digital growth, made in Bengaluru",
   description: "SEO, websites, Google and Meta ads and branding for high-growth startups, local businesses, and modern enterprises. Six years of craftsmanship, strictly measured in qualified leads and bottom-line revenue.",
 };
 
@@ -38,6 +46,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${hanken.variable} ${gloock.variable} ${notoKannada.variable}`}>
+      <head>
+        <link rel="icon" href="/assets/favicon.png" sizes="any" />
+      </head>
       <body className="antialiased selection:bg-marigold selection:text-indigo-main">
         {children}
       </body>
