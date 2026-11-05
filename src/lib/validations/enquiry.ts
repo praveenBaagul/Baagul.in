@@ -60,6 +60,29 @@ export const enquirySchema = z.object({
 
 export type EnquiryFormData = z.infer<typeof enquirySchema>;
 
+/**
+ * What the server accepts. Stricter than the form schema: services must be
+ * known options, and the request carries its retry key and the honeypot.
+ */
+export const enquirySubmissionSchema = enquirySchema.extend({
+  selectedServices: z
+    .array(z.enum(serviceOptions))
+    .min(1, { message: "Please select at least one service required." })
+    .max(serviceOptions.length),
+  email: z
+    .string()
+    .trim()
+    .min(1, { message: "Work email is required." })
+    .max(254, { message: "Email address is too long." })
+    .email({ message: "Please enter a valid work email address (e.g. name@company.com)." }),
+  /** Generated once per submission attempt, so a retry is recognised as the same enquiry. */
+  idempotencyKey: z.string().uuid(),
+  /** Honeypot. Hidden from people, so only bots fill it in. */
+  website: z.string().max(500).optional(),
+});
+
+export type EnquirySubmission = z.infer<typeof enquirySubmissionSchema>;
+
 export const newsletterSchema = z.object({
   email: z
     .string()

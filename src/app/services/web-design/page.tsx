@@ -56,7 +56,7 @@ export default function WebDesignPage() {
         <WebDesignServicePager />
 
         {/* Section 10: Specimen Matrix */}
-        <WebDesignSpecMatrix />
+        {/* <WebDesignSpecMatrix /> */}
       </main>
       <Footer />
     </div>

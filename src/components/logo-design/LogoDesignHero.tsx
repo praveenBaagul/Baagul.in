@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function LogoDesignHero() {
   return (
@@ -73,36 +74,21 @@ export default function LogoDesignHero() {
                   <span className="w-3 h-3 rounded-full bg-[#81C784] border border-[#0E1153]" />
                 </div>
                 <span className="text-[11px] font-bold text-[#3E4945]">
-                  baagul.canvas/logo-grid-v2
+                  baagul.canvas/logo-identity
                 </span>
-                <span className="text-[#005F4C] font-bold">1:1 RATIO</span>
+                <span className="text-[#005F4C] font-bold">IDENTITY ARCHIVE</span>
               </div>
 
-              {/* Vector Grid Preview */}
-              <div className="p-8 sm:p-12 bg-[#FAF8F5] relative flex flex-col items-center justify-center min-h-[260px] overflow-hidden">
-                {/* Subtle Grid Lines */}
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,#0E11530A_1px,transparent_1px),linear-gradient(to_bottom,#0E11530A_1px,transparent_1px)] bg-[size:24px_24px]" />
-
-                {/* Central Monogram Artwork */}
-                <div className="relative z-10 w-28 h-28 rounded-2xl bg-[#FFFFFF] border-2 border-[#0E1153] shadow-[4px_4px_0px_#FFA800] flex items-center justify-center">
-                  <span className="font-heading text-6xl font-black text-[#005F4C]">
-                    B
-                  </span>
-                  {/* Anchor points */}
-                  <span className="w-2 h-2 rounded-full bg-[#FFA800] border border-[#0E1153] absolute -top-1 -left-1" />
-                  <span className="w-2 h-2 rounded-full bg-[#FFA800] border border-[#0E1153] absolute -top-1 -right-1" />
-                  <span className="w-2 h-2 rounded-full bg-[#FFA800] border border-[#0E1153] absolute -bottom-1 -left-1" />
-                  <span className="w-2 h-2 rounded-full bg-[#FFA800] border border-[#0E1153] absolute -bottom-1 -right-1" />
-                </div>
-
-                <div className="relative z-10 flex items-center gap-3 mt-6">
-                  <span className="px-3 py-1 rounded bg-[#CFE8DC] border border-[#0E1153] text-[10px] font-mono font-bold text-[#005F4C]">
-                    RATIO: 1.618 GOLDEN MEAN
-                  </span>
-                  <span className="px-3 py-1 rounded bg-[#FFA800] border border-[#0E1153] text-[10px] font-mono font-bold text-[#0E1153]">
-                    RGB + CMYK READY
-                  </span>
-                </div>
+              {/* Vector Logo Specification Artwork */}
+              <div className="relative w-full aspect-[1024/682] bg-[#FAF8F5]">
+                <Image
+                  src="/assets/logodesignhero.jpg"
+                  alt="Baagul Logo and Brand Identity Specification"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>

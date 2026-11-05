@@ -48,7 +48,7 @@ export default function GuestPostPage() {
         <GuestPostServicePager />
 
         {/* Section 8: Specification Matrix */}
-        <GuestPostSpecMatrix />
+        {/* <GuestPostSpecMatrix /> */}
       </main>
       <Footer />
     </div>

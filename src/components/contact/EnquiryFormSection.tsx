@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useSyncExternalStore } from "react";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 import { ArrowRightIcon } from "@/components/Icons";
@@ -24,16 +24,20 @@ export default function EnquiryFormSection() {
     details: "",
   });
 
-  const [mounted, setMounted] = useState(false);
+  const emptySubscribe = () => () => {};
+  const mounted = useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
   const [errors, setErrors] = useState<FormErrors>({});
   const [touched, setTouched] = useState<Partial<Record<keyof EnquiryFormData, boolean>>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  // Kept across retries of the same enquiry, so the server can recognise them.
+  const idempotencyKey = useRef<string | null>(null);
+  const honeypot = useRef<HTMLInputElement>(null);
 
   // Validate single field on blur or change
   const validateField = <K extends keyof EnquiryFormData>(
@@ -115,11 +119,17 @@ export default function EnquiryFormSection() {
     setErrors({});
     setIsSubmitting(true);
 
+    idempotencyKey.current ??= crypto.randomUUID();
+
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          idempotencyKey: idempotencyKey.current,
+          website: honeypot.current?.value ?? "",
+        }),
       });
 
       const data = await res.json();
@@ -128,6 +138,7 @@ export default function EnquiryFormSection() {
         throw new Error(data.error || "Failed to submit enquiry. Please try again.");
       }
 
+      idempotencyKey.current = null;
       setSubmitted(true);
     } catch (err: unknown) {
       console.error("Submission error:", err);
@@ -155,6 +166,7 @@ export default function EnquiryFormSection() {
     setTouched({});
     setServerError(null);
     setSubmitted(false);
+    idempotencyKey.current = null;
   };
 
   return (
@@ -260,6 +272,12 @@ export default function EnquiryFormSection() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-6">
+                {/* Honeypot: out of sight and out of tab order, so only bots fill it in. */}
+                <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
+                  <label htmlFor="website">Website</label>
+                  <input ref={honeypot} id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+                </div>
+
                 {serverError && (
                   <div className="p-4 rounded-xl bg-red-100/80 border-2 border-red-500 text-red-800 text-xs font-medium flex items-start gap-2 shadow-[2px_2px_0px_#b91c1c]">
                     <span>⚠</span>

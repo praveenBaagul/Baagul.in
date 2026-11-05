@@ -1,0 +1,24 @@
+name: Enquiry maintenance
+
+# Calls the recovery job: retries undelivered events and closes finished sequences.
+# It does nothing until the repository has this configuration:
+#   Variable ENQUIRY_CRON_URL = https://www.baagul.in/api/cron/enquiries
+#   Secret   CRON_SECRET      = the same value as the deployment's CRON_SECRET
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  run:
+    if: ${{ vars.ENQUIRY_CRON_URL != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Call the maintenance endpoint
+        env:
+          CRON_URL: ${{ vars.ENQUIRY_CRON_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: curl --fail-with-body --silent --show-error --max-time 120 -H "Authorization: Bearer $CRON_SECRET" "$CRON_URL"

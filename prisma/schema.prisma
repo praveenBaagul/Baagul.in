@@ -1,0 +1,175 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum EnquiryStatus {
+  new
+  contacted
+  replied
+  qualified
+  converted
+  closed
+  unsubscribed
+}
+
+enum SequenceStatus {
+  pending
+  active
+  completed
+  stopped
+  skipped
+  failed
+}
+
+enum TriggerState {
+  not_required
+  pending
+  sending
+  sent
+  failed
+}
+
+enum StopState {
+  none
+  pending
+  sent
+}
+
+enum WebhookEventStatus {
+  processing
+  processed
+  ignored
+  failed
+}
+
+enum SuppressionReason {
+  unsubscribed
+  bounced
+  complained
+}
+
+model Enquiry {
+  id                   String           @id @db.VarChar(64)
+  idempotencyKey       String           @unique @map("idempotency_key") @db.VarChar(64)
+  contentHash          String           @map("content_hash") @db.VarChar(64)
+  customerName         String           @map("customer_name") @db.VarChar(255)
+  email                String           @db.VarChar(255)
+  phone                String?          @db.VarChar(50)
+  company              String?          @db.VarChar(255)
+  budget               String           @db.VarChar(100)
+  services             Json             // Stored as JSON array: ["SEO Optimization", ...]
+  message              String           @db.Text
+  ipHash               String?          @map("ip_hash") @db.VarChar(64)
+  submittedAt          DateTime         @default(now()) @map("submitted_at")
+
+  status               EnquiryStatus    @default(new)
+  statusChangedAt      DateTime         @default(now()) @map("status_changed_at")
+
+  sequenceStatus       SequenceStatus   @default(pending) @map("sequence_status")
+  sequenceReason       String?          @map("sequence_reason") @db.VarChar(255)
+  sequenceStartedAt    DateTime?        @map("sequence_started_at")
+  sequenceEndedAt      DateTime?        @map("sequence_ended_at")
+  lastStepSent         Int              @default(0) @map("last_step_sent") @db.SmallInt
+  automationId         String?          @map("automation_id") @db.VarChar(100)
+
+  triggerState         TriggerState     @default(pending) @map("trigger_state")
+  triggerAttempts      Int              @default(0) @map("trigger_attempts")
+  triggerNextAttemptAt DateTime?        @map("trigger_next_attempt_at")
+  triggerLeaseUntil    DateTime?        @map("trigger_lease_until")
+  triggerLastError     String?          @map("trigger_last_error") @db.Text
+
+  stopState            StopState        @default(none) @map("stop_state")
+  stopAttempts         Int              @default(0) @map("stop_attempts")
+  stopLastSentAt       DateTime?        @map("stop_last_sent_at")
+  stopLastError        String?          @map("stop_last_error") @db.Text
+
+  adminNotifiedAt      DateTime?        @map("admin_notified_at")
+
+  statusHistory        EnquiryStatusHistory[]
+  emailEvents          EnquiryEmailEvent[]
+
+  @@index([email, submittedAt])
+  @@index([contentHash, submittedAt])
+  @@index([status])
+  @@index([sequenceStatus])
+  @@index([triggerState, triggerNextAttemptAt])
+  @@index([stopState, stopLastSentAt])
+  @@map("enquiries")
+}
+
+model EnquiryStatusHistory {
+  id         BigInt        @id @default(autoincrement())
+  enquiryId  String        @map("enquiry_id") @db.VarChar(64)
+  enquiry    Enquiry       @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  fromStatus String?       @map("from_status") @db.VarChar(50)
+  toStatus   String        @map("to_status") @db.VarChar(50)
+  reason     String?       @db.VarChar(255)
+  actor      String        @db.VarChar(100)
+  changedAt  DateTime      @default(now()) @map("changed_at")
+
+  @@index([enquiryId, changedAt])
+  @@map("enquiry_status_history")
+}
+
+model ResendWebhookEvent {
+  id          String             @id @db.VarChar(128) // svix-id
+  type        String             @db.VarChar(100)
+  payload     Json
+  status      WebhookEventStatus
+  attempts    Int                @default(1)
+  leaseUntil  DateTime?          @map("lease_until")
+  lastError   String?            @map("last_error") @db.Text
+  receivedAt  DateTime           @default(now()) @map("received_at")
+  processedAt DateTime?          @map("processed_at")
+
+  emailEvents EnquiryEmailEvent[]
+
+  @@index([status, receivedAt])
+  @@map("resend_webhook_events")
+}
+
+model EnquiryEmailEvent {
+  id          BigInt             @id @default(autoincrement())
+  webhookId   String             @unique @map("webhook_id") @db.VarChar(128)
+  webhook     ResendWebhookEvent @relation(fields: [webhookId], references: [id])
+  enquiryId   String             @map("enquiry_id") @db.VarChar(64)
+  enquiry     Enquiry            @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  step        Int?               @db.SmallInt
+  type        String             @db.VarChar(100)
+  emailId     String?            @map("email_id") @db.VarChar(128)
+  messageId   String?            @map("message_id") @db.VarChar(255)
+  recipient   String?            @db.VarChar(255)
+  templateId  String?            @map("template_id") @db.VarChar(128)
+  detail      Json?
+  occurredAt  DateTime           @map("occurred_at")
+
+  @@index([enquiryId, occurredAt])
+  @@index([emailId])
+  @@index([messageId])
+  @@index([type])
+  @@map("enquiry_email_events")
+}
+
+model EmailSuppression {
+  email     String            @id @db.VarChar(255)
+  reason    SuppressionReason
+  source    String            @db.VarChar(100)
+  createdAt DateTime          @default(now()) @map("created_at")
+
+  @@map("email_suppressions")
+}
+
+model RateLimitCounter {
+  key         String   @db.VarChar(255)
+  windowStart DateTime @map("window_start")
+  hits        Int      @default(0)
+
+  @@id([key, windowStart])
+  @@map("rate_limit_counters")
+}
+

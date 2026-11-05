@@ -1,4 +1,3 @@
-import React from "react";
 import type { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
 import { serviceSchema } from "@/lib/structured-data";
@@ -48,7 +47,7 @@ export default function SeoOptimizationPage() {
         <SeoServicePager />
 
         {/* Section 8: Design System Specification Matrix */}
-        <SeoSpecMatrix />
+        {/* <SeoSpecMatrix /> */}
       </main>
       <Footer />
     </div>

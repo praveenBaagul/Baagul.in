@@ -108,7 +108,7 @@ export default function GuestPostHero() {
               </div>
               <div className="relative w-full aspect-[4/5] bg-[#FAF8F5]">
                 <Image
-                  src="/assets/cacf1.png"
+                  src="/assets/guestpage.png"
                   alt="Guest Post editorial illustration"
                   fill
                   className="object-cover"
