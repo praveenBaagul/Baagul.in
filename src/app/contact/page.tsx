@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Enquiry Now · Baagul Studio Bengaluru",
   description:
     "Schedule a technical strategy sprint or get a tailored proposal from Baagul Studio at Hustlehub Tech Park, HSR Layout, Bengaluru.",
+  alternates: { canonical: "/contact" },
 };
 
 function EnquiryFormFallback() {

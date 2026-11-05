@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Career & Current Openings · Baagul Marketing LLP",
   description:
     "Baagul Marketing LLC is hiring freelance Video Editors and Content Writers. Work remotely and build your career in digital marketing with us.",
+  alternates: { canonical: "/career" },
 };
 
 export default function CareerPage() {

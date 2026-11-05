@@ -10,6 +10,7 @@ import ServicesCTABand from "@/components/services/ServicesCTABand";
 export const metadata: Metadata = {
   title: "Our Services · Baagul Studio Bengaluru",
   description: "Explore Baagul Studio's comprehensive suite of digital marketing solutions, website design & development, SEO optimization, and e-commerce architectures.",
+  alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {

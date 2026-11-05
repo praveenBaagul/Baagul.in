@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import JsonLd from "@/components/seo/JsonLd";
+import { faqSchema } from "@/lib/structured-data";
 
 interface FAQItem {
   q: string;
@@ -44,6 +46,7 @@ export default function SeoFAQ() {
 
   return (
     <section className="w-full py-24 px-4 sm:px-8 lg:px-12 bg-[#005F4C] text-[#FEF9ED] border-b-2 border-[#0E1153]">
+      <JsonLd data={faqSchema(faqs)} />
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         {/* Header */}
         <div className="text-center mb-14">

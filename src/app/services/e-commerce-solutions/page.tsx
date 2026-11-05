@@ -1,5 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
+import JsonLd from "@/components/seo/JsonLd";
+import { serviceSchema } from "@/lib/structured-data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import EcommerceHero from "@/components/e-commerce/EcommerceHero";
@@ -15,11 +17,13 @@ import EcommerceSpecMatrix from "@/components/e-commerce/EcommerceSpecMatrix";
 export const metadata: Metadata = {
   title: "E-Commerce Solutions · Baagul Studio Bengaluru",
   description: "Building secure, scalable, and high-performing online stores that convert. Custom online store development, secure payment integration, and conversion-focused design.",
+  alternates: { canonical: "/services/e-commerce-solutions" },
 };
 
 export default function EcommerceSolutionsPage() {
   return (
     <div className="min-h-screen flex flex-col bg-canvas text-indigo-main antialiased selection:bg-marigold selection:text-indigo-main">
+      <JsonLd data={serviceSchema({ name: "E-Commerce Solutions", path: "/services/e-commerce-solutions", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero */}

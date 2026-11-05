@@ -11,35 +11,35 @@ interface StepItem {
 const steps: StepItem[] = [
   {
     number: "01",
-    title: "Research",
-    description: "Deep competitor audit, keyword search volumes, target demographic behavior mapping, and baseline ROI analysis.",
-    badge: "PHASE AUDIT",
+    title: "Brief & Footage",
+    description: "We understand your goals, audience, platform, and style references, then collect your raw footage and brand assets.",
+    badge: "PROJECT BRIEF",
     offsetClass: "lg:translate-y-0",
   },
   {
     number: "02",
-    title: "Strategy",
-    description: "Crafting omni-channel blueprints, ad budget allocations, content roadmaps, and high-conversion landing funnel architecture.",
-    badge: "SPRINT BLUEPRINT",
+    title: "Rough Cut",
+    description: "We select the best takes, build the story structure, set the pacing, and lay down music for a first assembly.",
+    badge: "STORY ASSEMBLY",
     offsetClass: "lg:translate-y-6",
   },
   {
     number: "03",
-    title: "Execution",
-    description: "Simultaneous deployment of ad creatives, live A/B split setups, social content release calendars, and technical backlink runs.",
-    badge: "GO-TO-MARKET",
+    title: "Polish",
+    description: "Motion graphics, color grading, sound design, transitions, and subtitles are added to give the video a finished look.",
+    badge: "POST-PRODUCTION",
     offsetClass: "lg:translate-y-0",
   },
   {
     number: "04",
-    title: "Optimization",
-    description: "Iterative algorithmic tuning, bid capping adjustments, weekly heatmapping reports, and sustained bottom-line ROAS scaling.",
-    badge: "SCALING MODE",
+    title: "Review & Delivery",
+    description: "You review and request revisions, then we export final files in every format and aspect ratio you need.",
+    badge: "FINAL EXPORT",
     offsetClass: "lg:translate-y-6",
   },
 ];
 
-export default function DigitalMarketingProcess() {
+export default function VideoEditingProcess() {
   return (
     <section className="relative w-full bg-[#0E7A63] text-[#FEF9ED] border-b-2 border-[#0E1153] py-24 px-4 sm:px-8 lg:px-12 overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -54,7 +54,7 @@ export default function DigitalMarketingProcess() {
           </div>
 
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-[56px] leading-[1.1] text-[#FEF9ED] mb-4">
-            Our 4-Step Digital Marketing
+            Our 4-Step Video Editing
             <br />
             <span className="font-serif italic font-normal text-[#FFBA45]">
               Process
@@ -62,7 +62,7 @@ export default function DigitalMarketingProcess() {
           </h2>
 
           <p className="font-sans text-sm sm:text-base text-[#FEF9ED]/85 leading-relaxed max-w-xl mx-auto">
-            We help brands grow online with a strategic approach, creative execution, and measurable results.
+            A clear, collaborative workflow that takes your raw footage to a polished, platform-ready video.
           </p>
         </div>
 
@@ -122,9 +122,9 @@ export default function DigitalMarketingProcess() {
         <div className="mt-16 pt-8 border-t border-[#FEF9ED]/20 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-[#FEF9ED]/70 gap-4">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 bg-[#FFBA45] rounded-full" />
-            <span>MEASURABLE RESULTS GUARANTEED</span>
+            <span>REVISION SUPPORT INCLUDED</span>
           </div>
-          <span>SPRINT CYCLES // 14-DAY DELIVERABLE AUDITS</span>
+          <span>FAST TURNAROUND // ALL ASPECT RATIOS</span>
         </div>
 
       </div>

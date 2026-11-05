@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import JsonLd from "@/components/seo/JsonLd";
+import { faqSchema } from "@/lib/structured-data";
 
 interface FAQItem {
   id: number;
@@ -64,6 +66,7 @@ export default function GuestPostFAQ() {
 
   return (
     <section className="w-full py-24 px-6 sm:px-12 lg:px-16 bg-[#FEF9ED] text-[#0E1153] border-b-2 border-[#0E1153]">
+      <JsonLd data={faqSchema(faqs)} />
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         {/* Eyebrow badge with orange dot */}
         <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded bg-[#FFFFFF] border-2 border-[#0E1153] text-[11px] font-mono font-bold uppercase tracking-widest text-[#0E1153] shadow-[2px_2px_0px_#0E1153]">

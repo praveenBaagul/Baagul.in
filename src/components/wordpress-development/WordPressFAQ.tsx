@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import JsonLd from "@/components/seo/JsonLd";
+import { faqSchema } from "@/lib/structured-data";
 
 interface FAQItem {
   q: string;
@@ -44,6 +46,7 @@ export default function WordPressFAQ() {
 
   return (
     <section className="w-full py-24 px-6 sm:px-12 lg:px-16 bg-[#E1E3F7] text-[#0E1153] border-b-2 border-[#0E1153]">
+      <JsonLd data={faqSchema(faqs)} />
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         {/* Left Column: Heading & Contact Box (5 cols) */}
         <div className="lg:col-span-5 flex flex-col items-start">

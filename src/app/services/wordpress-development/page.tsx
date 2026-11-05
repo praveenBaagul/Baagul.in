@@ -1,5 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
+import JsonLd from "@/components/seo/JsonLd";
+import { serviceSchema } from "@/lib/structured-data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WordPressHero from "@/components/wordpress-development/WordPressHero";
@@ -16,11 +18,13 @@ export const metadata: Metadata = {
   title: "WordPress Development · Baagul Studio Bengaluru",
   description:
     "Enterprise headless WordPress architectures, bespoke Gutenberg block themes, and high-performance WooCommerce storefronts that pass Core Web Vitals with 99+ PageSpeed scores.",
+  alternates: { canonical: "/services/wordpress-development" },
 };
 
 export default function WordPressDevelopmentPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
+      <JsonLd data={serviceSchema({ name: "WordPress & CMS Development", path: "/services/wordpress-development", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero */}

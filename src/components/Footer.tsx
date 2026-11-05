@@ -132,8 +132,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services/digital-marketing" className="hover:text-[#FFA800] transition-colors">
-                  Digital Marketing
+                <Link href="/services/video-editing" className="hover:text-[#FFA800] transition-colors">
+                  Video Editing
                 </Link>
               </li>
               <li>

@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import JsonLd from "@/components/seo/JsonLd";
+import { faqSchema } from "@/lib/structured-data";
 
 interface FAQItem {
   id: number;
@@ -42,6 +44,7 @@ export default function WebDesignFAQ() {
 
   return (
     <section className="w-full py-24 px-6 sm:px-12 lg:px-16 bg-[#E1E3F7] text-[#0E1153] border-b-2 border-[#0E1153]">
+      <JsonLd data={faqSchema(faqs)} />
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 max-w-3xl mx-auto">

@@ -1,4 +1,7 @@
 import React from "react";
+import type { Metadata } from "next";
+import JsonLd from "@/components/seo/JsonLd";
+import { organizationSchema } from "@/lib/structured-data";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import MetricsStrip from "@/components/MetricsStrip";
@@ -11,9 +14,14 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-canvas text-indigo-main antialiased selection:bg-marigold selection:text-indigo-main">
+      <JsonLd data={organizationSchema()} />
       <Header />
       <main className="flex-1 flex flex-col">
         <HeroSection />

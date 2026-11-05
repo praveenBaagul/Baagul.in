@@ -115,15 +115,15 @@ const allServiceCards: ServiceCardData[] = [
   },
   {
     number: "09",
-    tag: "GROWTH // OMNI",
-    title: "Digital Marketing Strategy",
+    tag: "MOTION // STORY",
+    title: "Video Editing",
     description:
-      "Full-funnel digital marketing systems combining programmatic SEO, paid performance media, lifecycle email flows, and multi-touch attribution.",
+      "Scroll-stopping reels, YouTube videos, brand films, and ad creatives with clean cuts, motion graphics, color grading, sound design, and subtitles.",
     imgSrc: "/assets/cacf1.png",
-    imgAlt: "Digital marketing funnel conversion metrics",
+    imgAlt: "Video editing timeline with motion graphics and color grading",
     headerBg: "bg-marigold text-indigo-main",
     accentBadge: "bg-indigo-main text-canvas",
-    href: "/services/digital-marketing",
+    href: "/services/video-editing",
   },
 ];
 

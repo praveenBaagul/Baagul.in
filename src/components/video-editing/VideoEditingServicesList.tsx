@@ -14,8 +14,8 @@ interface ServiceRow {
 const serviceRows: ServiceRow[] = [
   {
     number: "01",
-    title: "SEO & Content Marketing",
-    description: "Boost your online visibility with optimized content and search strategies that drive organic traffic and long-term growth.",
+    title: "Social Media Video Editing",
+    description: "Engaging reels, shorts, and stories edited for Instagram, YouTube, Facebook, and LinkedIn with trending formats and captions.",
     bgFill: "bg-[#CFE8DC]",
     badgeBg: "bg-[#0E1153] text-[#FEF9ED]",
     iconBg: "bg-[#0E7A63] text-[#FEF9ED]",
@@ -23,8 +23,8 @@ const serviceRows: ServiceRow[] = [
   },
   {
     number: "02",
-    title: "Social Media Marketing",
-    description: "Engage your audience and build brand loyalty with creative campaigns across platforms like Instagram, Facebook, and LinkedIn.",
+    title: "YouTube Video Editing",
+    description: "Long-form edits with strong hooks, tight pacing, B-roll, and thumbnail-ready frames that grow watch time and subscribers.",
     bgFill: "bg-white",
     badgeBg: "bg-[#0E7A63] text-[#FEF9ED]",
     iconBg: "bg-[#CFE8DC] text-[#0E1153]",
@@ -32,8 +32,8 @@ const serviceRows: ServiceRow[] = [
   },
   {
     number: "03",
-    title: "Pay-Per-Click Advertising (PPC)",
-    description: "Maximize ROI with targeted Google Ads and social media ads that convert clicks into customers.",
+    title: "Corporate & Brand Videos",
+    description: "Polished brand films, product demos, testimonials, and event highlights that build trust and tell your story.",
     bgFill: "bg-[#FFBA45]",
     badgeBg: "bg-[#0E1153] text-[#FEF9ED]",
     iconBg: "bg-[#E1E3F7] text-[#0E1153]",
@@ -41,8 +41,8 @@ const serviceRows: ServiceRow[] = [
   },
   {
     number: "04",
-    title: "Analytics & Performance Tracking",
-    description: "We provide real-time insights and detailed reports to measure success and optimize campaigns for better results.",
+    title: "Motion Graphics & Post-Production",
+    description: "Animated titles, color grading, sound design, and subtitles that give every video a professional, finished look.",
     bgFill: "bg-[#E1E3F7]",
     badgeBg: "bg-[#0E7A63] text-[#FEF9ED]",
     iconBg: "bg-[#FFBA45] text-[#0E1153]",
@@ -50,7 +50,7 @@ const serviceRows: ServiceRow[] = [
   },
 ];
 
-export default function DigitalMarketingServicesList() {
+export default function VideoEditingServicesList() {
   return (
     <section className="relative w-full bg-[#FEF9ED] border-b-2 border-[#0E1153] py-20 px-4 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
@@ -69,7 +69,7 @@ export default function DigitalMarketingServicesList() {
             </h2>
           </div>
           <p className="font-sans text-sm sm:text-base text-[#121A4A]/75 max-w-md leading-relaxed">
-            We think big and have hands in all leading technology platforms to provide you a wide array of services.
+            From quick social clips to full brand films, we handle every stage of post-production using industry-standard editing tools.
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function DigitalMarketingServicePager() {
+export default function VideoEditingServicePager() {
   return (
     <section className="relative w-full bg-[#FEF9ED] border-b-2 border-[#0E1153] py-16 px-4 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
@@ -10,7 +10,7 @@ export default function DigitalMarketingServicePager() {
           
           {/* Previous Service Card (Mint) */}
           <Link
-            href="/services/seo-optimizations"
+            href="/services/paid-promotions"
             className="group block bg-[#CFE8DC] border-2 border-[#0E1153] rounded-2xl p-6 sm:p-8 shadow-[6px_6px_0px_#0E1153] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#0E1153] transition-all duration-200"
           >
             <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#0E1153]/20">
@@ -19,27 +19,27 @@ export default function DigitalMarketingServicePager() {
                 <span>PREVIOUS SERVICE</span>
               </span>
               <span className="text-[10px] font-mono text-[#0E1153]/60 font-bold uppercase">
-                ORGANIC GROWTH ENGINE
+                PERFORMANCE MEDIA
               </span>
             </div>
 
             <h3 className="font-heading text-2xl sm:text-3xl font-bold text-[#0E1153] mb-2 group-hover:text-[#0E7A63] transition-colors">
-              SEO Optimization
+              Paid Promotions & Media Buying
             </h3>
 
             <p className="font-sans text-xs sm:text-sm text-[#0E1153]/80">
-              Technical Architecture & Backlinks
+              Influencer Collabs & Video Sponsorships
             </p>
           </Link>
 
           {/* Next Service Card (Mustard) */}
           <Link
-            href="/services/e-commerce-solutions"
+            href="/services/web-design"
             className="group block bg-[#FFBA45] border-2 border-[#0E1153] rounded-2xl p-6 sm:p-8 shadow-[6px_6px_0px_#0E1153] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#0E1153] transition-all duration-200"
           >
             <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#0E1153]/20">
               <span className="text-[10px] font-mono text-[#0E1153]/60 font-bold uppercase">
-                COMMERCE ACCELERATION
+                ENGINEERED WEB
               </span>
               <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#0E1153] flex items-center gap-1.5">
                 <span>NEXT SERVICE</span>
@@ -48,11 +48,11 @@ export default function DigitalMarketingServicePager() {
             </div>
 
             <h3 className="font-heading text-2xl sm:text-3xl font-bold text-[#0E1153] mb-2 group-hover:text-[#0E7A63] transition-colors">
-              E-Commerce Solutions
+              Website Design & Development
             </h3>
 
             <p className="font-sans text-xs sm:text-sm text-[#0E1153]/80">
-              Shopify, WooCommerce & High CRO
+              Next.js, React & Responsive Builds
             </p>
           </Link>
 

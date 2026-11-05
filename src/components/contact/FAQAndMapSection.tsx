@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import JsonLd from "@/components/seo/JsonLd";
+import { faqSchema } from "@/lib/structured-data";
 
 interface FAQItem {
   question: string;
@@ -35,6 +37,8 @@ export default function FAQAndMapSection() {
 
   return (
     <section className="w-full py-20 px-4 sm:px-12 max-w-7xl mx-auto border-t border-indigo-main/20">
+      
+      <JsonLd data={faqSchema(faqs.map((f) => ({ q: f.question, a: f.answer })))} />
       
       {/* Section Header */}
       <div className="flex flex-col items-start mb-14">

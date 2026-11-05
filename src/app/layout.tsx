@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk, Gloock, Noto_Serif_Kannada } from "next/font/google";
 import "./globals.css";
+import { SITE_URL } from "@/lib/site";
 
 const hanken = Hanken_Grotesk({
   variable: "--font-hanken",
@@ -23,7 +24,10 @@ const notoKannada = Noto_Serif_Kannada({
 });
 
 export const metadata: Metadata = {
-  title: "Baagul · Digital growth, made in Bengaluru",
+  metadataBase: new URL(SITE_URL),
+  openGraph: { type: "website", siteName: "Baagul", locale: "en_IN" },
+  twitter: { card: "summary_large_image" },
+  title:"Baagul · Digital growth, made in Bengaluru",
   description: "SEO, websites, Google and Meta ads and branding for high-growth startups, local businesses, and modern enterprises. Six years of craftsmanship, strictly measured in qualified leads and bottom-line revenue.",
 };
 

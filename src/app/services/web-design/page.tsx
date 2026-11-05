@@ -1,5 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
+import JsonLd from "@/components/seo/JsonLd";
+import { serviceSchema } from "@/lib/structured-data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WebDesignHero from "@/components/web-design/WebDesignHero";
@@ -17,11 +19,13 @@ export const metadata: Metadata = {
   title: "Website Design & Development · Baagul Studio Bengaluru",
   description:
     "Pixel-perfect Next.js, React, and TypeScript web applications engineered with fluid micro-interactions, accessible semantic structures, and sub-second loading speeds.",
+  alternates: { canonical: "/services/web-design" },
 };
 
 export default function WebDesignPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
+      <JsonLd data={serviceSchema({ name: "Website Design & Development", path: "/services/web-design", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero */}

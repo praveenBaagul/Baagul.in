@@ -1,5 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
+import JsonLd from "@/components/seo/JsonLd";
+import { serviceSchema } from "@/lib/structured-data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GuestPostHero from "@/components/guest-post/GuestPostHero";
@@ -15,11 +17,13 @@ export const metadata: Metadata = {
   title: "Guest Post • Baagul Studio Bengaluru",
   description:
     "Publishing high-quality content on top websites to build authority, earn natural high-DA backlinks, and capture qualified affiliate-grade traffic. Bengaluru digital PR and outreach architecture.",
+  alternates: { canonical: "/services/guest-post" },
 };
 
 export default function GuestPostPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
+      <JsonLd data={serviceSchema({ name: "Guest Posting", path: "/services/guest-post", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero (Forest Green #005F4C background, Bar chart widget & Poster illustration) */}

@@ -9,7 +9,7 @@ export default function EcommerceServicePager() {
           
           {/* Previous Service: Mint Green Fill */}
           <Link
-            href="/services/digital-marketing"
+            href="/services/video-editing"
             className="p-8 bg-[#CFE8DC] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#0E1153] transition-all flex flex-col justify-between group"
           >
             <div>
@@ -18,11 +18,11 @@ export default function EcommerceServicePager() {
                 <span>PREVIOUS SERVICE</span>
               </span>
               <h4 className="font-heading text-3xl font-bold text-[#0E1153] mb-2 leading-snug">
-                Digital Marketing
+                Video Editing
               </h4>
             </div>
             <p className="font-sans text-xs sm:text-sm text-[#3E4945] mt-2">
-              Performance acquisition, paid funnels, and retention systems.
+              Reels, YouTube videos, brand films, and ad creatives.
             </p>
           </Link>
 

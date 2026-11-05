@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import JsonLd from "@/components/seo/JsonLd";
+import { faqSchema } from "@/lib/structured-data";
 
 interface FAQItem {
   id: string;
@@ -12,37 +14,37 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     id: "01",
-    question: "What digital marketing services do you offer?",
-    answer: "We provide full-spectrum growth engineering including technical Search Engine Optimization (SEO), high-conversion Pay-Per-Click management (Google & Meta Ads), social media brand positioning, programmatic content syndication, full-funnel email automation, and multi-touch analytics attribution models.",
+    question: "What video editing services do you offer?",
+    answer: "We edit short-form reels and shorts, YouTube and long-form videos, corporate and brand films, product demos, testimonials, event highlights, and video ads — including motion graphics, color grading, sound design, and subtitles.",
   },
   {
     id: "02",
-    question: "How long does it take to see results from digital marketing?",
-    answer: "Paid ads and conversion rate improvements typically reflect data within 7–14 days. Organic SEO, content authority building, and algorithmic brand traction compound significantly over a 3 to 6-month operational horizon.",
+    question: "How long does it take to edit a video?",
+    answer: "Short-form reels are usually delivered within 24–48 hours. Long-form and brand videos typically take 3–7 days depending on length, footage volume, and the amount of motion graphics required.",
   },
   {
     id: "03",
-    question: "Do you provide SEO services?",
-    answer: "Yes. Our SEO framework spans technical Core Web Vitals remediation, semantic entity architecture, schema graphs, programmatic indexing, and authoritative backlink acquisition.",
+    question: "How many revisions are included?",
+    answer: "Every project includes revision rounds so the final cut matches your vision. We share drafts, collect your feedback with timestamps, and refine until you are happy with the result.",
   },
   {
     id: "04",
-    question: "Can you manage paid ads like Google Ads and Meta Ads?",
-    answer: "Yes, we handle end-to-end media buying across Google Search, Shopping, YouTube, Instagram Reels, and Meta feed ads with high creative turnover and algorithmic bid optimization.",
+    question: "How do I send my raw footage?",
+    answer: "You can share footage through Google Drive, Dropbox, WeTransfer, or any cloud link. Along with the footage, send your logo, fonts, music preferences, and any reference videos you like.",
   },
   {
     id: "05",
-    question: "How do you measure digital marketing performance?",
-    answer: "We use server-side tracking, GA4 custom conversion events, and blended ROAS / CAC metrics visualized on real-time Looker Studio dashboards directly connected to your store backend.",
+    question: "Which formats and aspect ratios do you deliver?",
+    answer: "We export in MP4 or MOV at up to 4K, in vertical (9:16), horizontal (16:9), and square (1:1) formats, optimized for Instagram, YouTube, Facebook, LinkedIn, and ad platforms.",
   },
   {
     id: "06",
-    question: "Do you offer customized digital marketing strategies?",
-    answer: "Absolutely. We reject one-size-fits-all playbooks. Every brand receives a bespoke channel allocation strategy calibrated to your market vertical, customer acquisition economics, and sprint goals.",
+    question: "Do you offer monthly video editing packages?",
+    answer: "Yes. Along with one-off projects, we offer monthly plans for creators and brands who publish regularly, with a fixed number of videos, consistent styling, and priority turnaround.",
   },
 ];
 
-export default function DigitalMarketingFAQ() {
+export default function VideoEditingFAQ() {
   const [openIndex, setOpenIndex] = useState<number>(0);
 
   const toggle = (idx: number) => {
@@ -51,6 +53,7 @@ export default function DigitalMarketingFAQ() {
 
   return (
     <section className="relative w-full bg-[#FEF9ED] border-b-2 border-[#0E1153] py-20 px-4 sm:px-8 lg:px-12">
+      <JsonLd data={faqSchema(faqs.map((f) => ({ q: f.question, a: f.answer })))} />
       <div className="max-w-7xl mx-auto">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -66,11 +69,11 @@ export default function DigitalMarketingFAQ() {
             </div>
 
             <h2 className="font-heading text-3xl sm:text-4xl text-[#0E1153] leading-snug mb-4">
-              Everything You Need to Know About Our Digital Marketing Services
+              Everything You Need to Know About Our Video Editing Services
             </h2>
 
             <p className="font-sans text-xs sm:text-sm text-[#121A4A]/75 leading-relaxed mb-8">
-              Clear, transparent operational answers on how Baagul handles channel allocations, analytics attribution, and sprint deliverables.
+              Clear answers on how Baagul handles footage, turnaround times, revisions, and final video delivery.
             </p>
 
             {/* Still Curious Card */}
@@ -82,7 +85,7 @@ export default function DigitalMarketingFAQ() {
                 Still curious?
               </h4>
               <p className="font-sans text-xs text-[#0E1153]/80 leading-relaxed mb-5">
-                Have specific industry constraints or questions about enterprise integrations? Talk directly to our technical directors.
+                Have a specific video style, deadline, or volume in mind? Talk directly to our editing team.
               </p>
               <Link
                 href="/contact"

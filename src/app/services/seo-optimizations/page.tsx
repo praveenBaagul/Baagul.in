@@ -1,5 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
+import JsonLd from "@/components/seo/JsonLd";
+import { serviceSchema } from "@/lib/structured-data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SeoHero from "@/components/seo-optimization/SeoHero";
@@ -15,11 +17,13 @@ export const metadata: Metadata = {
   title: "SEO Optimization · Baagul Studio Bengaluru",
   description:
     "All-in-one organic search architecture that converts impressions into high-margin paying clients. Technical site health, semantic indexing, Core Web Vitals, and keyword dominance. Bengaluru engineered.",
+  alternates: { canonical: "/services/seo-optimizations" },
 };
 
 export default function SeoOptimizationPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFBA45] selection:text-[#0E1153]">
+      <JsonLd data={serviceSchema({ name: "SEO Optimization", path: "/services/seo-optimizations", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero with Live Search Performance Mockup */}

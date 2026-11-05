@@ -24,9 +24,9 @@ export default function SeoServicePager() {
           </p>
         </Link>
 
-        {/* Next Service: Digital Marketing Agency */}
+        {/* Next Service: Video Editing */}
         <Link
-          href="/services/digital-marketing"
+          href="/services/video-editing"
           className="p-8 bg-[#FFBA45] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#0E1153] transition-all flex flex-col justify-between md:items-end md:text-right group"
         >
           <div>
@@ -35,11 +35,11 @@ export default function SeoServicePager() {
               <span>→</span>
             </span>
             <h4 className="font-heading text-3xl font-bold text-[#0E1153] mb-2 leading-snug group-hover:text-[#005F4C] transition-colors">
-              Digital Marketing Agency
+              Video Editing
             </h4>
           </div>
           <p className="font-sans text-xs sm:text-sm text-[#0E1153]/85 mt-4">
-            High-converting performance marketing, paid search acquisition, and multi-channel revenue funnels.
+            Reels, YouTube videos, brand films, and ad creatives with motion graphics and color grading.
           </p>
         </Link>
       </div>

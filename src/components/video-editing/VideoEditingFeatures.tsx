@@ -11,43 +11,43 @@ interface FeatureItem {
 const features: FeatureItem[] = [
   {
     number: "01",
-    title: "Search Engine Optimization (SEO)",
-    description: "Technical audits, on-page architecture, high-intent backlink acquisition.",
+    title: "Short-Form Reels & Shorts",
+    description: "Vertical edits for Instagram Reels, YouTube Shorts, and TikTok with hooks in the first 3 seconds.",
     badgeBg: "bg-[#0E7A63] text-[#FEF9ED]",
   },
   {
     number: "02",
-    title: "Social Media Marketing",
-    description: "Audience persona crafting, viral reel production, paid amplification.",
+    title: "YouTube & Long-Form Editing",
+    description: "Pacing, jump cuts, chapters, and retention-focused storytelling for long-form content.",
     badgeBg: "bg-[#FFBA45] text-[#0E1153]",
   },
   {
     number: "03",
-    title: "Pay-Per-Click Advertising (PPC)",
-    description: "Google Search ads, Shopping feeds, Meta ROAS scaling campaigns.",
+    title: "Ad Creatives & Promo Videos",
+    description: "Performance-ready video ads for Meta, YouTube, and Google in every aspect ratio.",
     badgeBg: "bg-[#CFE8DC] text-[#0E1153]",
   },
   {
     number: "04",
-    title: "Content Marketing",
-    description: "Editorial long-form assets, whitepapers, thought leadership syndication.",
+    title: "Motion Graphics & Titles",
+    description: "Animated text, lower thirds, logo reveals, and branded transitions.",
     badgeBg: "bg-[#E1E3F7] text-[#0E1153]",
   },
   {
     number: "05",
-    title: "Email Marketing Automation",
-    description: "Lifecycle flows, Klaviyo segmentation, churn reduction triggers.",
+    title: "Color Grading & Correction",
+    description: "Consistent, cinematic looks with skin-tone accuracy and exposure balancing.",
     badgeBg: "bg-[#C8553D] text-[#FEF9ED]",
   },
   {
     number: "06",
-    title: "Analytics & Performance Tracking",
-    description: "GA4 custom events, server-side attribution, Looker studio dashboards.",
+    title: "Sound Design & Subtitles",
+    description: "Audio cleanup, music and SFX mixing, plus accurate burned-in captions.",
     badgeBg: "bg-[#0E1153] text-[#FEF9ED]",
   },
 ];
 
-export default function DigitalMarketingFeatures() {
+export default function VideoEditingFeatures() {
   return (
     <section className="relative w-full bg-[#1B1F5E] text-[#FEF9ED] border-b-2 border-[#0E1153] py-20 px-4 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
@@ -67,16 +67,16 @@ export default function DigitalMarketingFeatures() {
 
             {/* Heading */}
             <h2 className="font-heading text-4xl sm:text-5xl lg:text-[54px] leading-[1.1] font-bold text-[#FEF9ED] mb-6">
-              Data-driven
+              Story-driven
               <br />
               <span className="font-serif italic font-normal text-[#FFBA45]">
-                campaigns
+                edits
               </span>
             </h2>
 
             {/* Description */}
             <p className="font-sans text-sm sm:text-base text-[#FEF9ED]/80 leading-relaxed mb-8 max-w-md">
-              Data-driven campaigns across SEO, social media, and ads that boost visibility, drive traffic, and generate measurable results.
+              Professionally edited videos for social media, YouTube, and ads that capture attention, boost engagement, and keep viewers watching.
             </p>
 
             {/* Action Button */}
@@ -91,7 +91,7 @@ export default function DigitalMarketingFeatures() {
             {/* Corner Graphic Accent */}
             <div className="mt-12 hidden lg:flex items-center gap-2 text-[10px] font-mono text-[#FEF9ED]/50">
               <span className="w-1.5 h-1.5 bg-[#FFBA45]" />
-              <span>CORE ARCHITECTURE // 06 CAPABILITIES</span>
+              <span>EDIT SUITE // 06 CAPABILITIES</span>
             </div>
 
           </div>

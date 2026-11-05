@@ -1,5 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
+import JsonLd from "@/components/seo/JsonLd";
+import { serviceSchema } from "@/lib/structured-data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GraphicsDesignHero from "@/components/graphics-design/GraphicsDesignHero";
@@ -14,11 +16,13 @@ export const metadata: Metadata = {
   title: "Graphics Design · Baagul Studio Bengaluru",
   description:
     "Bespoke marketing graphics, promotional collateral, custom brand assets, and high-converting visual systems engineered for businesses in Bengaluru and worldwide.",
+  alternates: { canonical: "/services/graphics-design" },
 };
 
 export default function GraphicsDesignPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
+      <JsonLd data={serviceSchema({ name: "Graphic Design", path: "/services/graphics-design", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero & 3 Progress Bars */}

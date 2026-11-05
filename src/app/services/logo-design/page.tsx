@@ -1,5 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
+import JsonLd from "@/components/seo/JsonLd";
+import { serviceSchema } from "@/lib/structured-data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LogoDesignHero from "@/components/logo-design/LogoDesignHero";
@@ -15,11 +17,13 @@ export const metadata: Metadata = {
   title: "Logo Design · Baagul Studio Bengaluru",
   description:
     "Timeless visual brand identities, custom vector marks, and comprehensive design systems that define and elevate your business. Bengaluru engineered brand architecture.",
+  alternates: { canonical: "/services/logo-design" },
 };
 
 export default function LogoDesignPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
+      <JsonLd data={serviceSchema({ name: "Logo Design", path: "/services/logo-design", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero & 3 KPI Cards */}

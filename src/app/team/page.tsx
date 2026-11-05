@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Our Team & Practitioners · Baagul Marketing LLP",
   description:
     "Meet the senior practitioners behind Baagul Marketing LLP in HSR Layout, Bengaluru. High-performance SEO specialists, growth engineers, media buyers, and brand craft directors.",
+  alternates: { canonical: "/team" },
 };
 
 const workingPrinciples = [

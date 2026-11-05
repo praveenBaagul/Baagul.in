@@ -10,6 +10,9 @@ const quickServices = [
   { name: "Guest Post", href: "/services/guest-post" },
   { name: "Graphic Designing", href: "/services/graphics-design" },
   { name: "E-Commerce Solutions", href: "/services/e-commerce-solutions" },
+  { name: "WordPress & CMS Development", href: "/services/wordpress-development" },
+  { name: "Paid Promotions & Media Buying", href: "/services/paid-promotions" },
+  { name: "Video Editing", href: "/services/video-editing" },
 ];
 
 export default function ServicesHero() {
@@ -94,7 +97,7 @@ export default function ServicesHero() {
                 </span>
               </div>
               <span className="text-[11px] font-mono text-slate-text">
-                6 PRIMARY MODULES
+                9 PRIMARY MODULES
               </span>
             </div>
 

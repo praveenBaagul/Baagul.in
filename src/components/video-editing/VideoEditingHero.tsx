@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function DigitalMarketingHero() {
+export default function VideoEditingHero() {
   return (
     <section className="relative w-full bg-[#FEF9ED] border-b-2 border-[#0E1153] pt-6 pb-16 px-4 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
@@ -19,7 +19,7 @@ export default function DigitalMarketingHero() {
             OUR SERVICES
           </Link>
           <span>/</span>
-          <span className="text-[#0E1153]">DIGITAL MARKETING</span>
+          <span className="text-[#0E1153]">VIDEO EDITING</span>
         </div>
 
         {/* Hero Split Grid (6 Cols Copy / 6 Cols Mockup) */}
@@ -38,17 +38,17 @@ export default function DigitalMarketingHero() {
 
             {/* Main Heading */}
             <h1 className="font-heading text-5xl sm:text-6xl lg:text-[70px] leading-[1.08] text-[#0E1153] mb-6">
-              <span>Digital / </span>
+              <span>Video / </span>
               <span className="relative inline-block ml-1">
                 <span className="bg-[#FFBA45] text-[#0E1153] px-4 py-1 rounded-md border-2 border-[#0E1153] shadow-[5px_5px_0px_#0E1153] inline-block font-normal">
-                  Marketing
+                  Editing
                 </span>
               </span>
             </h1>
 
             {/* Description */}
             <p className="font-sans text-sm sm:text-base text-[#121A4A]/80 leading-relaxed max-w-xl mb-8">
-              At Baagul.in, we create digital strategies that do more than get clicks — they engage, convert, and build lasting relationships. Whether you&apos;re starting from scratch or amplifying your current presence, our marketing solutions are tailored to reflect your brand&apos;s vision and connect with the right audience.
+              At Baagul.in, we turn raw footage into scroll-stopping stories. From short-form reels and YouTube videos to brand films and ad creatives, our editors craft clean cuts, motion graphics, color grades, and sound that hold attention and reflect your brand&apos;s voice.
             </p>
 
             {/* CTA Group */}
@@ -91,7 +91,7 @@ export default function DigitalMarketingHero() {
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
                     <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                   </svg>
-                  <span>store.baagul.com/campaigns/live</span>
+                  <span>studio.baagul.in/edit-suite</span>
                 </div>
 
                 {/* Right 2 Dots */}
@@ -101,37 +101,37 @@ export default function DigitalMarketingHero() {
                 </div>
               </div>
 
-              {/* Window Body: Analytics UI */}
+              {/* Window Body: Edit Suite UI */}
               <div className="p-6 bg-white space-y-5">
                 
-                {/* Top Row: Scale Acceleration Hub & Live Feed Pill */}
+                {/* Top Row: Brand Reel — Final Cut & Live Feed Pill */}
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="text-[10px] font-mono uppercase tracking-wider text-[#0E1153]/60 font-bold block">
-                      ACTIVE CAMPAIGN
+                      ACTIVE PROJECT
                     </span>
                     <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#0E1153]">
-                      Scale Acceleration Hub
+                      Brand Reel — Final Cut
                     </h3>
                   </div>
 
                   <div className="flex items-center gap-2 px-3 py-1 bg-[#0E7A63] text-[#FEF9ED] rounded-full border border-[#0E1153] font-mono text-[10px] font-bold">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#FFBA45]" />
-                    <span>LIVE FEED</span>
+                    <span>RENDERING</span>
                   </div>
                 </div>
 
                 {/* Middle Row: 2 Quick Metric Cards */}
                 <div className="grid grid-cols-2 gap-4">
                   
-                  {/* Organic Lift Card */}
+                  {/* Watch Time Card */}
                   <div className="bg-[#FEF9ED] border-2 border-[#0E1153] rounded-xl p-4 shadow-[2px_2px_0px_#0E1153]">
                     <span className="text-[10px] font-mono uppercase font-bold text-[#0E1153]/70 block mb-1">
-                      ORGANIC LIFT
+                      AVG. WATCH TIME
                     </span>
                     <div className="flex items-baseline gap-2 mb-1">
                       <span className="font-heading text-3xl font-bold text-[#0E7A63]">
-                        +312%
+                        +184%
                       </span>
                       {/* Squiggle wave icon */}
                       <svg className="w-5 h-3 text-[#0E7A63]" viewBox="0 0 24 10" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
@@ -139,38 +139,38 @@ export default function DigitalMarketingHero() {
                       </svg>
                     </div>
                     <span className="text-[10px] font-mono text-[#0E1153]/60 block">
-                      vs. prev quarter
+                      vs. raw cut
                     </span>
                   </div>
 
-                  {/* Blended CAC Card */}
+                  {/* Turnaround Card */}
                   <div className="bg-[#FEF9ED] border-2 border-[#0E1153] rounded-xl p-4 shadow-[2px_2px_0px_#0E1153]">
                     <span className="text-[10px] font-mono uppercase font-bold text-[#0E1153]/70 block mb-1">
-                      BLENDED CAC
+                      TURNAROUND
                     </span>
                     <div className="flex items-baseline gap-2 mb-1">
                       <span className="font-heading text-3xl font-bold text-[#0E1153]">
-                        -34%
+                        48 hrs
                       </span>
                       <span className="font-mono text-base font-bold text-[#0E7A63]">↘</span>
                     </div>
                     <span className="text-[10px] font-mono text-[#0E1153]/60 block">
-                      Efficiency optimized
+                      First draft delivery
                     </span>
                   </div>
 
                 </div>
 
-                {/* Bottom Row: Attribution Breakdown with Vertical Bar Chart & Dotted Curve */}
+                {/* Bottom Row: Retention by Segment with Vertical Bar Chart & Dotted Curve */}
                 <div className="bg-[#FEF9ED] border-2 border-[#0E1153] rounded-xl p-4 shadow-[2px_2px_0px_#0E1153]">
                   
-                  {/* Header inside Attribution box */}
+                  {/* Header inside Retention box */}
                   <div className="flex items-center justify-between mb-4 text-[10px] font-mono">
                     <span className="font-bold text-[#0E1153] uppercase tracking-wider">
-                      ATTRIBUTION BREAKDOWN
+                      RETENTION BY SEGMENT
                     </span>
                     <span className="text-[#0E1153]/70 font-semibold">
-                      Bangalore Cluster
+                      Timeline 00:60
                     </span>
                   </div>
 
@@ -195,32 +195,32 @@ export default function DigitalMarketingHero() {
                     {/* Columns Grid */}
                     <div className="grid grid-cols-6 items-end gap-3 h-24 px-2">
                       
-                      {/* Col 1: SEO */}
+                      {/* Col 1: HOOK */}
                       <div className="flex flex-col items-center justify-end h-full">
                         <div className="w-full max-w-[36px] h-12 bg-[#0E7A63] border-2 border-[#0E1153] rounded-t-sm" />
                       </div>
 
-                      {/* Col 2: PPC */}
+                      {/* Col 2: B-ROLL */}
                       <div className="flex flex-col items-center justify-end h-full">
                         <div className="w-full max-w-[36px] h-9 bg-[#FFBA45] border-2 border-[#0E1153] rounded-t-sm" />
                       </div>
 
-                      {/* Col 3: META */}
+                      {/* Col 3: MOTION */}
                       <div className="flex flex-col items-center justify-end h-full">
                         <div className="w-full max-w-[36px] h-[72px] bg-[#5459AC] border-2 border-[#0E1153] rounded-t-sm" />
                       </div>
 
-                      {/* Col 4: CONTENT */}
+                      {/* Col 4: COLOR */}
                       <div className="flex flex-col items-center justify-end h-full">
                         <div className="w-full max-w-[36px] h-11 bg-[#0E7A63] border-2 border-[#0E1153] rounded-t-sm" />
                       </div>
 
-                      {/* Col 5: Light Lavender Container */}
+                      {/* Col 5: AUDIO */}
                       <div className="flex flex-col items-center justify-end h-full">
                         <div className="w-full max-w-[36px] h-8 bg-[#E1E3F7] border-2 border-[#0E1153] rounded-t-sm" />
                       </div>
 
-                      {/* Col 6: EMAIL / BRAND */}
+                      {/* Col 6: CTA */}
                       <div className="flex flex-col items-center justify-end h-full">
                         <div className="w-full max-w-[36px] h-14 bg-[#FFBA45] border-2 border-[#0E1153] rounded-t-sm" />
                       </div>
@@ -232,12 +232,12 @@ export default function DigitalMarketingHero() {
 
                     {/* Labels Row */}
                     <div className="grid grid-cols-6 text-center text-[9px] font-mono font-bold text-[#0E1153]/70 pt-2 uppercase">
-                      <span>SEO</span>
-                      <span>PPC</span>
-                      <span>META</span>
-                      <span>CONTENT</span>
-                      <span>EMAIL</span>
-                      <span>BRAND</span>
+                      <span>HOOK</span>
+                      <span>B-ROLL</span>
+                      <span>MOTION</span>
+                      <span>COLOR</span>
+                      <span>AUDIO</span>
+                      <span>CTA</span>
                     </div>
 
                   </div>
@@ -257,11 +257,11 @@ export default function DigitalMarketingHero() {
           
           <div className="flex items-center justify-between gap-4 mb-6">
             <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#0E1153]">
-              Elevate Your Brand Identity
+              Elevate Your Brand Story
             </h3>
             <div className="hidden sm:block flex-1 border-t-2 border-[#0E1153]/20 mx-4" />
             <span className="font-mono text-xs uppercase tracking-widest text-[#0E1153]/70 font-bold whitespace-nowrap">
-              METRIC PERFORMANCE
+              EDIT PERFORMANCE
             </span>
           </div>
 
@@ -271,7 +271,7 @@ export default function DigitalMarketingHero() {
             <div className="bg-[#CFE8DC] border-2 border-[#0E1153] rounded-2xl p-6 shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between hover:-translate-y-1 transition-transform">
               <div className="flex items-center justify-between mb-4">
                 <span className="font-heading text-4xl sm:text-5xl font-bold text-[#0E1153]">
-                  87%
+                  92%
                 </span>
                 <span className="px-2.5 py-1 bg-white border border-[#0E1153] rounded font-mono text-[10px] font-bold text-[#0E1153]">
                   Q1 PEAK
@@ -279,11 +279,11 @@ export default function DigitalMarketingHero() {
               </div>
               <div>
                 <span className="font-mono text-xs uppercase font-bold text-[#0E1153] tracking-wider block mb-3">
-                  STRATEGIC VISUALS
+                  STORY-DRIVEN CUTS
                 </span>
-                {/* Horizontal Capsule Progress Bar (87%) */}
+                {/* Horizontal Capsule Progress Bar (92%) */}
                 <div className="h-3 w-full bg-[#FEF9ED] border-2 border-[#0E1153] rounded-full overflow-hidden p-0.5">
-                  <div className="h-full bg-[#0E1153] rounded-full w-[87%]" />
+                  <div className="h-full bg-[#0E1153] rounded-full w-[92%]" />
                 </div>
               </div>
             </div>
@@ -292,7 +292,7 @@ export default function DigitalMarketingHero() {
             <div className="bg-[#FFBA45] border-2 border-[#0E1153] rounded-2xl p-6 shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between hover:-translate-y-1 transition-transform">
               <div className="flex items-center justify-between mb-4">
                 <span className="font-heading text-4xl sm:text-5xl font-bold text-[#0E1153]">
-                  76%
+                  85%
                 </span>
                 <span className="px-2.5 py-1 bg-white border border-[#0E1153] rounded font-mono text-[10px] font-bold text-[#0E1153]">
                   ACTIVE
@@ -300,11 +300,11 @@ export default function DigitalMarketingHero() {
               </div>
               <div>
                 <span className="font-mono text-xs uppercase font-bold text-[#0E1153] tracking-wider block mb-3">
-                  CUSTOM DESIGNS
+                  MOTION GRAPHICS & VFX
                 </span>
-                {/* Horizontal Capsule Progress Bar (76%) */}
+                {/* Horizontal Capsule Progress Bar (85%) */}
                 <div className="h-3 w-full bg-[#FEF9ED] border-2 border-[#0E1153] rounded-full overflow-hidden p-0.5">
-                  <div className="h-full bg-[#0E1153] rounded-full w-[76%]" />
+                  <div className="h-full bg-[#0E1153] rounded-full w-[85%]" />
                 </div>
               </div>
             </div>
