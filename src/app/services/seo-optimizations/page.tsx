@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import JsonLd from "@/components/seo/JsonLd";
 import { serviceSchema } from "@/lib/structured-data";
 import Header from "@/components/Header";
@@ -27,6 +28,28 @@ export default function SeoOptimizationPage() {
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero with Live Search Performance Mockup */}
         <SeoHero />
+
+        {/* Client Success Stories Banner */}
+        <section className="w-full bg-[#1A1F5E] text-[#FEF9ED] py-4 px-4 sm:px-8 border-b-2 border-[#0E1153]">
+          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono">
+            <div className="flex items-center gap-2.5">
+              <span className="w-2.5 h-2.5 rounded-sm bg-[#FFA800] animate-pulse" />
+              <span className="font-bold text-[#FFA800] uppercase tracking-wider">
+                REAL CLIENT RESULTS:
+              </span>
+              <span className="text-[#FEF9ED]/90">
+                See verified Google Search success stories across 5 active client platforms.
+              </span>
+            </div>
+            <Link
+              href="/services/seo-optimizations/client-success-stories"
+              className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#FFA800] text-[#0E1153] font-heading font-bold text-xs border border-[#0E1153] hover:translate-x-0.5 hover:translate-y-0.5 transition-all shrink-0 cursor-pointer"
+            >
+              <span>Explore Success Stories</span>
+              <span>→</span>
+            </Link>
+          </div>
+        </section>
 
         {/* Section 2: Service Overview & Deliverables Accordion */}
         <SeoDeliverables />

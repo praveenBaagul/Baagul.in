@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRightIcon } from "@/components/Icons";
 
@@ -22,16 +23,16 @@ export default function EcommerceHero() {
             <span>/</span>
             <span className="text-[#FFBA45]">E-COMMERCE SOLUTIONS</span>
           </div>
-          <span className="text-[#FEF9ED]/50 uppercase">
+          {/* <span className="text-[#FEF9ED]/50 uppercase">
             SERVICE REF: BGL-ECOM-04
-          </span>
+          </span> */}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
-          {/* Left: 6 Columns */}
-          <div className="lg:col-span-6 flex flex-col items-start z-10">
-            
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+
+          {/* Left: 5 Columns */}
+          <div className="lg:col-span-5 flex flex-col items-start z-10">
+
             <div className="flex items-center gap-2 mb-3">
               <span className="w-2.5 h-2.5 bg-[#FFBA45] shadow-[1px_1px_0px_#0E1153]" />
               <span className="font-sans font-bold text-xs uppercase tracking-[0.2em] text-[#FFBA45]">
@@ -119,77 +120,23 @@ export default function EcommerceHero() {
 
           </div>
 
-          {/* Right: 6 Columns - Browser Window Mockup */}
-          <div className="lg:col-span-6 flex justify-center items-center">
-            <div className="w-full max-w-lg bg-[#FEF9ED] border-2 border-[#0E1153] rounded-xl shadow-[8px_8px_0px_#FFBA45] overflow-hidden flex flex-col text-[#0E1153]">
-              
-              {/* Window top bar */}
-              <div className="flex items-center justify-between px-4 py-2.5 bg-[#EDE8DC] border-b-2 border-[#0E1153] text-xs font-mono">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#C8553D] inline-block" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBA45] inline-block" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#005F4C] inline-block" />
-                </div>
-                <span className="text-[11px] text-[#3E4945] font-bold">
-                  store.baagul-clients.com/live
-                </span>
-                <span className="w-3" />
+          {/* Right: 7 Columns - Multi-Device Interactive Dashboard (Expanded Scale) */}
+          <div className="lg:col-span-7 flex flex-col justify-center items-center relative">
+            {/* Subtle ambient backdrop glow */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#FFBA45]/15 via-transparent to-[#005F4C]/25 rounded-3xl blur-2xl pointer-events-none -z-0" />
+
+            <div className="relative w-full max-w-2xl lg:max-w-[760px] xl:max-w-[820px] z-10 transition-transform duration-300 hover:scale-[1.01]">
+              <div className="relative w-full aspect-[1170/885] drop-shadow-[0_25px_45px_rgba(0,0,0,0.7)]">
+                <Image
+                  src="/assets/ecommerce-animated-dashboard.svg"
+                  alt="Baagul Studio E-Commerce Live Analytics Dashboard - Tablet & Mobile Interactive Experience"
+                  fill
+                  priority
+                  unoptimized
+                  className="object-contain"
+                  sizes="(max-width: 1024px) 100vw, 820px"
+                />
               </div>
-
-              {/* Mockup content */}
-              <div className="p-6 bg-[#FFFFFF] flex flex-col gap-5">
-                
-                {/* Product Card */}
-                <div className="p-4 bg-[#F8F3E7] border-2 border-[#0E1153] rounded-xl shadow-[4px_4px_0px_#0E1153] flex items-center justify-between">
-                  <div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="w-6 h-6 rounded-full bg-[#005F4C] text-[#FEF9ED] flex items-center justify-center text-xs font-bold font-serif">
-                        B
-                      </span>
-                      <span className="font-heading font-bold text-sm text-[#0E1153]">
-                        Nordic Clay Works
-                      </span>
-                    </div>
-                    <span className="text-[10px] font-mono font-bold text-[#3E4945] uppercase tracking-wider">
-                      SPRING RUN V2 · Artisan Stoneware Flagon
-                    </span>
-                    <span className="font-heading text-xl font-bold text-[#0E1153] block mt-1">
-                      ₹3,450
-                    </span>
-                  </div>
-                  <div className="flex flex-col items-end gap-2">
-                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#99F4D7] text-[#005140] font-bold">
-                      Checkout: +34.2%
-                    </span>
-                    <button className="px-3.5 py-1.5 rounded-lg bg-[#0E1153] text-[#FEF9ED] text-xs font-bold border border-[#0E1153] shadow-[2px_2px_0px_#C8553D]">
-                      1-Click Buy
-                    </button>
-                  </div>
-                </div>
-
-                {/* Cart Telemetry Badges */}
-                <div className="grid grid-cols-2 gap-3 text-xs font-mono">
-                  <div className="p-3 bg-[#E7E2D6] border border-[#0E1153]/30 rounded-lg">
-                    <span className="text-[9px] text-[#3E4945] uppercase font-bold block">CART FLOW</span>
-                    <span className="font-heading text-xl font-bold text-[#005F4C] block">99.4%</span>
-                    <span className="text-[10px] text-[#3E4945]">Uptime SLA · Zero Drops</span>
-                  </div>
-
-                  <div className="p-3 bg-[#FEF9ED] border border-[#0E1153]/30 rounded-lg">
-                    <span className="text-[9px] text-[#3E4945] uppercase font-bold block">SPEED GRADE 99</span>
-                    <span className="font-heading text-xl font-bold text-[#FFBA45] block">&lt; 0.8s</span>
-                    <span className="text-[10px] text-[#3E4945]">Under 0.8s TTI</span>
-                  </div>
-                </div>
-
-                {/* Security Pill */}
-                <div className="p-3 bg-[#E0E0FF] border border-[#0E1153]/30 rounded-lg flex items-center justify-between text-xs font-mono text-[#0E1153]">
-                  <span className="font-bold">🔒 PCI-DSS Compliant</span>
-                  <span className="text-[#3E4945]">Multi-Rail Gateways</span>
-                </div>
-
-              </div>
-
             </div>
           </div>
 

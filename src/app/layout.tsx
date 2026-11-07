@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk, Gloock, Noto_Serif_Kannada } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site";
+import WhatsAppChatWidget from "@/components/WhatsAppChatWidget";
 
 const hanken = Hanken_Grotesk({
   variable: "--font-hanken",
@@ -51,6 +52,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased selection:bg-marigold selection:text-indigo-main">
         {children}
+        <WhatsAppChatWidget />
       </body>
     </html>
   );

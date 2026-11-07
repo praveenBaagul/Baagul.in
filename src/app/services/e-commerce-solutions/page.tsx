@@ -51,7 +51,7 @@ export default function EcommerceSolutionsPage() {
         <EcommerceServicePager />
 
         {/* Section 9: Interactive Component State Sheet */}
-        <EcommerceSpecMatrix />
+        {/* <EcommerceSpecMatrix /> */}
       </main>
       <Footer />
     </div>

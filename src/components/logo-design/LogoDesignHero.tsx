@@ -103,12 +103,12 @@ export default function LogoDesignHero() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1: Green */}
-            <div className="p-6 bg-[#005F4C] text-[#FEF9ED] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between min-h-[160px]">
+            <div className="group cursor-pointer p-6 bg-[#005F4C] text-[#FEF9ED] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:shadow-[9px_9px_0px_#FFA800] hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between min-h-[160px]">
               <div className="flex items-center justify-between">
                 <span className="font-heading text-4xl sm:text-5xl font-black text-[#FEF9ED]">
                   87%
                 </span>
-                <span className="text-xl">↗</span>
+                <span className="text-xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200">↗</span>
               </div>
               <div className="pt-4 border-t border-[#FEF9ED]/20">
                 <span className="font-heading text-base font-bold block mb-1">
@@ -121,12 +121,12 @@ export default function LogoDesignHero() {
             </div>
 
             {/* Card 2: Mustard Yellow */}
-            <div className="p-6 bg-[#FFA800] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between min-h-[160px]">
+            <div className="group cursor-pointer p-6 bg-[#FFA800] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:shadow-[9px_9px_0px_#0E1153] hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between min-h-[160px]">
               <div className="flex items-center justify-between">
                 <span className="font-heading text-4xl sm:text-5xl font-black text-[#0E1153]">
                   76%
                 </span>
-                <span className="text-xl">↗</span>
+                <span className="text-xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200">↗</span>
               </div>
               <div className="pt-4 border-t border-[#0E1153]/20">
                 <span className="font-heading text-base font-bold block mb-1">
@@ -139,12 +139,12 @@ export default function LogoDesignHero() {
             </div>
 
             {/* Card 3: Deep Navy */}
-            <div className="p-6 bg-[#1A1F5E] text-[#FEF9ED] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between min-h-[160px]">
+            <div className="group cursor-pointer p-6 bg-[#1A1F5E] text-[#FEF9ED] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:shadow-[9px_9px_0px_#FFA800] hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between min-h-[160px]">
               <div className="flex items-center justify-between">
                 <span className="font-heading text-4xl sm:text-5xl font-black text-[#FEF9ED]">
                   60%
                 </span>
-                <span className="text-xl">↗</span>
+                <span className="text-xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200">↗</span>
               </div>
               <div className="pt-4 border-t border-[#FEF9ED]/20">
                 <span className="font-heading text-base font-bold block mb-1">

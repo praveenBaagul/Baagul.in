@@ -7,7 +7,7 @@ export default function GuestPostServicePager() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Previous Service: Logo Design */}
         <Link
-          href="/services"
+          href="/services/logo-design"
           className="p-8 bg-[#CFE8DC] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#0E1153] transition-all flex flex-col justify-between group"
         >
           <div>
@@ -24,7 +24,7 @@ export default function GuestPostServicePager() {
           </p>
         </Link>
 
-        {/* Next Service: Content Writing */}
+        {/* Next Service: SEO Optimization */}
         <Link
           href="/services/seo-optimizations"
           className="p-8 bg-[#FFA800] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#0E1153] transition-all flex flex-col justify-between md:items-end md:text-right group"
@@ -35,11 +35,11 @@ export default function GuestPostServicePager() {
               <span>→</span>
             </span>
             <h4 className="font-heading text-3xl font-bold text-[#0E1153] mb-2 leading-snug group-hover:text-[#005F4C] transition-colors">
-              Content Writing
+              SEO Optimization
             </h4>
           </div>
           <p className="font-sans text-xs sm:text-sm text-[#0E1153]/85 mt-4">
-            Search-optimized editorial content, long-form thought leadership, and conversion copy.
+            Durable organic search engine architecture, technical crawl modeling, and entity schema.
           </p>
         </Link>
       </div>

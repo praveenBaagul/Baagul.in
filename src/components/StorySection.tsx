@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function StorySection() {
   return (
-    <section className="w-full py-20 px-4 sm:px-12 max-w-7xl mx-auto border-b border-indigo-main/20">
+    <section id="story" className="w-full py-20 px-4 sm:px-12 max-w-7xl mx-auto border-b border-indigo-main/20">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         {/* Left Column: Photo with Cross-stitch border */}

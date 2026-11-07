@@ -15,21 +15,21 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     id: 0,
-    q: "What is guest posting, and how does it help my business?",
-    a: "Guest posting involves writing and publishing articles on other reputable websites within your industry. It helps you acquire high-quality backlinks, improve search engine rankings, drive targeted referral traffic, and establish brand authority.",
+    q: "What are guest posts & PR, and how do they help my business?",
+    a: "Guest posts & PR involve writing and publishing articles on other reputable websites within your industry. It helps you acquire high-quality backlinks, improve search engine rankings, drive targeted referral traffic, and establish brand authority.",
     defaultBg: "bg-[#FFFFFF]",
     defaultShadow: "shadow-[6px_6px_0px_#0E1153]",
   },
   {
     id: 1,
     q: "Are the backlinks do-follow and permanent?",
-    a: "Yes. All backlinks secured through our guest posting service are 100% natural, permanent do-follow links embedded contextually within authoritative editorial content.",
+    a: "Yes. All backlinks secured through our guest posts & PR service are 100% natural, permanent do-follow links embedded contextually within authoritative editorial content.",
     defaultBg: "bg-[#CFE8DC]",
     defaultShadow: "shadow-[6px_6px_0px_#0E1153]",
   },
   {
     id: 2,
-    q: "How do you choose websites for guest post outreach?",
+    q: "How do you choose websites for guest posts & PR outreach?",
     a: "We evaluate websites based on high Domain Authority (DA 50+), real organic Google search traffic, clean backlink profiles with low spam scores, and topical relevance to your target audience.",
     defaultBg: "bg-[#E1E3F7]",
     defaultShadow: "shadow-[6px_6px_0px_#0E1153]",
@@ -43,7 +43,7 @@ const faqs: FAQItem[] = [
   },
   {
     id: 4,
-    q: "How long does it take for a guest post to get published?",
+    q: "How long does it take for a guest post or PR placement to get published?",
     a: "On average, the process takes between 7 to 21 business days from pitch approval and drafting to final editorial review, live publication, and search engine indexation.",
     defaultBg: "bg-[#CFE8DC]",
     defaultShadow: "shadow-[6px_6px_0px_#0E1153]",
@@ -79,7 +79,7 @@ export default function GuestPostFAQ() {
           <h2 className="font-heading text-4xl sm:text-5xl text-[#0E1153] leading-tight">
             <span>Everything You Need to Know About</span>
             <br />
-            <span>Our Guest Post Services</span>
+            <span>Our Guest Posts &amp; PR Services</span>
           </h2>
         </div>
 

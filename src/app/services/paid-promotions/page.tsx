@@ -40,7 +40,7 @@ export default function PaidPromotionPage() {
         <PaidPromotionCTABanner />
 
         {/* Section 6: Specification Matrix */}
-        <PaidPromotionSpecMatrix />
+        {/* <PaidPromotionSpecMatrix /> */}
       </main>
       <Footer />
     </div>

@@ -38,13 +38,13 @@ export default function GraphicsDesignPage() {
         <GraphicsDesignProcess />
 
         {/* Section 5: Enquiry Now Interactive Form Section (Midnight Navy #1A1F5E) */}
-        <GraphicsDesignEnquiry />
+        {/* <GraphicsDesignEnquiry /> */}
 
         {/* Section 6: Full-Width Banner & Video Editing Pager */}
         <GraphicsDesignBannerAndPager />
 
         {/* Section 7: Component State Specimen Matrix */}
-        <GraphicsDesignSpecMatrix />
+        {/* <GraphicsDesignSpecMatrix /> */}
       </main>
       <Footer />
     </div>

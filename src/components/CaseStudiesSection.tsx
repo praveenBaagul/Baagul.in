@@ -8,6 +8,7 @@ interface CaseStudy {
   client: string;
   headline: string;
   summary: string;
+  features?: string[];
   statNumber: string;
   statLabel: string;
   imgSrc: string;
@@ -15,50 +16,76 @@ interface CaseStudy {
   layout: "image-left" | "image-right";
   badgeBg: string;
   badgeText: string;
+  href?: string;
+  linkText?: string;
 }
 
 const studies: CaseStudy[] = [
   {
-    id: "neo-financial",
+    id: "propfirm-coupons",
     tag: "FINTECH · SCALING ARCHITECTURE",
-    client: "Neo Financial Cloud",
-    headline: "Engineered organic pipeline yielding 4.2x qualified demo requests in 90 days.",
-    summary: "Re-architected the entire technical SEO taxonomy, authored 45 authoritative fintech research pages, and unified paid search bidding around high LTV accounts.",
-    statNumber: "+340%",
-    statLabel: "Inbound Pipeline Growth",
-    imgSrc: "/assets/3d387.png",
-    imgAlt: "Neo Financial Cloud web dashboard and metrics preview",
+    client: "propfirm.coupons",
+    headline: "Built for traders who compare before they commit — zero overpaying on funded challenges.",
+    summary: "We verify prop firm coupon terms, track rule changes, and calculate real costs so traders never overpay. Features side-by-side fee and profit-split comparisons, instant browser-side challenge filtering, and live verified discount codes.",
+    features: [
+      "Coupon terms in one place — eligibility & expiry tracking",
+      "Side-by-side comparison of fees, profit splits & drawdown",
+      "Instant client-side filtering by account size & platform",
+      "Always free — no sign-up or paywall for traders",
+    ],
+    statNumber: "86+",
+    statLabel: "Active Deals & Discounts",
+    imgSrc: "/assets/propfirm-coupons-showcase.jpg",
+    imgAlt: "propfirm.coupons platform - compare prop firms, find active discounts and trade smarter",
     layout: "image-left",
     badgeBg: "bg-peacock-light",
     badgeText: "text-peacock-dark",
+    href: "https://propfirm.coupons",
+    linkText: "Visit propfirm.coupons",
   },
   {
-    id: "mysore-silk",
-    tag: "HERITAGE COMMERCE · D2C",
-    client: "Mysore Silk Co.",
-    headline: "Taking 85 years of artisanal weave craftsmanship to global buyers with headless Shopify.",
-    summary: "Designed an editorial shopping journey preserving the tactile dignity of authentic mulberry silk, coupled with high-converting catalog ads across USA and GCC expat audiences.",
-    statNumber: "₹4.8 Cr",
-    statLabel: "International GMV Delivered",
-    imgSrc: "/assets/e49c5.png",
-    imgAlt: "Mysore Silk Co editorial e-commerce website showcase",
+    id: "khevana-dagli",
+    tag: "LEGAL PRACTICE · DIGITAL AUTHORITY",
+    client: "Advocate Khevana Dagli",
+    headline: "Divorce, criminal defence & civil litigation practice in Mumbai — result-driven counsel and high-converting search visibility.",
+    summary: "Built the digital practice foundation and high-intent local search dominance for Mumbai advocate Khevana Dagli, establishing authority across contested divorce, child custody, domestic violence, urgent bail, and property disputes.",
+    features: [
+      "Contested & mutual divorce and child custody counsel",
+      "Urgent bail, anticipatory bail & 498A defence litigation",
+      "Domestic violence & property dispute advisory",
+      "High-intent Mumbai legal search visibility & consultation bookings",
+    ],
+    statNumber: "+280%",
+    statLabel: "Qualified Consultation Growth",
+    imgSrc: "/assets/khevana-dagli-showcase.jpg",
+    imgAlt: "Advocate Khevana Dagli - Divorce, Criminal & Civil Lawyer in Mumbai",
     layout: "image-right",
     badgeBg: "bg-marigold/20",
     badgeText: "text-terracotta",
+    href: "https://khevanadagli.com/",
+    linkText: "Visit khevanadagli.com",
   },
   {
-    id: "astra-logistics",
-    tag: "ENTERPRISE B2B · APPLICATION OS",
-    client: "Astra Logistics OS",
-    headline: "Transforming regional freight tracking into an enterprise-grade booking SaaS.",
-    summary: "Redesigned the entire web UI/UX in Next.js, eliminated latency on dispatch boards, and launched target account account-based marketing (ABM) for supply chain decision makers.",
-    statNumber: "62%",
-    statLabel: "Lower Customer Acquisition Cost",
-    imgSrc: "/assets/31eaa.png",
-    imgAlt: "Astra Logistics OS portal running on tablet and desktop monitors",
+    id: "seo-neo-backlinks",
+    tag: "BACKLINK SERVICES · LONDON, UK",
+    client: "SEO Neo Backlinks",
+    headline: "Backlinks that support your SEO, delivered with a transparent report.",
+    summary: "Built supporting link architecture for agencies, freelancers, and site owners across the UK. Every placement is verified and documented with live URLs in an exportable delivery spreadsheet.",
+    features: [
+      "No retainers — flexible on-demand backlink packages",
+      "Full live URLs and target anchor text provided",
+      "60-day replacement guarantee on all placements",
+      "100% matched verified live URL reporting",
+    ],
+    statNumber: "100%",
+    statLabel: "Live Placements Verified",
+    imgSrc: "/assets/seo-neo-backlinks-webdesign.jpg",
+    imgAlt: "SEO Neo Backlinks - Backlink services delivered with full verification report",
     layout: "image-left",
     badgeBg: "bg-indigo-mid/10",
     badgeText: "text-indigo-mid",
+    href: "https://seoneobacklinks.com/",
+    linkText: "Visit seoneobacklinks.com",
   },
 ];
 
@@ -91,21 +118,21 @@ export default function CaseStudiesSection() {
                 className={`lg:col-span-7 ${item.layout === "image-right" ? "lg:col-start-6" : ""
                   }`}
               >
-                <div className="relative p-3 sm:p-4 bg-canvas-card border-2 border-indigo-main rounded-xl shadow-[6px_6px_0px_#121a4a] overflow-hidden group">
-                  <div className="relative h-64 sm:h-96 w-full rounded-lg overflow-hidden border border-indigo-main/30">
+                <div className="relative bg-canvas-card border-2 border-indigo-main rounded-xl shadow-[6px_6px_0px_#121a4a] overflow-hidden group">
+                  <div className="relative w-full aspect-[512/279] overflow-hidden">
                     <Image
                       src={item.imgSrc}
                       alt={item.imgAlt}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   {/* Metric hanging badge */}
-                  <div className="absolute bottom-6 right-6 bg-marigold border border-indigo-main px-4 py-2 rounded shadow-[3px_3px_0px_#121a4a]">
-                    <span className="font-heading text-xl font-bold text-indigo-main block">
+                  <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-marigold border border-indigo-main px-3 py-1.5 sm:px-4 sm:py-2 rounded shadow-[3px_3px_0px_#121a4a] z-10">
+                    <span className="font-heading text-lg sm:text-xl font-bold text-indigo-main block">
                       {item.statNumber}
                     </span>
-                    <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-indigo-main/80">
+                    <span className="text-[9px] sm:text-[10px] font-sans font-bold uppercase tracking-wider text-indigo-main/80">
                       {item.statLabel}
                     </span>
                   </div>
@@ -131,15 +158,28 @@ export default function CaseStudiesSection() {
                   {item.headline}
                 </p>
 
-                <p className="font-sans text-sm sm:text-base text-slate-text leading-relaxed mb-6">
+                <p className="font-sans text-sm sm:text-base text-slate-text leading-relaxed mb-4">
                   {item.summary}
                 </p>
 
+                {item.features && item.features.length > 0 && (
+                  <ul className="mb-6 grid grid-cols-1 sm:grid-cols-2 gap-2 w-full">
+                    {item.features.map((feat, fIdx) => (
+                      <li key={fIdx} className="flex items-start gap-2 text-xs font-sans text-indigo-main/80 font-medium">
+                        <span className="text-terracotta font-bold shrink-0">✓</span>
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
                 <a
-                  href="#contact"
+                  href={item.href || "#contact"}
+                  target={item.href?.startsWith("http") ? "_blank" : undefined}
+                  rel={item.href?.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-mid hover:text-terracotta transition-colors group"
                 >
-                  <span>View case debrief</span>
+                  <span>{item.linkText || "View case debrief"}</span>
                   <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>

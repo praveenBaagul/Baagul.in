@@ -52,7 +52,7 @@ export default function WordPressDevelopmentPage() {
         <WordPressServicePager />
 
         {/* Section 9: Specification Matrix */}
-        <WordPressSpecMatrix />
+        {/* <WordPressSpecMatrix /> */}
       </main>
       <Footer />
     </div>

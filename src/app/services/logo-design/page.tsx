@@ -48,7 +48,7 @@ export default function LogoDesignPage() {
         <LogoDesignServicePager />
 
         {/* Section 8: Design System Component Token Matrix */}
-        <LogoDesignSpecMatrix />
+        {/* <LogoDesignSpecMatrix /> */}
       </main>
       <Footer />
     </div>

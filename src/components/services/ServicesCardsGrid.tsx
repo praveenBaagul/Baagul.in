@@ -56,11 +56,11 @@ const allServiceCards: ServiceCardData[] = [
   {
     number: "04",
     tag: "PR // MEDIA",
-    title: "Guest Post",
+    title: "Guest Posts & PR",
     description:
       "Publishing high-quality content on top websites to build authority, earn natural high-DA backlinks, and capture qualified affiliate-grade traffic.",
     imgSrc: "/assets/cacf1.png",
-    imgAlt: "Guest post editorial publications and outreach metrics",
+    imgAlt: "Guest posts & PR editorial publications and outreach metrics",
     headerBg: "bg-marigold text-indigo-main",
     accentBadge: "bg-indigo-main text-canvas",
     href: "/services/guest-post",

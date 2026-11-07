@@ -46,7 +46,7 @@ export default function GuestPostWhyChooseUs() {
               <span className="font-heading text-5xl font-bold text-[#0E1153] float-left mr-3 leading-none">
                 A
               </span>
-              t Baagul, we provide high-quality guest post services designed to boost your online presence and build long-term search engine authority. Publishing quality content on reputable, niche-relevant websites is essential for sustainable growth. Our guest posting strategy focuses on earning authoritative contextual backlinks that drive real referral traffic and establish your brand as a recognized leader in your industry.
+              t Baagul, we provide high-quality guest posts &amp; PR services designed to boost your online presence and build long-term search engine authority. Publishing quality content on reputable, niche-relevant websites is essential for sustainable growth. Our guest posts &amp; PR strategy focuses on earning authoritative contextual backlinks that drive real referral traffic and establish your brand as a recognized leader in your industry.
             </p>
 
             <p>

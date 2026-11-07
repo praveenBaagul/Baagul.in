@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function LogoDesignShowcase() {
   return (
@@ -30,51 +31,51 @@ export default function LogoDesignShowcase() {
         {/* Top Row: 2 Large Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* Card 1 */}
-          <div className="p-8 sm:p-10 bg-[#FEF9ED] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] flex flex-col justify-between min-h-[300px]">
+          <div className="group cursor-pointer p-8 sm:p-10 bg-[#FEF9ED] hover:bg-[#FFFFFF] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] hover:shadow-[12px_12px_0px_#FFA800] hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between min-h-[300px]">
             <div className="flex items-center justify-between text-xs font-mono text-[#3E4945]">
               <span>ID: BGL-MK-01</span>
-              <span>HEALTH &amp; MEDICAL</span>
+              <span>FINTECH &amp; TRADING</span>
             </div>
 
-            <div className="py-12 flex flex-col items-center justify-center text-center">
-              <div className="w-20 h-20 rounded-full border-2 border-[#0E1153] bg-[#FFFFFF] flex items-center justify-center mb-4 shadow-[3px_3px_0px_#0E1153]">
-                <span className="font-heading text-3xl font-black text-[#005F4C]">⚜</span>
+            <div className="py-6 flex flex-col items-center justify-center text-center">
+              <div className="relative w-full max-w-sm aspect-[2/1] rounded-2xl overflow-hidden border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] bg-[#FAF8F5]">
+                <Image
+                  src="/assets/propfirm-coupons.jpg"
+                  alt="propfirm.coupons Logo Identity"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 384px"
+                  className="object-cover"
+                />
               </div>
-              <h3 className="font-heading text-2xl font-bold tracking-widest uppercase">
-                Vanguard Health Labs
-              </h3>
-              <span className="text-xs font-mono text-[#3E4945] tracking-widest mt-1">
-                CLINICAL DIAGNOSTICS GROUP
-              </span>
             </div>
 
             <div className="pt-4 border-t border-[#0E1153]/15 flex items-center justify-between text-xs font-mono font-bold text-[#005F4C]">
-              <span>VECTOR MONOGRAM</span>
+              <span>BRAND &amp; DIGITAL IDENTITY</span>
               <span>VIEW IDENTITY →</span>
             </div>
           </div>
 
           {/* Card 2 */}
-          <div className="p-8 sm:p-10 bg-[#FEF9ED] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] flex flex-col justify-between min-h-[300px]">
+          <div className="group cursor-pointer p-8 sm:p-10 bg-[#FEF9ED] hover:bg-[#FFFFFF] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] hover:shadow-[12px_12px_0px_#FFA800] hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between min-h-[300px]">
             <div className="flex items-center justify-between text-xs font-mono text-[#3E4945]">
               <span>ID: BGL-MK-02</span>
-              <span>LIFESTYLE &amp; CRAFT</span>
+              <span>CYBERSECURITY &amp; DEFENSE</span>
             </div>
 
-            <div className="py-12 flex flex-col items-center justify-center text-center">
-              <div className="w-20 h-20 rounded-2xl border-2 border-[#0E1153] bg-[#FFFFFF] flex items-center justify-center mb-4 shadow-[3px_3px_0px_#0E1153]">
-                <span className="font-heading text-3xl font-black text-[#FFA800]">⚔</span>
+            <div className="py-6 flex flex-col items-center justify-center text-center">
+              <div className="relative w-full max-w-sm aspect-[1024/682] rounded-2xl overflow-hidden border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] bg-[#FAF8F5]">
+                <Image
+                  src="/assets/aeroshield-logo.jpg"
+                  alt="AeroShield Cybersecurity Logo Identity"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 384px"
+                  className="object-cover"
+                />
               </div>
-              <h3 className="font-heading text-2xl font-bold tracking-widest uppercase">
-                Nordic Clay Works
-              </h3>
-              <span className="text-xs font-mono text-[#3E4945] tracking-widest mt-1">
-                ARTISAN STONEWARE STUDIO
-              </span>
             </div>
 
             <div className="pt-4 border-t border-[#0E1153]/15 flex items-center justify-between text-xs font-mono font-bold text-[#005F4C]">
-              <span>BESPOKE EMBLEM</span>
+              <span>ENTERPRISE EMBLEM</span>
               <span>VIEW IDENTITY →</span>
             </div>
           </div>
@@ -83,61 +84,73 @@ export default function LogoDesignShowcase() {
         {/* Bottom Row: 3 Medium Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 3 */}
-          <div className="p-6 bg-[#FEF9ED] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between min-h-[220px]">
+          <div className="group cursor-pointer p-6 bg-[#FEF9ED] hover:bg-[#FFFFFF] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:shadow-[9px_9px_0px_#FFA800] hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between min-h-[220px]">
             <div className="flex items-center justify-between text-[11px] font-mono text-[#3E4945]">
               <span>ID: BGL-MK-03</span>
-              <span>CYBERSECURITY</span>
+              <span>HEALTH &amp; MEDICAL</span>
             </div>
 
-            <div className="py-6 flex flex-col items-center justify-center text-center">
-              <div className="w-12 h-12 rounded-xl bg-[#FFFFFF] border-2 border-[#0E1153] flex items-center justify-center mb-2 shadow-[2px_2px_0px_#0E1153] text-xl">
-                🛡
+            <div className="py-4 flex flex-col items-center justify-center text-center">
+              <div className="relative w-full max-w-[220px] aspect-[1024/682] rounded-xl overflow-hidden border-2 border-[#0E1153] shadow-[3px_3px_0px_#0E1153] bg-[#FAF8F5]">
+                <Image
+                  src="/assets/vanguard-health-logo.jpg"
+                  alt="Vanguard Health Labs Logo Identity"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 220px"
+                  className="object-cover"
+                />
               </div>
-              <h4 className="font-heading text-lg font-bold">AeroShield</h4>
-              <span className="text-[10px] font-mono text-[#3E4945] tracking-wider">DEFENSE PROTOCOL</span>
             </div>
 
-            <div className="pt-3 border-t border-[#0E1153]/15 text-[11px] font-mono font-bold text-[#005F4C] text-right">
+            <div className="pt-3 border-t border-[#0E1153]/15 text-[11px] font-mono font-bold text-[#005F4C] text-right group-hover:translate-x-1 transition-transform duration-200">
               VIEW →
             </div>
           </div>
 
           {/* Card 4 */}
-          <div className="p-6 bg-[#FEF9ED] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between min-h-[220px]">
+          <div className="group cursor-pointer p-6 bg-[#FEF9ED] hover:bg-[#FFFFFF] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:shadow-[9px_9px_0px_#FFA800] hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between min-h-[220px]">
             <div className="flex items-center justify-between text-[11px] font-mono text-[#3E4945]">
               <span>ID: BGL-MK-04</span>
-              <span>ENTERPRISE SAAS</span>
+              <span>CLEANTECH &amp; SOLAR</span>
             </div>
 
-            <div className="py-6 flex flex-col items-center justify-center text-center">
-              <div className="w-12 h-12 rounded-xl bg-[#FFFFFF] border-2 border-[#0E1153] flex items-center justify-center mb-2 shadow-[2px_2px_0px_#0E1153] text-xl">
-                ⚡
+            <div className="py-4 flex flex-col items-center justify-center text-center">
+              <div className="relative w-full max-w-[220px] aspect-[1024/682] rounded-xl overflow-hidden border-2 border-[#0E1153] shadow-[3px_3px_0px_#0E1153] bg-[#FAF8F5]">
+                <Image
+                  src="/assets/solaria-energy-logo.jpg"
+                  alt="Solaria Energy Logo Identity"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 220px"
+                  className="object-cover"
+                />
               </div>
-              <h4 className="font-heading text-lg font-bold">Lumina Software</h4>
-              <span className="text-[10px] font-mono text-[#3E4945] tracking-wider">CLOUD PLATFORM</span>
             </div>
 
-            <div className="pt-3 border-t border-[#0E1153]/15 text-[11px] font-mono font-bold text-[#005F4C] text-right">
+            <div className="pt-3 border-t border-[#0E1153]/15 text-[11px] font-mono font-bold text-[#005F4C] text-right group-hover:translate-x-1 transition-transform duration-200">
               VIEW →
             </div>
           </div>
 
           {/* Card 5 */}
-          <div className="p-6 bg-[#FEF9ED] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between min-h-[220px]">
+          <div className="group cursor-pointer p-6 bg-[#FEF9ED] hover:bg-[#FFFFFF] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:shadow-[9px_9px_0px_#FFA800] hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between min-h-[220px]">
             <div className="flex items-center justify-between text-[11px] font-mono text-[#3E4945]">
               <span>ID: BGL-MK-05</span>
-              <span>CLEANTECH ENERGY</span>
+              <span>ENTERPRISE SAAS</span>
             </div>
 
-            <div className="py-6 flex flex-col items-center justify-center text-center">
-              <div className="w-12 h-12 rounded-xl bg-[#FFFFFF] border-2 border-[#0E1153] flex items-center justify-center mb-2 shadow-[2px_2px_0px_#0E1153] text-xl">
-                ☼
+            <div className="py-4 flex flex-col items-center justify-center text-center">
+              <div className="relative w-full max-w-[220px] aspect-[1024/682] rounded-xl overflow-hidden border-2 border-[#0E1153] shadow-[3px_3px_0px_#0E1153] bg-[#FAF8F5]">
+                <Image
+                  src="/assets/lumina-software-logo.jpg"
+                  alt="Lumina Software Logo Identity"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 220px"
+                  className="object-cover"
+                />
               </div>
-              <h4 className="font-heading text-lg font-bold">Solaria Energy</h4>
-              <span className="text-[10px] font-mono text-[#3E4945] tracking-wider">SOLAR INFRASTRUCTURE</span>
             </div>
 
-            <div className="pt-3 border-t border-[#0E1153]/15 text-[11px] font-mono font-bold text-[#005F4C] text-right">
+            <div className="pt-3 border-t border-[#0E1153]/15 text-[11px] font-mono font-bold text-[#005F4C] text-right group-hover:translate-x-1 transition-transform duration-200">
               VIEW →
             </div>
           </div>

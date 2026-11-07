@@ -14,7 +14,7 @@ import GuestPostServicePager from "@/components/guest-post/GuestPostServicePager
 import GuestPostSpecMatrix from "@/components/guest-post/GuestPostSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Guest Post • Baagul Studio Bengaluru",
+  title: "Guest Posts & PR • Baagul Studio Bengaluru",
   description:
     "Publishing high-quality content on top websites to build authority, earn natural high-DA backlinks, and capture qualified affiliate-grade traffic. Bengaluru digital PR and outreach architecture.",
   alternates: { canonical: "/services/guest-post" },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function GuestPostPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
-      <JsonLd data={serviceSchema({ name: "Guest Posting", path: "/services/guest-post", description: metadata.description })} />
+      <JsonLd data={serviceSchema({ name: "Guest Posts & PR", path: "/services/guest-post", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero (Forest Green #005F4C background, Bar chart widget & Poster illustration) */}
@@ -35,7 +35,7 @@ export default function GuestPostPage() {
         {/* Section 3: Our Services 4 Cards (Soft lavender background #E1E3F7) */}
         <GuestPostMainFeatures />
 
-        {/* Section 4: 4-Step Guest Post Process (Midnight navy #1A1F5E background) */}
+        {/* Section 4: 4-Step Guest Posts & PR Process (Midnight navy #1A1F5E background) */}
         <GuestPostProcess />
 
         {/* Section 5: Why Choose Us (Build Authority, Earn Backlinks. Rank Higher + 98% indexation box) */}

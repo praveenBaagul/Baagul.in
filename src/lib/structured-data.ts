@@ -31,6 +31,11 @@ export function organizationSchema() {
     email: BUSINESS.email,
     telephone: BUSINESS.telephone,
     address: { "@type": "PostalAddress", ...BUSINESS.address },
+    sameAs: [
+      "https://www.linkedin.com/company/baagulmarketing/",
+      "https://www.instagram.com/baagul_marketing/",
+      "https://x.com/baagul_in",
+    ],
     areaServed: ["IN", "Worldwide"],
   };
 }

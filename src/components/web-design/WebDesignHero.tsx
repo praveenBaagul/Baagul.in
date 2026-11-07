@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function WebDesignHero() {
   return (
@@ -57,112 +58,18 @@ export default function WebDesignHero() {
             </Link>
           </div>
 
-          {/* Right Column (6.5 cols) - Interactive Browser Frame with Callout Pins */}
+          {/* Right Column (7 cols) - Web Design Illustration Artwork */}
           <div className="lg:col-span-7 flex justify-center relative">
-            {/* Top Badge: "Great UI / UX concept" */}
-            <div className="absolute -top-3 left-4 z-20 px-3 py-1 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-full text-[10px] font-mono font-bold text-[#0E1153] shadow-[2px_2px_0px_#0E1153] flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#FFA800]" />
-              <span>Great UI / UX concept</span>
-            </div>
-
-            {/* Top Right Stamp Badge: "BUILT TO CONVERT" */}
-            <div className="absolute -top-4 right-4 z-20 px-4 py-1.5 bg-[#FFA800] border-2 border-[#0E1153] rounded-full text-[11px] font-mono font-black uppercase text-[#0E1153] shadow-[3px_3px_0px_#0E1153] rotate-[4deg]">
-              <span>★ BUILT TO CONVERT</span>
-            </div>
-
-            {/* Browser Window Mockup */}
-            <div className="w-full max-w-xl bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] overflow-hidden text-[#0E1153] relative">
-              {/* Browser Address Bar */}
-              <div className="px-4 py-3 bg-[#EDE8DC] border-b-2 border-[#0E1153] flex items-center justify-between text-xs font-mono">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#E57373] border border-[#0E1153]" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFA800] border border-[#0E1153]" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#81C784] border border-[#0E1153]" />
-                </div>
-
-                <div className="px-4 py-0.5 rounded-full bg-[#FFFFFF] border border-[#0E1153] text-[11px] text-[#3E4945] font-mono flex items-center gap-1.5">
-                  <span className="text-[#005F4C]">🔒</span>
-                  <span>baagul.in/web-design</span>
-                </div>
-
-                <span className="w-6" />
-              </div>
-
-              {/* Mockup Canvas Interior */}
-              <div className="p-6 bg-[#FAF8F5] flex flex-col gap-4">
-                {/* Header Wireframe Row */}
-                <div className="flex items-center justify-between pb-3 border-b border-[#0E1153]/15">
-                  <div className="w-20 h-4 bg-[#0E1153] rounded-sm" />
-                  <div className="flex items-center gap-2">
-                    <span className="w-12 h-2.5 bg-[#EDE8DC] rounded-sm" />
-                    <span className="w-12 h-2.5 bg-[#EDE8DC] rounded-sm" />
-                    <span className="w-16 h-5 bg-[#005F4C] rounded-md border border-[#0E1153]" />
-                  </div>
-                </div>
-
-                {/* Hero Wireframe Box with Split Graphic & Typography Tag */}
-                <div className="grid grid-cols-12 gap-4 p-4 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-xl relative">
-                  {/* Left sub-column */}
-                  <div className="col-span-7 flex flex-col gap-2.5">
-                    <div className="w-16 h-2 bg-[#FFA800] rounded-sm" />
-                    <div className="w-4/5 h-6 bg-[#0E1153] rounded-sm" />
-                    <div className="w-full h-2.5 bg-[#EDE8DC] rounded-sm" />
-                    <div className="w-3/4 h-2.5 bg-[#EDE8DC] rounded-sm" />
-                    <div className="w-24 h-6 bg-[#0E1153] rounded-full mt-2" />
-                  </div>
-
-                  {/* Right sub-column with "Clear Typography" callout pin */}
-                  <div className="col-span-5 bg-[#CFE8DC] border-2 border-[#0E1153] rounded-lg p-3 relative flex flex-col justify-between">
-                    <div className="w-6 h-6 rounded bg-[#005F4C] text-[#FEF9ED] flex items-center justify-center text-xs font-bold">
-                      ⊞
-                    </div>
-                    {/* Clear Typography Pin */}
-                    <div className="absolute -bottom-2 -right-2 px-2.5 py-1 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-md shadow-[2px_2px_0px_#0E1153] flex items-center gap-1.5 text-[9px] font-mono font-bold text-[#0E1153]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFA800]" />
-                      <span>Clear Typography</span>
-                    </div>
-                    <div className="flex items-center gap-1 mt-2">
-                      <span className="w-10 h-3 bg-[#E1E3F7] rounded-sm border border-[#0E1153]/30" />
-                      <span className="w-12 h-3 bg-[#FFA800] rounded-sm border border-[#0E1153]" />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom 3 Status Metric Boxes */}
-                <div className="grid grid-cols-3 gap-3">
-                  <div className="p-2.5 bg-[#FFFFFF] border border-[#0E1153] rounded-lg text-center">
-                    <span className="text-[10px] font-mono font-bold text-[#0E1153] block">
-                      99.9% SLA
-                    </span>
-                  </div>
-                  <div className="p-2.5 bg-[#FFFFFF] border border-[#0E1153] rounded-lg text-center">
-                    <span className="text-[10px] font-mono font-bold text-[#005F4C] block">
-                      &lt; 0.8s LCP
-                    </span>
-                  </div>
-                  <div className="p-2.5 bg-[#FFFFFF] border border-[#0E1153] rounded-lg text-center">
-                    <span className="text-[10px] font-mono font-bold text-[#0E1153] block">
-                      SEO READY
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom Left Badge & Quad Motif: "Responsive / Mobile Friendly" */}
-            <div className="absolute -bottom-4 left-6 z-20 flex items-center gap-2">
-              {/* Quad Color Motif */}
-              <div className="grid grid-cols-2 gap-0.5 p-1 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-md shadow-[2px_2px_0px_#0E1153]">
-                <span className="w-2 h-2 rounded-sm bg-[#005F4C]" />
-                <span className="w-2 h-2 rounded-sm bg-[#FFA800]" />
-                <span className="w-2 h-2 rounded-sm bg-[#0E1153]" />
-                <span className="w-2 h-2 rounded-sm bg-[#E1E3F7]" />
-              </div>
-
-              {/* Pin */}
-              <div className="px-3.5 py-1 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-full text-[10px] font-mono font-bold text-[#0E1153] shadow-[2px_2px_0px_#0E1153] flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#FFA800]" />
-                <span>Responsive / Mobile Friendly</span>
+            <div className="w-full max-w-2xl bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] overflow-hidden relative group">
+              <div className="relative w-full aspect-[1024/572]">
+                <Image
+                  src="/assets/web-design-hero-illustration.jpg"
+                  alt="Web Design That Works - Beautiful Websites, Better User Experience, More Business Growth"
+                  fill
+                  priority
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 750px"
+                />
               </div>
             </div>
           </div>

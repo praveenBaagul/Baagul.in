@@ -118,22 +118,68 @@ export default function Footer() {
                 </a>
               </div>
             </div>
+
+            {/* Follow Us / Social Links */}
+            <div className="mt-8 flex flex-col items-start">
+              <div className="inline-flex flex-col items-center">
+                <span className="font-heading text-sm font-semibold text-[#FEF9ED] tracking-wide mb-3 text-center">
+                  Follow Us
+                </span>
+                <div className="flex items-center gap-3">
+                  {/* LinkedIn */}
+                  <a
+                    href="https://www.linkedin.com/company/baagulmarketing/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow Baagul Marketing on LinkedIn"
+                    className="w-10 h-10 rounded-full bg-[#0A66C2] flex items-center justify-center hover:scale-110 hover:shadow-lg transition-transform duration-200 cursor-pointer shadow-sm"
+                  >
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true">
+                      <path fill="#FFFFFF" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z" />
+                    </svg>
+                  </a>
+
+                  {/* Instagram */}
+                  <a
+                    href="https://www.instagram.com/baagul_marketing/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow Baagul Marketing on Instagram"
+                    className="w-10 h-10 rounded-full bg-[#1C1C1E] border border-white/10 flex items-center justify-center hover:scale-110 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] transition-all duration-200 cursor-pointer shadow-sm"
+                  >
+                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                      <circle cx="12" cy="12" r="4" />
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                  </a>
+
+                  {/* X / Twitter */}
+                  <a
+                    href="https://x.com/baagul_in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow Baagul Marketing on X"
+                    className="w-10 h-10 rounded-full bg-[#000000] border border-white/15 flex items-center justify-center hover:scale-110 hover:border-white/30 transition-all duration-200 cursor-pointer shadow-sm"
+                  >
+                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true">
+                      <path fill="#FFFFFF" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Column 2: Services Links (2 cols) */}
-          <div className="lg:col-span-2 lg:pl-4 flex flex-col">
+          <div className="lg:col-span-2 lg:pl-2 flex flex-col">
             <span className="font-mono font-bold text-xs uppercase tracking-widest text-[#FFA800] mb-4">
               SERVICES
             </span>
-            <ul className="flex flex-col gap-3 text-xs sm:text-sm text-[#FEF9ED]/85 font-sans">
+            <ul className="flex flex-col gap-2.5 text-xs sm:text-sm text-[#FEF9ED]/85 font-sans">
               <li>
-                <Link href="/services/e-commerce-solutions" className="hover:text-[#FFA800] transition-colors">
-                  E-Commerce Solutions
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/video-editing" className="hover:text-[#FFA800] transition-colors">
-                  Video Editing
+                <Link href="/services/web-design" className="hover:text-[#FFA800] transition-colors">
+                  Web Design
                 </Link>
               </li>
               <li>
@@ -142,8 +188,38 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-[#FFA800] transition-colors">
-                  Web Design
+                <Link href="/services/logo-design" className="hover:text-[#FFA800] transition-colors">
+                  Logo Design
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/guest-post" className="hover:text-[#FFA800] transition-colors">
+                  Guest Posts &amp; PR
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/graphics-design" className="hover:text-[#FFA800] transition-colors">
+                  Graphic Designing
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/e-commerce-solutions" className="hover:text-[#FFA800] transition-colors">
+                  E-Commerce Solutions
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/wordpress-development" className="hover:text-[#FFA800] transition-colors">
+                  WordPress Development
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/paid-promotions" className="hover:text-[#FFA800] transition-colors">
+                  Paid Promotions
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/video-editing" className="hover:text-[#FFA800] transition-colors">
+                  Video Editing
                 </Link>
               </li>
             </ul>

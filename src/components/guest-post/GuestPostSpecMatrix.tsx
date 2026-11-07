@@ -7,7 +7,7 @@ export default function GuestPostSpecMatrix() {
         <div className="flex items-center justify-between mb-6 text-xs font-mono text-slate-text">
           <div className="flex items-center gap-2 text-indigo-main font-bold">
             <span className="w-2 h-2 rounded-full bg-peacock" />
-            <span>GUEST POST DESIGN SYSTEM SPECIFICATION MATRIX</span>
+            <span>GUEST POSTS &amp; PR DESIGN SYSTEM SPECIFICATION MATRIX</span>
           </div>
           <span className="text-[11px] opacity-70">
             TOKENS: FRAUNCES + DM SANS / 2PX INK / #0E1153

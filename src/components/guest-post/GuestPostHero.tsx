@@ -29,7 +29,7 @@ export default function GuestPostHero() {
               <span>Guest</span>
               <br />
               <span className="inline-block bg-[#FFA800] text-[#0E1153] px-5 py-1 rounded-xl border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] mt-2">
-                Post
+                Posts &amp; PR
               </span>
             </h1>
 
@@ -91,32 +91,19 @@ export default function GuestPostHero() {
             </div>
           </div>
 
-          {/* Right Column (5 cols) - Art Illustration Card */}
+          {/* Right Column (5 cols) - Guest Posts & PR Poster Artwork */}
           <div className="lg:col-span-5 flex justify-center relative">
-            {/* Tilted Stamp Badge */}
-            <div className="absolute -top-4 -left-4 z-20 w-20 h-20 rounded-full bg-[#1A1F5E] text-[#FFA800] border-2 border-[#0E1153] shadow-[3px_3px_0px_#0E1153] flex flex-col items-center justify-center text-center p-1 font-mono text-[9px] font-bold uppercase rotate-[-12deg]">
-              <span>★ 100% ★</span>
-              <span>WHITE-HAT</span>
-              <span>AUTHORITY</span>
-            </div>
-
-            {/* Poster / Canvas Card */}
-            <div className="w-full max-w-sm bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[10px_10px_0px_#0E1153] overflow-hidden rotate-[2deg] hover:rotate-0 transition-transform">
-              <div className="p-3 bg-[#EDE8DC] border-b-2 border-[#0E1153] flex items-center justify-between text-[11px] font-mono font-bold text-[#0E1153]">
-                <span>EDITORIAL ARCHIVE // CLUSTER 04</span>
-                <span>BAAGUL</span>
-              </div>
-              <div className="relative w-full aspect-[4/5] bg-[#FAF8F5]">
+            {/* Poster Card */}
+            <div className="w-full max-w-md lg:max-w-lg bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] overflow-hidden relative group">
+              <div className="relative w-full aspect-square">
                 <Image
-                  src="/assets/guestpage.png"
-                  alt="Guest Post editorial illustration"
+                  src="/assets/guest-post-hero-poster.jpg"
+                  alt="Guest Posts & PR - Build Website Authority, Increase Brand Visibility & Boost Google Rankings"
                   fill
-                  className="object-cover"
+                  priority
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 750px"
                 />
-              </div>
-              <div className="p-4 bg-[#FFFFFF] border-t-2 border-[#0E1153] flex items-center justify-between text-xs font-mono font-bold text-[#0E1153]">
-                <span>NICHE CITATIONS &amp; PR</span>
-                <span className="text-[#005F4C]">VERIFIED DA 60+</span>
               </div>
             </div>
           </div>

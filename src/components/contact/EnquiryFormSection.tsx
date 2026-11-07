@@ -233,7 +233,7 @@ export default function EnquiryFormSection() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-indigo-mid">✦</span>
-                <span>Data-driven SEO optimization &amp; guest posting</span>
+                <span>Data-driven SEO optimization &amp; guest posts &amp; PR</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-indigo-mid">✦</span>

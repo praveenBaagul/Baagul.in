@@ -28,7 +28,7 @@ export default function EcommerceServicePager() {
 
           {/* Next Service: Mustard Gold / Amber Fill */}
           <Link
-            href="/services"
+            href="/services/wordpress-development"
             className="p-8 bg-[#F5A800] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#0E1153] transition-all flex flex-col justify-between md:items-end md:text-right group"
           >
             <div>

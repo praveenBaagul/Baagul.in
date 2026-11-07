@@ -34,9 +34,9 @@ export default function LogoDesignWhyChooseUs() {
         {/* Right Column (7 cols) - 2 Stacked Cream Cards */}
         <div className="lg:col-span-7 flex flex-col gap-6">
           {/* Card 1 */}
-          <div className="p-8 bg-[#FEF9ED] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#FFA800]">
+          <div className="group cursor-pointer p-8 bg-[#FEF9ED] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#FFA800] hover:shadow-[10px_10px_0px_#FFA800] hover:-translate-y-1.5 transition-all duration-200">
             <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#0E1153]/15">
-              <span className="font-heading text-xl font-bold">
+              <span className="font-heading text-xl font-bold group-hover:text-[#005F4C] transition-colors duration-200">
                 Instant Visual Authority
               </span>
               <span className="text-xs font-mono font-bold text-[#005F4C]">
@@ -49,9 +49,9 @@ export default function LogoDesignWhyChooseUs() {
           </div>
 
           {/* Card 2 */}
-          <div className="p-8 bg-[#FEF9ED] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#FFA800]">
+          <div className="group cursor-pointer p-8 bg-[#FEF9ED] text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#FFA800] hover:shadow-[10px_10px_0px_#FFA800] hover:-translate-y-1.5 transition-all duration-200">
             <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#0E1153]/15">
-              <span className="font-heading text-xl font-bold">
+              <span className="font-heading text-xl font-bold group-hover:text-[#005F4C] transition-colors duration-200">
                 Cross-Platform Scalability
               </span>
               <span className="text-xs font-mono font-bold text-[#005F4C]">

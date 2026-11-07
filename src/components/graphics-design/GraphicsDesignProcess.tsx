@@ -3,13 +3,30 @@ import React from "react";
 interface Step {
   num: string;
   title: string;
+  desc: string;
 }
 
 const steps: Step[] = [
-  { num: "01", title: "Brief & Research" },
-  { num: "02", title: "Concept & Ideation" },
-  { num: "03", title: "Design & Development" },
-  { num: "04", title: "Review & Delivery" },
+  {
+    num: "01",
+    title: "Brief & Research",
+    desc: "Define goals, study the audience, and gather the right insights.",
+  },
+  {
+    num: "02",
+    title: "Concept & Ideation",
+    desc: "Explore ideas, sketch directions, and shape the visual approach.",
+  },
+  {
+    num: "03",
+    title: "Design & Development",
+    desc: "Build layouts, refine details, and create the final visual system.",
+  },
+  {
+    num: "04",
+    title: "Review & Delivery",
+    desc: "Present the work, finalize assets, and deliver polished results.",
+  },
 ];
 
 export default function GraphicsDesignProcess() {
@@ -49,10 +66,13 @@ export default function GraphicsDesignProcess() {
                 </span>
               </div>
 
-              <div>
-                <h3 className="font-heading text-xl font-bold leading-snug">
+              <div className="mb-4">
+                <h3 className="font-heading text-xl font-bold leading-snug mb-2">
                   {step.title}
                 </h3>
+                <p className="font-sans text-xs text-[#3E4945] leading-relaxed">
+                  {step.desc}
+                </p>
               </div>
 
               <div className="pt-3 border-t border-[#0E1153]/15 flex items-center justify-between text-[10px] font-mono font-bold text-[#005F4C]">

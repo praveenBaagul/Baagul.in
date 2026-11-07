@@ -7,7 +7,7 @@ const quickServices = [
   { name: "Website Design & Development", href: "/services/web-design" },
   { name: "SEO Optimization", href: "/services/seo-optimizations" },
   { name: "Logo Design", href: "/services/logo-design" },
-  { name: "Guest Post", href: "/services/guest-post" },
+  { name: "Guest Posts & PR", href: "/services/guest-post" },
   { name: "Graphic Designing", href: "/services/graphics-design" },
   { name: "E-Commerce Solutions", href: "/services/e-commerce-solutions" },
   { name: "WordPress & CMS Development", href: "/services/wordpress-development" },

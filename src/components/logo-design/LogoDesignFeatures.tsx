@@ -79,29 +79,32 @@ export default function LogoDesignFeatures() {
           {deliverables.map((item) => (
             <div
               key={item.number}
-              className="p-6 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[4px_4px_0px_#0E1153] flex flex-col justify-between min-h-[200px]"
+              className="group cursor-pointer p-6 bg-[#FFFFFF] hover:bg-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[4px_4px_0px_#0E1153] hover:shadow-[7px_7px_0px_#FFA800] hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between min-h-[200px]"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className={`w-8 h-8 rounded-lg ${item.iconBg} border border-[#0E1153] flex items-center justify-center font-mono font-bold text-xs text-[#0E1153]`}>
+                  <span className={`w-8 h-8 rounded-lg ${item.iconBg} border border-[#0E1153] flex items-center justify-center font-mono font-bold text-xs text-[#0E1153] group-hover:scale-110 group-hover:rotate-6 transition-transform duration-200`}>
                     ✦
                   </span>
-                  <span className="font-mono text-xs font-bold text-[#0E1153]/30">
+                  <span className="font-mono text-xs font-bold text-[#0E1153]/30 group-hover:text-[#FFA800] transition-colors duration-200">
                     {item.number}
                   </span>
                 </div>
 
-                <h3 className="font-heading text-lg font-bold text-[#0E1153] mb-2 leading-snug">
+                <h3 className="font-heading text-lg font-bold text-[#0E1153] group-hover:text-[#FEF9ED] mb-2 leading-snug transition-colors duration-200">
                   {item.title}
                 </h3>
 
-                <p className="font-sans text-xs text-[#3E4945] leading-relaxed">
+                <p className="font-sans text-xs text-[#3E4945] group-hover:text-[#FEF9ED]/80 leading-relaxed transition-colors duration-200">
                   {item.desc}
                 </p>
               </div>
 
-              <div className="pt-3 mt-4 border-t border-[#0E1153]/10 font-mono text-[10px] font-bold text-[#005F4C] uppercase">
-                SPEC: {item.number} // APPROVED
+              <div className="pt-3 mt-4 border-t border-[#0E1153]/10 group-hover:border-[#FEF9ED]/20 font-mono text-[10px] font-bold text-[#005F4C] group-hover:text-[#FFA800] uppercase transition-colors duration-200 flex items-center justify-between">
+                <span>SPEC: {item.number} // APPROVED</span>
+                <span className="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200 text-xs">
+                  →
+                </span>
               </div>
             </div>
           ))}

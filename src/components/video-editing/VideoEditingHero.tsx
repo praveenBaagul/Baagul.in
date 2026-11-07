@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function VideoEditingHero() {
   return (
@@ -69,185 +70,20 @@ export default function VideoEditingHero() {
 
           </div>
 
-          {/* Right Column: Browser Window Card with Pixel-Accurate Figma Alignment */}
-          <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
-            
-            {/* Browser Card Frame: Tilted -rotate-[1.5deg] with Emerald Shadow */}
-            <div className="w-full max-w-[560px] bg-white border-2 border-[#0E1153] rounded-xl shadow-[8px_8px_0px_#0E7A63] overflow-hidden -rotate-[1.2deg] hover:rotate-0 transition-transform duration-300">
-              
-              {/* Window Header Bar */}
-              <div className="bg-white px-4 py-2.5 border-b-2 border-[#0E1153] flex items-center justify-between">
-                {/* 3 Window Control Dots */}
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#BA1A1A] border border-[#0E1153]" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBA45] border border-[#0E1153]" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#0E7A63] border border-[#0E1153]" />
-                </div>
-
-                {/* Center Search / URL Bar */}
-                <div className="bg-[#FEF9ED] px-3.5 py-1 rounded-md border border-[#0E1153] shadow-[1px_1px_0px_#0E1153] flex items-center gap-2 text-[11px] font-mono text-[#0E1153] font-medium">
-                  {/* Small Lock SVG */}
-                  <svg className="w-3 h-3 text-[#0E1153]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                  </svg>
-                  <span>studio.baagul.in/edit-suite</span>
-                </div>
-
-                {/* Right 2 Dots */}
-                <div className="flex items-center gap-1 opacity-40">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#0E1153]" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#0E1153]" />
-                </div>
+          {/* Right Column (6 cols) - Video Editing Suite Poster Artwork */}
+          <div className="lg:col-span-6 flex justify-center lg:justify-end relative">
+            <div className="w-full max-w-[560px] bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E7A63] overflow-hidden relative group">
+              <div className="relative w-full aspect-square">
+                <Image
+                  src="/assets/video-editing-hero-poster.jpg"
+                  alt="Video Editing Suite - Short-Form Reels, YouTube & Long-Form, Motion Graphics & Sound Design"
+                  fill
+                  priority
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 600px"
+                />
               </div>
-
-              {/* Window Body: Edit Suite UI */}
-              <div className="p-6 bg-white space-y-5">
-                
-                {/* Top Row: Brand Reel — Final Cut & Live Feed Pill */}
-                <div className="flex items-center justify-between">
-                  <div>
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#0E1153]/60 font-bold block">
-                      ACTIVE PROJECT
-                    </span>
-                    <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#0E1153]">
-                      Brand Reel — Final Cut
-                    </h3>
-                  </div>
-
-                  <div className="flex items-center gap-2 px-3 py-1 bg-[#0E7A63] text-[#FEF9ED] rounded-full border border-[#0E1153] font-mono text-[10px] font-bold">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#FFBA45]" />
-                    <span>RENDERING</span>
-                  </div>
-                </div>
-
-                {/* Middle Row: 2 Quick Metric Cards */}
-                <div className="grid grid-cols-2 gap-4">
-                  
-                  {/* Watch Time Card */}
-                  <div className="bg-[#FEF9ED] border-2 border-[#0E1153] rounded-xl p-4 shadow-[2px_2px_0px_#0E1153]">
-                    <span className="text-[10px] font-mono uppercase font-bold text-[#0E1153]/70 block mb-1">
-                      AVG. WATCH TIME
-                    </span>
-                    <div className="flex items-baseline gap-2 mb-1">
-                      <span className="font-heading text-3xl font-bold text-[#0E7A63]">
-                        +184%
-                      </span>
-                      {/* Squiggle wave icon */}
-                      <svg className="w-5 h-3 text-[#0E7A63]" viewBox="0 0 24 10" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                        <path d="M1 5 Q 6 1, 11 5 T 21 5" />
-                      </svg>
-                    </div>
-                    <span className="text-[10px] font-mono text-[#0E1153]/60 block">
-                      vs. raw cut
-                    </span>
-                  </div>
-
-                  {/* Turnaround Card */}
-                  <div className="bg-[#FEF9ED] border-2 border-[#0E1153] rounded-xl p-4 shadow-[2px_2px_0px_#0E1153]">
-                    <span className="text-[10px] font-mono uppercase font-bold text-[#0E1153]/70 block mb-1">
-                      TURNAROUND
-                    </span>
-                    <div className="flex items-baseline gap-2 mb-1">
-                      <span className="font-heading text-3xl font-bold text-[#0E1153]">
-                        48 hrs
-                      </span>
-                      <span className="font-mono text-base font-bold text-[#0E7A63]">↘</span>
-                    </div>
-                    <span className="text-[10px] font-mono text-[#0E1153]/60 block">
-                      First draft delivery
-                    </span>
-                  </div>
-
-                </div>
-
-                {/* Bottom Row: Retention by Segment with Vertical Bar Chart & Dotted Curve */}
-                <div className="bg-[#FEF9ED] border-2 border-[#0E1153] rounded-xl p-4 shadow-[2px_2px_0px_#0E1153]">
-                  
-                  {/* Header inside Retention box */}
-                  <div className="flex items-center justify-between mb-4 text-[10px] font-mono">
-                    <span className="font-bold text-[#0E1153] uppercase tracking-wider">
-                      RETENTION BY SEGMENT
-                    </span>
-                    <span className="text-[#0E1153]/70 font-semibold">
-                      Timeline 00:60
-                    </span>
-                  </div>
-
-                  {/* Vertical Bar Chart + Dotted Connecting Trendline */}
-                  <div className="relative pt-6 pb-2">
-                    
-                    {/* SVG Dotted Trendline connecting across the tops */}
-                    <svg
-                      className="absolute inset-0 w-full h-full pointer-events-none z-10"
-                      viewBox="0 0 380 90"
-                      preserveAspectRatio="none"
-                    >
-                      <path
-                        d="M 32 46 Q 80 58, 128 22 T 224 48 T 272 56 T 320 28 T 355 76"
-                        fill="none"
-                        stroke="#0E1153"
-                        strokeWidth="1.5"
-                        strokeDasharray="4 4"
-                      />
-                    </svg>
-
-                    {/* Columns Grid */}
-                    <div className="grid grid-cols-6 items-end gap-3 h-24 px-2">
-                      
-                      {/* Col 1: HOOK */}
-                      <div className="flex flex-col items-center justify-end h-full">
-                        <div className="w-full max-w-[36px] h-12 bg-[#0E7A63] border-2 border-[#0E1153] rounded-t-sm" />
-                      </div>
-
-                      {/* Col 2: B-ROLL */}
-                      <div className="flex flex-col items-center justify-end h-full">
-                        <div className="w-full max-w-[36px] h-9 bg-[#FFBA45] border-2 border-[#0E1153] rounded-t-sm" />
-                      </div>
-
-                      {/* Col 3: MOTION */}
-                      <div className="flex flex-col items-center justify-end h-full">
-                        <div className="w-full max-w-[36px] h-[72px] bg-[#5459AC] border-2 border-[#0E1153] rounded-t-sm" />
-                      </div>
-
-                      {/* Col 4: COLOR */}
-                      <div className="flex flex-col items-center justify-end h-full">
-                        <div className="w-full max-w-[36px] h-11 bg-[#0E7A63] border-2 border-[#0E1153] rounded-t-sm" />
-                      </div>
-
-                      {/* Col 5: AUDIO */}
-                      <div className="flex flex-col items-center justify-end h-full">
-                        <div className="w-full max-w-[36px] h-8 bg-[#E1E3F7] border-2 border-[#0E1153] rounded-t-sm" />
-                      </div>
-
-                      {/* Col 6: CTA */}
-                      <div className="flex flex-col items-center justify-end h-full">
-                        <div className="w-full max-w-[36px] h-14 bg-[#FFBA45] border-2 border-[#0E1153] rounded-t-sm" />
-                      </div>
-
-                    </div>
-
-                    {/* Horizontal Divider Line */}
-                    <div className="w-full border-t border-[#0E1153]/30 mt-2" />
-
-                    {/* Labels Row */}
-                    <div className="grid grid-cols-6 text-center text-[9px] font-mono font-bold text-[#0E1153]/70 pt-2 uppercase">
-                      <span>HOOK</span>
-                      <span>B-ROLL</span>
-                      <span>MOTION</span>
-                      <span>COLOR</span>
-                      <span>AUDIO</span>
-                      <span>CTA</span>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
             </div>
-
           </div>
 
         </div>

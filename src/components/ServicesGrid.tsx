@@ -59,7 +59,7 @@ const services: ServiceCard[] = [
   {
     id: "guest-post",
     number: "04",
-    title: "Guest Post",
+    title: "Guest Posts & PR",
     category: "AUTHORITY LINKS",
     description: "Editorial placements on relevant, high-authority publications that build quality backlinks, referral traffic, and domain trust.",
     bgColor: "bg-peacock",

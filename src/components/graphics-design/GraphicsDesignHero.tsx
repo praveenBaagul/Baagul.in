@@ -1,13 +1,14 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function GraphicsDesignHero() {
   return (
     <section className="relative w-full bg-[#FEF9ED] text-[#0E1153] pt-10 pb-16 px-6 sm:px-12 lg:px-16 border-b-2 border-[#0E1153]">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column (6 cols) */}
-          <div className="lg:col-span-6 flex flex-col items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          {/* Left Column (5 cols) */}
+          <div className="lg:col-span-5 flex flex-col items-start">
             {/* Eyebrow */}
             <div className="flex items-center gap-2 mb-4 text-xs font-mono font-bold uppercase tracking-widest text-[#0E1153]">
               <span className="w-2.5 h-2.5 bg-[#0E1153]" />
@@ -88,88 +89,18 @@ export default function GraphicsDesignHero() {
             </div>
           </div>
 
-          {/* Right Column (6 cols) - Stacked Framed Artboard Posters */}
-          <div className="lg:col-span-6 flex justify-center relative">
-            {/* Top Quad Color Motif */}
-            <div className="absolute -top-6 left-6 grid grid-cols-2 gap-1 w-6 h-6 z-30">
-              <span className="w-2.5 h-2.5 rounded-sm bg-[#005F4C]" />
-              <span className="w-2.5 h-2.5 rounded-sm bg-[#FFA800]" />
-              <span className="w-2.5 h-2.5 rounded-sm bg-[#0E1153]" />
-              <span className="w-2.5 h-2.5 rounded-sm bg-[#E1E3F7]" />
-            </div>
-
-            {/* Back Stacked Sheet (Yellow/Lavender Underlay) */}
-            <div className="absolute inset-0 bg-[#FFBA45] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] rotate-[-2.5deg] translate-y-3" />
-            <div className="absolute inset-0 bg-[#E1E3F7] border-2 border-[#0E1153] rounded-2xl rotate-[1.5deg] translate-y-1" />
-
-            {/* Front White Artboard Canvas */}
-            <div className="relative z-10 w-full max-w-lg bg-[#FAF8F5] border-2 border-[#0E1153] rounded-2xl p-6 sm:p-8 flex flex-col justify-between min-h-[500px] shadow-[6px_6px_0px_#0E1153]">
-              {/* Top Meta Header */}
-              <div className="flex items-center justify-between text-[11px] font-mono font-bold text-[#0E1153] pb-3 border-b border-[#0E1153]/20">
-                <span>PLATE #09 / BENGALURU</span>
-                <span className="w-3 h-3 rotate-45 bg-[#FFA800] border border-[#0E1153]" />
-                <span>5000 × 3200 PX</span>
-              </div>
-
-              {/* Canvas Center Layout */}
-              <div className="py-6 flex flex-col justify-between flex-1">
-                {/* Upper Sub-Header: Type Sample & Swatches */}
-                <div className="flex items-start justify-between">
-                  {/* Type Sample Box */}
-                  <div className="p-3 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-lg shadow-[2px_2px_0px_#0E1153]">
-                    <span className="font-heading text-3xl font-black text-[#0E1153] block leading-none">
-                      Aa
-                    </span>
-                    <span className="font-mono text-[9px] uppercase tracking-wider text-[#3E4945] mt-1 block">
-                      FRAUNCES DISPLAY
-                    </span>
-                  </div>
-
-                  {/* Swatches strip */}
-                  <div className="flex items-center gap-1.5 p-1 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-md shadow-[2px_2px_0px_#0E1153]">
-                    <span className="w-4 h-6 rounded-sm bg-[#0E1153]" />
-                    <span className="w-4 h-6 rounded-sm bg-[#005F4C]" />
-                    <span className="w-4 h-6 rounded-sm bg-[#FFA800]" />
-                    <span className="w-4 h-6 rounded-sm bg-[#E1E3F7]" />
-                  </div>
-                </div>
-
-                {/* Central Dashed Compass Circle with Vector Element */}
-                <div className="relative my-8 flex items-center justify-center">
-                  {/* Dashed outer compass ring */}
-                  <div className="relative w-44 h-44 rounded-full border-2 border-dashed border-[#005F4C]/40 flex items-center justify-center">
-                    {/* Anchor square points */}
-                    <span className="absolute -top-1.5 w-3 h-3 bg-[#FFA800] border border-[#0E1153]" />
-                    <span className="absolute -bottom-1.5 w-3 h-3 bg-[#FFA800] border border-[#0E1153]" />
-                    <span className="absolute -left-1.5 w-3 h-3 bg-[#FFA800] border border-[#0E1153]" />
-                    <span className="absolute -right-1.5 w-3 h-3 bg-[#FFA800] border border-[#0E1153]" />
-
-                    {/* Dark Green Brand Logo Mark */}
-                    <div className="w-20 h-20 bg-[#005F4C] border-2 border-[#0E1153] rounded-2xl shadow-[4px_4px_0px_#0E1153] flex items-center justify-center relative rotate-3">
-                      <div className="w-7 h-7 rounded-full bg-[#FFFFFF] shadow-sm flex items-center justify-center" />
-                      <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-[#FFA800] rounded-md border border-[#0E1153]" />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Technical Dimension Label */}
-                <div className="flex items-center justify-between">
-                  <div className="px-3 py-1 bg-[#FFFFFF] border border-[#0E1153] text-[9px] font-mono font-bold text-[#0E1153] rounded">
-                    PRECISION BÉZIER PATHS
-                  </div>
-
-                  {/* Stamp Badge: PRINT READY 100% VECTOR */}
-                  <div className="w-20 h-20 rounded-full bg-[#1A1F5E] text-[#FEF9ED] border-2 border-[#0E1153] shadow-[3px_3px_0px_#0E1153] flex flex-col items-center justify-center text-center p-1 font-mono text-[9px] font-bold uppercase rotate-[-8deg]">
-                    <span>PRINT</span>
-                    <span className="text-[#FFA800]">READY</span>
-                    <span className="text-[7px] text-[#FEF9ED]/70">100% VECTOR</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Bottom Stamp Line */}
-              <div className="pt-3 border-t border-[#0E1153]/20 flex items-center justify-center text-[10px] font-mono font-bold text-[#0E1153] tracking-widest uppercase">
-                BAAGUL STUDIO DESIGN DESK &copy; 2026
+          {/* Right Column (7 cols) - Creative Design Process Artwork */}
+          <div className="lg:col-span-7 flex justify-center relative">
+            <div className="w-full max-w-2xl bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] overflow-hidden relative group">
+              <div className="relative w-full aspect-[1024/576]">
+                <Image
+                  src="/assets/creative-design-process-hero.jpg"
+                  alt="Creative Design Process - From the first idea to the final masterpiece"
+                  fill
+                  priority
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 750px"
+                />
               </div>
             </div>
           </div>

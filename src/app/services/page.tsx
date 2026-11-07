@@ -20,7 +20,6 @@ export default function ServicesPage() {
       <main className="flex-1 flex flex-col">
         <ServicesHero />
         <ServicesCardsGrid />
-        <CraftsmanStandardsBand />
         <ServicesCTABand />
       </main>
       <Footer />
