@@ -50,7 +50,7 @@ export default function VideoEditingPage() {
         <VideoEditingServicePager />
 
         {/* Band 8: Design System Matrix */}
-        <VideoEditingSpecMatrix />
+        {/* <VideoEditingSpecMatrix /> */}
       </main>
 
       {/* Site-wide Footer */}

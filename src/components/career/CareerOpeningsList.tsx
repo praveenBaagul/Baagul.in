@@ -11,31 +11,22 @@ interface JobRole {
   region: string;
   description: string;
   imageSrc: string;
+  href?: string;
 }
 
 const roles: JobRole[] = [
   {
-    id: "video-editor",
+    id: "ui-ux-designer",
     badgeNum: "01",
-    title: "Video Editor (Freelance, Remote)",
-    employmentType: "FREELANCE",
-    location: "REMOTE",
-    region: "GLOBAL",
+    title: "UI/UX Designer (Full-Time, On-Site)",
+    employmentType: "FULL-TIME",
+    location: "BENGALURU",
+    region: "WORK FROM OFFICE",
     description:
-      "Craft compelling short-form cuts, motion graphics, and editorial YouTube productions for high-growth tech brands and agency campaigns.",
-    imageSrc: "/assets/69bac.png",
-  },
-  {
-    id: "content-writer",
-    badgeNum: "02",
-    title: "Content Writer (Freelance, Remote)",
-    employmentType: "FREELANCE",
-    location: "REMOTE",
-    region: "GLOBAL",
-    description:
-      "Author authoritative search content, in-depth technical tear-downs, and conversion-focused guest articles for prominent publications.",
-    imageSrc: "/assets/cacf1.png",
-  },
+      "Design modern websites, mobile apps, interactive Figma prototypes, and scalable design systems for fast-growing digital products.",
+    imageSrc: "/assets/b03af.png",
+    href: "/career/ui-ux-designer",
+  }
 ];
 
 export default function CareerOpeningsList() {
@@ -59,8 +50,8 @@ export default function CareerOpeningsList() {
           Current Opening
         </h2>
 
-        {/* 2 Staggered Large Job Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        {/* 3 Staggered Large Job Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
           {roles.map((role) => (
             <div
               key={role.id}
@@ -113,7 +104,7 @@ export default function CareerOpeningsList() {
                 {/* Bottom Action Row */}
                 <div className="pt-4 border-t border-[#0E1153]/15 flex items-center justify-between">
                   <Link
-                    href="/contact"
+                    href={role.href || "/contact"}
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0E1153] text-[#FEF9ED] font-heading font-bold text-xs border border-[#0E1153] shadow-[2px_2px_0px_#FFA800] hover:translate-x-0.5 hover:translate-y-0.5 transition-all"
                   >
                     <span>View opening</span>

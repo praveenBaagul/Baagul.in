@@ -32,7 +32,7 @@ export default function CareerHero() {
             </h1>
 
             <p className="font-sans text-base sm:text-lg text-[#3E4945] max-w-xl leading-relaxed mb-8">
-              Baagul Marketing LLC is hiring freelance Video Editors and Content Writers. Work remotely and build your career in digital marketing with us.
+              Baagul Marketing LLC is hiring UI/UX Designers, freelance Video Editors, and Content Writers. Build your career with our Bengaluru design and digital marketing studio.
             </p>
 
             {/* Action buttons */}
@@ -47,7 +47,7 @@ export default function CareerHero() {
 
               <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase text-[#0E1153]">
                 <span className="w-2 h-2 rounded-full bg-[#005F4C] animate-pulse" />
-                <span>2 ACTIVE OPENINGS</span>
+                <span>1 ACTIVE OPENINGS</span>
               </div>
             </div>
           </div>
@@ -63,11 +63,11 @@ export default function CareerHero() {
             </div>
 
             {/* Stamp Badge: REMOTE WELCOME */}
-            <div className="absolute -bottom-3 -right-3 sm:-right-4 z-20 w-20 h-20 rounded-full bg-[#005F4C] text-[#FEF9ED] border-2 border-[#0E1153] shadow-[3px_3px_0px_#0E1153] flex flex-col items-center justify-center text-center p-1 font-mono text-[9px] font-bold uppercase rotate-12">
+            {/* <div className="absolute -bottom-3 -right-3 sm:-right-4 z-20 w-20 h-20 rounded-full bg-[#005F4C] text-[#FEF9ED] border-2 border-[#0E1153] shadow-[3px_3px_0px_#0E1153] flex flex-col items-center justify-center text-center p-1 font-mono text-[9px] font-bold uppercase rotate-12">
               <span>★ 100% ★</span>
               <span className="text-[#FFA800]">REMOTE</span>
               <span className="text-[7px]">WELCOME</span>
-            </div>
+            </div> */}
 
             {/* Headcount Card Frame */}
             <div className="w-full max-w-sm bg-[#FFA800] border-2 border-[#0E1153] rounded-2xl p-8 shadow-[8px_8px_0px_#0E1153] flex flex-col justify-between min-h-[220px]">
@@ -78,7 +78,7 @@ export default function CareerHero() {
 
               <div className="py-4">
                 <span className="font-heading text-8xl font-black text-[#0E1153] leading-none block">
-                  02
+                  01
                 </span>
                 <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#0E1153]/80 mt-2 block">
                   OPEN ROLES

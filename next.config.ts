@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: "/careers", destination: "/career", permanent: true },
+      { source: "/career/ui-ux-design", destination: "/career/ui-ux-designer", permanent: true },
+      { source: "/careers/ui-ux-designer", destination: "/career/ui-ux-designer", permanent: true },
       { source: "/services/digital-marketing", destination: "/services/video-editing", permanent: true },
       { source: "/services/graphic-design", destination: "/services/graphics-design", permanent: true },
       { source: "/services/paid-promotion", destination: "/services/paid-promotions", permanent: true },

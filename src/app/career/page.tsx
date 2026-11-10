@@ -10,7 +10,7 @@ import CareerSpecMatrix from "@/components/career/CareerSpecMatrix";
 export const metadata: Metadata = {
   title: "Career & Current Openings · Baagul Marketing LLP",
   description:
-    "Baagul Marketing LLC is hiring freelance Video Editors and Content Writers. Work remotely and build your career in digital marketing with us.",
+    "BAAGUL LLP is hiring a full-time UI/UX Designer in Bengaluru, as well as freelance Video Editors and Content Writers. Build your career with our design and digital marketing studio.",
   alternates: { canonical: "/career" },
 };
 
@@ -29,7 +29,7 @@ export default function CareerPage() {
         <CareerContactBand />
 
         {/* Section 4: Design System Specimen / Component State Matrix */}
-        <CareerSpecMatrix />
+        {/* <CareerSpecMatrix /> */}
       </main>
       <Footer />
     </div>
