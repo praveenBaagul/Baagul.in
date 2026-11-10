@@ -34,12 +34,12 @@ export default function VideoEditingServicePager() {
 
           {/* Next Service Card (Mustard) */}
           <Link
-            href="/services/web-design"
+            href="/services/app-development"
             className="group block bg-[#FFBA45] border-2 border-[#0E1153] rounded-2xl p-6 sm:p-8 shadow-[6px_6px_0px_#0E1153] hover:-translate-y-1 hover:shadow-[8px_8px_0px_#0E1153] transition-all duration-200"
           >
             <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#0E1153]/20">
               <span className="text-[10px] font-mono text-[#0E1153]/60 font-bold uppercase">
-                ENGINEERED WEB
+                MOBILE & HYBRID APPS
               </span>
               <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#0E1153] flex items-center gap-1.5">
                 <span>NEXT SERVICE</span>
@@ -48,11 +48,11 @@ export default function VideoEditingServicePager() {
             </div>
 
             <h3 className="font-heading text-2xl sm:text-3xl font-bold text-[#0E1153] mb-2 group-hover:text-[#0E7A63] transition-colors">
-              Website Design & Development
+              App Development
             </h3>
 
             <p className="font-sans text-xs sm:text-sm text-[#0E1153]/80">
-              Next.js, React & Responsive Builds
+              iOS, Android, React Native & Flutter Mobile Solutions
             </p>
           </Link>
 

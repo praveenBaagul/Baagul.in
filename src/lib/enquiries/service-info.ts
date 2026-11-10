@@ -47,6 +47,12 @@ export const SERVICE_INFO: Record<ServiceName, ServiceInfo> = {
     summary: "We create visual brand identities, custom vector marks and design systems.",
     benefits: "It gives your business a consistent look across everything you publish.",
   },
+  "App Development": {
+    path: "/services/app-development",
+    summary:
+      "We design and develop native iOS, Android, and cross-platform apps with Flutter and React Native.",
+    benefits: "You get a scalable, high-performance mobile application engineered to match your user and business goals.",
+  },
 };
 
 /** Builds the service fields of the event payload from validated service names. */

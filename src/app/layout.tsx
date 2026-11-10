@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Hanken_Grotesk, Gloock, Noto_Serif_Kannada } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site";
@@ -24,16 +24,27 @@ const notoKannada = Noto_Serif_Kannada({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#0E1153",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   icons: {
     icon: [
-      { url: "/assets/favicon.png" },
-      { url: "/favicon.png" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icons/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/icons/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/icons/icon-192.png", type: "image/png", sizes: "192x192" },
     ],
-    shortcut: "/assets/favicon.png",
-    apple: "/assets/favicon.png",
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
+  manifest: "/manifest.webmanifest",
   openGraph: { type: "website", siteName: "Baagul", locale: "en_IN" },
   twitter: { card: "summary_large_image" },
   title: "Baagul · Digital growth, made in Bengaluru",
@@ -47,9 +58,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${hanken.variable} ${gloock.variable} ${notoKannada.variable}`}>
-      <head>
-        <link rel="icon" href="/assets/favicon.png" sizes="any" />
-      </head>
       <body className="antialiased selection:bg-marigold selection:text-indigo-main">
         {children}
         <WhatsAppChatWidget />

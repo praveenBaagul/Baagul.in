@@ -222,6 +222,11 @@ export default function Footer() {
                   Video Editing
                 </Link>
               </li>
+              <li>
+                <Link href="/services/app-development" className="hover:text-[#FFA800] transition-colors">
+                  App Development
+                </Link>
+              </li>
             </ul>
           </div>
 

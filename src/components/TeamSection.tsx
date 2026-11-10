@@ -120,7 +120,7 @@ export default function TeamSection() {
         ))}
 
         {/* 8th Card: Meet all 14 CTA Card */}
-        <div className="p-6 bg-marigold border-2 border-indigo-main rounded-xl shadow-[4px_4px_0px_#121a4a] flex flex-col justify-between text-indigo-main">
+        {/* <div className="p-6 bg-marigold border-2 border-indigo-main rounded-xl shadow-[4px_4px_0px_#121a4a] flex flex-col justify-between text-indigo-main">
           <div>
             <span className="text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded bg-indigo-main text-canvas inline-block mb-4">
               WE ARE HIRING
@@ -142,7 +142,7 @@ export default function TeamSection() {
               <ArrowRightIcon className="w-3.5 h-3.5" />
             </a>
           </div>
-        </div>
+        </div> */}
 
       </div>
     </section>

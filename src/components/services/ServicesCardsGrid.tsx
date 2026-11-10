@@ -125,6 +125,18 @@ const allServiceCards: ServiceCardData[] = [
     accentBadge: "bg-indigo-main text-canvas",
     href: "/services/video-editing",
   },
+  {
+    number: "10",
+    tag: "APP // NATIVE & HYBRID",
+    title: "Mobile & Web App Development",
+    description:
+      "High-performance iOS, Android, and cross-platform apps built with React Native and Flutter. 60fps animations, offline-first sync, and enterprise scale.",
+    imgSrc: "/assets/11282.png",
+    imgAlt: "Mobile app interfaces on smartphone screens with clean dashboard analytics",
+    headerBg: "bg-peacock text-canvas",
+    accentBadge: "bg-canvas text-peacock-dark",
+    href: "/services/app-development",
+  },
 ];
 
 export default function ServicesCardsGrid() {

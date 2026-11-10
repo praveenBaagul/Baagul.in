@@ -128,6 +128,18 @@ const services: ServiceCard[] = [
     tagColor: "bg-canvas text-indigo-main",
     href: "/services/video-editing",
   },
+  {
+    id: "app-development",
+    number: "10",
+    title: "Mobile & Web App Development",
+    category: "NATIVE & HYBRID APPS",
+    description: "High-performance iOS, Android, and cross-platform apps built with React Native and Flutter. 60fps animations, offline sync, and enterprise scale.",
+    bgColor: "bg-peacock",
+    textColor: "text-canvas",
+    borderColor: "border-indigo-main",
+    tagColor: "bg-marigold text-indigo-dark",
+    href: "/services/app-development",
+  },
 ];
 
 export default function ServicesGrid() {

@@ -56,38 +56,18 @@ export default function LogoDesignHero() {
             </Link>
           </div>
 
-          {/* Right Column (6 cols) - Vector Design Canvas Mockup */}
-          <div className="lg:col-span-6 flex justify-center relative">
-            {/* Tilted Stamp Badge */}
-            <div className="absolute -top-3 -right-3 sm:-right-4 z-20 w-20 h-20 rounded-full bg-[#FFA800] text-[#0E1153] border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] flex flex-col items-center justify-center text-center p-1 font-mono text-[9px] font-black uppercase rotate-[12deg]">
-              <span>★ 100% ★</span>
-              <span>VECTOR</span>
-              <span>PRECISION</span>
-            </div>
-
-            <div className="w-full max-w-lg bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] overflow-hidden text-[#0E1153]">
-              {/* Studio Canvas Header */}
-              <div className="px-4 py-3 bg-[#EDE8DC] border-b-2 border-[#0E1153] flex items-center justify-between text-xs font-mono">
-                <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded-full bg-[#E57373] border border-[#0E1153]" />
-                  <span className="w-3 h-3 rounded-full bg-[#FFA800] border border-[#0E1153]" />
-                  <span className="w-3 h-3 rounded-full bg-[#81C784] border border-[#0E1153]" />
-                </div>
-                <span className="text-[11px] font-bold text-[#3E4945]">
-                  baagul.canvas/logo-identity
-                </span>
-                <span className="text-[#005F4C] font-bold">IDENTITY ARCHIVE</span>
-              </div>
-
-              {/* Vector Logo Specification Artwork */}
-              <div className="relative w-full aspect-[1024/682] bg-[#FAF8F5]">
+          {/* Right Column (6 cols) - Logo Design Showcase Poster Artwork */}
+          <div className="lg:col-span-6 flex justify-center lg:justify-end relative">
+            <div className="w-full max-w-xl bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] overflow-hidden relative group">
+              <div className="relative w-full aspect-[16/9]">
                 <Image
-                  src="/assets/logodesignhero.jpg"
-                  alt="Baagul Logo and Brand Identity Specification"
+                  src="/assets/logo-design-hero-poster.jpg"
+                  alt="Logo Design & Visual Brand Identity - Baagul Studio"
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                  className="object-cover"
                   priority
+                  unoptimized
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 650px"
                 />
               </div>
             </div>

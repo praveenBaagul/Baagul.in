@@ -20,19 +20,17 @@ export default function Header({ onNavClick }: HeaderProps) {
 
   // Neo-brutalist pill style when active or hovered
   const getNavLinkClass = (isActive: boolean) => {
-    return `relative px-3.5 py-1.5 rounded-lg text-sm font-semibold transition-all duration-150 ${
-      isActive
-        ? "bg-marigold text-indigo-dark border border-indigo-main shadow-[2px_2px_0px_#121a4a]"
-        : "text-indigo-main/80 hover:text-indigo-main hover:bg-[#ebe7dc] hover:border hover:border-indigo-main/40 hover:shadow-[2px_2px_0px_#121a4a]/50"
-    }`;
+    return `relative px-3.5 py-1.5 rounded-lg text-sm font-semibold transition-all duration-150 ${isActive
+      ? "bg-marigold text-indigo-dark border border-indigo-main shadow-[2px_2px_0px_#121a4a]"
+      : "text-indigo-main/80 hover:text-indigo-main hover:bg-[#ebe7dc] hover:border hover:border-indigo-main/40 hover:shadow-[2px_2px_0px_#121a4a]/50"
+      }`;
   };
 
   const getMobileLinkClass = (isActive: boolean) => {
-    return `px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
-      isActive
-        ? "bg-marigold text-indigo-dark border border-indigo-main shadow-[2px_2px_0px_#121a4a]"
-        : "text-indigo-main hover:bg-[#ebe7dc]"
-    }`;
+    return `px-3 py-2 rounded-lg text-sm font-semibold transition-all ${isActive
+      ? "bg-marigold text-indigo-dark border border-indigo-main shadow-[2px_2px_0px_#121a4a]"
+      : "text-indigo-main hover:bg-[#ebe7dc]"
+      }`;
   };
 
   return (
@@ -65,13 +63,13 @@ export default function Header({ onNavClick }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-12 h-20 sm:h-24 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center group flex-shrink-0" aria-label="Baagul Home">
-          <div className="relative w-14 h-14 sm:w-20 sm:h-20 transition-transform duration-200 group-hover:scale-105">
+          <div className="relative w-20 h-20 sm:w-28 sm:h-28 transition-transform duration-200 group-hover:scale-105">
             <Image
               src="/assets/favicon.png"
               alt="Baagul logo"
               fill
               priority
-              className="object-contain"
+              className="object-contain scale-110 sm:scale-120"
             />
           </div>
         </Link>
@@ -120,9 +118,8 @@ export default function Header({ onNavClick }: HeaderProps) {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
-            className={`hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl border border-indigo-main font-semibold text-xs sm:text-sm text-indigo-main shadow-[3px_3px_0px_#121a4a] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#121a4a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all duration-150 ${
-              isContactActive ? "bg-marigold ring-2 ring-indigo-main" : "bg-marigold"
-            }`}
+            className={`hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl border border-indigo-main font-semibold text-xs sm:text-sm text-indigo-main shadow-[3px_3px_0px_#121a4a] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#121a4a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all duration-150 ${isContactActive ? "bg-marigold ring-2 ring-indigo-main" : "bg-marigold"
+              }`}
           >
             Start a project
           </Link>

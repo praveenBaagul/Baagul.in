@@ -7,6 +7,7 @@ export const serviceOptions = [
   "E-Commerce",
   "Cloud Hosting",
   "Logo & Brand",
+  "App Development",
 ] as const;
 
 export const budgetOptions = [

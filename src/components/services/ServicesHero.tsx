@@ -13,6 +13,7 @@ const quickServices = [
   { name: "WordPress & CMS Development", href: "/services/wordpress-development" },
   { name: "Paid Promotions & Media Buying", href: "/services/paid-promotions" },
   { name: "Video Editing", href: "/services/video-editing" },
+  { name: "App Development", href: "/services/app-development" },
 ];
 
 export default function ServicesHero() {
