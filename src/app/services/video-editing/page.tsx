@@ -31,6 +31,7 @@ export default function VideoEditingPage() {
         {/* Band 1: Hero & Skill Tiles */}
         <VideoEditingHero />
 
+
         {/* Band 2: Main Features (Deep Navy) */}
         <VideoEditingFeatures />
 

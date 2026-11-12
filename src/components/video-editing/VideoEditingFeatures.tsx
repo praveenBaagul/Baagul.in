@@ -32,31 +32,19 @@ const features: FeatureItem[] = [
     title: "Motion Graphics & Titles",
     description: "Animated text, lower thirds, logo reveals, and branded transitions.",
     badgeBg: "bg-[#E1E3F7] text-[#0E1153]",
-  },
-  {
-    number: "05",
-    title: "Color Grading & Correction",
-    description: "Consistent, cinematic looks with skin-tone accuracy and exposure balancing.",
-    badgeBg: "bg-[#C8553D] text-[#FEF9ED]",
-  },
-  {
-    number: "06",
-    title: "Sound Design & Subtitles",
-    description: "Audio cleanup, music and SFX mixing, plus accurate burned-in captions.",
-    badgeBg: "bg-[#0E1153] text-[#FEF9ED]",
-  },
+  }
 ];
 
 export default function VideoEditingFeatures() {
   return (
     <section className="relative w-full bg-[#1B1F5E] text-[#FEF9ED] border-b-2 border-[#0E1153] py-20 px-4 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
+
           {/* Left Column (5 Cols) */}
           <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-28">
-            
+
             {/* Tag Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#0E1153] border border-[#FFBA45]/40 shadow-[2px_2px_0px_#FFBA45] rounded mb-5">
               <span className="w-2 h-2 bg-[#FFBA45] rounded-full" />
