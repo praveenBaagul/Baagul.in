@@ -9,7 +9,7 @@ import PaidPromotionOffer from "@/components/paid-promotions/PaidPromotionOffer"
 import PaidPromotionWhyChooseUs from "@/components/paid-promotions/PaidPromotionWhyChooseUs";
 import PaidPromotionProcess from "@/components/paid-promotions/PaidPromotionProcess";
 import PaidPromotionCTABanner from "@/components/paid-promotions/PaidPromotionCTABanner";
-import PaidPromotionSpecMatrix from "@/components/paid-promotions/PaidPromotionSpecMatrix";
+// import PaidPromotionSpecMatrix from "@/components/paid-promotions/PaidPromotionSpecMatrix";
 
 export const metadata: Metadata = {
   title: "Paid Promotion Services · Baagul Studio Bengaluru",

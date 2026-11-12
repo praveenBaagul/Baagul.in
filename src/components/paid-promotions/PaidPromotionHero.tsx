@@ -1,7 +1,32 @@
-import React from "react";
+"use client";
+
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 export default function PaidPromotionHero() {
+  const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Ensure initial muted state complies with browser autoplay policies
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.play().catch(() => {
+        // Autoplay fallback if blocked by user browser settings
+      });
+    }
+  }, []);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      const nextMuted = !videoRef.current.muted;
+      videoRef.current.muted = nextMuted;
+      setIsMuted(nextMuted);
+      if (!nextMuted) {
+        videoRef.current.play().catch(() => { });
+      }
+    }
+  };
   return (
     <section className="relative w-full bg-[#FEF9ED] text-[#0E1153] pt-12 pb-20 px-6 sm:px-12 lg:px-16 border-b-2 border-[#0E1153]">
       <div className="max-w-7xl mx-auto">
@@ -84,37 +109,85 @@ export default function PaidPromotionHero() {
 
           {/* Right Column (5 cols) - Golden Video Player Mockup Frame */}
           <div className="lg:col-span-5 flex justify-center relative">
-            {/* Tilted Stamp Badge */}
-            <div className="absolute -bottom-4 -left-4 z-20 w-20 h-20 rounded-full bg-[#1A1F5E] text-[#FEF9ED] border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] flex flex-col items-center justify-center text-center p-1 font-mono text-[9px] font-bold uppercase rotate-[-12deg]">
-              <span>★ 100% ★</span>
-              <span className="text-[#FFA800]">VERIFIED</span>
-              <span className="text-[7px]">AUDIENCE REACH</span>
-            </div>
 
             {/* Video Player Card */}
-            <div className="w-full max-w-md bg-[#FFA800] border-2 border-[#0E1153] rounded-2xl p-6 sm:p-8 shadow-[8px_8px_0px_#0E1153] flex flex-col justify-between min-h-[260px] relative">
-              {/* Top window controls */}
-              <div className="flex items-center justify-between text-xs font-mono font-bold text-[#0E1153] pb-3 border-b border-[#0E1153]/20">
-                <span className="px-2 py-0.5 bg-[#FFFFFF] rounded border border-[#0E1153] text-[10px]">
-                  REC ● 4K 60FPS
-                </span>
-                <span className="text-[11px]">SPONSORED SPOTLIGHT</span>
-              </div>
+            <div className="w-full max-w-lg bg-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#FFA800] overflow-hidden relative group">
+              <div
+                onClick={toggleMute}
+                className="relative w-full aspect-video bg-[#0E1153] overflow-hidden cursor-pointer select-none"
+                title={isMuted ? "Click to unmute" : "Click to mute"}
+              >
+                <video
+                  ref={videoRef}
+                  src="/assets/video/baagul-video-editing-promo.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="auto"
+                  className="w-full h-full object-cover"
+                />
 
-              {/* Central Play Button */}
-              <div className="py-8 flex items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-[#FFFFFF] border-2 border-[#0E1153] shadow-[3px_3px_0px_#0E1153] flex items-center justify-center text-xl text-[#0E1153] pl-1 hover:scale-105 transition-transform cursor-pointer">
-                  ▶
+                {/* Studio Live Badge */}
+                <div className="absolute top-3 left-3 z-20 pointer-events-none flex items-center gap-2 px-2.5 py-1 rounded-full bg-[#0E1153]/85 backdrop-blur-xs border border-white/20 text-[#FEF9ED] font-mono text-[10px] sm:text-[11px] uppercase font-bold tracking-wider shadow-xs">
+                  <span className="w-2 h-2 rounded-full bg-[#FFA800] animate-pulse" />
+                  <span>SPONSORED SPOTLIGHT</span>
                 </div>
-              </div>
 
-              {/* Bottom Progress Scrub Bar */}
-              <div className="w-full pt-3 border-t border-[#0E1153]/20 flex items-center gap-3 text-[10px] font-mono font-bold text-[#0E1153]">
-                <span>02:14</span>
-                <div className="flex-1 h-2 bg-[#FFFFFF] rounded-full border border-[#0E1153] overflow-hidden">
-                  <div className="h-full bg-[#0E1153]" style={{ width: "68%" }} />
-                </div>
-                <span>03:45</span>
+                {/* Prominent High-Visibility Mute / Unmute Button */}
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleMute();
+                  }}
+                  aria-label={isMuted ? "Unmute video audio" : "Mute video audio"}
+                  className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-20 inline-flex items-center gap-2 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-full bg-[#FEF9ED] text-[#0E1153] border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] hover:bg-[#FFA800] hover:shadow-[2px_2px_0px_#0E1153] hover:translate-x-0.5 hover:translate-y-0.5 active:translate-x-1 active:translate-y-1 transition-all cursor-pointer font-mono font-bold tracking-wider uppercase select-none text-xs"
+                >
+                  {isMuted ? (
+                    <>
+                      {/* Muted Speaker SVG */}
+                      <svg
+                        className="w-4 h-4 text-[#C8553D] shrink-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2.5}
+                        aria-hidden="true"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.414 0-.75-.336-.75-.75V10.5c0-.414.336-.75.75-.75h4.74z"
+                        />
+                      </svg>
+                      <span>MUTED</span>
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#0E1153]/10 text-[#0E1153] font-semibold">
+                        UNMUTE
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      {/* Sound Playing SVG */}
+                      <svg
+                        className="w-4 h-4 text-[#005F4C] shrink-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2.5}
+                        aria-hidden="true"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.414 0-.75-.336-.75-.75V10.5c0-.414.336-.75.75-.75h4.74z"
+                        />
+                      </svg>
+                      <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse shrink-0" />
+                      <span>SOUND ON</span>
+                    </>
+                  )}
+                </button>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ import VideoEditingProcess from "@/components/video-editing/VideoEditingProcess"
 import VideoEditingWhyChooseUs from "@/components/video-editing/VideoEditingWhyChooseUs";
 import VideoEditingFAQ from "@/components/video-editing/VideoEditingFAQ";
 import VideoEditingServicePager from "@/components/video-editing/VideoEditingServicePager";
-import VideoEditingSpecMatrix from "@/components/video-editing/VideoEditingSpecMatrix";
+// import VideoEditingSpecMatrix from "@/components/video-editing/VideoEditingSpecMatrix";
 
 export const metadata: Metadata = {
   title: "Video Editing Services · Baagul Studio Bengaluru",
