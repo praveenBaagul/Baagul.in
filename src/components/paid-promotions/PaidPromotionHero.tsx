@@ -119,7 +119,7 @@ export default function PaidPromotionHero() {
               >
                 <video
                   ref={videoRef}
-                  src="/assets/video/baagul-video-editing-promo.mp4"
+                  src="/assets/video/baagul-paid-promotion-promo.mp4"
                   autoPlay
                   loop
                   muted

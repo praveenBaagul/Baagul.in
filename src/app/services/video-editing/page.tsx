@@ -5,7 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import VideoEditingHero from "@/components/video-editing/VideoEditingHero";
 import VideoEditingFeatures from "@/components/video-editing/VideoEditingFeatures";
-import VideoEditingServicesList from "@/components/video-editing/VideoEditingServicesList";
+import VideoEditingFormatShowcase from "@/components/video-editing/VideoEditingFormatShowcase";
+// import VideoEditingServicesList from "@/components/video-editing/VideoEditingServicesList";
 import VideoEditingProcess from "@/components/video-editing/VideoEditingProcess";
 import VideoEditingWhyChooseUs from "@/components/video-editing/VideoEditingWhyChooseUs";
 import VideoEditingFAQ from "@/components/video-editing/VideoEditingFAQ";
@@ -35,8 +36,8 @@ export default function VideoEditingPage() {
         {/* Band 2: Main Features (Deep Navy) */}
         <VideoEditingFeatures />
 
-        {/* Band 3: Our Services (Stacked Offset Rows) */}
-        <VideoEditingServicesList />
+        {/* Band 3: Interactive Format Showcase (Phone Mockup / YouTube Mockup) */}
+        <VideoEditingFormatShowcase />
 
         {/* Band 4: Process (Emerald 4-Step) */}
         <VideoEditingProcess />

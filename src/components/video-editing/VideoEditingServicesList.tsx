@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import type { VideoFormatId } from "./VideoEditingFormatShowcase";
 
 interface ServiceRow {
   number: string;
@@ -9,6 +12,8 @@ interface ServiceRow {
   badgeBg: string;
   iconBg: string;
   desktopOffsetClass: string;
+  formatId: VideoFormatId;
+  previewLabel: string;
 }
 
 const serviceRows: ServiceRow[] = [
@@ -20,6 +25,8 @@ const serviceRows: ServiceRow[] = [
     badgeBg: "bg-[#0E1153] text-[#FEF9ED]",
     iconBg: "bg-[#0E7A63] text-[#FEF9ED]",
     desktopOffsetClass: "lg:ml-0",
+    formatId: "reels",
+    previewLabel: "Phone Mockup",
   },
   {
     number: "02",
@@ -29,6 +36,8 @@ const serviceRows: ServiceRow[] = [
     badgeBg: "bg-[#0E7A63] text-[#FEF9ED]",
     iconBg: "bg-[#CFE8DC] text-[#0E1153]",
     desktopOffsetClass: "lg:ml-5",
+    formatId: "youtube",
+    previewLabel: "YouTube Mockup",
   },
   {
     number: "03",
@@ -38,6 +47,8 @@ const serviceRows: ServiceRow[] = [
     badgeBg: "bg-[#0E1153] text-[#FEF9ED]",
     iconBg: "bg-[#E1E3F7] text-[#0E1153]",
     desktopOffsetClass: "lg:ml-0",
+    formatId: "ads",
+    previewLabel: "Feed Ad Mockup",
   },
   {
     number: "04",
@@ -47,10 +58,24 @@ const serviceRows: ServiceRow[] = [
     badgeBg: "bg-[#0E7A63] text-[#FEF9ED]",
     iconBg: "bg-[#FFBA45] text-[#0E1153]",
     desktopOffsetClass: "lg:ml-5",
+    formatId: "motion",
+    previewLabel: "NLE Suite Mockup",
   },
 ];
 
 export default function VideoEditingServicesList() {
+  const handleSelectFormat = (formatId: VideoFormatId) => {
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(
+        new CustomEvent("select-video-format", { detail: formatId })
+      );
+      const element = document.getElementById("format-showcase");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
+
   return (
     <section className="relative w-full bg-[#FEF9ED] border-b-2 border-[#0E1153] py-20 px-4 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
@@ -95,8 +120,8 @@ export default function VideoEditingServicesList() {
                   </span>
                 </div>
 
-                {/* Title & Description (7 cols) */}
-                <div className="md:col-span-7">
+                {/* Title & Description (6 cols) */}
+                <div className="md:col-span-6">
                   <h3 className="font-heading text-2xl sm:text-3xl font-bold text-[#0E1153] mb-2">
                     {row.title}
                   </h3>
@@ -105,11 +130,20 @@ export default function VideoEditingServicesList() {
                   </p>
                 </div>
 
-                {/* Right Action Link (2 cols) */}
-                <div className="md:col-span-2 flex justify-start md:justify-end">
+                {/* Right Action Links (3 cols) */}
+                <div className="md:col-span-3 flex flex-wrap items-center justify-start md:justify-end gap-2.5">
+                  <button
+                    type="button"
+                    onClick={() => handleSelectFormat(row.formatId)}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-white text-[#0E1153] rounded-xl border border-[#0E1153] font-mono text-xs font-bold shadow-[2px_2px_0px_#0E1153] hover:bg-[#FFBA45] transition-colors cursor-pointer"
+                  >
+                    <span>{row.previewLabel}</span>
+                    <span>↑</span>
+                  </button>
+
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white text-[#0E1153] rounded-xl border border-[#0E1153] font-mono text-xs font-bold shadow-[2px_2px_0px_#0E1153] hover:bg-[#0E1153] hover:text-[#FEF9ED] transition-colors"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#0E1153] text-[#FEF9ED] rounded-xl border border-[#0E1153] font-mono text-xs font-bold shadow-[2px_2px_0px_#FFBA45] hover:bg-[#0E7A63] transition-colors"
                   >
                     <span>INTAKE</span>
                     <span>→</span>
