@@ -19,7 +19,7 @@ function OfferVideoPlayer({
     if (e) e.stopPropagation();
     if (videoRef.current) {
       if (videoRef.current.paused) {
-        videoRef.current.play().catch(() => {});
+        videoRef.current.play().catch(() => { });
         setIsPlaying(true);
       } else {
         videoRef.current.pause();
@@ -228,10 +228,57 @@ export default function PaidPromotionOffer() {
               {/* Video Player Right (4 cols) */}
               <div className="lg:col-span-4">
                 <OfferVideoPlayer
-                  src="/assets/video/baagul-paid-promotion-promo.mp4"
+                  src="/assets/video/Baagul_PR_Package.mp4"
                   badgeLabel="PR SPOTLIGHT"
                   badgeColor="bg-[#005F4C]"
                 />
+              </div>
+            </div>
+          </div>
+
+          {/* Module 03: Product Promotion with Targeted Content */}
+          <div className="bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] overflow-hidden">
+            {/* Module Top Bar */}
+            <div className="px-6 sm:px-8 py-4 bg-[#EDE8DC] border-b-2 border-[#0E1153] flex flex-wrap items-center justify-between gap-4">
+              <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#0E1153]">
+                Product Promotion with Targeted Content
+              </h3>
+              <span className="px-3 py-1 rounded bg-[#FFA800] border border-[#0E1153] text-xs font-mono font-bold text-[#0E1153]">
+                PERFORMANCE ADS
+              </span>
+            </div>
+
+            {/* Module Content Grid */}
+            <div className="p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              {/* Video Player Left (4 cols) */}
+              <div className="lg:col-span-4">
+                <OfferVideoPlayer
+                  src="/assets/video/baagul-paid-promotion-promo.mp4"
+                  badgeLabel="TARGETED PROMOTION"
+                  badgeColor="bg-[#FFA800]"
+                />
+              </div>
+
+              {/* Text Column 1 (4 cols) */}
+              <div className="lg:col-span-4 flex flex-col">
+                <div className="flex items-center gap-2 mb-2 font-heading font-bold text-lg text-[#0E1153]">
+                  <span className="w-2 h-2 rounded-full bg-[#FFA800]" />
+                  <span>Maximum Exposure</span>
+                </div>
+                <p className="font-sans text-xs sm:text-sm text-[#3E4945] leading-relaxed">
+                  Position your flagship products in front of qualified commercial shoppers through niche creator features, curated lifestyle lookbooks, and high-converting retargeting media buys.
+                </p>
+              </div>
+
+              {/* Text Column 2 (4 cols) */}
+              <div className="lg:col-span-4 flex flex-col">
+                <div className="flex items-center gap-2 mb-2 font-heading font-bold text-lg text-[#0E1153]">
+                  <span className="w-2 h-2 rounded-full bg-[#005F4C]" />
+                  <span>Customizable Campaigns</span>
+                </div>
+                <p className="font-sans text-xs sm:text-sm text-[#3E4945] leading-relaxed">
+                  Whether launching a brand-new SKU or running seasonal flash sales, our dynamic promotion pods adjust bid parameters and creative angles in real time to sustain profitable ROAS.
+                </p>
               </div>
             </div>
           </div>
