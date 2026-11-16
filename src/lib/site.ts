@@ -13,7 +13,10 @@ export const SITEMAP_OVERRIDES: Record<
   string,
   { priority?: number; changeFrequency?: "daily" | "weekly" | "monthly" | "yearly" }
 > = {
-  "/": { priority: 1, changeFrequency: "weekly" },
-  "/services": { priority: 0.9, changeFrequency: "monthly" },
-  "/contact": { priority: 0.7, changeFrequency: "yearly" },
+  "/": { priority: 1.0, changeFrequency: "weekly" },
+  "/services": { priority: 0.9, changeFrequency: "weekly" },
+  "/career": { priority: 0.8, changeFrequency: "weekly" },
+  "/team": { priority: 0.8, changeFrequency: "monthly" },
+  "/contact": { priority: 0.8, changeFrequency: "monthly" },
+  "/privacy-policy": { priority: 0.3, changeFrequency: "yearly" },
 };

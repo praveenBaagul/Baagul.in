@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useSyncExternalStore } from "react";
 import { PhoneInput } from "react-international-phone";
-import "react-international-phone/style.css";
 import { ArrowRightIcon } from "@/components/Icons";
 import {
   serviceOptions,

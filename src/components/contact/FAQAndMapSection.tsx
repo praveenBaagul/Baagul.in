@@ -20,7 +20,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "Can we schedule an in-person workshop at HSR Layout?",
-    answer: "Absolutely. We host founders and core marketing teams at our studio in Hustlehub Tech Park, Sector 4, HSR Layout for whiteboarding, technical audit walk-throughs, and strategy alignment sessions by appointment.",
+    answer: "Absolutely. We host founders and core marketing teams at our studio in Hustlehub Tech Park, Sector 2, HSR Layout for whiteboarding, technical audit walk-throughs, and strategy alignment sessions by appointment.",
   },
   {
     question: "What models of engagement do you provide?",
@@ -99,15 +99,15 @@ export default function FAQAndMapSection() {
             </div>
 
             {/* Map visual card */}
-            <div className="relative my-4 h-48 w-full bg-[#f1ede2] border border-indigo-main/30 rounded-lg p-4 flex flex-col items-center justify-center text-center">
+            <div className="relative my-4 p-5 w-full bg-[#f1ede2] border border-indigo-main/30 rounded-lg flex flex-col items-center justify-center text-center">
               <div className="w-12 h-12 rounded-full bg-peacock text-canvas flex items-center justify-center text-xl mb-2 shadow-[2px_2px_0px_#121a4a]">
                 📍
               </div>
               <h4 className="font-heading text-xl text-indigo-main font-bold">
                 Hustlehub Tech Park
               </h4>
-              <p className="text-xs text-slate-text">
-                2nd Floor, Sector 3/4, HSR Layout
+              <p className="text-xs text-slate-text mt-1.5 max-w-sm leading-relaxed">
+                2nd Floor , H210 , Hustlehub Tech Park, 36/5, Somasundarapalya, 27th Main Rd, Sector 2, HSR Layout, Bengaluru, Karnataka 560102
               </p>
             </div>
 
@@ -125,7 +125,7 @@ export default function FAQAndMapSection() {
 
             {/* Direct Google Maps link button */}
             <a
-              href="https://maps.google.com/?q=Hustlehub+Tech+Park+HSR+Layout+Bengaluru"
+              href="https://maps.app.goo.gl/SkAM411gfZyDBdec8"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-3 rounded-lg bg-canvas border border-indigo-main text-indigo-main font-mono text-xs font-bold uppercase tracking-wider text-center shadow-[2px_2px_0px_#121a4a] hover:bg-canvas-alt transition-colors flex items-center justify-center gap-2"

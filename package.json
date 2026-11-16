@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "prebuild": "node scripts/fix-permissions.js",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
@@ -13,7 +14,7 @@
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",
-    "postinstall": "prisma generate",
+    "postinstall": "node scripts/fix-permissions.js && prisma generate",
     "automation": "tsx --env-file-if-exists=.env scripts/automation.ts",
     "templates": "tsx --env-file-if-exists=.env scripts/templates.ts"
   },

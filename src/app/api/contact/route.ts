@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+ import { NextRequest, NextResponse } from "next/server";
 import { enquirySubmissionSchema } from "@/lib/validations/enquiry";
 import { isDatabaseConfigured } from "@/lib/enquiries/db";
 import { clientIp } from "@/lib/enquiries/http";
@@ -71,13 +71,19 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true, enquiryId: result.enquiryId }, { status: 200 });
   } catch (error) {
-    console.error("Enquiry submission failed:", safeErrorMessage(error));
-    // The customer is told to retry, but the lead still reaches the team.
+    const errorMsg = safeErrorMessage(error);
+    console.error("Enquiry submission failed:", errorMsg);
+
+    // If database insertion failed, attempt direct email notification so the lead is never lost.
     if (isResendConfigured()) {
-      await notifyAdmin(notice).catch((notifyError) =>
-        console.error("Enquiry notification failed:", safeErrorMessage(notifyError))
-      );
+      try {
+        await notifyAdmin(notice);
+        return NextResponse.json({ success: true, fallback: true }, { status: 200 });
+      } catch (notifyError) {
+        console.error("Enquiry notification failed:", safeErrorMessage(notifyError));
+      }
     }
+
     return NextResponse.json({ error: FAILURE_MESSAGE }, { status: 500 });
   }
 }
