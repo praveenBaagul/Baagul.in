@@ -126,55 +126,6 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-
-            {/* Social Links */}
-            <div className="mt-6 flex flex-col items-start">
-              <span className="text-[11px] font-bold uppercase tracking-[1.1px] text-[#f5a800] mb-2.5">
-                Follow Us
-              </span>
-              <div className="flex items-center gap-2.5">
-                {/* LinkedIn */}
-                <a
-                  href="https://www.linkedin.com/company/baagulmarketing/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Follow Baagul Marketing on LinkedIn"
-                  className="w-9 h-9 rounded-lg bg-[#0A66C2] flex items-center justify-center hover:scale-105 hover:shadow-md transition-all duration-200 cursor-pointer shadow-sm"
-                >
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true">
-                    <path fill="#FFFFFF" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z" />
-                  </svg>
-                </a>
-
-                {/* Instagram */}
-                <a
-                  href="https://www.instagram.com/baagul_marketing/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Follow Baagul Marketing on Instagram"
-                  className="w-9 h-9 rounded-lg bg-[#1C1C1E] border border-white/10 flex items-center justify-center hover:scale-105 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] transition-all duration-200 cursor-pointer shadow-sm"
-                >
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <circle cx="12" cy="12" r="4" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
-                </a>
-
-                {/* X / Twitter */}
-                <a
-                  href="https://x.com/baagul_in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Follow Baagul Marketing on X"
-                  className="w-9 h-9 rounded-lg bg-[#000000] border border-white/15 flex items-center justify-center hover:scale-105 hover:border-white/30 transition-all duration-200 cursor-pointer shadow-sm"
-                >
-                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true">
-                    <path fill="#FFFFFF" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Column 2: Services Links (3 cols) */}
@@ -410,6 +361,84 @@ export default function Footer() {
             <span className="text-[11px] font-bold text-[#fbf6ea]/60 tracking-[0.88px] mt-1">
               Strictly value. No spam. Unsubscribe anytime.
             </span>
+
+            {/* Social Links placed under Newsletter to balance column heights */}
+            <div className="mt-6 pt-5 border-t border-[#fbf6ea]/15 flex flex-col items-start">
+              <span className="text-[11px] font-bold uppercase tracking-[1.1px] text-[#f5a800] mb-3">
+                Follow Us
+              </span>
+              <div className="flex items-center gap-2.5 flex-wrap">
+
+                {/* 2. Twitter / X */}
+                <div className="relative group/tooltip flex items-center justify-center">
+                  <a
+                    href="https://x.com/baagul_in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Twitter / X"
+                    aria-label="Follow Baagul Marketing on Twitter / X"
+                    className="w-10 h-10 rounded-xl bg-white border border-black/5 shadow-sm flex items-center justify-center hover:scale-105 hover:shadow-md transition-all duration-200 cursor-pointer"
+                  >
+                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="#1DA1F2" aria-hidden="true">
+                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.936 9.936 0 0024 4.59z" />
+                    </svg>
+                  </a>
+                  <div className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/tooltip:opacity-100 group-hover/tooltip:-top-9 transition-all duration-200 z-30 whitespace-nowrap">
+                    <span className="bg-[#121a4a] text-[#fbf6ea] text-[11px] font-sans font-semibold px-2 py-0.5 rounded shadow-lg border border-[#f5a800]/40 block">
+                      Twitter
+                    </span>
+                    <span className="w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-[#121a4a] block mx-auto -mt-[1px]" />
+                  </div>
+                </div>
+
+                {/* 3. Instagram */}
+                <div className="relative group/tooltip flex items-center justify-center">
+                  <a
+                    href="https://www.instagram.com/baagul_marketing/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Instagram"
+                    aria-label="Follow Baagul Marketing on Instagram"
+                    className="w-10 h-10 rounded-xl bg-white border-2 border-[#E1306C] shadow-sm flex items-center justify-center hover:scale-105 hover:shadow-md transition-all duration-200 cursor-pointer"
+                  >
+                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#E1306C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                      <circle cx="12" cy="12" r="4" />
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                  </a>
+                  <div className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/tooltip:opacity-100 group-hover/tooltip:-top-9 transition-all duration-200 z-30 whitespace-nowrap">
+                    <span className="bg-[#121a4a] text-[#fbf6ea] text-[11px] font-sans font-semibold px-2 py-0.5 rounded shadow-lg border border-[#f5a800]/40 block">
+                      Instagram
+                    </span>
+                    <span className="w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-[#121a4a] block mx-auto -mt-[1px]" />
+                  </div>
+                </div>
+
+
+                {/* 5. LinkedIn */}
+                <div className="relative group/tooltip flex items-center justify-center">
+                  <a
+                    href="https://www.linkedin.com/company/baagulmarketing/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="LinkedIn"
+                    aria-label="Follow Baagul Marketing on LinkedIn"
+                    className="w-10 h-10 rounded-xl bg-white border border-black/5 shadow-sm flex items-center justify-center hover:scale-105 hover:shadow-md transition-all duration-200 cursor-pointer"
+                  >
+                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                    </svg>
+                  </a>
+                  <div className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/tooltip:opacity-100 group-hover/tooltip:-top-9 transition-all duration-200 z-30 whitespace-nowrap">
+                    <span className="bg-[#121a4a] text-[#fbf6ea] text-[11px] font-sans font-semibold px-2 py-0.5 rounded shadow-lg border border-[#f5a800]/40 block">
+                      LinkedIn
+                    </span>
+                    <span className="w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-[#121a4a] block mx-auto -mt-[1px]" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
