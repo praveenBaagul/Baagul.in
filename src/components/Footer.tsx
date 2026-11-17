@@ -236,33 +236,96 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Company Links (2 cols) */}
-          <div className="lg:col-span-2 flex flex-col">
-            <span className="font-bold text-[11px] tracking-[1.1px] uppercase text-[#f5a800] mb-4">
-              COMPANY
-            </span>
-            <ul className="flex flex-col gap-2.5 text-sm text-[#fbf6ea]/80 font-sans">
-              <li>
-                <Link href="/team" className="hover:text-[#f5a800] transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/seo-optimizations/client-success-stories" className="hover:text-[#f5a800] transition-colors">
-                  Case Studies
-                </Link>
-              </li>
-              <li>
-                <Link href="/career" className="hover:text-[#f5a800] transition-colors">
-                  Career
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-[#f5a800] transition-colors">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
+          {/* Column 3: Company & Resources Links (2 cols) */}
+          <div className="lg:col-span-2 flex flex-col gap-6">
+            <div>
+              <span className="font-bold text-[11px] tracking-[1.1px] uppercase text-[#f5a800] mb-3 block">
+                COMPANY
+              </span>
+              <ul className="flex flex-col gap-2 text-sm text-[#fbf6ea]/80 font-sans">
+                <li>
+                  <Link href="/team" className="hover:text-[#f5a800] transition-colors">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services/seo-optimizations/client-success-stories" className="hover:text-[#f5a800] transition-colors">
+                    Case Studies
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/career" className="hover:text-[#f5a800] transition-colors">
+                    Career
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="hover:text-[#f5a800] transition-colors">
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy-policy" className="hover:text-[#f5a800] transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-bold text-[11px] tracking-[1.1px] uppercase text-[#f5a800] mb-3 block">
+                RESOURCES
+              </span>
+              <ul className="flex flex-col gap-2 text-sm text-[#fbf6ea]/80 font-sans">
+                <li>
+                  <a
+                    href="/sitemap.xml"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#f5a800] transition-colors inline-flex items-center gap-1.5"
+                  >
+                    <span>Sitemap</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/llms.txt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#f5a800] transition-colors inline-flex items-center gap-1.5"
+                  >
+                    <span>LLMs</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/llms-full.txt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#f5a800] transition-colors inline-flex items-center gap-1.5"
+                  >
+                    <span>LLMs Full</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/ai.txt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#f5a800] transition-colors inline-flex items-center gap-1.5"
+                  >
+                    <span>AI</span>
+                  </a>
+                </li>
+                <li>
+                  <Link
+                    href="/mcp"
+                    className="hover:text-[#f5a800] transition-colors inline-flex items-center gap-1.5"
+                  >
+                    <span>MCP Server</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Column 4: Newsletter / Updates (3 cols) */}
