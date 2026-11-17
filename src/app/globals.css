@@ -80,3 +80,45 @@ body {
 .react-international-phone-input-container .react-international-phone-input { overflow: visible; height: var(--react-international-phone-height, 36px); box-sizing: border-box; padding: 0 8px; border: 1px solid var(--react-international-phone-border-color, gainsboro); border-radius: var(--react-international-phone-border-radius, 4px); margin: 0; background-color: var(--react-international-phone-background-color, white); border-bottom-left-radius: 0; border-top-left-radius: 0; color: var(--react-international-phone-text-color, #222); font-family: inherit; font-size: var(--react-international-phone-font-size, 13px); }
 .react-international-phone-input-container .react-international-phone-input:focus { outline: none; }
 .react-international-phone-input-container .react-international-phone-input--disabled { background-color: var(--react-international-phone-disabled-background-color, whitesmoke); color: var(--react-international-phone-disabled-text-color, #666); }
+
+/* Sparkle Shine Animation */
+@keyframes shine-sweep {
+  0%, 70% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+@keyframes sparkle-pop {
+  0%, 75% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  84% {
+    transform: scale(1.25) rotate(45deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.95));
+  }
+  92% {
+    transform: scale(0.9) rotate(90deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0) rotate(135deg);
+    opacity: 0;
+  }
+}
+
+.animate-shine-sweep {
+  animation: shine-sweep 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-sparkle-1 {
+  animation: sparkle-pop 4.5s ease-in-out infinite;
+}
+
+.animate-sparkle-2 {
+  animation: sparkle-pop 4.5s ease-in-out 0.2s infinite;
+}

@@ -44,7 +44,7 @@ export default function Header({ onNavClick }: HeaderProps) {
             </span>
             <span className="opacity-40">·</span>
             <span className="tracking-wide text-canvas/90">
-              Now booking projects for Q4 2026
+              Now Partnering With Ambitious Brands
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -63,13 +63,13 @@ export default function Header({ onNavClick }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-12 h-20 sm:h-24 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center group flex-shrink-0" aria-label="Baagul Home">
-          <div className="relative w-20 h-20 sm:w-28 sm:h-28 transition-transform duration-200 group-hover:scale-105">
+          <div className="relative w-[125px] h-[60px] sm:w-[150px] sm:h-[72px] md:w-[168px] md:h-[80px] lg:w-[180px] lg:h-[86px] transition-transform duration-200 group-hover:scale-105 origin-left">
             <Image
-              src="/assets/favicon.png"
+              src="/assets/baagul-brand-logo.png"
               alt="Baagul logo"
               fill
               priority
-              className="object-contain scale-110 sm:scale-120"
+              className="object-contain object-left"
             />
           </div>
         </Link>

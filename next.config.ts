@@ -53,6 +53,9 @@ const nextConfig: NextConfig = {
     ];
   },
   partialPrefetching: true,
+  experimental: {
+    agentUpgrade: "security",
+  },
 };
 
 export default nextConfig;

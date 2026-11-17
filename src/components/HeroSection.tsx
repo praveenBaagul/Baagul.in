@@ -139,19 +139,44 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Overlapping Marigold Badge */}
-            <div className="absolute -top-6 -left-6 sm:-left-8 -rotate-12 z-20">
-              <div className="w-28 h-28 rounded-2xl bg-marigold border-2 border-indigo-main shadow-[4px_4px_0px_#121a4a] flex flex-col items-center justify-center p-3 text-indigo-dark text-center select-none">
-                <span className="font-heading text-3xl font-extrabold leading-none tracking-tight">
+            {/* Overlapping Marigold Badge with Sparkle Shine Animation */}
+            <div className="absolute -top-6 -left-6 sm:-left-8 -rotate-12 z-20 group cursor-default">
+              <div className="relative w-28 h-28 rounded-2xl bg-marigold border-2 border-indigo-main shadow-[4px_4px_0px_#121a4a] flex flex-col items-center justify-center p-3 text-indigo-dark text-center select-none overflow-hidden transition-transform duration-200 group-hover:scale-105">
+                {/* Diagonal Glossy Shine Sweep Beam */}
+                <div 
+                  className="absolute inset-0 w-3/4 h-[250%] -top-[75%] bg-gradient-to-r from-transparent via-white/55 to-transparent pointer-events-none animate-shine-sweep" 
+                  aria-hidden="true"
+                />
+
+                {/* Content */}
+                <span className="font-heading text-3xl font-extrabold leading-none tracking-tight relative z-10">
                   6+
                 </span>
-                <span className="font-mono font-bold text-[11px] leading-tight tracking-wider uppercase mt-1.5 text-indigo-dark/95">
+                <span className="font-mono font-bold text-[11px] leading-tight tracking-wider uppercase mt-1.5 text-indigo-dark/95 relative z-10">
                   YEARS · EST.
                 </span>
-                <span className="font-mono font-bold text-[10px] leading-tight tracking-widest uppercase text-indigo-dark/85">
+                <span className="font-mono font-bold text-[10px] leading-tight tracking-widest uppercase text-indigo-dark/85 relative z-10">
                   BENGALURU
                 </span>
               </div>
+
+              {/* Sparkle Star 1 (Top-Right) */}
+              <svg 
+                className="absolute -top-2.5 -right-2.5 w-5 h-5 text-canvas-card fill-current animate-sparkle-1 pointer-events-none z-30 drop-shadow-[1px_1px_0px_#121a4a]"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+              </svg>
+
+              {/* Sparkle Star 2 (Bottom-Left) */}
+              <svg 
+                className="absolute -bottom-1 -left-2 w-4 h-4 text-canvas-card fill-current animate-sparkle-2 pointer-events-none z-30 drop-shadow-[1px_1px_0px_#121a4a]"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+              </svg>
             </div>
 
             {/* Hanging Metric Swatch Card */}
