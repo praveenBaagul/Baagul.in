@@ -10,11 +10,24 @@ export default function robots(): MetadataRoute.Robots {
   }
 
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-      disallow: ["/api/"],
-    },
+    rules: [
+      {
+        userAgent: "*",
+        allow: ["/", "/api/mcp"],
+        disallow: ["/api/subscribe"],
+      },
+      {
+        userAgent: [
+          "GPTBot",
+          "ClaudeBot",
+          "Google-Extended",
+          "PerplexityBot",
+          "Applebot-Extended",
+          "CCBot",
+        ],
+        allow: ["/", "/llms.txt", "/llms-full.txt", "/ai.txt", "/mcp", "/api/mcp"],
+      },
+    ],
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,
   };

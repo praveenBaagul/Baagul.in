@@ -1,0 +1,40 @@
+# Baagul LLP · Digital Marketing & Web Engineering Studio
+
+> High-performance digital marketing, full-funnel search engine optimization, modern Next.js web development, and digital growth systems engineered in Bengaluru, India.
+
+## Main Sections
+
+- [Homepage](https://baagul.in/): Overview of services, portfolio case studies, technical engineering stack, and studio capabilities.
+- [Services Hub](https://baagul.in/services): Directory of all 10 core agency services, technical deliverables, and engagement workflows.
+- [Team & About](https://baagul.in/team): Company philosophy, founding leadership, design systems, and engineering ethos.
+- [Case Studies](https://baagul.in/services/seo-optimizations/client-success-stories): Documented performance results, organic traffic metrics, and client implementations.
+- [Contact Us](https://baagul.in/contact): Project inquiries, consultation booking, office address, and direct communication channels.
+- [Careers](https://baagul.in/career): Open engineering, design, and growth positions at Baagul LLP.
+
+## Core Services
+
+- [Website Design & Development](https://baagul.in/services/web-design): High-speed Next.js, React, and TypeScript web applications with sub-second page loads and accessible semantic UI.
+- [SEO Optimization](https://baagul.in/services/seo-optimizations): Technical site health, semantic indexing, Core Web Vitals optimization, and organic search ranking authority.
+- [Logo Design & Visual Identity](https://baagul.in/services/logo-design): Comprehensive branding, typographic hierarchies, color geometry, and vector asset guidelines.
+- [Guest Posts & PR](https://baagul.in/services/guest-post): High-authority editorial placements, brand PR features, and contextual link profile architecture.
+- [Graphic Designing](https://baagul.in/services/graphics-design): Conversion-optimized creative assets, digital campaign collateral, and print marketing systems.
+- [E-Commerce Solutions](https://baagul.in/services/e-commerce-solutions): Headless commerce architectures, frictionless checkout flows, and catalog conversion optimization.
+- [WordPress & CMS Development](https://baagul.in/services/wordpress-development): Enterprise WordPress engineering, custom Gutenberg blocks, and secure headless CMS solutions.
+- [Paid Promotions & Media Buying](https://baagul.in/services/paid-promotions): High-ROAS Google Ads, Meta Ads, and programmatic acquisition campaigns driven by real-time analytics.
+- [Video Editing & Motion Graphics](https://baagul.in/services/video-editing): Dynamic promotional edits, social media video reels, and cinematic brand storytelling.
+- [App Development](https://baagul.in/services/app-development): Scalable cross-platform iOS and Android mobile applications built with React Native and modern APIs.
+
+## Studio Details
+
+- **Company Name**: Baagul LLP
+- **Headquarters**: 2nd Floor Hustlehub Tech Park, HSR Layout, Bengaluru, Karnataka 560102, India
+- **Email**: support@baagul.in
+- **Phone**: +91 7483737014
+- **Core Technologies**: Next.js (App Router), React, TypeScript, Tailwind CSS, Node.js, Python, Supabase, PostgreSQL, Shopify, WordPress
+
+## Machine-Readable Resources
+
+- [Full LLM Context](https://baagul.in/llms-full.txt): Complete detailed service specifications, tech stack, and studio documentation for AI systems.
+- [AI Discovery Document](https://baagul.in/ai.txt): Machine-readable metadata and crawler permissions.
+- [MCP Server](https://baagul.in/mcp): Model Context Protocol endpoint providing structured tools and discovery for AI agents.
+- [XML Sitemap](https://baagul.in/sitemap.xml): Complete URL index of all published studio pages.

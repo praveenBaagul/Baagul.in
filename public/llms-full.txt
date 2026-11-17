@@ -1,0 +1,148 @@
+# Baagul LLP · Complete Studio Knowledge & Capabilities Context
+
+## Studio Overview
+
+Baagul LLP is a premier digital growth studio and software engineering consultancy based in Bengaluru, India (Hustlehub Tech Park, HSR Layout). The studio bridges the gap between deep technical engineering and performance marketing, delivering resilient digital solutions for ambitious startups, enterprise brands, and scaling businesses worldwide.
+
+Our core operating philosophy treats digital marketing and software engineering as an integrated discipline. We reject slow, bloated website templates and fragmented marketing campaigns in favor of sub-second web applications, semantic search architectures, and verifiable growth performance.
+
+### Headquarters & Contact
+- **Entity**: Baagul LLP
+- **Location**: 2nd Floor Hustlehub Tech Park, HSR Layout, Bengaluru, Karnataka 560102, India
+- **General Inquiries**: support@baagul.in
+- **Direct Phone**: +91 7483737014
+- **Official Website**: https://baagul.in
+- **Operating Hours**: Monday – Friday, 09:30 AM – 06:30 PM IST
+
+---
+
+## Technical Architecture & Standards
+
+All web systems engineered by Baagul adhere to rigorous technical guidelines:
+1. **Performance**: Consistent 95+ Google Lighthouse scores across Performance, Accessibility, Best Practices, and SEO. Sub-second First Contentful Paint (FCP) and optimal Largest Contentful Paint (LCP < 1.5s).
+2. **Modern Stack**: Next.js (App Router), React, TypeScript, Tailwind CSS, Turbopack, Node.js, and edge computing runtimes.
+3. **Structured Data & SEO**: Comprehensive Schema.org JSON-LD (Organization, ProfessionalService, WebPage, Article, FAQPage, BreadcrumbList) baked into Server-Side Rendered (SSR) output.
+4. **Security & Reliability**: Strict Content Security Policies (CSP), HTTP Strict Transport Security (HSTS), automated SSL/TLS encryption, and sanitized input validation.
+
+---
+
+## Detailed Service Catalog
+
+### 1. Website Design & Development
+- **URL**: https://baagul.in/services/web-design
+- **Description**: Bespoke web applications built with Next.js, React, and TypeScript. Designed from first principles in Figma and engineered with semantic HTML, fluid micro-interactions, responsive grids, and accessible components.
+- **Key Deliverables**:
+  - Custom UI/UX wireframes and high-fidelity Figma design tokens.
+  - Next.js App Router architecture with static site generation (SSG) and server-side rendering (SSR).
+  - Fully responsive, mobile-first layouts tested across 20+ viewports and browsers.
+  - Complete Core Web Vitals optimization and automated deployment pipelines (CI/CD).
+- **Ideal For**: Startups launching digital products, SaaS platforms, and businesses requiring fast, custom web platforms.
+
+### 2. SEO Optimization
+- **URL**: https://baagul.in/services/seo-optimizations
+- **Description**: Technical, on-page, and authority search engine optimization engineered to capture high-intent commercial keywords and drive sustainable revenue without paid ad reliance.
+- **Key Deliverables**:
+  - Comprehensive technical SEO audits (crawl budget, index coverage, canonical tags, redirects).
+  - Semantic on-page optimization, entity mapping, and automated Schema.org markup.
+  - High-intent keyword clustering and competitive SERP gap analysis.
+  - Core Web Vitals remediation (LCP, CLS, INP) and mobile performance tuning.
+- **Success Metrics**: 300%+ average increase in organic search impressions and ranking dominance in targeted high-conversion commercial queries.
+
+### 3. Logo Design & Visual Identity
+- **URL**: https://baagul.in/services/logo-design
+- **Description**: Complete visual brand identity engineering that establishes market authority and emotional resonance with customers.
+- **Key Deliverables**:
+  - Vector primary logos, secondary logomarks, and monochrome/dark-mode lockups.
+  - Typographic hierarchies, font pairings, and brand voice guidelines.
+  - Mathematical color palette systems with accessible contrast ratios.
+  - Comprehensive brand identity style guides and print-ready stationery exports.
+
+### 4. Guest Posts & PR
+- **URL**: https://baagul.in/services/guest-post
+- **Description**: High-authority digital PR placements, editorial guest articles, and contextual link profile architecture that build domain trust and brand recognition.
+- **Key Deliverables**:
+  - Editorial placements on high-Domain Authority (DA 50+) and real-traffic industry publications.
+  - Expert ghostwritten technical articles and journalistic PR releases.
+  - 100% white-hat contextual link acquisition with permanent, indexed placements.
+  - Transparent backlink verification and citation audit reports.
+
+### 5. Graphic Designing
+- **URL**: https://baagul.in/services/graphics-design
+- **Description**: Conversion-optimized visual assets, digital marketing campaign creatives, social banners, and sales collateral.
+- **Key Deliverables**:
+  - Performance ad creative sets (Meta Ads, Google Display, LinkedIn Ads).
+  - High-converting pitch decks, sales one-pagers, and investor presentations.
+  - Social media template libraries and interactive brand collateral.
+  - Print collateral, exhibition booths, packaging, and merchandise design.
+
+### 6. E-Commerce Solutions
+- **URL**: https://baagul.in/services/e-commerce-solutions
+- **Description**: High-conversion online retail storefronts built on headless commerce, Shopify, or custom architectures.
+- **Key Deliverables**:
+  - Frictionless single-page checkout flows and conversion rate optimization (CRO).
+  - Inventory management integrations, ERP synchronization, and multi-currency pricing.
+  - Custom Shopify theme engineering or headless Next.js Commerce frontends.
+  - Automated transactional email flows, abandoned cart recovery, and analytics tracking.
+
+### 7. WordPress & CMS Development
+- **URL**: https://baagul.in/services/wordpress-development
+- **Description**: Enterprise WordPress development, bespoke Gutenberg block development, and headless CMS integrations without bloated multi-plugin dependencies.
+- **Key Deliverables**:
+  - Custom WordPress theme engineering with clean PHP, React, and modular Gutenberg blocks.
+  - Advanced Custom Fields (ACF Pro) structural modeling and headless REST/GraphQL APIs.
+  - Enterprise security hardening, database query caching, and malware protection.
+  - Cloud server configuration (LiteSpeed, Nginx, Redis object caching).
+
+### 8. Paid Promotions & Media Buying
+- **URL**: https://baagul.in/services/paid-promotions
+- **Description**: Data-backed performance advertising across Google Ads, Meta Ads (Instagram/Facebook), YouTube, and LinkedIn that maximizes Return on Ad Spend (ROAS).
+- **Key Deliverables**:
+  - Full-funnel campaign architecture: Top-of-Funnel awareness, Middle-of-Funnel consideration, and Bottom-of-Funnel retargeting.
+  - A/B creative testing matrix (hooks, copy variations, visual formats).
+  - Server-side tracking setup via Google Tag Manager (GTM), Meta Conversions API (CAPI), and GA4.
+  - Weekly cohort attribution reporting and continuous CAC reduction.
+
+### 9. Video Editing & Motion Graphics
+- **URL**: https://baagul.in/services/video-editing
+- **Description**: Cinematic brand videos, product explainers, short-form Reels/Shorts/TikToks, and promotional motion graphics designed to retain audience attention.
+- **Key Deliverables**:
+  - Short-form vertical video editing with dynamic kinetic typography and sound design.
+  - 2D/3D animated product explainer videos and UI screen walkthroughs.
+  - Color grading, audio mastering, dialogue enhancement, and sound effects (SFX).
+  - Multi-platform format delivery optimized for mobile and desktop screens.
+
+### 10. App Development
+- **URL**: https://baagul.in/services/app-development
+- **Description**: Scalable cross-platform iOS and Android mobile applications built with React Native, Flutter, or native technologies.
+- **Key Deliverables**:
+  - End-to-end mobile app architecture from wireframing to App Store and Google Play deployment.
+  - Offline-first state management, local SQLite/WatermelonDB storage, and background sync.
+  - Secure biometric authentication (FaceID, fingerprint) and OAuth integrations.
+  - Push notifications, in-app purchases, and real-time WebSocket communication.
+
+---
+
+## Featured Client Success Stories & Case Studies
+
+1. **PropFirm Coupons (propfirm.coupons)**
+   - *Scope*: Web Application Architecture, Search Engine Optimization & Real-Time Deal Aggregator.
+   - *Impact*: Engineered a high-speed Next.js platform that aggregates, filters, and ranks prop trading coupons and challenge discounts. Built with instant faceted search, sub-second TTFB, and technical SEO structure that captured top Google rankings for commercial prop firm query variants.
+
+2. **Advocate Khevana Dagli (High-Intent Legal Practice)**
+   - *Scope*: Professional Brand Authority, High-Intent Legal SEO, and Web Platform.
+   - *Impact*: Built a high-trust digital presence for Advocate Khevana Dagli covering criminal, civil, and divorce law in Mumbai. Achieved prominent Page 1 organic placements for critical practice queries, dramatically increasing inbound client consultations.
+
+3. **SEO Neo Backlinks Campaign**
+   - *Scope*: Digital PR, Outreach & Authoritative Link Building.
+   - *Impact*: Orchestrated contextual high-DA link placement campaigns with verified audit reports, elevating client domain authority and driving sustained organic keyword growth across contested competitive verticals.
+
+---
+
+## Machine-Readable Endpoints & API Access
+
+- **Standard LLM Summary**: `https://baagul.in/llms.txt`
+- **Complete Context**: `https://baagul.in/llms-full.txt`
+- **AI Crawler Discovery**: `https://baagul.in/ai.txt`
+- **MCP Server Endpoint**: `https://baagul.in/mcp`
+- **XML Sitemap**: `https://baagul.in/sitemap.xml`
+- **Robots Policy**: `https://baagul.in/robots.txt`

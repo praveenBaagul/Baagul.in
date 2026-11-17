@@ -1,0 +1,50 @@
+# AI Discovery Document for baagul.in
+# https://baagul.in/ai.txt
+
+name: Baagul LLP
+url: https://baagul.in
+description: Architectural digital marketing, search engine optimization authority systems, bespoke Next.js web applications, and full-stack performance growth engineering.
+contact: support@baagul.in
+location: 2nd Floor Hustlehub Tech Park, HSR Layout, Bengaluru, Karnataka 560102, India
+last_updated: 2026-11-17
+
+topics:
+  - digital marketing studio
+  - search engine optimization
+  - technical seo audits
+  - website design and development
+  - nextjs and react web applications
+  - brand identity and logo design
+  - guest posts and digital pr
+  - e-commerce engineering
+  - wordpress and cms development
+  - paid advertising and media buying
+  - video editing and motion graphics
+  - mobile app development
+
+resources:
+  homepage: https://baagul.in/
+  services: https://baagul.in/services
+  team: https://baagul.in/team
+  case_studies: https://baagul.in/services/seo-optimizations/client-success-stories
+  careers: https://baagul.in/career
+  contact: https://baagul.in/contact
+
+services:
+  web_design: https://baagul.in/services/web-design
+  seo_optimizations: https://baagul.in/services/seo-optimizations
+  logo_design: https://baagul.in/services/logo-design
+  guest_post: https://baagul.in/services/guest-post
+  graphics_design: https://baagul.in/services/graphics-design
+  ecommerce_solutions: https://baagul.in/services/e-commerce-solutions
+  wordpress_development: https://baagul.in/services/wordpress-development
+  paid_promotions: https://baagul.in/services/paid-promotions
+  video_editing: https://baagul.in/services/video-editing
+  app_development: https://baagul.in/services/app-development
+
+ai_discovery:
+  llms_txt: https://baagul.in/llms.txt
+  llms_full_txt: https://baagul.in/llms-full.txt
+  mcp_server: https://baagul.in/mcp
+  sitemap: https://baagul.in/sitemap.xml
+  robots: https://baagul.in/robots.txt

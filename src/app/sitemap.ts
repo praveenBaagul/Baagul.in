@@ -46,8 +46,13 @@ function defaults(route: string) {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = collectRoutes(APP_DIR)
-    .filter((route) => !SITEMAP_EXCLUDE.includes(route))
-    .sort();
+    .filter((route) => !SITEMAP_EXCLUDE.includes(route));
+
+  if (!routes.includes("/mcp")) {
+    routes.push("/mcp");
+  }
+
+  routes.sort();
 
   return routes.map((route) => ({
     url: route === "/" ? SITE_URL : `${SITE_URL}${route}`,
