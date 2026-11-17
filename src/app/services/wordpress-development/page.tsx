@@ -15,10 +15,21 @@ import WordPressServicePager from "@/components/wordpress-development/WordPressS
 import WordPressSpecMatrix from "@/components/wordpress-development/WordPressSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "WordPress Development · Baagul Studio Bengaluru",
+  title: "WordPress & Headless CMS Development | Baagul Bengaluru",
   description:
-    "Enterprise headless WordPress architectures, bespoke Gutenberg block themes, and high-performance WooCommerce storefronts that pass Core Web Vitals with 99+ PageSpeed scores.",
+    "Enterprise headless WordPress architectures, bespoke Gutenberg block themes, and high-performance WooCommerce storefronts.",
   alternates: { canonical: "/services/wordpress-development" },
+  openGraph: {
+    title: "WordPress & Headless CMS Development | Baagul Bengaluru",
+    description:
+      "Enterprise headless WordPress architectures, bespoke Gutenberg block themes, and high-performance WooCommerce storefronts.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WordPress & Headless CMS Development | Baagul Bengaluru",
+    description:
+      "Enterprise headless WordPress architectures, bespoke Gutenberg block themes, and high-performance WooCommerce storefronts.",
+  },
 };
 
 export default function WordPressDevelopmentPage() {

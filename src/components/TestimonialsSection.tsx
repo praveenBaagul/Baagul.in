@@ -88,9 +88,9 @@ export default function TestimonialsSection() {
               {/* Author & Signature */}
               <div className="pt-4 border-t border-indigo-main/15 flex items-center justify-between">
                 <div>
-                  <h4 className="font-sans font-bold text-sm text-indigo-main">
+                  <h3 className="font-sans font-bold text-sm text-indigo-main">
                     {item.author}
-                  </h4>
+                  </h3>
                   <p className="text-xs text-slate-text">
                     {item.title}, <span className="font-semibold text-indigo-main">{item.company}</span>
                   </p>

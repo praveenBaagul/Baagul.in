@@ -189,6 +189,7 @@ export default function ServicesCardsGrid() {
                   <Image
                     src={card.imgSrc}
                     alt={card.imgAlt}
+                    title={card.imgAlt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />

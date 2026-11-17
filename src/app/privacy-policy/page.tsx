@@ -5,10 +5,21 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy · Baagul Marketing LLP",
+  title: "Privacy Policy & Data Protection | Baagul Marketing LLP",
   description:
-    "Privacy policy and data governance practices of Baagul Marketing LLP, HSR Layout, Bengaluru. Learn how we handle, process, and protect your information.",
+    "Privacy policy and data governance practices of Baagul Marketing LLP in Bengaluru. Learn how we collect, use, and protect your data.",
   alternates: { canonical: "/privacy-policy" },
+  openGraph: {
+    title: "Privacy Policy & Data Protection | Baagul Marketing LLP",
+    description:
+      "Privacy policy and data governance practices of Baagul Marketing LLP in Bengaluru. Learn how we collect, use, and protect your data.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy & Data Protection | Baagul Marketing LLP",
+    description:
+      "Privacy policy and data governance practices of Baagul Marketing LLP in Bengaluru. Learn how we collect, use, and protect your data.",
+  },
 };
 
 export default function PrivacyPolicyPage() {

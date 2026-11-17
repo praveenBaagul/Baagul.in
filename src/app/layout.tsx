@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Hanken_Grotesk, Gloock, Noto_Serif_Kannada } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site";
@@ -45,10 +46,23 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/manifest.webmanifest",
-  openGraph: { type: "website", siteName: "Baagul", locale: "en_IN" },
-  twitter: { card: "summary_large_image" },
-  title: "Baagul · Digital growth, made in Bengaluru",
-  description: "SEO, websites, Google and Meta ads and branding for high-growth startups, local businesses, and modern enterprises. Six years of craftsmanship, strictly measured in qualified leads and bottom-line revenue.",
+  alternates: {
+    canonical: "/",
+  },
+  title: "Digital Marketing, SEO & Web Studio in Bengaluru | Baagul",
+  description: "Digital marketing, SEO, web design & growth marketing in Bengaluru. Measurable leads and revenue for startups and growing enterprises.",
+  openGraph: {
+    type: "website",
+    siteName: "Baagul",
+    locale: "en_IN",
+    title: "Digital Marketing, SEO & Web Studio in Bengaluru | Baagul",
+    description: "Digital marketing, SEO, web design & growth marketing in Bengaluru. Measurable leads and revenue for startups and growing enterprises.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Marketing, SEO & Web Studio in Bengaluru | Baagul",
+    description: "Digital marketing, SEO, web design & growth marketing in Bengaluru. Measurable leads and revenue for startups and growing enterprises.",
+  },
 };
 
 export default function RootLayout({
@@ -56,9 +70,31 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
   return (
     <html lang="en" className={`${hanken.variable} ${gloock.variable} ${notoKannada.variable}`}>
       <body className="antialiased selection:bg-marigold selection:text-indigo-main">
+        {gaId && (
+          <>
+            <Script
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+            />
+            <Script
+              id="google-analytics"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${gaId}');
+                `,
+              }}
+            />
+          </>
+        )}
         {children}
         <WhatsAppChatWidget />
       </body>

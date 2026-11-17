@@ -16,6 +16,7 @@ export default function StorySection() {
               <Image
                 src="/assets/22109.png"
                 alt="Baagul founders and team reviewing strategy papers"
+                title="Baagul founders and team reviewing strategy papers"
                 fill
                 className="object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-300"
               />

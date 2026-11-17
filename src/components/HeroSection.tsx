@@ -52,7 +52,8 @@ export default function HeroSection() {
               <div className="w-6 h-6 rounded bg-indigo-deep border border-indigo-main/40 flex items-center justify-center p-1 group-hover:translate-x-0.5 transition-transform">
                 <Image
                   src="/assets/e2143.svg"
-                  alt=""
+                  alt="Arrow icon"
+                  title="Arrow icon"
                   width={14}
                   height={14}
                   className="object-contain"
@@ -124,6 +125,7 @@ export default function HeroSection() {
                 <Image
                   src="/assets/7ad54.png"
                   alt="Baagul team collaborating in workspace under natural light"
+                  title="Baagul team collaborating in workspace under natural light"
                   fill
                   priority
                   className="object-cover"

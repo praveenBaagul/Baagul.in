@@ -11,10 +11,21 @@ import SeoWhyChooseTeam from "@/components/seo-success/SeoWhyChooseTeam";
 import SeoSuccessCTA from "@/components/seo-success/SeoSuccessCTA";
 
 export const metadata: Metadata = {
-  title: "SEO Client Success Stories • Real Google Search Results | Baagul Studio",
+  title: "SEO Case Studies & Verified Client Results | Baagul Studio",
   description:
-    "Explore real SEO client success stories and verified Google Search visibility from Baagul Studio. Discover how we help businesses get discovered, attract organic customers, and dominate search rankings.",
+    "Real SEO case studies and verified Google ranking results. Discover how Baagul helps businesses scale qualified organic traffic.",
   alternates: { canonical: "/services/seo-optimizations/client-success-stories" },
+  openGraph: {
+    title: "SEO Case Studies & Verified Client Results | Baagul Studio",
+    description:
+      "Real SEO case studies and verified Google ranking results. Discover how Baagul helps businesses scale qualified organic traffic.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEO Case Studies & Verified Client Results | Baagul Studio",
+    description:
+      "Real SEO case studies and verified Google ranking results. Discover how Baagul helps businesses scale qualified organic traffic.",
+  },
 };
 
 export default function SeoClientSuccessStoriesPage() {

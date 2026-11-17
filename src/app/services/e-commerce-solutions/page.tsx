@@ -15,9 +15,21 @@ import EcommerceServicePager from "@/components/e-commerce/EcommerceServicePager
 import EcommerceSpecMatrix from "@/components/e-commerce/EcommerceSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "E-Commerce Solutions · Baagul Studio Bengaluru",
-  description: "Building secure, scalable, and high-performing online stores that convert. Custom online store development, secure payment integration, and conversion-focused design.",
+  title: "E-Commerce Solutions & Store Development | Baagul Studio",
+  description:
+    "High-converting online store engineering, custom checkout flows, payment gateway integrations, and headless commerce architectures.",
   alternates: { canonical: "/services/e-commerce-solutions" },
+  openGraph: {
+    title: "E-Commerce Solutions & Store Development | Baagul Studio",
+    description:
+      "High-converting online store engineering, custom checkout flows, payment gateway integrations, and headless commerce architectures.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "E-Commerce Solutions & Store Development | Baagul Studio",
+    description:
+      "High-converting online store engineering, custom checkout flows, payment gateway integrations, and headless commerce architectures.",
+  },
 };
 
 export default function EcommerceSolutionsPage() {

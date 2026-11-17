@@ -95,6 +95,7 @@ export default function TeamSection() {
               <Image
                 src={member.imgSrc}
                 alt={member.name}
+                title={member.name}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
               />

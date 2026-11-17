@@ -8,10 +8,21 @@ import CareerContactBand from "@/components/career/CareerContactBand";
 import CareerSpecMatrix from "@/components/career/CareerSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Career & Current Openings · Baagul Marketing LLP",
+  title: "Careers & Job Openings in Bengaluru | Baagul Marketing LLP",
   description:
-    "BAAGUL LLP is hiring a full-time UI/UX Designer in Bengaluru, as well as freelance Video Editors and Content Writers. Build your career with our design and digital marketing studio.",
+    "Join Baagul Marketing LLP in Bengaluru. Explore open career opportunities in UI/UX design, performance marketing, and development.",
   alternates: { canonical: "/career" },
+  openGraph: {
+    title: "Careers & Job Openings in Bengaluru | Baagul Marketing LLP",
+    description:
+      "Join Baagul Marketing LLP in Bengaluru. Explore open career opportunities in UI/UX design, performance marketing, and development.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Careers & Job Openings in Bengaluru | Baagul Marketing LLP",
+    description:
+      "Join Baagul Marketing LLP in Bengaluru. Explore open career opportunities in UI/UX design, performance marketing, and development.",
+  },
 };
 
 export default function CareerPage() {

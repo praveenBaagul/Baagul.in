@@ -7,10 +7,21 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Our Team & Practitioners · Baagul Marketing LLP",
+  title: "Our Leadership & Growth Specialists | Baagul Marketing LLP",
   description:
-    "Meet the senior practitioners behind Baagul Marketing LLP in HSR Layout, Bengaluru. High-performance SEO specialists, growth engineers, media buyers, and brand craft directors.",
+    "Meet the senior practitioners behind Baagul in Bengaluru. SEO specialists, growth engineers, media buyers, and brand directors.",
   alternates: { canonical: "/team" },
+  openGraph: {
+    title: "Our Leadership & Growth Specialists | Baagul Marketing LLP",
+    description:
+      "Meet the senior practitioners behind Baagul in Bengaluru. SEO specialists, growth engineers, media buyers, and brand directors.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Leadership & Growth Specialists | Baagul Marketing LLP",
+    description:
+      "Meet the senior practitioners behind Baagul in Bengaluru. SEO specialists, growth engineers, media buyers, and brand directors.",
+  },
 };
 
 const workingPrinciples = [

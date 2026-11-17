@@ -69,6 +69,7 @@ export default function WhatsAppChatWidget() {
                   <Image
                     src="/assets/favicon.png"
                     alt="Baagul brand logo"
+                    title="Baagul brand logo"
                     width={40}
                     height={40}
                     className="w-full h-full object-cover"
@@ -128,6 +129,7 @@ export default function WhatsAppChatWidget() {
                 <Image
                   src="/assets/favicon.png"
                   alt="Baagul brand logo"
+                  title="Baagul brand logo"
                   width={28}
                   height={28}
                   className="w-full h-full object-cover"

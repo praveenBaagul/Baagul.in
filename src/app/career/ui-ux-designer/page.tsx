@@ -6,10 +6,21 @@ import Footer from "@/components/Footer";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "We're Hiring – UI/UX Designer · BAAGUL LLP Bengaluru",
+  title: "UI/UX Designer Job Opening in Bengaluru | Baagul Studio",
   description:
-    "BAAGUL LLP is hiring a full-time UI/UX Designer in Bengaluru (Work From Office). Design modern websites, mobile apps, wireframes, and design systems. Freshers with strong real-world project portfolios and experienced designers may apply.",
+    "Full-time UI/UX Designer role in Bengaluru. Design modern responsive websites, apps, and design systems for high-growth brands.",
   alternates: { canonical: "/career/ui-ux-designer" },
+  openGraph: {
+    title: "UI/UX Designer Job Opening in Bengaluru | Baagul Studio",
+    description:
+      "Full-time UI/UX Designer role in Bengaluru. Design modern responsive websites, apps, and design systems for high-growth brands.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UI/UX Designer Job Opening in Bengaluru | Baagul Studio",
+    description:
+      "Full-time UI/UX Designer role in Bengaluru. Design modern responsive websites, apps, and design systems for high-growth brands.",
+  },
 };
 
 const jobPostingSchema = {
@@ -24,7 +35,7 @@ const jobPostingSchema = {
     "@type": "Organization",
     name: "BAAGUL LLP",
     sameAs: "https://baagul.in",
-    logo: "https://baagul.in/assets/favicon.png",
+    logo: "https://baagul.in/assets/baagul-brand-logo.png",
   },
   jobLocation: {
     "@type": "Place",

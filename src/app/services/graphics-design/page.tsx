@@ -13,10 +13,21 @@ import GraphicsDesignBannerAndPager from "@/components/graphics-design/GraphicsD
 import GraphicsDesignSpecMatrix from "@/components/graphics-design/GraphicsDesignSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Graphics Design · Baagul Studio Bengaluru",
+  title: "Graphic Design & Creative Brand Studio in Bengaluru | Baagul",
   description:
-    "Bespoke marketing graphics, promotional collateral, custom brand assets, and high-converting visual systems engineered for businesses in Bengaluru and worldwide.",
+    "Bespoke marketing graphics, promotional collateral, custom brand assets, and high-converting visual systems engineered in Bengaluru.",
   alternates: { canonical: "/services/graphics-design" },
+  openGraph: {
+    title: "Graphic Design & Creative Brand Studio in Bengaluru | Baagul",
+    description:
+      "Bespoke marketing graphics, promotional collateral, custom brand assets, and high-converting visual systems engineered in Bengaluru.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Graphic Design & Creative Brand Studio in Bengaluru | Baagul",
+    description:
+      "Bespoke marketing graphics, promotional collateral, custom brand assets, and high-converting visual systems engineered in Bengaluru.",
+  },
 };
 
 export default function GraphicsDesignPage() {

@@ -123,6 +123,7 @@ export default function CaseStudiesSection() {
                     <Image
                       src={item.imgSrc}
                       alt={item.imgAlt}
+                      title={item.imgAlt}
                       fill
                       className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     />

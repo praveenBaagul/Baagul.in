@@ -14,10 +14,21 @@ import SeoServicePager from "@/components/seo-optimization/SeoServicePager";
 import SeoSpecMatrix from "@/components/seo-optimization/SeoSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "SEO Optimization · Baagul Studio Bengaluru",
+  title: "SEO Optimization & Search Growth in Bengaluru | Baagul",
   description:
-    "All-in-one organic search architecture that converts impressions into high-margin paying clients. Technical site health, semantic indexing, Core Web Vitals, and keyword dominance. Bengaluru engineered.",
+    "Organic search architecture that converts impressions into paying clients. Technical SEO, semantic indexing, and keyword dominance.",
   alternates: { canonical: "/services/seo-optimizations" },
+  openGraph: {
+    title: "SEO Optimization & Search Growth in Bengaluru | Baagul",
+    description:
+      "Organic search architecture that converts impressions into paying clients. Technical SEO, semantic indexing, and keyword dominance.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEO Optimization & Search Growth in Bengaluru | Baagul",
+    description:
+      "Organic search architecture that converts impressions into paying clients. Technical SEO, semantic indexing, and keyword dominance.",
+  },
 };
 
 export default function SeoOptimizationPage() {

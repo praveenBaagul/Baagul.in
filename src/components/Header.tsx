@@ -67,6 +67,7 @@ export default function Header({ onNavClick }: HeaderProps) {
             <Image
               src="/assets/baagul-brand-logo.png"
               alt="Baagul logo"
+              title="Baagul logo"
               fill
               priority
               className="object-contain object-left"

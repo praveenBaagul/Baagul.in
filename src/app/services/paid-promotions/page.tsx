@@ -12,10 +12,21 @@ import PaidPromotionCTABanner from "@/components/paid-promotions/PaidPromotionCT
 // import PaidPromotionSpecMatrix from "@/components/paid-promotions/PaidPromotionSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Paid Promotion Services · Baagul Studio Bengaluru",
+  title: "Paid Promotions & Performance Media Buying | Baagul Studio",
   description:
-    "Elevate your brand's visibility and impact. High-ROI video content sponsorships, product promotion, and transparent creator reviews that connect your business with recurring buyers.",
+    "Data-driven Google Ads, Meta PPC, and performance media buying campaigns engineered for maximum return on ad spend (ROAS).",
   alternates: { canonical: "/services/paid-promotions" },
+  openGraph: {
+    title: "Paid Promotions & Performance Media Buying | Baagul Studio",
+    description:
+      "Data-driven Google Ads, Meta PPC, and performance media buying campaigns engineered for maximum return on ad spend (ROAS).",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Paid Promotions & Performance Media Buying | Baagul Studio",
+    description:
+      "Data-driven Google Ads, Meta PPC, and performance media buying campaigns engineered for maximum return on ad spend (ROAS).",
+  },
 };
 
 export default function PaidPromotionPage() {

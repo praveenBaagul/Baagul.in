@@ -1,6 +1,6 @@
 // Single source of truth for the public site URL.
 // Set NEXT_PUBLIC_SITE_URL in the hosting env if the domain ever changes.
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.baagul.in").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://baagul.in").replace(/\/$/, "");
 
 // Routes that exist as pages but must NOT appear in the sitemap
 // (thank-you pages, internal tools, drafts...). Redirect-only pages are

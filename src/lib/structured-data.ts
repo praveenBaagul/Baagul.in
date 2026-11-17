@@ -9,7 +9,7 @@ export const BUSINESS = {
   name: "Baagul",
   email: "support@baagul.in",
   telephone: "+91-7483737014",
-  logo: `${SITE_URL}/assets/favicon.png`,
+  logo: `${SITE_URL}/assets/baagul-brand-logo.png`,
   address: {
     streetAddress: "2nd Floor, Hustlehub Tech Park, HSR Layout",
     addressLocality: "Bengaluru",

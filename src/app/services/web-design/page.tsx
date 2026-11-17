@@ -18,8 +18,19 @@ import WebDesignSpecMatrix from "@/components/web-design/WebDesignSpecMatrix";
 export const metadata: Metadata = {
   title: "Website Design & Development · Baagul Studio Bengaluru",
   description:
-    "Pixel-perfect Next.js, React, and TypeScript web applications engineered with fluid micro-interactions, accessible semantic structures, and sub-second loading speeds.",
+    "Pixel-perfect Next.js & React web applications with fluid interactions, accessible semantic code, and sub-second loading speeds.",
   alternates: { canonical: "/services/web-design" },
+  openGraph: {
+    title: "Website Design & Development · Baagul Studio Bengaluru",
+    description:
+      "Pixel-perfect Next.js & React web applications with fluid interactions, accessible semantic code, and sub-second loading speeds.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Website Design & Development · Baagul Studio Bengaluru",
+    description:
+      "Pixel-perfect Next.js & React web applications with fluid interactions, accessible semantic code, and sub-second loading speeds.",
+  },
 };
 
 export default function WebDesignPage() {

@@ -13,10 +13,21 @@ import AppDevelopmentServicePager from "@/components/app-development/AppDevelopm
 // import AppDevelopmentSpecMatrix from "@/components/app-development/AppDevelopmentSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "App Development Services · iOS, Android & Flutter Studio Bengaluru",
+  title: "Mobile App Development Studio in Bengaluru | Baagul",
   description:
-    "Flagship mobile app development for iOS, Android, Flutter, and React Native. High-performance native engineering, 60 FPS interfaces, and offline-first architectures.",
+    "Custom iOS, Android, Flutter, and React Native mobile app development. High-performance native engineering and 60 FPS interfaces.",
   alternates: { canonical: "/services/app-development" },
+  openGraph: {
+    title: "Mobile App Development Studio in Bengaluru | Baagul",
+    description:
+      "Custom iOS, Android, Flutter, and React Native mobile app development. High-performance native engineering and 60 FPS interfaces.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mobile App Development Studio in Bengaluru | Baagul",
+    description:
+      "Custom iOS, Android, Flutter, and React Native mobile app development. High-performance native engineering and 60 FPS interfaces.",
+  },
 };
 
 export default function AppDevelopmentPage() {

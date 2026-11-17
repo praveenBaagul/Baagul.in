@@ -8,9 +8,18 @@ import CraftsmanStandardsBand from "@/components/services/CraftsmanStandardsBand
 import ServicesCTABand from "@/components/services/ServicesCTABand";
 
 export const metadata: Metadata = {
-  title: "Our Services · Baagul Studio Bengaluru",
-  description: "Explore Baagul Studio's comprehensive suite of digital marketing solutions, website design & development, SEO optimization, and e-commerce architectures.",
+  title: "Digital Marketing & Web Services in Bengaluru | Baagul",
+  description: "Explore Baagul Studio's digital marketing, web design, SEO optimization, and e-commerce growth architectures in Bengaluru.",
   alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Digital Marketing & Web Services in Bengaluru | Baagul",
+    description: "Explore Baagul Studio's digital marketing, web design, SEO optimization, and e-commerce growth architectures in Bengaluru.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Marketing & Web Services in Bengaluru | Baagul",
+    description: "Explore Baagul Studio's digital marketing, web design, SEO optimization, and e-commerce growth architectures in Bengaluru.",
+  },
 };
 
 export default function ServicesPage() {
