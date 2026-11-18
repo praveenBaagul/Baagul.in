@@ -242,7 +242,7 @@ export const TEMPLATE_VARIABLES: { key: string; fallbackValue: string }[] = [
   { key: "SERVICE_URL", fallbackValue: "https://www.baagul.in/services" },
   { key: "COMPANY_NAME", fallbackValue: "Baagul" },
   { key: "COMPANY_WEBSITE_URL", fallbackValue: "https://www.baagul.in" },
-  { key: "COMPANY_PHONE", fallbackValue: "+91 7483737014" },
+  { key: "COMPANY_PHONE", fallbackValue: "+91 62056 97634" },
   { key: "COMPANY_ADDRESS", fallbackValue: "Bengaluru" },
   { key: "REPLY_EMAIL", fallbackValue: "support@baagul.in" },
 ];

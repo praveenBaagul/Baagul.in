@@ -74,13 +74,13 @@ export default function CTASection() {
   return (
     <section id="contact" className="w-full py-24 px-4 sm:px-12 bg-indigo-main text-canvas relative overflow-hidden border-t-2 border-indigo-main">
       {/* Bidri decorative SVG backdrop overlay */}
-      <div 
-        className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#dadff4_1px,transparent_1px)] [background-size:24px_24px]" 
-        aria-hidden="true" 
+      <div
+        className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#dadff4_1px,transparent_1px)] [background-size:24px_24px]"
+        aria-hidden="true"
       />
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10 items-center">
-        
+
         {/* Left Column: Action Prompt */}
         <div className="lg:col-span-7 flex flex-col items-start">
           <div className="flex items-center gap-2 mb-4">
@@ -97,7 +97,7 @@ export default function CTASection() {
           </h2>
 
           <p className="font-sans text-base sm:text-lg text-canvas/80 max-w-xl leading-relaxed mb-8">
-            Whether you need a ground-up technical SEO migration, paid acquisition scaling, or 
+            Whether you need a ground-up technical SEO migration, paid acquisition scaling, or
             a pixel-perfect web application that converts, our studio team is ready.
           </p>
 
@@ -112,10 +112,10 @@ export default function CTASection() {
             </a>
 
             <a
-              href="tel:+917483737014"
+              href="tel:+916205697634"
               className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-indigo-mid text-canvas font-semibold text-sm border border-canvas/40 hover:bg-indigo-mid/80 transition-colors"
             >
-              +91 7483737014
+              +91 62056 97634
             </a>
           </div>
 
@@ -123,21 +123,21 @@ export default function CTASection() {
           <div className="pt-6 border-t border-canvas/20 grid grid-cols-2 sm:grid-cols-3 gap-6 text-xs text-canvas/70">
             <div>
               <span className="font-bold text-canvas block mb-1">STUDIO LOCATION</span>
-              Sector 4, HSR Layout,
+              2nd Floor , H210 , Hustlehub Tech Park, 36/5, Somasundarapalya, 27th Main Rd, Sector 2, HSR Layout
               <br />
-              Bengaluru, KA 560102
+              Bengaluru, Karnataka 560102
             </div>
             <div>
               <span className="font-bold text-canvas block mb-1">DIRECT INQUIRIES</span>
               support@baagul.in
               <br />
-              Mon - Fri, 9:30 - 18:30 IST
+              Mon - Sat, 9:30 - 18:30 IST
             </div>
             <div>
               <span className="font-bold text-canvas block mb-1">TIMEZONE</span>
               UTC+05:30 (IST)
               <br />
-              Active in Studio now
+              Team Online
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function CTASection() {
         {/* Right Column: Newsletter Inlay Box "The Growth Letter" */}
         <div className="lg:col-span-5">
           <div className="p-8 bg-indigo-navy border-2 border-canvas/30 rounded-2xl shadow-[8px_8px_0px_#021064] relative">
-            
+
             {/* Kannada Supra-title */}
             <div className="flex items-center justify-between mb-4 pb-3 border-b border-canvas/15">
               <span className="font-kannada text-xs font-bold text-marigold">
@@ -161,7 +161,7 @@ export default function CTASection() {
             </h3>
 
             <p className="font-sans text-xs sm:text-sm text-canvas/80 leading-relaxed mb-6">
-              Deconstructions of Indian digital consumer behavior, paid search algorithm shifts, 
+              Deconstructions of Indian digital consumer behavior, paid search algorithm shifts,
               and craft web design directly from our studio desks. Read by 12,000+ operators.
             </p>
 
@@ -186,7 +186,7 @@ export default function CTASection() {
             ) : (
               <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-3">
                 <label htmlFor="cta-email" className="sr-only">Company Email Address</label>
-                
+
                 {serverError && (
                   <p className="text-xs text-red-300 font-mono bg-red-950/60 p-2.5 rounded-lg border border-red-500/50">
                     ⚠ {serverError}
@@ -201,20 +201,18 @@ export default function CTASection() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     placeholder="Enter company email..."
-                    className={`flex-1 px-4 py-3 rounded-xl bg-canvas text-indigo-main font-sans text-sm focus:outline-none transition-all ${
-                      emailError
-                        ? "border-2 border-red-500 ring-2 ring-red-400/50"
-                        : "border border-canvas/40 focus:ring-2 focus:ring-marigold"
-                    }`}
+                    className={`flex-1 px-4 py-3 rounded-xl bg-canvas text-indigo-main font-sans text-sm focus:outline-none transition-all ${emailError
+                      ? "border-2 border-red-500 ring-2 ring-red-400/50"
+                      : "border border-canvas/40 focus:ring-2 focus:ring-marigold"
+                      }`}
                   />
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`px-5 py-3 rounded-xl bg-marigold text-indigo-dark font-bold text-xs uppercase tracking-wider border border-indigo-main transition-all shrink-0 flex items-center justify-center gap-2 ${
-                      isSubmitting
-                        ? "opacity-75 cursor-not-allowed"
-                        : "hover:bg-marigold-light hover:translate-x-0.5 hover:translate-y-0.5 cursor-pointer shadow-[2px_2px_0px_#f8f2e4]"
-                    }`}
+                    className={`px-5 py-3 rounded-xl bg-marigold text-indigo-dark font-bold text-xs uppercase tracking-wider border border-indigo-main transition-all shrink-0 flex items-center justify-center gap-2 ${isSubmitting
+                      ? "opacity-75 cursor-not-allowed"
+                      : "hover:bg-marigold-light hover:translate-x-0.5 hover:translate-y-0.5 cursor-pointer shadow-[2px_2px_0px_#f8f2e4]"
+                      }`}
                   >
                     {isSubmitting ? (
                       <>

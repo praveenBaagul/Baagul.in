@@ -97,7 +97,7 @@ const STUDIO_INFO = {
   tagline: "Architectural Digital Marketing & Web Engineering Studio",
   headquarters: "2nd Floor Hustlehub Tech Park, HSR Layout, Bengaluru, Karnataka 560102, India",
   email: "support@baagul.in",
-  phone: "+91 7483737014",
+  phone: "+91 62056 97634",
   website: SITE_URL,
   operating_hours: "Monday - Friday, 09:30 AM - 06:30 PM IST",
 };

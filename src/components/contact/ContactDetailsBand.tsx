@@ -4,7 +4,7 @@ export default function ContactDetailsBand() {
   return (
     <section className="w-full bg-[#0e7a63] text-canvas border-y-2 border-indigo-main py-12 px-4 sm:px-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 divide-y md:divide-y-0 md:divide-x divide-canvas/20">
-        
+
         {/* Column 1: Email Desk */}
         <div className="flex flex-col items-start pt-4 md:pt-0">
           <div className="flex items-center gap-2 mb-2 text-xs font-mono uppercase tracking-wider text-marigold">
@@ -27,12 +27,12 @@ export default function ContactDetailsBand() {
             <span>📍 VISIT US</span>
           </div>
           <p className="font-heading text-xl sm:text-2xl text-canvas leading-snug">
-            2nd Floor Hustlehub Tech Park,
+            2nd Floor, H210, Hustlehub Tech Park,
             <br />
-            HSR Layout, Bengaluru, KA 560102
+            36/5, Somasundarapalya, 27th Main Rd, Sector 2, HSR Layout, Bengaluru, Karnataka 560102
           </p>
           <span className="text-xs text-canvas/75 mt-2">
-            Studio visits by prior appointment
+            Office Visits by Appointment Only
           </span>
         </div>
 

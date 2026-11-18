@@ -8,7 +8,7 @@ const ORG_ID = `${SITE_URL}/#organization`;
 export const BUSINESS = {
   name: "Baagul",
   email: "support@baagul.in",
-  telephone: "+91-7483737014",
+  telephone: "+91-62056-97634",
   logo: `${SITE_URL}/assets/baagul-brand-logo.png`,
   address: {
     streetAddress: "2nd Floor, Hustlehub Tech Park, HSR Layout",

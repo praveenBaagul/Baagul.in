@@ -140,7 +140,7 @@ export default function Header({ onNavClick }: HeaderProps) {
             <span className="opacity-40">·</span>
             <span className="w-1.5 h-1.5 rounded-full bg-marigold shrink-0" aria-hidden="true" />
             <span className="tracking-wide text-canvas/90">
-              Now booking projects for Q4 2026
+              Now Partnering With Ambitious Brands
             </span>
           </div>
           <div className="flex items-center gap-2">

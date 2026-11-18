@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
-const WHATSAPP_PHONE = "917483737014"; // Baagul official WhatsApp number
+const WHATSAPP_PHONE = "916205697634"; // Baagul official WhatsApp number
 
 export default function WhatsAppChatWidget() {
   const [isOpen, setIsOpen] = useState(false);

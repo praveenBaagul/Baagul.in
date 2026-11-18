@@ -198,10 +198,10 @@ export default function EnquiryFormSection() {
               <span className="text-base text-peacock">📞</span>
             </div>
             <a
-              href="tel:+917483737014"
+              href="tel:+916205697634"
               className="font-heading text-2xl sm:text-3xl text-indigo-main font-bold hover:text-peacock transition-colors block mb-1"
             >
-              +91 7483737014
+              +91 62056 97634
             </a>
             <a
               href="mailto:support@baagul.in"

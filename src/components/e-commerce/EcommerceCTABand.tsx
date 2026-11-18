@@ -63,8 +63,8 @@ export default function EcommerceCTABand() {
               </div>
               <div className="flex items-center gap-2 text-canvas">
                 <span>📞</span>
-                <a href="tel:+917483737014" className="hover:text-marigold transition-colors">
-                  +91 7483737014
+                <a href="tel:+916205697634" className="hover:text-marigold transition-colors">
+                  +91 62056 97634
                 </a>
               </div>
               <div className="flex items-center gap-2 text-[11px] text-canvas/60 pt-1 border-t border-canvas/15">

@@ -49,7 +49,7 @@ export function getConfig() {
     inboundForwardTo: env("RESEND_INBOUND_FORWARD_TO") ?? adminEmail,
     companyName: env("COMPANY_NAME") ?? "Baagul",
     companyWebsiteUrl: (env("COMPANY_WEBSITE_URL") ?? SITE_URL).replace(/\/$/, ""),
-    companyPhone: env("COMPANY_PHONE") ?? "+91 7483737014",
+    companyPhone: env("COMPANY_PHONE") ?? "+91 62056 97634",
     companyAddress: env("COMPANY_ADDRESS") ?? "Hustlehub Tech Park, HSR Layout, Bengaluru",
     databaseUrl: env("DATABASE_URL"),
     adminApiToken: env("ADMIN_API_TOKEN"),

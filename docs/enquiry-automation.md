@@ -77,7 +77,7 @@ RESEND_INBOUND_FORWARD_TO=support@baagul.in
 # Company Identity
 COMPANY_NAME=Baagul
 COMPANY_WEBSITE_URL=https://www.baagul.in
-COMPANY_PHONE=+91 7483737014
+COMPANY_PHONE=+91 62056 97634
 COMPANY_ADDRESS=Hustlehub Tech Park, HSR Layout, Bengaluru
 
 # Admin Email Alerts

@@ -3,24 +3,25 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TeamSection from "@/components/TeamSection";
+import AboutUsStorySection from "@/components/team/AboutUsStorySection";
 import Link from "next/link";
 import { ArrowRightIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Our Leadership & Growth Specialists | Baagul Marketing LLP",
+  title: "About Us & Leadership Team | Baagul Marketing LLP",
   description:
-    "Meet the senior practitioners behind Baagul in Bengaluru. SEO specialists, growth engineers, media buyers, and brand directors.",
+    "Learn about Baagul, an architectural web engineering and performance marketing studio in HSR Layout, Bengaluru. Meet our senior team of engineers, SEO architects, and craft directors.",
   alternates: { canonical: "/team" },
   openGraph: {
-    title: "Our Leadership & Growth Specialists | Baagul Marketing LLP",
+    title: "About Us & Leadership Team | Baagul Marketing LLP",
     description:
-      "Meet the senior practitioners behind Baagul in Bengaluru. SEO specialists, growth engineers, media buyers, and brand directors.",
+      "Learn about Baagul, an architectural web engineering and performance marketing studio in HSR Layout, Bengaluru. Meet our senior team of engineers, SEO architects, and craft directors.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Leadership & Growth Specialists | Baagul Marketing LLP",
+    title: "About Us & Leadership Team | Baagul Marketing LLP",
     description:
-      "Meet the senior practitioners behind Baagul in Bengaluru. SEO specialists, growth engineers, media buyers, and brand directors.",
+      "Learn about Baagul, an architectural web engineering and performance marketing studio in HSR Layout, Bengaluru. Meet our senior team of engineers, SEO architects, and craft directors.",
   },
 };
 
@@ -92,6 +93,9 @@ export default function TeamPage() {
             </div>
           </div>
         </section>
+
+        {/* About Us & Studio Story Section */}
+        <AboutUsStorySection />
 
         {/* Core Team Roster Component */}
         <TeamSection />

@@ -29,7 +29,7 @@
 - **Company Name**: Baagul LLP
 - **Headquarters**: 2nd Floor Hustlehub Tech Park, HSR Layout, Bengaluru, Karnataka 560102, India
 - **Email**: support@baagul.in
-- **Phone**: +91 7483737014
+- **Phone**: +91 62056 97634
 - **Core Technologies**: Next.js (App Router), React, TypeScript, Tailwind CSS, Node.js, Python, Supabase, PostgreSQL, Shopify, WordPress
 
 ## Machine-Readable Resources

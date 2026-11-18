@@ -106,7 +106,7 @@ export default function Footer() {
                   <path d="M0 15.5V2H7.5V5H15V15.5H0V15.5M1.5 14H3V12.5H1.5V14V14M1.5 11H3V9.5H1.5V11V11M1.5 8H3V6.5H1.5V8V8M1.5 5H3V3.5H1.5V5V5M4.5 14H6V12.5H4.5V14V14M4.5 11H6V9.5H4.5V11V11M4.5 8H6V6.5H4.5V8V8M4.5 5H6V3.5H4.5V5V5M7.5 14H13.5V6.5H7.5V8H9V9.5H7.5V11H9V12.5H7.5V14V14M10.5 9.5V8H12V9.5H10.5V9.5M10.5 12.5V11H12V12.5H10.5V12.5" fill="#F5A800" />
                 </svg>
                 <span className="leading-snug">
-                  2nd Floor Hustlehub Tech Park, HSR Layout, Bengaluru, Karnataka 560102
+                  2nd Floor , H210 , Hustlehub Tech Park, 36/5, Somasundarapalya, 27th Main Rd, Sector 2, HSR Layout, Bengaluru, Karnataka 560102
                 </span>
               </div>
               <div className="flex items-center gap-2.5">
@@ -121,8 +121,8 @@ export default function Footer() {
                 <svg className="w-[13.5px] h-[13.5px] shrink-0" viewBox="0 0 13.5 13.5" fill="none" aria-hidden="true">
                   <path d="M12.7125 13.5C11.15 13.5 9.60625 13.1594 8.08125 12.4781C6.55625 11.7969 5.16875 10.8313 3.91875 9.58125C2.66875 8.33125 1.70312 6.94375 1.02188 5.41875C0.340625 3.89375 0 2.35 0 0.7875C0 0.5625 0.075 0.375 0.225 0.225C0.375 0.075 0.5625 0 0.7875 0H3.825C4 0 4.15625 0.059375 4.29375 0.178125C4.43125 0.296875 4.5125 0.4375 4.5375 0.6L5.025 3.225C5.05 3.425 5.04375 3.59375 5.00625 3.73125C4.96875 3.86875 4.9 3.9875 4.8 4.0875L2.98125 5.925C3.23125 6.3875 3.52813 6.83437 3.87188 7.26562C4.21562 7.69688 4.59375 8.1125 5.00625 8.5125C5.39375 8.9 5.8 9.25937 6.225 9.59062C6.65 9.92188 7.1 10.225 7.575 10.5L9.3375 8.7375C9.45 8.625 9.59688 8.54062 9.77812 8.48438C9.95937 8.42813 10.1375 8.4125 10.3125 8.4375L12.9 8.9625C13.075 9.0125 13.2188 9.10312 13.3313 9.23438C13.4438 9.36563 13.5 9.5125 13.5 9.675V12.7125C13.5 12.9375 13.425 13.125 13.275 13.275C13.125 13.425 12.9375 13.5 12.7125 13.5V13.5M2.26875 4.5L3.50625 3.2625V3.2625V3.2625L3.1875 1.5V1.5V1.5H1.51875V1.5V1.5C1.58125 2.0125 1.66875 2.51875 1.78125 3.01875C1.89375 3.51875 2.05625 4.0125 2.26875 4.5V4.5M8.98125 11.2125C9.46875 11.425 9.96562 11.5938 10.4719 11.7188C10.9781 11.8438 11.4875 11.925 12 11.9625V11.9625V11.9625V10.3125V10.3125V10.3125L10.2375 9.95625V9.95625V9.95625L8.98125 11.2125V11.2125M2.26875 4.5V4.5V4.5V4.5V4.5V4.5V4.5V4.5V4.5V4.5V4.5V4.5M8.98125 11.2125V11.2125V11.2125V11.2125V11.2125V11.2125V11.2125V11.2125V11.2125V11.2125V11.2125V11.2125" fill="#F5A800" />
                 </svg>
-                <a href="tel:+917483737014" className="hover:text-[#f5a800] transition-colors leading-[20px]">
-                  +91 7483737014
+                <a href="tel:+916205697634" className="hover:text-[#f5a800] transition-colors leading-[20px]">
+                  +91 62056 97634
                 </a>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function Footer() {
               </span>
               <ul className="flex flex-col gap-2 text-sm text-[#fbf6ea]/80 font-sans">
                 <li>
-                  <Link href="/team" className="hover:text-[#f5a800] transition-colors">
+                  <Link href="/team#about" className="hover:text-[#f5a800] transition-colors">
                     About Us
                   </Link>
                 </li>
@@ -414,7 +414,6 @@ export default function Footer() {
                     <span className="w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-[#121a4a] block mx-auto -mt-[1px]" />
                   </div>
                 </div>
-
 
                 {/* 5. LinkedIn */}
                 <div className="relative group/tooltip flex items-center justify-center">

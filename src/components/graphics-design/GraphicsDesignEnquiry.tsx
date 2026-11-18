@@ -33,7 +33,9 @@ export default function GraphicsDesignEnquiry() {
           {/* Contact Hotline Pill */}
           <div className="flex items-center gap-3 p-4 bg-[#0E1153] border-2 border-[#FEF9ED]/20 rounded-xl text-xs font-mono font-bold text-[#FEF9ED] shadow-[3px_3px_0px_#FFA800]">
             <span className="text-[#FFA800] text-base">📞</span>
-            <span>DIRECT DESK: +91 7483737014</span>
+            <a href="tel:+916205697634" className="hover:text-[#FFA800] transition-colors">
+              DIRECT DESK: +91 62056 97634
+            </a>
           </div>
         </div>
 
