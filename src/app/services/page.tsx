@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ServicesHero from "@/components/services/ServicesHero";
 import ServicesCardsGrid from "@/components/services/ServicesCardsGrid";
-import CraftsmanStandardsBand from "@/components/services/CraftsmanStandardsBand";
 import ServicesCTABand from "@/components/services/ServicesCTABand";
 
 export const metadata: Metadata = {

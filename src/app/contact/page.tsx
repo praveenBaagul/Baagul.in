@@ -41,11 +41,12 @@ export default function ContactPage() {
     <div className="min-h-screen flex flex-col bg-canvas text-indigo-main antialiased selection:bg-marigold selection:text-indigo-main">
       <Header />
       <main className="flex-1 flex flex-col">
-        <ContactHero />
-        <ContactDetailsBand />
+        {/* <ContactHero /> */}
         <Suspense fallback={<EnquiryFormFallback />}>
           <EnquiryFormSection />
-        </Suspense>
+        </Suspense>z
+        <ContactDetailsBand />
+
         <FAQAndMapSection />
       </main>
       <Footer />

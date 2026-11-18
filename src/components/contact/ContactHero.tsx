@@ -8,10 +8,10 @@ export default function ContactHero() {
       <div className="w-full border-t-2 border-dashed border-terracotta/40 mb-10" aria-hidden="true" />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        
+
         {/* Left Column: Typography & Positioning */}
         <div className="lg:col-span-6 flex flex-col items-start z-10">
-          
+
           {/* Eyebrow Label */}
           <div className="flex items-center gap-2 mb-4">
             <span className="w-2.5 h-2.5 bg-peacock" />
@@ -36,8 +36,8 @@ export default function ContactHero() {
 
           {/* Body Copy */}
           <p className="font-sans text-base sm:text-lg text-slate-text max-w-xl leading-relaxed mb-8">
-            We&apos;re always here to help! Whether you have a question about our products, 
-            need assistance with your order, or just want to share your feedback, feel free 
+            We&apos;re always here to help! Whether you have a question about our products,
+            need assistance with your order, or just want to share your feedback, feel free
             to reach out to us. Our team will get back to you as soon as possible.
           </p>
 
@@ -63,7 +63,7 @@ export default function ContactHero() {
 
         {/* Right Column: Visual Composition & Postal Architectural Card */}
         <div className="lg:col-span-6 flex justify-center items-center relative py-6">
-          
+
           {/* Top Right 2x3 Pixel Grid Accent */}
           <div className="absolute top-0 right-4 sm:right-8 opacity-90 z-0 hidden sm:block" aria-hidden="true">
             <div className="grid grid-cols-3 gap-1.5 w-24">
@@ -78,7 +78,7 @@ export default function ContactHero() {
 
           {/* Main Postal / Architectural Preview Card */}
           <div className="relative max-w-md w-full bg-[#f1ede2] border-2 border-indigo-main rounded-xl p-5 shadow-[8px_8px_0px_#121a4a] z-10">
-            
+
             {/* Header bar of card */}
             <div className="flex items-center justify-between pb-3 border-b border-indigo-main/20 text-xs font-mono text-indigo-main">
               <div className="flex items-center gap-2">

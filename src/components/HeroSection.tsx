@@ -6,10 +6,10 @@ export default function HeroSection() {
   return (
     <section className="relative w-full pt-12 pb-20 px-4 sm:px-12 max-w-7xl mx-auto overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        
+
         {/* Left Column (7 cols on desktop) */}
         <div className="lg:col-span-7 flex flex-col items-start z-10">
-          
+
           {/* Label + Running Stitch Tag */}
           <div className="flex flex-col gap-1.5 mb-6">
             <div className="flex items-center gap-2">
@@ -37,8 +37,8 @@ export default function HeroSection() {
 
           {/* Subtext */}
           <p className="font-sans text-lg sm:text-xl text-slate-text max-w-xl leading-relaxed mb-8">
-            SEO, websites, Google and Meta ads and branding for high-growth startups, 
-            local businesses, and modern enterprises. Six years of craftsmanship, 
+            SEO, websites, Google and Meta ads and branding for high-growth startups,
+            local businesses, and modern enterprises. Six years of craftsmanship,
             strictly measured in qualified leads and bottom-line revenue.
           </p>
 
@@ -100,7 +100,7 @@ export default function HeroSection() {
 
         {/* Right Column: Lalbagh Glasshouse Arch + Stepped Tower */}
         <div className="lg:col-span-5 flex justify-center items-center relative py-6">
-          
+
           {/* Kasuti Pixel Tower behind arch */}
           <div className="absolute top-2 right-4 sm:right-8 opacity-90 z-0 hidden sm:block" aria-hidden="true">
             <div className="grid grid-cols-5 gap-1.5 w-36">
@@ -118,7 +118,7 @@ export default function HeroSection() {
 
           {/* The Glasshouse Arch Container */}
           <div className="relative max-w-[360px] sm:max-w-[380px] w-full z-10">
-            
+
             {/* The Glasshouse Frame */}
             <div className="relative bg-indigo-mid border-2 border-indigo-main p-3.5 rounded-t-[190px] rounded-b-lg shadow-[8px_8px_0px_#dadff4] overflow-hidden">
               <div className="relative w-full h-[440px] sm:h-[460px] rounded-t-[180px] rounded-b bg-canvas-card border border-indigo-main overflow-hidden">
@@ -131,7 +131,7 @@ export default function HeroSection() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-main/70 via-transparent to-transparent pointer-events-none" />
-                
+
                 {/* Glasshouse architectural rib lines */}
                 <div className="absolute inset-0 flex justify-between px-8 pointer-events-none opacity-25">
                   <div className="w-[1.5px] h-full bg-canvas" />
@@ -145,8 +145,8 @@ export default function HeroSection() {
             <div className="absolute -top-6 -left-6 sm:-left-8 -rotate-12 z-20 group cursor-default">
               <div className="relative w-28 h-28 rounded-2xl bg-marigold border-2 border-indigo-main shadow-[4px_4px_0px_#121a4a] flex flex-col items-center justify-center p-3 text-indigo-dark text-center select-none overflow-hidden transition-transform duration-200 group-hover:scale-105">
                 {/* Diagonal Glossy Shine Sweep Beam */}
-                <div 
-                  className="absolute inset-0 w-3/4 h-[250%] -top-[75%] bg-gradient-to-r from-transparent via-white/55 to-transparent pointer-events-none animate-shine-sweep" 
+                <div
+                  className="absolute inset-0 w-3/4 h-[250%] -top-[75%] bg-gradient-to-r from-transparent via-white/55 to-transparent pointer-events-none animate-shine-sweep"
                   aria-hidden="true"
                 />
 
@@ -163,7 +163,7 @@ export default function HeroSection() {
               </div>
 
               {/* Sparkle Star 1 (Top-Right) */}
-              <svg 
+              <svg
                 className="absolute -top-2.5 -right-2.5 w-5 h-5 text-canvas-card fill-current animate-sparkle-1 pointer-events-none z-30 drop-shadow-[1px_1px_0px_#121a4a]"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -172,7 +172,7 @@ export default function HeroSection() {
               </svg>
 
               {/* Sparkle Star 2 (Bottom-Left) */}
-              <svg 
+              <svg
                 className="absolute -bottom-1 -left-2 w-4 h-4 text-canvas-card fill-current animate-sparkle-2 pointer-events-none z-30 drop-shadow-[1px_1px_0px_#121a4a]"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
