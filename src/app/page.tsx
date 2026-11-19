@@ -30,7 +30,6 @@ export default function Home() {
         <ServicesGrid />
         <CaseStudiesSection />
         <ProcessSection />
-        {/* <TeamSection /> */}
         <TestimonialsSection />
         <CTASection />
       </main>

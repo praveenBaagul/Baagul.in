@@ -94,11 +94,13 @@ export default function TeamPage() {
           </div>
         </section>
 
+        {/* Core Team Roster Component */}
+        <TeamSection />
+
+
         {/* About Us & Studio Story Section */}
         <AboutUsStorySection />
 
-        {/* Core Team Roster Component */}
-        <TeamSection />
 
         {/* Studio Operating Principles */}
         <section className="w-full py-20 px-4 sm:px-12 max-w-7xl mx-auto border-t border-indigo-main/15">

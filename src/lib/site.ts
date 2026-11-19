@@ -17,6 +17,7 @@ export const SITEMAP_OVERRIDES: Record<
   "/services": { priority: 0.9, changeFrequency: "weekly" },
   "/career": { priority: 0.8, changeFrequency: "weekly" },
   "/team": { priority: 0.8, changeFrequency: "monthly" },
+  "/docs/kishore": { priority: 0.7, changeFrequency: "monthly" },
   "/contact": { priority: 0.8, changeFrequency: "monthly" },
   "/privacy-policy": { priority: 0.3, changeFrequency: "yearly" },
 };

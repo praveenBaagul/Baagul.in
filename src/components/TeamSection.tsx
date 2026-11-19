@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRightIcon } from "./Icons";
 
 interface TeamMember {
@@ -8,57 +9,19 @@ interface TeamMember {
   role: string;
   domain: string;
   imgSrc: string;
+  profileUrl?: string;
+  linkedinUrl?: string;
 }
 
 const members: TeamMember[] = [
   {
     id: "m1",
-    name: "Arvind Kashyap",
-    role: "Founding Partner & Head of Search",
-    domain: "Ex-Flipkart · 11 yrs SEO",
-    imgSrc: "/assets/146d6.png",
-  },
-  {
-    id: "m2",
-    name: "Sharath Hegde",
-    role: "Partner · Performance Media",
-    domain: "₹40Cr+ Meta & Google Ad Spend",
-    imgSrc: "/assets/f9746.png",
-  },
-  {
-    id: "m3",
-    name: "Darshan Nayak",
-    role: "Lead Full-Stack Engineer",
-    domain: "Next.js · Headless Shopify",
-    imgSrc: "/assets/becc1.png",
-  },
-  {
-    id: "m4",
-    name: "Pranav Rao",
-    role: "Brand & Creative Director",
-    domain: "National Institute of Design (NID)",
-    imgSrc: "/assets/b03af.png",
-  },
-  {
-    id: "m5",
-    name: "Bhavana Rao",
-    role: "Senior Growth Strategist",
-    domain: "B2B SaaS Attribution & Funnels",
-    imgSrc: "/assets/2fea7.png",
-  },
-  {
-    id: "m6",
-    name: "Chetan Kumar",
-    role: "Technical SEO Architect",
-    domain: "Programmatic Crawl & Indexing",
-    imgSrc: "/assets/cd0ff.png",
-  },
-  {
-    id: "m7",
-    name: "Ananya Dixit",
-    role: "Content & Editorial Lead",
-    domain: "Technical & Financial Copywriting",
-    imgSrc: "/assets/b21c0.png",
+    name: "Kishore V",
+    role: "Digital Marketing Manager",
+    domain: "Full-Funnel Growth · Performance Strategy",
+    imgSrc: "/assets/kishore-v.png",
+    profileUrl: "/docs/kishore",
+    linkedinUrl: "https://www.linkedin.com/in/kishore-v46",
   },
 ];
 
@@ -79,74 +42,82 @@ export default function TeamSection() {
           </h2>
         </div>
         <p className="font-sans text-sm sm:text-base text-slate-text max-w-md">
-          A focused collective of engineers, media buyers, designers, and copywriters working together under one roof in HSR Layout.
+          A focused collective of growth strategists, engineers, and creatives working together under one roof in HSR Layout, Bengaluru.
         </p>
       </div>
 
-      {/* Grid: 7 Members + 1 CTA Swatch Card */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Grid: Active Team Roster + Studio Hiring Swatch Card */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {members.map((member) => (
           <div
             key={member.id}
-            className="group relative p-4 bg-canvas-card border-2 border-indigo-main rounded-xl shadow-[4px_4px_0px_#121a4a] hover:-translate-y-1 hover:shadow-[6px_6px_0px_#121a4a] transition-all duration-200 flex flex-col"
+            className="group relative p-4 bg-canvas-card border-2 border-indigo-main rounded-xl shadow-[4px_4px_0px_#121a4a] hover:-translate-y-1 hover:shadow-[6px_6px_0px_#121a4a] transition-all duration-200 flex flex-col justify-between"
           >
-            {/* Photo frame */}
-            <div className="relative h-56 w-full rounded-lg overflow-hidden border border-indigo-main/30 mb-4 bg-canvas">
-              <Image
-                src={member.imgSrc}
-                alt={member.name}
-                title={member.name}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+            <div>
+              {/* Photo frame */}
+              <div className="relative h-64 sm:h-72 w-full rounded-lg overflow-hidden border border-indigo-main/30 mb-4 bg-canvas">
+                <Image
+                  src={member.imgSrc}
+                  alt={member.name}
+                  title={member.name}
+                  fill
+                  priority
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+
+              {/* Member Details */}
+              <h4 className="font-heading text-2xl text-indigo-main font-bold leading-tight">
+                {member.name}
+              </h4>
+              <span className="text-xs font-bold text-terracotta mt-1 block">
+                {member.role}
+              </span>
+              <span className="text-[11px] text-slate-text mt-0.5 block">
+                {member.domain}
+              </span>
             </div>
 
-            {/* Member Details */}
-            <h4 className="font-heading text-xl text-indigo-main font-semibold leading-tight">
-              {member.name}
-            </h4>
-            <span className="text-xs font-semibold text-terracotta mt-1">
-              {member.role}
-            </span>
-            <span className="text-[11px] text-slate-text mt-0.5">
-              {member.domain}
-            </span>
-
-            {/* LinkedIn link badge */}
-            <div className="mt-4 pt-3 border-t border-indigo-main/15 flex items-center justify-between text-xs text-indigo-mid">
-              <span className="font-medium text-[11px]">View Profile</span>
-              <span className="text-terracotta group-hover:translate-x-1 transition-transform">→</span>
-            </div>
+            {/* Profile Action Button with LinkedIn Logo */}
+            <Link
+              href={member.profileUrl || "/docs/kishore"}
+              className="mt-6 w-full inline-flex items-center justify-between px-4 py-3 rounded-xl bg-indigo-main hover:bg-indigo-mid text-canvas font-mono font-bold text-xs uppercase tracking-wider border-2 border-indigo-main shadow-[4px_4px_0px_#f5a800] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#f5a800] transition-all group/btn"
+            >
+              <div className="flex items-center gap-2.5">
+                <span className="tracking-wide">View profile</span>
+              </div>
+              <span className="text-marigold group-hover/btn:translate-x-1 transition-transform text-sm font-sans font-bold">
+                →
+              </span>
+            </Link>
           </div>
         ))}
 
-        {/* 8th Card: Meet all 14 CTA Card */}
-        {/* <div className="p-6 bg-marigold border-2 border-indigo-main rounded-xl shadow-[4px_4px_0px_#121a4a] flex flex-col justify-between text-indigo-main">
+        {/* Studio Hiring Card */}
+        <div className="p-6 bg-marigold border-2 border-indigo-main rounded-xl shadow-[4px_4px_0px_#121a4a] flex flex-col justify-between text-indigo-main min-h-[380px]">
           <div>
-            <span className="text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded bg-indigo-main text-canvas inline-block mb-4">
+            <span className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded bg-indigo-main text-canvas inline-block mb-4 font-mono">
               WE ARE HIRING
             </span>
             <h4 className="font-heading text-2xl font-bold leading-tight mb-2">
-              Engineers, Writers, &amp; Media Buyers.
+              Join Our Bengaluru Collective.
             </h4>
-            <p className="font-sans text-xs leading-relaxed opacity-90 mt-2">
-              Want to do the most honest, high-craft work of your career in Bengaluru? We are always looking for sharp minds.
+            <p className="font-sans text-xs leading-relaxed text-indigo-dark/90 mt-2">
+              Looking to do the most honest, high-impact growth and engineering work of your career? We are expanding our core team in HSR Layout.
             </p>
           </div>
 
           <div className="pt-6">
-            <a
-              href="#contact"
+            <Link
+              href="/career"
               className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-indigo-main text-canvas font-semibold text-xs border border-indigo-main shadow-[2px_2px_0px_#121a4a] hover:bg-indigo-mid transition-colors"
             >
-              <span>See Open Positions</span>
+              <span>See Open Roles</span>
               <ArrowRightIcon className="w-3.5 h-3.5" />
-            </a>
+            </Link>
           </div>
-        </div> */}
-
+        </div>
       </div>
     </section>
   );
 }
-

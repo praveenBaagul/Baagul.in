@@ -57,7 +57,7 @@ const studies: CaseStudy[] = [
     ],
     statNumber: "+280%",
     statLabel: "Qualified Consultation Growth",
-    imgSrc: "/assets/khevana-dagli-showcase.jpg",
+    imgSrc: "/assets/khevana-dagli-showcase.webp",
     imgAlt: "Advocate Khevana Dagli - Divorce, Criminal & Civil Lawyer in Mumbai",
     layout: "image-right",
     badgeBg: "bg-marigold/20",

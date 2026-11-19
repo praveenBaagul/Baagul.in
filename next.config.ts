@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   // URL changes — never just delete the old page.
   async redirects() {
     return [
+      // Direct doc & credential route matching
+      { source: "/docs/kishore.pdf", destination: "/docs/kishore", permanent: false },
+
       // Internal renamed routes
       { source: "/careers", destination: "/career", permanent: true },
       { source: "/career/ui-ux-design", destination: "/career/ui-ux-designer", permanent: true },
