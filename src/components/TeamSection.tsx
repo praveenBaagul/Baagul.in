@@ -51,6 +51,14 @@ const members: TeamMember[] = [
     linkedinUrl: "https://www.linkedin.com/in/navin-kumar-verma",
   },
   {
+    id: "m7",
+    name: "Sifa Domnic Fernandes",
+    role: "UGC Creator & SEO Analyst",
+    domain: "Creative Content · Organic Search & Performance",
+    imgSrc: "/assets/sifa-domnic-fernandes.png",
+    profileUrl: "/team/sifa-domnic-fernandes",
+  },
+  {
     id: "m5",
     name: "Sahil Goswami",
     role: "Video Editing & Graphic Design",
@@ -65,14 +73,6 @@ const members: TeamMember[] = [
     domain: "Organic Search Strategy · Technical SEO",
     imgSrc: "/assets/sindhu-reddy.png",
     profileUrl: "/team/sindhu-reddy",
-  },
-  {
-    id: "m7",
-    name: "Sife Domnic Fernandes",
-    role: "UGC Creator & SEO Analyst",
-    domain: "Creative Content · Organic Search & Performance",
-    imgSrc: "/assets/sife-domnic-fernandes.png",
-    profileUrl: "/team/sife-domnic-fernandes",
   },
 ];
 

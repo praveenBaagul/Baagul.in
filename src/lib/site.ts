@@ -23,7 +23,7 @@ export const SITEMAP_OVERRIDES: Record<
   "/team/navin-kumar-verma": { priority: 0.7, changeFrequency: "monthly" },
   "/team/sahil-goswami": { priority: 0.7, changeFrequency: "monthly" },
   "/team/sindhu-reddy": { priority: 0.7, changeFrequency: "monthly" },
-  "/team/sife-domnic-fernandes": { priority: 0.7, changeFrequency: "monthly" },
+  "/team/sifa-domnic-fernandes": { priority: 0.7, changeFrequency: "monthly" },
   "/contact": { priority: 0.8, changeFrequency: "monthly" },
   "/privacy-policy": { priority: 0.3, changeFrequency: "yearly" },
 };

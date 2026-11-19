@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function SifeProfileCard() {
+export default function SifaProfileCard() {
   const [copied, setCopied] = useState(false);
 
   const handleCopyLink = () => {
@@ -68,9 +68,9 @@ export default function SifeProfileCard() {
             <div className="md:col-span-5 flex flex-col items-center">
               <div className="relative w-full max-w-[280px] aspect-[4/5] rounded-2xl overflow-hidden border-2 border-indigo-main shadow-[5px_5px_0px_#121a4a] bg-canvas">
                 <Image
-                  src="/assets/sife-domnic-fernandes.png"
-                  alt="Sife Domnic Fernandes - UGC Creator & SEO Analyst at Baagul LLP"
-                  title="Sife Domnic Fernandes"
+                  src="/assets/sifa-domnic-fernandes.png"
+                  alt="Sifa Domnic Fernandes - UGC Creator & SEO Analyst at Baagul LLP"
+                  title="Sifa Domnic Fernandes"
                   fill
                   priority
                   className="object-cover object-top"
@@ -133,7 +133,7 @@ export default function SifeProfileCard() {
                 </div>
 
                 <h1 className="font-heading text-3xl sm:text-4xl text-indigo-main font-extrabold leading-tight tracking-tight mb-1">
-                  Sife Domnic Fernandes
+                  Sifa Domnic Fernandes
                 </h1>
 
                 <span className="font-heading text-xl text-terracotta font-bold block mb-4">

@@ -19,8 +19,11 @@ const nextConfig: NextConfig = {
       { source: "/docs/sahil", destination: "/team/sahil-goswami", permanent: false },
       { source: "/docs/sindhu.pdf", destination: "/team/sindhu-reddy", permanent: false },
       { source: "/docs/sindhu", destination: "/team/sindhu-reddy", permanent: false },
-      { source: "/docs/sife.pdf", destination: "/team/sife-domnic-fernandes", permanent: false },
-      { source: "/docs/sife", destination: "/team/sife-domnic-fernandes", permanent: false },
+      { source: "/docs/sife.pdf", destination: "/team/sifa-domnic-fernandes", permanent: false },
+      { source: "/docs/sife", destination: "/team/sifa-domnic-fernandes", permanent: false },
+      { source: "/docs/sifa.pdf", destination: "/team/sifa-domnic-fernandes", permanent: false },
+      { source: "/docs/sifa", destination: "/team/sifa-domnic-fernandes", permanent: false },
+      { source: "/team/sife-domnic-fernandes", destination: "/team/sifa-domnic-fernandes", permanent: true },
 
       // Internal renamed routes
       { source: "/careers", destination: "/career", permanent: true },
