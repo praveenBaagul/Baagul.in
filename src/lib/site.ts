@@ -18,6 +18,12 @@ export const SITEMAP_OVERRIDES: Record<
   "/career": { priority: 0.8, changeFrequency: "weekly" },
   "/team": { priority: 0.8, changeFrequency: "monthly" },
   "/docs/kishore": { priority: 0.7, changeFrequency: "monthly" },
+  "/docs/dushyanth": { priority: 0.7, changeFrequency: "monthly" },
+  "/team/praveen-kumara": { priority: 0.7, changeFrequency: "monthly" },
+  "/team/navin-kumar-verma": { priority: 0.7, changeFrequency: "monthly" },
+  "/team/sahil-goswami": { priority: 0.7, changeFrequency: "monthly" },
+  "/team/sindhu-reddy": { priority: 0.7, changeFrequency: "monthly" },
+  "/team/sife-domnic-fernandes": { priority: 0.7, changeFrequency: "monthly" },
   "/contact": { priority: 0.8, changeFrequency: "monthly" },
   "/privacy-policy": { priority: 0.3, changeFrequency: "yearly" },
 };

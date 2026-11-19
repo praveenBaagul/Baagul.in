@@ -68,7 +68,7 @@ export default function KishoreProfileCard() {
             <div className="md:col-span-5 flex flex-col items-center">
               <div className="relative w-full max-w-[280px] aspect-[4/5] rounded-2xl overflow-hidden border-2 border-indigo-main shadow-[5px_5px_0px_#121a4a] bg-canvas">
                 <Image
-                  src="/assets/kishore-v.png"
+                  src="/assets/kishore.png"
                   alt="Kishore V - Digital Marketing Manager at Baagul LLP"
                   title="Kishore V"
                   fill
@@ -152,13 +152,13 @@ export default function KishoreProfileCard() {
                 </div>
 
                 {/* Key Credentials Grid */}
-                <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
                   <div className="p-3.5 bg-canvas border border-indigo-main/20 rounded-xl">
                     <span className="font-mono text-[10px] font-bold text-indigo-main/60 uppercase block mb-0.5">
                       EMPLOYEE ID
                     </span>
                     <span className="font-mono text-xs sm:text-sm font-extrabold text-indigo-main">
-                      BGL-2024-M08
+                      BG02
                     </span>
                   </div>
 
@@ -179,15 +179,16 @@ export default function KishoreProfileCard() {
                       Performance Growth
                     </span>
                   </div>
+                </div>
 
-                  <div className="p-3.5 bg-canvas border border-indigo-main/20 rounded-xl">
-                    <span className="font-mono text-[10px] font-bold text-indigo-main/60 uppercase block mb-0.5">
-                      LOCATION
-                    </span>
-                    <span className="font-mono text-xs sm:text-sm font-extrabold text-indigo-main">
-                      HSR Layout, Bengaluru
-                    </span>
-                  </div>
+                {/* Full Location Address Card */}
+                <div className="p-3.5 bg-canvas border border-indigo-main/20 rounded-xl">
+                  <span className="font-mono text-[10px] font-bold text-indigo-main/60 uppercase block mb-1">
+                    LOCATION
+                  </span>
+                  <span className="font-mono text-xs sm:text-[13px] font-bold text-indigo-main leading-relaxed block">
+                    2nd Floor, H210, Hustlehub Tech Park, 36/5, Somasundarapalya, 27th Main Rd, Sector 2, HSR Layout, Bengaluru, Karnataka 560102
+                  </span>
                 </div>
               </div>
 

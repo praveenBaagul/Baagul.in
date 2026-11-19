@@ -10,6 +10,17 @@ const nextConfig: NextConfig = {
     return [
       // Direct doc & credential route matching
       { source: "/docs/kishore.pdf", destination: "/docs/kishore", permanent: false },
+      { source: "/docs/dushyanth.pdf", destination: "/docs/dushyanth", permanent: false },
+      { source: "/docs/praveen.pdf", destination: "/team/praveen-kumara", permanent: false },
+      { source: "/docs/praveen", destination: "/team/praveen-kumara", permanent: false },
+      { source: "/docs/navin.pdf", destination: "/team/navin-kumar-verma", permanent: false },
+      { source: "/docs/navin", destination: "/team/navin-kumar-verma", permanent: false },
+      { source: "/docs/sahil.pdf", destination: "/team/sahil-goswami", permanent: false },
+      { source: "/docs/sahil", destination: "/team/sahil-goswami", permanent: false },
+      { source: "/docs/sindhu.pdf", destination: "/team/sindhu-reddy", permanent: false },
+      { source: "/docs/sindhu", destination: "/team/sindhu-reddy", permanent: false },
+      { source: "/docs/sife.pdf", destination: "/team/sife-domnic-fernandes", permanent: false },
+      { source: "/docs/sife", destination: "/team/sife-domnic-fernandes", permanent: false },
 
       // Internal renamed routes
       { source: "/careers", destination: "/career", permanent: true },
