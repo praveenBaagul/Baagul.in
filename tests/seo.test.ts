@@ -72,7 +72,7 @@ describe("next.config", () => {
 
 describe("structured data", () => {
   it("names the organisation BAAGUL once, and other pages only reference it", () => {
-    expect(organizationSchema()).toMatchObject({ "@id": ORG_ID, name: "BAAGUL" });
+    expect(organizationSchema()).toMatchObject({ "@id": ORG_ID, name: "BAAGUL", legalName: "Baagul LLP" });
 
     for (const schema of [servicesHubSchema(SERVICES), careersPageSchema(JOB_OPENINGS), aboutPageSchema()]) {
       const json = JSON.stringify(schema);

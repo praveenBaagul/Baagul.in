@@ -32,7 +32,7 @@ export default function CareerHero() {
             </h1>
 
             <p className="font-sans text-base sm:text-lg text-[#3E4945] max-w-xl leading-relaxed mb-8">
-              Baagul Marketing LLC is hiring UI/UX Designers, freelance Video Editors, and Content Writers. Build your career with our Bengaluru design and digital marketing studio.
+              Baagul LLP is hiring UI/UX Designers, freelance Video Editors, and Content Writers. Build your career with our Bengaluru design and digital marketing studio.
             </p>
 
             {/* Action buttons */}

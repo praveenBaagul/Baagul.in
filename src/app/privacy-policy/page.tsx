@@ -5,20 +5,20 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy & Data Protection | Baagul Marketing LLP",
+  title: "Privacy Policy & Data Protection | Baagul LLP",
   description:
-    "Privacy policy and data governance practices of Baagul Marketing LLP in Bengaluru. Learn how we collect, use, and protect your data.",
+    "Privacy policy and data governance practices of Baagul LLP in Bengaluru. Learn how we collect, use, and protect your data.",
   alternates: { canonical: "/privacy-policy" },
   openGraph: {
-    title: "Privacy Policy & Data Protection | Baagul Marketing LLP",
+    title: "Privacy Policy & Data Protection | Baagul LLP",
     description:
-      "Privacy policy and data governance practices of Baagul Marketing LLP in Bengaluru. Learn how we collect, use, and protect your data.",
+      "Privacy policy and data governance practices of Baagul LLP in Bengaluru. Learn how we collect, use, and protect your data.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy & Data Protection | Baagul Marketing LLP",
+    title: "Privacy Policy & Data Protection | Baagul LLP",
     description:
-      "Privacy policy and data governance practices of Baagul Marketing LLP in Bengaluru. Learn how we collect, use, and protect your data.",
+      "Privacy policy and data governance practices of Baagul LLP in Bengaluru. Learn how we collect, use, and protect your data.",
   },
 };
 
@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="font-mono text-xs text-[#5f6485]">
-            Last Updated: November 2026 · Baagul Marketing LLP, HSR Layout, Bengaluru, Karnataka, India
+            Last Updated: November 2026 · Baagul LLP, HSR Layout, Bengaluru, Karnataka, India
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function PrivacyPolicyPage() {
               1. Introduction
             </h2>
             <p>
-              Baagul Marketing LLP (&quot;Baagul&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is committed to respecting your privacy and protecting any personal data collected through our website (<strong>baagul.in</strong>) and client intake systems. This Privacy Policy details the types of information we collect, how it is processed, and your rights concerning your personal data.
+              Baagul LLP (&quot;Baagul&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is committed to respecting your privacy and protecting any personal data collected through our website (<strong>baagul.in</strong>) and client intake systems. This Privacy Policy details the types of information we collect, how it is processed, and your rights concerning your personal data.
             </p>
           </section>
 
@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
               You have the right to request access to, modification of, or permanent deletion of your inquiry records. To exercise your rights, contact our privacy officer:
             </p>
             <div className="bg-[#f8f2e4] p-4 rounded-lg border border-[#121a4a] font-mono text-xs space-y-1">
-              <p><strong>Entity:</strong> Baagul Marketing LLP</p>
+              <p><strong>Entity:</strong> Baagul LLP</p>
               <p><strong>Address:</strong> Sector 4, HSR Layout, Bengaluru, Karnataka 560102, India</p>
               <p><strong>Email:</strong> <a href="mailto:support@baagul.in" className="text-[#0e7c6b] underline">support@baagul.in</a></p>
               <p><strong>Direct Inquiries:</strong> <a href="mailto:praveen@baagul.com" className="text-[#0e7c6b] underline">praveen@baagul.com</a></p>

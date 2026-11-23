@@ -33,7 +33,7 @@ const jobPostingSchema = {
   employmentType: "FULL_TIME",
   hiringOrganization: {
     "@type": "Organization",
-    name: "BAAGUL LLP",
+    name: "Baagul LLP",
     sameAs: "https://baagul.in",
     logo: "https://baagul.in/assets/baagul-brand-logo.png",
   },

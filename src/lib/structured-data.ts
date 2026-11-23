@@ -7,9 +7,9 @@ import { SITE_URL } from "@/lib/site";
 export const ORG_ID = `${SITE_URL}/#organization`;
 
 export const BUSINESS = {
-  // BAAGUL is the public brand. The legal entity name (BAAGUL LLP) is not
-  // added as legalName until it is confirmed.
+  // BAAGUL is the public brand; Baagul LLP is the registered company name.
   name: "BAAGUL",
+  legalName: "Baagul LLP",
   email: "support@baagul.in",
   telephone: "+91-62056-97634",
   logo: `${SITE_URL}/assets/baagul-brand-logo.png`,
@@ -28,6 +28,7 @@ export function organizationSchema() {
     "@type": "ProfessionalService",
     "@id": ORG_ID,
     name: BUSINESS.name,
+    legalName: BUSINESS.legalName,
     url: SITE_URL,
     logo: BUSINESS.logo,
     image: BUSINESS.logo,

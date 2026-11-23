@@ -11,20 +11,20 @@ import CareerContactBand from "@/components/career/CareerContactBand";
 import CareerSpecMatrix from "@/components/career/CareerSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Careers & Job Openings in Bengaluru | Baagul Marketing LLP",
+  title: "Careers & Job Openings in Bengaluru | Baagul LLP",
   description:
-    "Join Baagul Marketing LLP in Bengaluru. Explore open career opportunities in UI/UX design, performance marketing, and development.",
+    "Join Baagul LLP in Bengaluru. Explore open career opportunities in UI/UX design, performance marketing, and development.",
   alternates: { canonical: "/career" },
   openGraph: {
-    title: "Careers & Job Openings in Bengaluru | Baagul Marketing LLP",
+    title: "Careers & Job Openings in Bengaluru | Baagul LLP",
     description:
-      "Join Baagul Marketing LLP in Bengaluru. Explore open career opportunities in UI/UX design, performance marketing, and development.",
+      "Join Baagul LLP in Bengaluru. Explore open career opportunities in UI/UX design, performance marketing, and development.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Careers & Job Openings in Bengaluru | Baagul Marketing LLP",
+    title: "Careers & Job Openings in Bengaluru | Baagul LLP",
     description:
-      "Join Baagul Marketing LLP in Bengaluru. Explore open career opportunities in UI/UX design, performance marketing, and development.",
+      "Join Baagul LLP in Bengaluru. Explore open career opportunities in UI/UX design, performance marketing, and development.",
   },
 };
 
