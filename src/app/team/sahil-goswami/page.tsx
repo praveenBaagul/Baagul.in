@@ -55,7 +55,7 @@ export default function SahilProfilePage() {
         },
       },
       image: `${SITE_URL}/assets/sahil-placeholder.png`,
-      identifier: "BG007",
+      identifier: "BG06",
       email: "support@baagul.in",
       telephone: "+91-62056-97634",
       url: `${SITE_URL}/team/sahil-goswami`,

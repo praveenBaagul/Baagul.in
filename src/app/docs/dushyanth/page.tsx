@@ -55,7 +55,7 @@ export default function DushyanthProfilePage() {
         },
       },
       image: `${SITE_URL}/assets/dushyanth-kumar.png`,
-      identifier: "BG005",
+      identifier: "BG05",
       email: "support@baagul.in",
       telephone: "+91-62056-97634",
       url: `${SITE_URL}/docs/dushyanth`,

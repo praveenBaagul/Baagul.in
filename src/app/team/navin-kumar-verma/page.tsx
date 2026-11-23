@@ -55,7 +55,7 @@ export default function NavinProfilePage() {
         },
       },
       image: `${SITE_URL}/assets/navin-kumar-verma.png`,
-      identifier: "BG006",
+      identifier: "BG11",
       email: "support@baagul.in",
       telephone: "+91-62056-97634",
       url: `${SITE_URL}/team/navin-kumar-verma`,

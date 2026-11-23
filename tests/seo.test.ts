@@ -22,11 +22,14 @@ describe("sitemap", () => {
   const entries = sitemap();
 
   it("gives every route a lastModified date from the dates file", () => {
+    const dates: Record<string, { lastModified: string }> = SITEMAP_DATES;
     for (const entry of entries) {
       expect(entry.lastModified, entry.url).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      // Each page's own content-change date, not one deploy date for everything.
+      // (All pages can share a date when they all changed that day.)
+      const route = new URL(entry.url).pathname.replace(/\/$/, "") || "/";
+      expect(entry.lastModified, entry.url).toBe(dates[route]?.lastModified);
     }
-    // Real per-page dates, not one deploy date for everything.
-    expect(new Set(entries.map((entry) => entry.lastModified)).size).toBeGreaterThan(1);
   });
 
   it("has a date entry whose content hash is current (run `npm run sitemap:dates` if this fails)", () => {

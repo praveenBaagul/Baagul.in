@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="HARISHMITHA C placeholder portrait">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#E8DFC9" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="#F5EDDC"/>
+  <rect width="800" height="1000" fill="url(#grid)"/>
+  <circle cx="400" cy="330" r="130" fill="#121A4A"/>
+  <path d="M200 660 A200 200 0 0 1 600 660 Z" fill="#121A4A"/>
+  <rect x="191" y="720" width="418" height="60" rx="8" fill="#F5A800" stroke="#121A4A" stroke-width="4"/>
+  <text x="400" y="760" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" letter-spacing="4" fill="#121A4A">HARISHMITHA C</text>
+</svg>

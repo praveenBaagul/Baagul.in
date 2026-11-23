@@ -159,7 +159,7 @@ export default function NavinProfileCard() {
                       EMPLOYEE ID
                     </span>
                     <span className="font-mono text-xs sm:text-sm font-extrabold text-indigo-main">
-                      BG006
+                      BG11
                     </span>
                   </div>
 

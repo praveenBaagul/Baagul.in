@@ -159,7 +159,7 @@ export default function PraveenProfileCard() {
                       EMPLOYEE ID
                     </span>
                     <span className="font-mono text-xs sm:text-sm font-extrabold text-indigo-main">
-                      BGL-2024-E14
+                      BG07
                     </span>
                   </div>
 

@@ -606,6 +606,20 @@ export const GENERAL_FAQS: Faq[] = [
 
 export const TEAM_SOURCE: TeamMemberSource[] = [
   {
+    name: "Ashish Kumar",
+    role: "Founder",
+    focus: "Company Leadership · Growth Strategy",
+    profilePath: null,
+    linkedinUrl: null
+  },
+  {
+    name: "Archana Kumari",
+    role: "Co-Founder",
+    focus: "Company Leadership · Operations",
+    profilePath: null,
+    linkedinUrl: null
+  },
+  {
     name: "Kishore V",
     role: "Digital Marketing Manager",
     focus: "Full-Funnel Growth · Performance Strategy",
@@ -635,8 +649,8 @@ export const TEAM_SOURCE: TeamMemberSource[] = [
   },
   {
     name: "Sifa Domnic Fernandes",
-    role: "UGC Creator & SEO Analyst",
-    focus: "Creative Content · Organic Search & Performance",
+    role: "SEO Analyst",
+    focus: "Organic Search · SEO Performance Tracking",
     profilePath: "/team/sifa-domnic-fernandes",
     linkedinUrl: null
   },
@@ -652,6 +666,34 @@ export const TEAM_SOURCE: TeamMemberSource[] = [
     role: "SEO Manager",
     focus: "Organic Search Strategy · Technical SEO",
     profilePath: "/team/sindhu-reddy",
+    linkedinUrl: null
+  },
+  {
+    name: "Varshini KS",
+    role: "SEO Analyst",
+    focus: "Organic Search · Keyword Research",
+    profilePath: "/team/varshini-ks",
+    linkedinUrl: null
+  },
+  {
+    name: "Lakshmi P",
+    role: "SEO Analyst",
+    focus: "Organic Search · On-Page SEO",
+    profilePath: "/team/lakshmi-p",
+    linkedinUrl: null
+  },
+  {
+    name: "Asif S",
+    role: "Video Editor",
+    focus: "Video Editing · Short-Form Content",
+    profilePath: "/team/asif-s",
+    linkedinUrl: null
+  },
+  {
+    name: "Harishmitha C",
+    role: "UI/UX Designer",
+    focus: "UI/UX Design · Websites & Apps",
+    profilePath: null,
     linkedinUrl: null
   }
 ];

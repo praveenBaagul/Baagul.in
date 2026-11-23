@@ -6,29 +6,29 @@ import SifaProfileCard from "@/components/team/SifaProfileCard";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Sifa Domnic Fernandes: UGC Creator & SEO Analyst | Baagul LLP",
+  title: "Sifa Domnic Fernandes - SEO Analyst | Baagul LLP",
   description:
-    "Official practitioner profile, technical bio, and verified credentials for Sifa Domnic Fernandes, UGC Creator & SEO Analyst at Baagul LLP in Bengaluru.",
+    "Official practitioner profile, technical bio, and verified credentials for Sifa Domnic Fernandes, SEO Analyst at Baagul LLP in Bengaluru.",
   alternates: { canonical: "/team/sifa-domnic-fernandes" },
   openGraph: {
-    title: "Sifa Domnic Fernandes: UGC Creator & SEO Analyst | Baagul LLP",
+    title: "Sifa Domnic Fernandes - SEO Analyst | Baagul LLP",
     description:
-      "Official practitioner profile, technical bio, and verified credentials for Sifa Domnic Fernandes, UGC Creator & SEO Analyst at Baagul LLP in Bengaluru.",
+      "Official practitioner profile, technical bio, and verified credentials for Sifa Domnic Fernandes, SEO Analyst at Baagul LLP in Bengaluru.",
     url: `${SITE_URL}/team/sifa-domnic-fernandes`,
     images: [
       {
         url: `${SITE_URL}/assets/sifa-domnic-fernandes.png`,
         width: 1200,
         height: 630,
-        alt: "Sifa Domnic Fernandes - UGC Creator & SEO Analyst at Baagul LLP",
+        alt: "Sifa Domnic Fernandes - SEO Analyst at Baagul LLP",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sifa Domnic Fernandes: UGC Creator & SEO Analyst | Baagul LLP",
+    title: "Sifa Domnic Fernandes - SEO Analyst | Baagul LLP",
     description:
-      "Official practitioner profile, technical bio, and verified credentials for Sifa Domnic Fernandes, UGC Creator & SEO Analyst at Baagul LLP in Bengaluru.",
+      "Official practitioner profile, technical bio, and verified credentials for Sifa Domnic Fernandes, SEO Analyst at Baagul LLP in Bengaluru.",
     images: [`${SITE_URL}/assets/sifa-domnic-fernandes.png`],
   },
 };
@@ -40,7 +40,7 @@ export default function SifaProfilePage() {
     mainEntity: {
       "@type": "Person",
       name: "Sifa Domnic Fernandes",
-      jobTitle: "UGC Creator & SEO Analyst",
+      jobTitle: "SEO Analyst",
       worksFor: {
         "@type": "Organization",
         name: "Baagul LLP",
@@ -55,7 +55,7 @@ export default function SifaProfilePage() {
         },
       },
       image: `${SITE_URL}/assets/sifa-domnic-fernandes.png`,
-      identifier: "BG008",
+      identifier: "BG04",
       email: "support@baagul.in",
       telephone: "+91-62056-97634",
       url: `${SITE_URL}/team/sifa-domnic-fernandes`,

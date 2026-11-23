@@ -70,7 +70,7 @@ export default function SifaProfileCard() {
               <div className="relative w-full max-w-[280px] aspect-[4/5] rounded-2xl overflow-hidden border-2 border-indigo-main shadow-[5px_5px_0px_#121a4a] bg-canvas">
                 <Image
                   src="/assets/sifa-domnic-fernandes.png"
-                  alt="Sifa Domnic Fernandes - UGC Creator & SEO Analyst at Baagul LLP"
+                  alt="Sifa Domnic Fernandes - SEO Analyst at Baagul LLP"
                   title="Sifa Domnic Fernandes"
                   fill
                   priority
@@ -138,12 +138,12 @@ export default function SifaProfileCard() {
                 </h1>
 
                 <span className="font-heading text-xl text-terracotta font-bold block mb-4">
-                  UGC Creator &amp; SEO Analyst
+                  SEO Analyst
                 </span>
 
                 <div className="p-4 sm:p-5 bg-canvas border-2 border-indigo-main/20 rounded-xl mb-6">
                   <p className="font-sans text-xs sm:text-sm text-slate-text leading-relaxed">
-                    Drives high-converting user-generated content (UGC) production paired with deep organic search analysis at Baagul LLP. Bridges compelling brand storytelling with programmatic keyword research, user search intent optimization, and performance tracking across multi-channel client campaigns in Bengaluru.
+                    Delivers organic search analysis at Baagul LLP, covering keyword research, search intent optimization, on-page SEO and performance tracking across client campaigns in Bengaluru.
                   </p>
                 </div>
 
@@ -154,7 +154,7 @@ export default function SifaProfileCard() {
                       EMPLOYEE ID
                     </span>
                     <span className="font-mono text-xs sm:text-sm font-extrabold text-indigo-main">
-                      BG008
+                      BG04
                     </span>
                   </div>
 
@@ -172,7 +172,7 @@ export default function SifaProfileCard() {
                       DEPARTMENT
                     </span>
                     <span className="font-mono text-xs sm:text-sm font-extrabold text-indigo-main">
-                      Content &amp; SEO
+                      SEO
                     </span>
                   </div>
                 </div>

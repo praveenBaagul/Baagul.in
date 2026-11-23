@@ -159,7 +159,7 @@ export default function DushyanthProfileCard() {
                       EMPLOYEE ID
                     </span>
                     <span className="font-mono text-xs sm:text-sm font-extrabold text-indigo-main">
-                      BG005
+                      BG05
                     </span>
                   </div>
 

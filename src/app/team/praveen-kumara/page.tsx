@@ -55,7 +55,7 @@ export default function PraveenProfilePage() {
         },
       },
       image: `${SITE_URL}/assets/praveen-kumar-a.png`,
-      identifier: "BGL-2024-E14",
+      identifier: "BG07",
       email: "support@baagul.in",
       telephone: "+91-62056-97634",
       url: `${SITE_URL}/team/praveen-kumara`,

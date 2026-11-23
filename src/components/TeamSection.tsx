@@ -13,7 +13,22 @@ interface TeamMember {
   linkedinUrl?: string;
 }
 
+// Placeholder portraits (*-placeholder.svg / .png) stand in until real photos are added.
 const members: TeamMember[] = [
+  {
+    id: "m8",
+    name: "Ashish Kumar",
+    role: "Founder",
+    domain: "Company Leadership · Growth Strategy",
+    imgSrc: "/assets/ashish-kumar-placeholder.svg",
+  },
+  // {
+  //   id: "m9",
+  //   name: "Archana Kumari",
+  //   role: "Co-Founder",
+  //   domain: "Company Leadership · Operations",
+  //   imgSrc: "/assets/archana-kumari-placeholder.svg",
+  // },
   {
     id: "m1",
     name: "Kishore V",
@@ -53,8 +68,8 @@ const members: TeamMember[] = [
   {
     id: "m7",
     name: "Sifa Domnic Fernandes",
-    role: "UGC Creator & SEO Analyst",
-    domain: "Creative Content · Organic Search & Performance",
+    role: "SEO Analyst",
+    domain: "Organic Search · SEO Performance Tracking",
     imgSrc: "/assets/sifa-domnic-fernandes.png",
     profileUrl: "/team/sifa-domnic-fernandes",
   },
@@ -74,6 +89,37 @@ const members: TeamMember[] = [
     imgSrc: "/assets/sindhu-reddy.png",
     profileUrl: "/team/sindhu-reddy",
   },
+  {
+    id: "m10",
+    name: "Varshini KS",
+    role: "SEO Analyst",
+    domain: "Organic Search · Keyword Research",
+    imgSrc: "/assets/varshini-ks-placeholder.svg",
+    profileUrl: "/team/varshini-ks",
+  },
+  {
+    id: "m11",
+    name: "Lakshmi P",
+    role: "SEO Analyst",
+    domain: "Organic Search · On-Page SEO",
+    imgSrc: "/assets/lakshmi-p-placeholder.svg",
+    profileUrl: "/team/lakshmi-p",
+  },
+  {
+    id: "m12",
+    name: "Asif S",
+    role: "Video Editor",
+    domain: "Video Editing · Short-Form Content",
+    imgSrc: "/assets/asif-s-placeholder.svg",
+    profileUrl: "/team/asif-s",
+  },
+  // {
+  //   id: "m13",
+  //   name: "Harishmitha C",
+  //   role: "UI/UX Designer",
+  //   domain: "UI/UX Design · Websites & Apps",
+  //   imgSrc: "/assets/harishmitha-c-placeholder.svg",
+  // },
 ];
 
 export default function TeamSection() {
@@ -113,6 +159,7 @@ export default function TeamSection() {
                   title={member.name}
                   fill
                   priority
+                  unoptimized={member.imgSrc.endsWith(".svg")}
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -129,18 +176,20 @@ export default function TeamSection() {
               </span>
             </div>
 
-            {/* Profile Action Button with LinkedIn Logo */}
-            <Link
-              href={member.profileUrl || "/docs/kishore"}
-              className="mt-6 w-full inline-flex items-center justify-between px-4 py-3 rounded-xl bg-indigo-main hover:bg-indigo-mid text-canvas font-mono font-bold text-xs uppercase tracking-wider border-2 border-indigo-main shadow-[4px_4px_0px_#f5a800] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#f5a800] transition-all group/btn"
-            >
-              <div className="flex items-center gap-2.5">
-                <span className="tracking-wide">View profile</span>
-              </div>
-              <span className="text-marigold group-hover/btn:translate-x-1 transition-transform text-sm font-sans font-bold">
-                →
-              </span>
-            </Link>
+            {/* Profile Action Button (only for members with a profile page) */}
+            {member.profileUrl && (
+              <Link
+                href={member.profileUrl}
+                className="mt-6 w-full inline-flex items-center justify-between px-4 py-3 rounded-xl bg-indigo-main hover:bg-indigo-mid text-canvas font-mono font-bold text-xs uppercase tracking-wider border-2 border-indigo-main shadow-[4px_4px_0px_#f5a800] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0px_#f5a800] transition-all group/btn"
+              >
+                <div className="flex items-center gap-2.5">
+                  <span className="tracking-wide">View profile</span>
+                </div>
+                <span className="text-marigold group-hover/btn:translate-x-1 transition-transform text-sm font-sans font-bold">
+                  →
+                </span>
+              </Link>
+            )}
           </div>
         ))}
 

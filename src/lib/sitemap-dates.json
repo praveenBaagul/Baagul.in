@@ -1,7 +1,7 @@
 {
   "/": {
-    "lastModified": "2026-11-19",
-    "hash": "c8db91369fd804c1"
+    "lastModified": "2026-11-23",
+    "hash": "2ed2488940574e61"
   },
   "/career": {
     "lastModified": "2026-11-23",
@@ -17,7 +17,7 @@
   },
   "/docs/dushyanth": {
     "lastModified": "2026-11-23",
-    "hash": "a6dcd38d536d8ec4"
+    "hash": "00c3263d8c9a7eb3"
   },
   "/docs/kishore": {
     "lastModified": "2026-11-23",
@@ -81,26 +81,38 @@
   },
   "/team": {
     "lastModified": "2026-11-23",
-    "hash": "c5df5a6a2816bfc8"
+    "hash": "45449a3b3ee126ca"
+  },
+  "/team/asif-s": {
+    "lastModified": "2026-11-23",
+    "hash": "8ed79e23ccbf137f"
+  },
+  "/team/lakshmi-p": {
+    "lastModified": "2026-11-23",
+    "hash": "b8d445bc6ba0e4f8"
   },
   "/team/navin-kumar-verma": {
     "lastModified": "2026-11-23",
-    "hash": "1fcbc6c76b1378c4"
+    "hash": "c95099753b0d7e2f"
   },
   "/team/praveen-kumara": {
     "lastModified": "2026-11-23",
-    "hash": "1b18470725536a54"
+    "hash": "d4276c05a8ef8574"
   },
   "/team/sahil-goswami": {
     "lastModified": "2026-11-23",
-    "hash": "5ddcc2c78497575a"
+    "hash": "bed937dd51715d77"
   },
   "/team/sifa-domnic-fernandes": {
     "lastModified": "2026-11-23",
-    "hash": "59bea760d0a18a87"
+    "hash": "1a7d5e18b543e166"
   },
   "/team/sindhu-reddy": {
     "lastModified": "2026-11-23",
     "hash": "7e9afa1fc8dce34a"
+  },
+  "/team/varshini-ks": {
+    "lastModified": "2026-11-23",
+    "hash": "ad47f65d387afa81"
   }
 }

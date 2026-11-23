@@ -154,7 +154,7 @@ export default function SahilProfileCard() {
                       EMPLOYEE ID
                     </span>
                     <span className="font-mono text-xs sm:text-sm font-extrabold text-indigo-main">
-                      BG007
+                      BG06
                     </span>
                   </div>
 
