@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function GuestPostPillsStrip() {
   const pills = [
-    { title: "High-DA Authority Websites", bg: "bg-[#FFA800]", text: "text-[#0E1153]" },
-    { title: "Niche-Relevant Portfolios", bg: "bg-[#FFFFFF]", text: "text-[#0E1153]" },
-    { title: "100% Do-Follow Backlinks", bg: "bg-[#CFE8DC]", text: "text-[#005F4C]" },
-    { title: "Real Traffic Growth", bg: "bg-[#E1E3F7]", text: "text-[#0E1153]" },
+    { title: "Real-Audience Publications", bg: "bg-[#FFA800]", text: "text-[#0E1153]" },
+    { title: "Niche-Relevant Placements", bg: "bg-[#FFFFFF]", text: "text-[#0E1153]" },
+    { title: "Transparent Link Reporting", bg: "bg-[#CFE8DC]", text: "text-[#005F4C]" },
+    { title: "Referral Traffic Growth", bg: "bg-[#E1E3F7]", text: "text-[#0E1153]" },
     { title: "Brand Authority & Trust", bg: "bg-[#FFFFFF]", text: "text-[#0E1153]" },
-    { title: "Qualified Heavy Buyer Leads", bg: "bg-[#FFA800]", text: "text-[#0E1153]" },
+    { title: "Digital PR Coverage", bg: "bg-[#FFA800]", text: "text-[#0E1153]" },
   ];
 
   return (
@@ -22,8 +22,12 @@ export default function GuestPostPillsStrip() {
 
         {/* Heading */}
         <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-[#0E1153] leading-snug mb-10 max-w-2xl">
-          High-quality content, niche-relevant placements, and authority backlinks that grow your business online.
+          Professional Guest Posting &amp; Blogger Outreach Services
         </h2>
+
+        <p className="font-sans text-sm sm:text-base text-[#3E4945] max-w-2xl leading-relaxed -mt-4 mb-10">
+          Original content, niche-relevant placements and honest reporting that put your brand in front of the right readers.
+        </p>
 
         {/* Two rows of rounded pills */}
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-3xl mb-10">

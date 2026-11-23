@@ -5,55 +5,53 @@ import JsonLd from "@/components/seo/JsonLd";
 import { faqSchema } from "@/lib/structured-data";
 
 interface FAQItem {
-  id: number;
   q: string;
   a: string;
-  defaultBg: string;
-  defaultShadow: string;
 }
+
+// Cards cycle through these backgrounds in order.
+const BACKGROUNDS = ["bg-[#FFFFFF]", "bg-[#CFE8DC]", "bg-[#E1E3F7]"];
 
 const faqs: FAQItem[] = [
   {
-    id: 0,
-    q: "What are guest posts & PR, and how do they help my business?",
-    a: "Guest posts & PR involve writing and publishing articles on other reputable websites within your industry. It helps you acquire high-quality backlinks, improve search engine rankings, drive targeted referral traffic, and establish brand authority.",
-    defaultBg: "bg-[#FFFFFF]",
-    defaultShadow: "shadow-[6px_6px_0px_#0E1153]",
+    q: "What are guest posting services, and how do they help my business?",
+    a: "Guest posting means writing and publishing articles on other relevant websites in your industry. Done well, it puts your brand in front of new readers, brings referral traffic, builds trust and can earn editorial mentions and links that support your wider SEO.",
   },
   {
-    id: 1,
-    q: "Are the backlinks do-follow and permanent?",
-    a: "Yes. All backlinks secured through our guest posts & PR service are 100% natural, permanent do-follow links embedded contextually within authoritative editorial content.",
-    defaultBg: "bg-[#CFE8DC]",
-    defaultShadow: "shadow-[6px_6px_0px_#0E1153]",
+    q: "How much do guest posting services cost?",
+    a: "The cost depends on how many placements you need, the publications you want to appear on, and whether content writing and digital PR are included. We share a fixed quote and the list of target websites before we start, so there are no surprises.",
   },
   {
-    id: 2,
-    q: "How do you choose websites for guest posts & PR outreach?",
-    a: "We evaluate websites based on high Domain Authority (DA 50+), real organic Google search traffic, clean backlink profiles with low spam scores, and topical relevance to your target audience.",
-    defaultBg: "bg-[#E1E3F7]",
-    defaultShadow: "shadow-[6px_6px_0px_#0E1153]",
+    q: "How do you select websites for guest posting?",
+    a: "We look for websites with a genuine audience and real organic traffic, topical relevance to your business, a clean link profile and real editorial standards. We avoid sites that exist only to sell links.",
   },
   {
-    id: 3,
-    q: "Do I need to supply the article content myself?",
-    a: "No. Our dedicated in-house team of professional copywriters and subject specialists crafts well-researched, publication-ready articles matching each host website's editorial guidelines.",
-    defaultBg: "bg-[#FFFFFF]",
-    defaultShadow: "shadow-[6px_6px_0px_#0E1153]",
+    q: "What is the difference between guest posting and digital PR?",
+    a: "Guest posting places an article you contribute on another website. Digital PR earns coverage that journalists and editors write themselves, through stories, data, expert commentary and campaigns. Many brands use both: guest posts for steady, targeted visibility and digital PR for wider reach and authority.",
   },
   {
-    id: 4,
+    q: "Can guest posting help increase referral traffic?",
+    a: "Yes. A useful article on a website your customers already read sends interested visitors to your site. That is why we choose publications by audience and relevance rather than by metrics alone.",
+  },
+  {
+    q: "Do you provide guest post content writing?",
+    a: "Yes. Our in-house writers create well-researched, original, publication-ready articles that follow each website's editorial guidelines. You review and approve every article before it is pitched.",
+  },
+  {
+    q: "Are guest post links do-follow and permanent?",
+    a: "Each publisher decides how links on its website are marked. In line with Google's guidelines, paid or sponsored placements should carry rel=\"sponsored\" or rel=\"nofollow\", and we do not disguise them. No agency can guarantee that a third-party website keeps a link forever, but we choose stable, well-run publications and check placements after they go live.",
+  },
+  {
+    q: "How do you report published guest posts?",
+    a: "You receive a report for every placement with the live URL, the publishing website, the link and how it is marked, and the publication date, so you always know exactly what was published and where.",
+  },
+  {
     q: "How long does it take for a guest post or PR placement to get published?",
-    a: "On average, the process takes between 7 to 21 business days from pitch approval and drafting to final editorial review, live publication, and search engine indexation.",
-    defaultBg: "bg-[#CFE8DC]",
-    defaultShadow: "shadow-[6px_6px_0px_#0E1153]",
+    a: "Most placements take 7 to 21 business days, from topic approval and writing to the publisher's editorial review and going live. Timelines vary by publication.",
   },
   {
-    id: 5,
-    q: "Are your link-building practices safe from Google penalties?",
-    a: "Yes. We strictly follow white-hat manual outreach methods with authentic editorial relationships, diversified natural anchor text, and zero involvement with PBNs or link networks.",
-    defaultBg: "bg-[#E1E3F7]",
-    defaultShadow: "shadow-[6px_6px_0px_#0E1153]",
+    q: "Is guest posting safe from Google penalties?",
+    a: "Guest posting is safe when it is done for audiences, not just links. We use manual, white-hat outreach to relevant websites, natural anchor text, correct labelling of paid placements, and we never use private blog networks or link schemes.",
   },
 ];
 
@@ -77,23 +75,23 @@ export default function GuestPostFAQ() {
         {/* Section Heading */}
         <div className="text-center mb-16 max-w-3xl">
           <h2 className="font-heading text-4xl sm:text-5xl text-[#0E1153] leading-tight">
-            <span>Everything You Need to Know About</span>
+            <span>Frequently Asked Questions</span>
             <br />
-            <span>Our Guest Posts &amp; PR Services</span>
+            <span>About Guest Posting</span>
           </h2>
         </div>
 
         {/* 2-Column Grid Matching Screenshot Colors Exactly */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-          {faqs.map((item) => {
-            const isOpen = openIdx === item.id;
+          {faqs.map((item, idx) => {
+            const isOpen = openIdx === idx;
             return (
               <div
-                key={item.id}
-                className={`${item.defaultBg} text-[#0E1153] border-2 border-[#0E1153] rounded-2xl ${item.defaultShadow} overflow-hidden transition-all`}
+                key={item.q}
+                className={`${BACKGROUNDS[idx % BACKGROUNDS.length]} text-[#0E1153] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] overflow-hidden transition-all`}
               >
                 <button
-                  onClick={() => toggle(item.id)}
+                  onClick={() => toggle(idx)}
                   className="w-full p-5 sm:p-6 flex items-center justify-between text-left gap-4 transition-colors"
                 >
                   <span className="font-heading text-base sm:text-lg font-bold text-[#0E1153] leading-snug">

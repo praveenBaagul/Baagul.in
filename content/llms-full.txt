@@ -59,12 +59,12 @@ All web systems engineered by Baagul adhere to rigorous technical guidelines:
 
 ### 4. Guest Posts & PR
 - **URL**: https://baagul.in/services/guest-post
-- **Description**: High-authority digital PR placements, editorial guest articles, and contextual link profile architecture that build domain trust and brand recognition.
+- **Description**: Guest posting services, blogger outreach and digital PR. Editorial placements on relevant websites with genuine audiences, for referral traffic, brand visibility and trust.
 - **Key Deliverables**:
-  - Editorial placements on high-Domain Authority (DA 50+) and real-traffic industry publications.
-  - Expert ghostwritten technical articles and journalistic PR releases.
-  - 100% white-hat contextual link acquisition with permanent, indexed placements.
-  - Transparent backlink verification and citation audit reports.
+  - Editorial placements on relevant, real-traffic industry publications, chosen by audience and topic.
+  - Original guest post content writing that follows each publisher's editorial guidelines.
+  - Blogger outreach and digital PR campaigns; paid placements are labelled in line with Google's guidelines (rel="sponsored" or rel="nofollow").
+  - Transparent reports for every placement: live URL, publishing website, link and how it is marked.
 
 ### 5. Graphic Designing
 - **URL**: https://baagul.in/services/graphics-design

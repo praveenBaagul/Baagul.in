@@ -41,8 +41,8 @@ export const SERVICES: Service[] = [
     slug: "guest-post",
     name: "Guest Posts & PR",
     url: `${SITE_URL}/services/guest-post`,
-    description: "High-authority editorial placements and digital PR strategies that build verified domain authority and sustainable referral traffic.",
-    deliverables: ["DA 50+ Editorial Placements", "Ghostwritten Technical Content", "Permanent Contextual Links", "Live Link Verification Reports"],
+    description: "Guest posting services, blogger outreach and digital PR that place your brand on relevant publications with genuine audiences, for referral traffic and brand visibility.",
+    deliverables: ["Editorial Placements on Relevant Publications", "Guest Post Content Writing", "Blogger Outreach & Digital PR", "Live Placement Reports"],
   },
   {
     slug: "graphics-design",

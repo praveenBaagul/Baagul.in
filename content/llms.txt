@@ -16,7 +16,7 @@
 - [Website Design & Development](https://baagul.in/services/web-design): High-speed Next.js, React, and TypeScript web applications with sub-second page loads and accessible semantic UI.
 - [SEO Optimization](https://baagul.in/services/seo-optimizations): Technical site health, semantic indexing, Core Web Vitals optimization, and organic search ranking authority.
 - [Logo Design & Visual Identity](https://baagul.in/services/logo-design): Comprehensive branding, typographic hierarchies, color geometry, and vector asset guidelines.
-- [Guest Posts & PR](https://baagul.in/services/guest-post): High-authority editorial placements, brand PR features, and contextual link profile architecture.
+- [Guest Posts & PR](https://baagul.in/services/guest-post): Guest posting services, blogger outreach and digital PR on relevant publications with genuine audiences.
 - [Graphic Designing](https://baagul.in/services/graphics-design): Conversion-optimized creative assets, digital campaign collateral, and print marketing systems.
 - [E-Commerce Solutions](https://baagul.in/services/e-commerce-solutions): Headless commerce architectures, frictionless checkout flows, and catalog conversion optimization.
 - [WordPress & CMS Development](https://baagul.in/services/wordpress-development): Enterprise WordPress engineering, custom Gutenberg blocks, and secure headless CMS solutions.

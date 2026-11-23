@@ -15,9 +15,9 @@ const cards: ServiceCard[] = [
     serviceNumber: "SERVICE 01",
     badgeColor: "bg-[#005F4C]",
     iconBg: "bg-[#CFE8DC]",
-    title: "High-Quality Content Creation",
+    title: "SEO Content Writing & Guest Blogging",
     description:
-      "We craft well-researched, engaging, and original articles tailored to your niche.",
+      "Original, well-researched articles written by our team to fit each publisher's audience and editorial guidelines.",
     footerText: "EDITORIAL DRAFT",
     icon: (
       <svg
@@ -40,9 +40,9 @@ const cards: ServiceCard[] = [
     serviceNumber: "SERVICE 02",
     badgeColor: "bg-[#FFA800]",
     iconBg: "bg-[#FFA800]",
-    title: "SEO-Optimized Articles",
+    title: "SEO Guest Posting Services",
     description:
-      "Each post is optimized with the right keywords to improve search engine rankings and drive organic traffic.",
+      "Topics planned around what your audience searches for, so each guest post supports your wider SEO strategy.",
     footerText: "SERP FOCUSED",
     icon: (
       <svg
@@ -66,10 +66,10 @@ const cards: ServiceCard[] = [
     serviceNumber: "SERVICE 03",
     badgeColor: "bg-[#0E1153]",
     iconBg: "bg-[#CFE8DC]",
-    title: "Authority & Backlink Building",
+    title: "Digital PR & Editorial Outreach",
     description:
-      "Publish on reputable websites to increase your brand credibility and gain valuable backlinks.",
-    footerText: "DO-FOLLOW",
+      "PR campaigns and expert commentary that earn brand mentions and links on reputable, relevant websites.",
+    footerText: "BRAND MENTIONS",
     icon: (
       <svg
         className="w-5 h-5 text-[#0E1153]"
@@ -89,9 +89,9 @@ const cards: ServiceCard[] = [
     serviceNumber: "SERVICE 04",
     badgeColor: "bg-[#4E8D7C]",
     iconBg: "bg-[#FFA800]",
-    title: "Custom Outreach & Placement",
+    title: "Blogger Outreach & Placement",
     description:
-      "We handle outreach and secure placements on relevant blogs, ensuring your content reaches the right audience.",
+      "We pitch relevant blogs and publications and secure editorial placements, so your content reaches the right audience.",
     footerText: "TARGET AUDIENCE",
     icon: (
       <svg
@@ -123,12 +123,12 @@ export default function GuestPostMainFeatures() {
             </div>
 
             <h2 className="font-heading text-4xl sm:text-5xl lg:text-[52px] font-bold text-[#0E1153] leading-tight">
-              Our Services
+              High-Quality Editorial Placements for Your Brand
             </h2>
           </div>
 
           <p className="font-sans text-xs sm:text-sm text-[#3E4945] max-w-md leading-relaxed pb-1">
-            We think big and have hands in all leading technology platforms to provide you wide array of services.
+            Guest posting, content writing, blogger outreach and digital PR, handled by one team from first pitch to published article.
           </p>
         </div>
 

@@ -161,41 +161,57 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
       },
       {
         title: "Content Creation",
-        description: "Drafting authoritative 1,200+ word copy with contextual anchor text, proprietary assets, and references."
+        description: "Writing original, in-depth articles that follow each publisher's editorial guidelines, with natural, relevant references."
       },
       {
         title: "Outreach & Placement",
-        description: "Pitching vetted webmasters with genuine domain authority to secure confirmed editorial publication spots."
+        description: "Pitching vetted publishers and bloggers with genuine audiences to secure editorial placements."
       },
       {
         title: "Review & Publishing",
-        description: "Live link verification, indexing tracking, and transparent reporting with permanent follow guarantees."
+        description: "Checking every placement once it is live and reporting the published URL, the link and how it is marked."
       }
     ],
     faqs: [
       {
-        question: "What are guest posts & PR, and how do they help my business?",
-        answer: "Guest posts & PR involve writing and publishing articles on other reputable websites within your industry. It helps you acquire high-quality backlinks, improve search engine rankings, drive targeted referral traffic, and establish brand authority."
+        question: "What are guest posting services, and how do they help my business?",
+        answer: "Guest posting means writing and publishing articles on other relevant websites in your industry. Done well, it puts your brand in front of new readers, brings referral traffic, builds trust and can earn editorial mentions and links that support your wider SEO."
       },
       {
-        question: "Are the backlinks do-follow and permanent?",
-        answer: "Yes. All backlinks secured through our guest posts & PR service are 100% natural, permanent do-follow links embedded contextually within authoritative editorial content."
+        question: "How much do guest posting services cost?",
+        answer: "The cost depends on how many placements you need, the publications you want to appear on, and whether content writing and digital PR are included. We share a fixed quote and the list of target websites before we start, so there are no surprises."
       },
       {
-        question: "How do you choose websites for guest posts & PR outreach?",
-        answer: "We evaluate websites based on high Domain Authority (DA 50+), real organic Google search traffic, clean backlink profiles with low spam scores, and topical relevance to your target audience."
+        question: "How do you select websites for guest posting?",
+        answer: "We look for websites with a genuine audience and real organic traffic, topical relevance to your business, a clean link profile and real editorial standards. We avoid sites that exist only to sell links."
       },
       {
-        question: "Do I need to supply the article content myself?",
-        answer: "No. Our dedicated in-house team of professional copywriters and subject specialists crafts well-researched, publication-ready articles matching each host website's editorial guidelines."
+        question: "What is the difference between guest posting and digital PR?",
+        answer: "Guest posting places an article you contribute on another website. Digital PR earns coverage that journalists and editors write themselves, through stories, data, expert commentary and campaigns. Many brands use both: guest posts for steady, targeted visibility and digital PR for wider reach and authority."
+      },
+      {
+        question: "Can guest posting help increase referral traffic?",
+        answer: "Yes. A useful article on a website your customers already read sends interested visitors to your site. That is why we choose publications by audience and relevance rather than by metrics alone."
+      },
+      {
+        question: "Do you provide guest post content writing?",
+        answer: "Yes. Our in-house writers create well-researched, original, publication-ready articles that follow each website's editorial guidelines. You review and approve every article before it is pitched."
+      },
+      {
+        question: "Are guest post links do-follow and permanent?",
+        answer: "Each publisher decides how links on its website are marked. In line with Google's guidelines, paid or sponsored placements should carry rel=\"sponsored\" or rel=\"nofollow\", and we do not disguise them. No agency can guarantee that a third-party website keeps a link forever, but we choose stable, well-run publications and check placements after they go live."
+      },
+      {
+        question: "How do you report published guest posts?",
+        answer: "You receive a report for every placement with the live URL, the publishing website, the link and how it is marked, and the publication date, so you always know exactly what was published and where."
       },
       {
         question: "How long does it take for a guest post or PR placement to get published?",
-        answer: "On average, the process takes between 7 to 21 business days from pitch approval and drafting to final editorial review, live publication, and search engine indexation."
+        answer: "Most placements take 7 to 21 business days, from topic approval and writing to the publisher's editorial review and going live. Timelines vary by publication."
       },
       {
-        question: "Are your link-building practices safe from Google penalties?",
-        answer: "Yes. We strictly follow white-hat manual outreach methods with authentic editorial relationships, diversified natural anchor text, and zero involvement with PBNs or link networks."
+        question: "Is guest posting safe from Google penalties?",
+        answer: "Guest posting is safe when it is done for audiences, not just links. We use manual, white-hat outreach to relevant websites, natural anchor text, correct labelling of paid placements, and we never use private blog networks or link schemes."
       }
     ]
   },

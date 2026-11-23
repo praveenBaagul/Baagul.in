@@ -14,27 +14,27 @@ import GuestPostServicePager from "@/components/guest-post/GuestPostServicePager
 import GuestPostSpecMatrix from "@/components/guest-post/GuestPostSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Guest Posting & Digital PR Services | Baagul",
+  title: "Guest Posting Services & Digital PR | BAAGUL",
   description:
-    "Guest posting services and digital PR: guest post outreach on high-authority industry sites that earns natural backlinks and qualified referral traffic.",
+    "Grow your brand with BAAGUL's guest posting services, blogger outreach and digital PR. Get relevant editorial placements, quality content and reporting.",
   alternates: { canonical: "/services/guest-post" },
   openGraph: {
-    title: "Guest Posting & Digital PR Services | Baagul",
+    title: "Guest Posting Services & Digital PR | BAAGUL",
     description:
-      "Guest posting services and digital PR: guest post outreach on high-authority industry sites that earns natural backlinks and qualified referral traffic.",
+      "Grow your brand with BAAGUL's guest posting services, blogger outreach and digital PR. Get relevant editorial placements, quality content and reporting.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Guest Posting & Digital PR Services | Baagul",
+    title: "Guest Posting Services & Digital PR | BAAGUL",
     description:
-      "Guest posting services and digital PR: guest post outreach on high-authority industry sites that earns natural backlinks and qualified referral traffic.",
+      "Grow your brand with BAAGUL's guest posting services, blogger outreach and digital PR. Get relevant editorial placements, quality content and reporting.",
   },
 };
 
 export default function GuestPostPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
-      <JsonLd data={serviceSchema({ name: "Guest Posts & PR", path: "/services/guest-post", description: metadata.description })} />
+      <JsonLd data={serviceSchema({ name: "Guest Posting Services & Digital PR", path: "/services/guest-post", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero (Forest Green #005F4C background, Bar chart widget & Poster illustration) */}
@@ -49,7 +49,7 @@ export default function GuestPostPage() {
         {/* Section 4: 4-Step Guest Posts & PR Process (Midnight navy #1A1F5E background) */}
         <GuestPostProcess />
 
-        {/* Section 5: Why Choose Us (Build Authority, Earn Backlinks. Rank Higher + 98% indexation box) */}
+        {/* Section 5: Why Choose Us (heading, reporting box, link to SEO services) */}
         <GuestPostWhyChooseUs />
 
         {/* Section 6: 2-Column FAQ Accordion */}

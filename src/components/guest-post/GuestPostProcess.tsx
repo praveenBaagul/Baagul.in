@@ -38,7 +38,7 @@ const steps: ProcessStep[] = [
     number: "02",
     title: "Content Creation",
     description:
-      "Drafting authoritative 1,200+ word copy with contextual anchor text, proprietary assets, and references.",
+      "Writing original, in-depth articles that follow each publisher's editorial guidelines, with natural, relevant references.",
     footerLeft: "EDITORIAL QUALITY",
     footerRight: "PHASE II",
     icon: (
@@ -64,7 +64,7 @@ const steps: ProcessStep[] = [
     number: "03",
     title: "Outreach & Placement",
     description:
-      "Pitching vetted webmasters with genuine domain authority to secure confirmed editorial publication spots.",
+      "Pitching vetted publishers and bloggers with genuine audiences to secure editorial placements.",
     footerLeft: "RELATIONSHIP FIRST",
     footerRight: "PHASE III",
     icon: (
@@ -89,7 +89,7 @@ const steps: ProcessStep[] = [
     number: "04",
     title: "Review & Publishing",
     description:
-      "Live link verification, indexing tracking, and transparent reporting with permanent follow guarantees.",
+      "Checking every placement once it is live and reporting the published URL, the link and how it is marked.",
     footerLeft: "LIVE INDEX",
     footerRight: "FINAL",
     isHighlighted: true,
@@ -130,11 +130,11 @@ export default function GuestPostProcess() {
           </div>
 
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-[52px] text-[#FEF9ED] font-bold leading-tight mb-4">
-            Our 4-Step Guest Post Process
+            Our Guest Posting &amp; Publication Process
           </h2>
 
           <p className="font-sans text-xs sm:text-sm text-[#FEF9ED]/80 max-w-xl mx-auto leading-relaxed">
-            We follow a strategic approach to create and publish high-quality guest posts that boost your brand visibility and SEO.
+            Four steps from research to a published, verified article that builds your brand visibility.
           </p>
         </div>
 

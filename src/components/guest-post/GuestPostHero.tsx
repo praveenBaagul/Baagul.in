@@ -33,12 +33,12 @@ export default function GuestPostHero() {
               </span>
               {" "}
               <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#FEF9ED]/85">
-                Guest Posting &amp; Digital PR Services
+                Guest Posting Services &amp; Digital PR Solutions
               </span>
             </h1>
 
             <p className="font-sans text-base sm:text-lg text-[#FEF9ED]/90 max-w-xl leading-relaxed mb-8">
-              At Baagul, our guest posting services place your brand on high-authority industry publications. We pair guest post outreach with digital PR services to earn natural backlinks, editorial mentions, and qualified referral traffic.
+              At BAAGUL, our guest posting services place your brand on relevant publications with genuine audiences. We combine blogger outreach, original content and digital PR to earn editorial placements, referral traffic and brand visibility.
             </p>
 
             {/* CTA Button */}
@@ -102,7 +102,7 @@ export default function GuestPostHero() {
               <div className="relative w-full aspect-square">
                 <Image
                   src="/assets/guest-post-hero-poster.jpg"
-                  alt="Guest Posts & PR - Build Website Authority, Increase Brand Visibility & Boost Google Rankings"
+                  alt="Guest posting services and digital PR by BAAGUL"
                   fill
                   priority
                   className="object-cover object-center"
