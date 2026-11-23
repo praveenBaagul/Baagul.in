@@ -2,6 +2,11 @@ import fs from "node:fs";
 import path from "node:path";
 import type { MetadataRoute } from "next";
 import { SITE_URL, SITEMAP_EXCLUDE, SITEMAP_OVERRIDES } from "@/lib/site";
+import SITEMAP_DATES from "@/lib/sitemap-dates.json";
+
+// Each route's lastModified is the day its content last changed, kept in
+// src/lib/sitemap-dates.json. After editing a page, run `npm run sitemap:dates`.
+const LAST_MODIFIED: Record<string, { lastModified: string }> = SITEMAP_DATES;
 
 // Generated at build time: every new `page.tsx` under src/app is picked up
 // automatically on the next deploy. No manual sitemap edits needed.
@@ -56,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return routes.map((route) => ({
     url: route === "/" ? SITE_URL : `${SITE_URL}${route}`,
+    ...(LAST_MODIFIED[route] ? { lastModified: LAST_MODIFIED[route].lastModified } : {}),
     ...defaults(route),
     ...SITEMAP_OVERRIDES[route],
   }));

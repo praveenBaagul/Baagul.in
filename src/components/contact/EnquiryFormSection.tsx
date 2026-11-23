@@ -180,9 +180,10 @@ export default function EnquiryFormSection() {
             </span>
           </div>
 
-          <h2 className="font-heading text-4xl sm:text-5xl text-indigo-main leading-tight mb-4">
+          {/* The page's main heading: an h1 for search engines, styled exactly as before. */}
+          <h1 className="font-heading text-4xl sm:text-5xl text-indigo-main leading-tight mb-4">
             Tell us what you need.
-          </h2>
+          </h1>
 
           <p className="font-sans text-sm sm:text-base text-slate-text leading-relaxed mb-8">
             Choose a service and share a few details. We&apos;ll get back to you soon with

@@ -2,6 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/seo/JsonLd";
+import { aboutPageSchema } from "@/lib/structured-data";
 import TeamSection from "@/components/TeamSection";
 import AboutUsStorySection from "@/components/team/AboutUsStorySection";
 import Link from "next/link";
@@ -55,6 +57,7 @@ const workingPrinciples = [
 export default function TeamPage() {
   return (
     <div className="min-h-screen flex flex-col bg-canvas text-indigo-main antialiased selection:bg-marigold selection:text-indigo-main">
+      <JsonLd data={aboutPageSchema()} />
       <Header />
 
       <main className="flex-1 flex flex-col">

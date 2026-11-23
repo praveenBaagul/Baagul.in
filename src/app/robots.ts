@@ -14,11 +14,14 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: ["/", "/api/mcp"],
-        disallow: ["/api/subscribe"],
       },
       {
+        // AI crawlers and AI search bots. A bot named here follows only this group.
         userAgent: [
+          "OAI-SearchBot",
+          "ChatGPT-User",
           "GPTBot",
+          "Claude-SearchBot",
           "ClaudeBot",
           "Google-Extended",
           "PerplexityBot",

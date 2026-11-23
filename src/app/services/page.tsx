@@ -2,6 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/seo/JsonLd";
+import { SERVICES } from "@/lib/mcp/content/services";
+import { servicesHubSchema } from "@/lib/structured-data";
 import ServicesHero from "@/components/services/ServicesHero";
 import ServicesCardsGrid from "@/components/services/ServicesCardsGrid";
 import ServicesCTABand from "@/components/services/ServicesCTABand";
@@ -24,6 +27,7 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="min-h-screen flex flex-col bg-canvas text-indigo-main antialiased selection:bg-marigold selection:text-indigo-main">
+      <JsonLd data={servicesHubSchema(SERVICES)} />
       <Header />
       <main className="flex-1 flex flex-col">
         <ServicesHero />

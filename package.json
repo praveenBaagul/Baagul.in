@@ -17,7 +17,8 @@
     "postinstall": "node scripts/fix-permissions.js && prisma generate",
     "automation": "tsx --env-file-if-exists=.env scripts/automation.ts",
     "templates": "tsx --env-file-if-exists=.env scripts/templates.ts",
-    "mcp:sync": "tsx scripts/sync-mcp-content.ts"
+    "mcp:sync": "tsx scripts/sync-mcp-content.ts",
+    "sitemap:dates": "tsx scripts/update-sitemap-dates.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",

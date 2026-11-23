@@ -2,6 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/seo/JsonLd";
+import { JOB_OPENINGS } from "@/lib/mcp/content/careers";
+import { careersPageSchema } from "@/lib/structured-data";
 import CareerHero from "@/components/career/CareerHero";
 import CareerOpeningsList from "@/components/career/CareerOpeningsList";
 import CareerContactBand from "@/components/career/CareerContactBand";
@@ -28,6 +31,7 @@ export const metadata: Metadata = {
 export default function CareerPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
+      <JsonLd data={careersPageSchema(JOB_OPENINGS)} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero & Headcount 02 Card */}

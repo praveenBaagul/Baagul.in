@@ -8,6 +8,15 @@ const nextConfig: NextConfig = {
   // URL changes — never just delete the old page.
   async redirects() {
     return [
+      // One canonical host: www.baagul.in permanently redirects to baagul.in,
+      // keeping the path. Next.js passes the query string through unchanged.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www\\.baagul\\.in" }],
+        destination: "https://baagul.in/:path*",
+        permanent: true,
+      },
+
       // Direct doc & credential route matching
       { source: "/docs/kishore.pdf", destination: "/docs/kishore", permanent: false },
       { source: "/docs/dushyanth.pdf", destination: "/docs/dushyanth", permanent: false },
@@ -71,6 +80,11 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
+      {
+        // Plain-text files for AI crawlers. They contain non-ASCII characters (·, ₹).
+        source: "/:file(llms\\.txt|llms-full\\.txt|ai\\.txt)",
+        headers: [{ key: "Content-Type", value: "text/plain; charset=utf-8" }],
+      },
       {
         source: "/(.*)",
         headers: [
