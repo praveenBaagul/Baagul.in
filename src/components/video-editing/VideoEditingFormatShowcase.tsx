@@ -23,7 +23,7 @@ const formats: FormatTab[] = [
     ratio: "9:16 Vertical",
     icon: "📱",
     badgeBg: "bg-[#0E7A63] text-[#FEF9ED]",
-    description: "Vertical cuts engineered for 3-second hook retention on Instagram Reels, YouTube Shorts, and TikTok.",
+    description: "Vertical cuts built to hook viewers in the first 3 seconds on Instagram Reels, YouTube Shorts and other short-form platforms.",
   },
   {
     id: "youtube",
@@ -32,7 +32,7 @@ const formats: FormatTab[] = [
     ratio: "16:9 Widescreen",
     icon: "📺",
     badgeBg: "bg-[#FFBA45] text-[#0E1153]",
-    description: "Paced for maximum watch-time with chapters, B-roll overlays, retention edits, and high-impact sound design.",
+    description: "Paced to keep viewers watching, with chapters, B-roll overlays, retention edits and sound design.",
   },
   {
     id: "ads",
@@ -41,7 +41,7 @@ const formats: FormatTab[] = [
     ratio: "16:9 Feed Ad",
     icon: "🎯",
     badgeBg: "bg-[#CFE8DC] text-[#0E1153]",
-    description: "High-converting performance video ads for Meta, TikTok, and YouTube designed to drive direct clicks and purchases.",
+    description: "Video ads for Meta and YouTube built around a clear hook, product showcase and call to action.",
   },
   {
     id: "motion",
@@ -148,7 +148,7 @@ export default function VideoEditingFormatShowcase() {
               </span>
             </div>
             <h2 className="font-heading text-3xl sm:text-5xl lg:text-[54px] text-[#0E1153] tracking-tight leading-tight">
-              Format <span className="font-serif italic font-normal text-[#0E7A63]">Mockup</span> Showcase
+              Video Editing for <span className="font-serif italic font-normal text-[#0E7A63]">Every</span> Platform
             </h2>
           </div>
         </div>
@@ -256,6 +256,7 @@ export default function VideoEditingFormatShowcase() {
                   <video
                     ref={videoRef}
                     src="/assets/video/Shorts.mp4"
+                    aria-label="Sample Instagram Reel edited by BAAGUL"
                     loop
                     muted
                     playsInline
@@ -375,19 +376,19 @@ export default function VideoEditingFormatShowcase() {
                   <span>9:16 VERTICAL SUITE</span>
                 </div>
                 <h3 className="font-heading text-2xl sm:text-4xl font-bold text-white mb-3 sm:mb-4 leading-tight">
-                  High-Retention Reels & Shorts
+                  Instagram Reels &amp; YouTube Shorts Editing
                 </h3>
                 <p className="font-sans text-xs sm:text-base text-[#FEF9ED]/80 leading-relaxed mb-4 sm:mb-6">
-                  Over 85% of social content is consumed on mobile. Our short-form editors craft fast-paced transitions, sound hits, kinetic captions, and 3-second hook loops tailored to Instagram, TikTok, and YouTube Shorts algorithms.
+                  Most social video is watched on phones. Our short-form editors craft fast-paced transitions, sound hits, kinetic captions and strong opening hooks for Instagram Reels, YouTube Shorts and other short-form platforms.
                 </p>
 
                 <div className="grid grid-cols-2 gap-2.5 sm:gap-3 w-full mb-4 sm:mb-6">
                   <div className="bg-white/5 border border-white/10 rounded-xl p-3 sm:p-3.5">
                     <span className="font-heading text-xl sm:text-2xl font-bold text-[#FFBA45] block mb-0.5 sm:mb-1">
-                      +85%
+                      9:16
                     </span>
                     <span className="font-mono text-[10px] sm:text-xs text-[#FEF9ED]/70 uppercase">
-                      Average Hook Retention
+                      Vertical-First Edits
                     </span>
                   </div>
                   <div className="bg-white/5 border border-white/10 rounded-xl p-3 sm:p-3.5">
@@ -440,6 +441,7 @@ export default function VideoEditingFormatShowcase() {
                   <video
                     ref={videoRef}
                     src="/assets/video/YouTube & Long-Form Editing.mp4"
+                    aria-label="Sample YouTube long-form video edit by BAAGUL"
                     loop
                     muted
                     playsInline
@@ -542,7 +544,7 @@ export default function VideoEditingFormatShowcase() {
                         </span>
                       </div>
                       <span className="font-mono text-[10px] sm:text-xs text-[#0E1153]/70 truncate block">
-                        128K subscribers · Retention-Engineered Edits
+                        Sample channel · Retention-Focused Edits
                       </span>
                     </div>
                   </div>
@@ -599,6 +601,7 @@ export default function VideoEditingFormatShowcase() {
                   <video
                     ref={videoRef}
                     src="/assets/video/Ad Creatives & Promo Videos.mp4"
+                    aria-label="Sample promotional video ad edited by BAAGUL"
                     loop
                     muted
                     playsInline
@@ -692,7 +695,7 @@ export default function VideoEditingFormatShowcase() {
                   <span>PERFORMANCE AD SUITE</span>
                 </div>
                 <h3 className="font-heading text-2xl sm:text-4xl font-bold text-white mb-3 sm:mb-4 leading-tight">
-                  High-Converting Paid Video Ads
+                  Promotional Video Ads for Social &amp; YouTube
                 </h3>
                 <p className="font-sans text-xs sm:text-base text-[#FEF9ED]/80 leading-relaxed mb-4 sm:mb-6">
                   Ad creatives demand immediate pattern disruption. We test direct response hooks, clear product showcases, animated proof points, and distinct calls-to-action formatted for both 4:5 mobile feed and 16:9 pre-roll slots.
@@ -710,7 +713,7 @@ export default function VideoEditingFormatShowcase() {
                       <span className="text-[#CFE8DC]">✦</span> Dynamic Subtitle & Caption Overlays
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="text-[#CFE8DC]">✦</span> 3 Hook Variations per Creative for A/B Testing
+                      <span className="text-[#CFE8DC]">✦</span> Hook Variations for A/B Testing
                     </li>
                   </ul>
                 </div>
@@ -751,6 +754,7 @@ export default function VideoEditingFormatShowcase() {
                   <video
                     ref={videoRef}
                     src="/assets/video/Motion Graphics & Titles.mp4"
+                    aria-label="Sample motion graphics and animated titles by BAAGUL"
                     loop
                     muted
                     playsInline

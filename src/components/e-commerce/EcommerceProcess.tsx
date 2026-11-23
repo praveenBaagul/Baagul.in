@@ -85,16 +85,16 @@ export default function EcommerceProcess() {
 
           <div className="flex flex-wrap items-baseline gap-3 mb-3">
             <h2 className="font-heading text-4xl sm:text-5xl lg:text-[46px] text-[#0E1153] tracking-tight">
-              Our 4-Step Graphic Design Process
+              Our E-Commerce Website Development Process
             </h2>
             <span className="text-sm font-serif italic text-slate-text">
-              (Our 4-Step E-Commerce Process)
+              (4 steps, from research to launch)
             </span>
             <span className="text-xl text-[#3B82F6] font-bold">✛</span>
           </div>
 
           <p className="font-sans text-sm sm:text-base text-[#3E4945] max-w-xl leading-relaxed">
-            We bring ideas to life through a creative process that blends strategy, design, and refinement.
+            How we plan, design, build and test your online store before it goes live.
           </p>
         </div>
 

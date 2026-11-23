@@ -13,20 +13,20 @@ import AppDevelopmentServicePager from "@/components/app-development/AppDevelopm
 // import AppDevelopmentSpecMatrix from "@/components/app-development/AppDevelopmentSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Mobile App Development Company in Bangalore | Baagul",
+  title: "Mobile App Development Company in Bangalore | BAAGUL",
   description:
-    "Mobile app development company in Bangalore building Android and iOS apps with React Native, Flutter and native code. Fast, polished, launch-ready.",
+    "BAAGUL is a mobile app development company in Bangalore offering Android, iOS, React Native and custom app development for startups and businesses.",
   alternates: { canonical: "/services/app-development" },
   openGraph: {
-    title: "Mobile App Development Company in Bangalore | Baagul",
+    title: "Mobile App Development Company in Bangalore | BAAGUL",
     description:
-      "Mobile app development company in Bangalore building Android and iOS apps with React Native, Flutter and native code. Fast, polished, launch-ready.",
+      "BAAGUL is a mobile app development company in Bangalore offering Android, iOS, React Native and custom app development for startups and businesses.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile App Development Company in Bangalore | Baagul",
+    title: "Mobile App Development Company in Bangalore | BAAGUL",
     description:
-      "Mobile app development company in Bangalore building Android and iOS apps with React Native, Flutter and native code. Fast, polished, launch-ready.",
+      "BAAGUL is a mobile app development company in Bangalore offering Android, iOS, React Native and custom app development for startups and businesses.",
   },
 };
 
@@ -36,7 +36,7 @@ export default function AppDevelopmentPage() {
       {/* Structured Schema */}
       <JsonLd
         data={serviceSchema({
-          name: "Mobile & Web App Development",
+          name: "Mobile App Development",
           path: "/services/app-development",
           description: metadata.description,
         })}

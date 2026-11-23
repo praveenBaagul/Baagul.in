@@ -10,28 +10,28 @@ interface Step {
 const steps: Step[] = [
   {
     num: "01",
-    title: "Consultation",
-    desc: "We discuss your brand values, target audience, budget, and campaign goals to define the best promotion strategy.",
+    title: "Goals & Budget",
+    desc: "We discuss your business goals, target customers, advertising budget and what a lead or sale is worth to you, to set clear campaign targets.",
   },
   {
     num: "02",
-    title: "Content Development",
-    desc: "We formulate campaign concepts, creator partnerships, video scripts, and custom trackable offer links.",
+    title: "Audience Research & Strategy",
+    desc: "We research your audience, keywords and competitors, then choose the platforms and campaign structure: Google, Meta, LinkedIn or YouTube.",
   },
   {
     num: "03",
-    title: "Production",
-    desc: "Creators record, edit, and produce high-resolution assets aligning with your brand tone and regulatory guidelines.",
+    title: "Creatives & Landing Pages",
+    desc: "Ad copy, designs and videos, creator content where it fits, and landing pages planned to turn clicks into enquiries and sales.",
   },
   {
     num: "04",
-    title: "Promotion & Distribution",
-    desc: "Scheduled rollout across targeted channels with algorithmic boost budgets to maximize early momentum.",
+    title: "Launch & Tracking",
+    desc: "Campaigns go live with conversion tracking, pixels and analytics in place, so every lead and sale can be measured.",
   },
   {
     num: "05",
-    title: "Review & Feedback",
-    desc: "In-depth analytics review assessing impressions, click-through rates, ROAS, and customer sentiment for ongoing scaling.",
+    title: "Reporting & Optimization",
+    desc: "Regular reports on spend, leads, sales, cost per acquisition and ROAS, with ongoing bid, audience and creative optimization.",
     isFinal: true,
   },
 ];
@@ -48,7 +48,7 @@ export default function PaidPromotionProcess() {
               <span>EXECUTION ROADMAP</span>
             </div>
             <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-[#0E1153]">
-              Our Process
+              Our Performance Marketing Campaign Process
             </h2>
           </div>
 

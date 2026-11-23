@@ -13,32 +13,32 @@ interface ProcessCard {
 const cards: ProcessCard[] = [
   {
     number: "01",
-    title: "Creative Brief & Research",
-    description: "Deep dive into your visual objectives, target demographics, competitor positioning, and brand guidelines.",
+    title: "Social Media Graphic Design",
+    description: "Posts, carousels, stories, cover images and reusable templates for Instagram, LinkedIn, Facebook and X, consistent with your brand.",
     bgColor: "bg-[#FFFFFF]",
     textColor: "text-[#0E1153]",
     iconBg: "bg-[#EDE8DC]",
   },
   {
     number: "02",
-    title: "Concept & Ideation",
-    description: "Exploring multiple graphic directions, wireframes, mood boards, and typographic balance.",
+    title: "Advertising Creatives",
+    description: "Ad creative sets for Meta, Google Display and LinkedIn, sized for each placement, plus promotional banners for campaigns and offers.",
     bgColor: "bg-[#CFE8DC]",
     textColor: "text-[#0E1153]",
     iconBg: "bg-[#FFFFFF]",
   },
   {
     number: "03",
-    title: "Design & Development",
-    description: "Meticulous vector crafting, asset rendering, color harmonies, and responsive aspect ratio adaptations.",
+    title: "Brochures & Marketing Collateral",
+    description: "Brochures, flyers, one-pagers, posters, packaging and exhibition graphics, prepared as print-ready files.",
     bgColor: "bg-[#E1E3F7]",
     textColor: "text-[#0E1153]",
     iconBg: "bg-[#FFFFFF]",
   },
   {
     number: "04",
-    title: "Review & Final Delivery",
-    description: "Collaborative review rounds followed by complete master asset package exports across print and digital formats.",
+    title: "Corporate Presentations",
+    description: "Pitch decks, sales presentations and company profiles that make complex information clear and look consistent slide after slide.",
     bgColor: "bg-[#FFA800]",
     textColor: "text-[#0E1153]",
     iconBg: "bg-[#0E1153]",
@@ -57,12 +57,12 @@ export default function GraphicsDesignServicesGrid() {
               <span>CAPABILITIES &amp; DELIVERABLES</span>
             </div>
             <h2 className="font-heading text-4xl sm:text-5xl text-[#0E1153]">
-              Our Services
+              Social Media, Advertising &amp; Marketing Collateral Design
             </h2>
           </div>
 
           <p className="font-sans text-xs sm:text-sm text-[#3E4945] max-w-md leading-relaxed">
-            We think big and have hands in all leading technology platforms to provide you wide array of services.
+            The graphic design work we deliver most often, from daily social media content to corporate presentations.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export default function GraphicsDesignServicesGrid() {
               <div>
                 <div className="flex items-center justify-between mb-8 pb-3 border-b border-current/15">
                   <span className="font-mono text-xs font-bold uppercase tracking-wider">
-                    MODULE 0{card.number}
+                    MODULE {card.number}
                   </span>
                   <span className="font-heading text-3xl font-black opacity-30">
                     {card.number}
@@ -97,7 +97,7 @@ export default function GraphicsDesignServicesGrid() {
               </div>
 
               <div className="pt-3 border-t border-current/15 flex items-center justify-between font-mono text-[10px] font-bold uppercase">
-                <span>STAGE APPROVED</span>
+                <span>SERVICE {card.number}</span>
                 <span>→</span>
               </div>
             </div>

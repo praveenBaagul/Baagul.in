@@ -42,6 +42,21 @@ const faqs: FAQItem[] = [
     question: "Do you offer monthly video editing packages?",
     answer: "Yes. Along with one-off projects, we offer monthly plans for creators and brands who publish regularly, with a fixed number of videos, consistent styling, and priority turnaround.",
   },
+  {
+    id: "07",
+    question: "How much do video editing services cost in Bangalore?",
+    answer: "The cost depends on the type and length of the video, the amount of footage, motion graphics and subtitles, and how many videos you need. We offer per-project pricing and monthly plans, and share a clear quote before we start.",
+  },
+  {
+    id: "08",
+    question: "Do you provide video editing for Instagram Reels and YouTube Shorts?",
+    answer: "Yes. We edit vertical 9:16 short-form videos for Instagram Reels and YouTube Shorts, with strong opening hooks, captions, music and sound effects. We can also cut Shorts and Reels from your long-form videos. Short-form reels are usually delivered within 24–48 hours.",
+  },
+  {
+    id: "09",
+    question: "Can you edit video advertisements for Google, Facebook, and Instagram?",
+    answer: "Yes. We edit video ads for YouTube and Google, Facebook and Instagram in the aspect ratios each placement needs, such as 9:16, 4:5, 1:1 and 16:9, with captions, clear calls to action and hook variations for testing. Our paid promotions team can also run the campaigns.",
+  },
 ];
 
 export default function VideoEditingFAQ() {
@@ -69,11 +84,11 @@ export default function VideoEditingFAQ() {
             </div>
 
             <h2 className="font-heading text-3xl sm:text-4xl text-[#0E1153] leading-snug mb-4">
-              Everything You Need to Know About Our Video Editing Services
+              Frequently Asked Questions About Video Editing
             </h2>
 
             <p className="font-sans text-xs sm:text-sm text-[#121A4A]/75 leading-relaxed mb-8">
-              Clear answers on how Baagul handles footage, turnaround times, revisions, and final video delivery.
+              Clear answers on how BAAGUL handles footage, turnaround times, revisions, and final video delivery.
             </p>
 
             {/* Still Curious Card */}

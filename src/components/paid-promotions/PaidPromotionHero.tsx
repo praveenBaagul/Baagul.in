@@ -69,7 +69,7 @@ export default function PaidPromotionHero() {
               </span>
               {" "}
               <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
-                Performance Marketing Agency in Bangalore
+                Performance Marketing &amp; Paid Advertising Services in Bangalore
               </span>
             </h1>
 
@@ -80,7 +80,7 @@ export default function PaidPromotionHero() {
             {/* Two Pill Tags */}
             <div className="flex flex-wrap items-center gap-3 mb-6">
               <span className="px-3.5 py-1.5 rounded-full bg-[#FFFFFF] border-2 border-[#0E1153] text-xs font-mono font-bold text-[#005F4C] shadow-[2px_2px_0px_#0E1153]">
-                ✓ HIGH-ROI PROMOTION
+                ✓ GOOGLE &amp; META ADS
               </span>
               <span className="px-3.5 py-1.5 rounded-full bg-[#FFFFFF] border-2 border-[#0E1153] text-xs font-mono font-bold text-[#0E1153] shadow-[2px_2px_0px_#0E1153]">
                 ✓ CAMPAIGN TRANSPARENCY
@@ -88,7 +88,7 @@ export default function PaidPromotionHero() {
             </div>
 
             <p className="font-sans text-sm sm:text-base text-[#3E4945] max-w-xl leading-relaxed mb-8">
-              At Baagul, we craft data-backed paid promotion strategies that drive real business results. From Google Ads management and Meta Ads management services to influencer campaigns, sponsor placements, and targeted video promotions, we position your brand directly in front of buyers.
+              At BAAGUL, we plan and manage paid advertising measured against your business goals: Google Ads and PPC management, Meta Ads on Facebook and Instagram, LinkedIn Ads, and lead generation and sales campaigns. Creator partnerships, video promotions and PR distribution support your campaigns where they fit.
             </p>
 
             {/* Action Buttons */}
@@ -200,16 +200,16 @@ export default function PaidPromotionHero() {
         {/* Platform Tags Strip at Base */}
         <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 pt-6 border-t border-dashed border-[#0E1153]/20">
           <span className="text-xs font-mono font-bold text-[#3E4945] uppercase mr-2">
-            PROMOTION CHANNELS:
+            AD PLATFORMS:
+          </span>
+          <span className="px-4 py-1.5 rounded-full bg-[#FFFFFF] border-2 border-[#0E1153] text-xs font-mono font-bold text-[#0E1153] shadow-[2px_2px_0px_#0E1153]">
+            GOOGLE ADS
+          </span>
+          <span className="px-4 py-1.5 rounded-full bg-[#FFFFFF] border-2 border-[#0E1153] text-xs font-mono font-bold text-[#0E1153] shadow-[2px_2px_0px_#0E1153]">
+            META ADS
           </span>
           <span className="px-4 py-1.5 rounded-full bg-[#FFFFFF] border-2 border-[#0E1153] text-xs font-mono font-bold text-[#0E1153] shadow-[2px_2px_0px_#0E1153]">
             YOUTUBE
-          </span>
-          <span className="px-4 py-1.5 rounded-full bg-[#FFFFFF] border-2 border-[#0E1153] text-xs font-mono font-bold text-[#0E1153] shadow-[2px_2px_0px_#0E1153]">
-            INSTAGRAM
-          </span>
-          <span className="px-4 py-1.5 rounded-full bg-[#FFFFFF] border-2 border-[#0E1153] text-xs font-mono font-bold text-[#0E1153] shadow-[2px_2px_0px_#0E1153]">
-            TIKTOK
           </span>
           <span className="px-4 py-1.5 rounded-full bg-[#FFFFFF] border-2 border-[#0E1153] text-xs font-mono font-bold text-[#0E1153] shadow-[2px_2px_0px_#0E1153]">
             LINKEDIN

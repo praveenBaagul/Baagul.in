@@ -11,38 +11,38 @@ interface FeatureItem {
 const features: FeatureItem[] = [
   {
     number: "01",
-    title: "Native iOS Engineering",
-    description: "Swift and SwiftUI craftsmanship engineered for the Apple ecosystem with high responsiveness, CoreData, and Apple HIG adherence.",
+    title: "Android & iOS App Development",
+    description: "Native apps in Kotlin with Jetpack Compose for Android and Swift with SwiftUI for iPhone and iPad, following Material Design and Apple's guidelines.",
     badgeBg: "bg-[#0E7A63] text-[#FEF9ED]",
   },
   {
     number: "02",
-    title: "Native Android Engineering",
-    description: "Kotlin and Jetpack Compose architecture supporting modern Material You design, multi-device fragmentation, and background workers.",
+    title: "Mobile App UI/UX Design & Prototyping",
+    description: "User journeys, wireframes and high-fidelity Figma prototypes you can click through and test before development starts.",
     badgeBg: "bg-[#FFBA45] text-[#0E1153]",
   },
   {
     number: "03",
-    title: "Cross-Platform with Flutter & React Native",
-    description: "Single codebases delivering dual-platform efficiency without sacrificing native tactile feel, GPU acceleration, or hardware APIs.",
+    title: "React Native & Flutter Cross-Platform Development",
+    description: "One codebase for Android and iOS, with native UI performance and access to device features such as the camera, location and biometrics.",
     badgeBg: "bg-[#CFE8DC] text-[#0E1153]",
   },
   {
     number: "04",
-    title: "Offline-First Data & Background Sync",
-    description: "Reliable mobile experiences that function seamlessly underground or in low-connectivity areas with local cache resolution.",
+    title: "Backend, API Integration & Offline Sync",
+    description: "Backend APIs, third-party integrations and offline-first data that keeps the app usable in low connectivity and syncs when back online.",
     badgeBg: "bg-[#E1E3F7] text-[#0E1153]",
   },
   {
     number: "05",
-    title: "Secure Payments, Biometrics & Auth",
-    description: "Apple Pay, Google Pay, Razorpay, FaceID, TouchID, and OAuth 2.0 integration designed to protect transactions and user privacy.",
+    title: "Payments, Biometrics & Push Notifications",
+    description: "Apple Pay, Google Pay and Razorpay, Face ID and fingerprint login, OAuth sign-in and push notifications, built to protect user data.",
     badgeBg: "bg-[#C8553D] text-[#FEF9ED]",
   },
   {
     number: "06",
-    title: "App Store & Play Store Launch CI/CD",
-    description: "Automated Fastlane build pipelines, TestFlight distribution, Google Play console compliance, and zero-rejection store audits.",
+    title: "App Store Launch & App Maintenance",
+    description: "Automated builds, TestFlight testing and App Store and Google Play submission, then updates, bug fixes and monitoring after launch.",
     badgeBg: "bg-[#0E1153] text-[#FEF9ED]",
   },
 ];
@@ -67,16 +67,20 @@ export default function AppDevelopmentFeatures() {
 
             {/* Heading */}
             <h2 className="font-heading text-4xl sm:text-5xl lg:text-[54px] leading-[1.1] font-bold text-[#FEF9ED] mb-6">
-              Engineered for
+              Custom Mobile App
               <br />
               <span className="font-serif italic font-normal text-[#FFBA45]">
-                Velocity &amp; Scale
+                Development Services
               </span>
             </h2>
 
             {/* Subtitle */}
             <p className="font-sans text-sm sm:text-base text-[#FEF9ED]/80 leading-relaxed mb-8">
-              Every mobile product we ship combines robust architectural patterns, frictionless gestures, and deep operating system integration. We build apps that users love to open and founders trust to scale.
+              From startup MVPs to business apps, every app we build combines solid architecture, smooth interactions and deep operating system integration. Need a web application alongside your app? See our{" "}
+              <Link href="/services/web-design" className="font-bold text-[#FFBA45] underline underline-offset-2 hover:text-[#FEF9ED]">
+                web design and development services
+              </Link>
+              .
             </p>
 
             {/* Callout Card */}
@@ -111,7 +115,7 @@ export default function AppDevelopmentFeatures() {
                 <div>
                   <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#0E1153]/15">
                     <span className="font-mono text-sm font-bold text-[#0E1153]/50">
-                      // {feat.number}
+                      {`// ${feat.number}`}
                     </span>
                     <span
                       className={`px-2.5 py-0.5 rounded font-mono text-[10px] font-bold uppercase tracking-wider border border-[#0E1153] ${feat.badgeBg}`}

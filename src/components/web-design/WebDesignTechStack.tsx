@@ -48,7 +48,15 @@ export default function WebDesignTechStack() {
           </div>
 
           <p className="font-sans text-xs sm:text-sm text-[#3E4945] max-w-sm leading-relaxed">
-            We build every website on Next.js and React instead of heavy themes and page builders. Here is what that means for your business.
+            We build custom websites on Next.js and React instead of heavy themes and page builders. Here is what that means for your business. Prefer to manage your site in WordPress? See our{" "}
+            <Link href="/services/wordpress-development" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+              WordPress development services
+            </Link>
+            , or our{" "}
+            <Link href="/services/app-development" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+              mobile app development services
+            </Link>{" "}
+            for Android and iOS apps.
           </p>
         </div>
 

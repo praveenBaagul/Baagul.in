@@ -40,12 +40,12 @@ export default function WordPressHero() {
               </span>
               {" "}
               <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
-                WordPress Development Services in Bangalore
+                WordPress Development Company in Bangalore
               </span>
             </h1>
 
             <p className="font-sans text-base sm:text-lg text-[#3E4945] max-w-xl leading-relaxed mb-8">
-              Custom WordPress website development, bespoke block themes, and custom CMS development that pass Core Web Vitals with 99+ PageSpeed scores, zero bloat, and enterprise-grade security.
+              Custom WordPress websites, redesigns, Gutenberg block themes, migration, speed optimization and maintenance, built and looked after by our WordPress developers in Bangalore.
             </p>
 
             {/* CTA Buttons */}
@@ -74,7 +74,7 @@ export default function WordPressHero() {
               <div className="relative w-full aspect-square">
                 <Image
                   src="/assets/wordpress-hero-clean.jpg"
-                  alt="WordPress Development - Bespoke Themes, Plugins, Data Migration, and CMS Architecture"
+                  alt="WordPress development by BAAGUL: custom themes, migration and CMS customization"
                   fill
                   priority
                   unoptimized

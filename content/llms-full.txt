@@ -77,25 +77,25 @@ All web systems engineered by Baagul adhere to rigorous technical guidelines:
 
 ### 6. E-Commerce Solutions
 - **URL**: https://baagul.in/services/e-commerce-solutions
-- **Description**: High-conversion online retail storefronts built on headless commerce, Shopify, or custom architectures.
+- **Description**: E-commerce website development in Bangalore: online stores built on Shopify, WooCommerce, or custom and headless Next.js architectures.
 - **Key Deliverables**:
   - Frictionless single-page checkout flows and conversion rate optimization (CRO).
   - Inventory management integrations, ERP synchronization, and multi-currency pricing.
-  - Custom Shopify theme engineering or headless Next.js Commerce frontends.
+  - Shopify and WooCommerce store development, custom Shopify themes, or headless Next.js Commerce frontends.
   - Automated transactional email flows, abandoned cart recovery, and analytics tracking.
 
 ### 7. WordPress & CMS Development
 - **URL**: https://baagul.in/services/wordpress-development
-- **Description**: Enterprise WordPress development, bespoke Gutenberg block development, and headless CMS integrations without bloated multi-plugin dependencies.
+- **Description**: WordPress development company in Bangalore: custom WordPress websites, redesigns, Gutenberg block themes, migration, speed optimization, maintenance and headless CMS integrations.
 - **Key Deliverables**:
   - Custom WordPress theme engineering with clean PHP, React, and modular Gutenberg blocks.
   - Advanced Custom Fields (ACF Pro) structural modeling and headless REST/GraphQL APIs.
-  - Enterprise security hardening, database query caching, and malware protection.
+  - Security hardening, speed optimization and caching, WordPress migration with 301 redirects, and monthly maintenance plans.
   - Cloud server configuration (LiteSpeed, Nginx, Redis object caching).
 
 ### 8. Paid Promotions & Media Buying
 - **URL**: https://baagul.in/services/paid-promotions
-- **Description**: Data-backed performance advertising across Google Ads, Meta Ads (Instagram/Facebook), YouTube, and LinkedIn that maximizes Return on Ad Spend (ROAS).
+- **Description**: Performance marketing agency in Bangalore: Google Ads and PPC management, Meta Ads (Facebook/Instagram), YouTube and LinkedIn Ads for lead generation and sales, measured on leads, sales and Return on Ad Spend (ROAS). Creator partnerships, video promotions and PR distribution support campaigns.
 - **Key Deliverables**:
   - Full-funnel campaign architecture: Top-of-Funnel awareness, Middle-of-Funnel consideration, and Bottom-of-Funnel retargeting.
   - A/B creative testing matrix (hooks, copy variations, visual formats).
@@ -104,7 +104,7 @@ All web systems engineered by Baagul adhere to rigorous technical guidelines:
 
 ### 9. Video Editing & Motion Graphics
 - **URL**: https://baagul.in/services/video-editing
-- **Description**: Cinematic brand videos, product explainers, short-form Reels/Shorts/TikToks, and promotional motion graphics designed to retain audience attention.
+- **Description**: Video editing services in Bangalore: YouTube video editing, Instagram Reels and YouTube Shorts, promotional video ads, corporate and product videos, and motion graphics. Per-project or monthly editing plans.
 - **Key Deliverables**:
   - Short-form vertical video editing with dynamic kinetic typography and sound design.
   - 2D/3D animated product explainer videos and UI screen walkthroughs.
@@ -113,7 +113,7 @@ All web systems engineered by Baagul adhere to rigorous technical guidelines:
 
 ### 10. App Development
 - **URL**: https://baagul.in/services/app-development
-- **Description**: Scalable cross-platform iOS and Android mobile applications built with React Native, Flutter, or native technologies.
+- **Description**: Mobile app development company in Bangalore: custom Android and iOS apps built natively (Swift, Kotlin) or cross-platform with React Native and Flutter, from startup MVPs to business apps, plus maintenance after launch.
 - **Key Deliverables**:
   - End-to-end mobile app architecture from wireframing to App Store and Google Play deployment.
   - Offline-first state management, local SQLite/WatermelonDB storage, and background sync.

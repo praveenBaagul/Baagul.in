@@ -12,28 +12,44 @@ interface FAQItem {
 
 const faqs: FAQItem[] = [
   {
-    q: "Why should I choose a custom WordPress website instead of a pre-made theme?",
-    a: "Pre-made themes are overloaded with unnecessary features, slow code, and third-party dependencies that destroy Core Web Vitals and expose security vulnerabilities. Our custom-coded WordPress sites include only the exact features you require, ensuring sub-second load times and effortless editing.",
+    q: "Why choose a custom WordPress website instead of a pre-made theme?",
+    a: "Pre-made themes often bundle features you don't need, extra code and third-party dependencies that slow pages down and add security risk. A custom WordPress theme includes only what your site needs, which keeps it faster, easier to edit and simpler to maintain.",
   },
   {
-    q: "Will my website be fast and secure against hacking attempts?",
-    a: "Yes. Every WordPress website we build is hardened with enterprise security directives, XML-RPC disablement, secure database table prefixes, and zero vulnerability plugins. Combined with proper caching and clean PHP code, your site easily scores 90+ on Google PageSpeed Insights.",
+    q: "How much does WordPress website development cost in Bangalore?",
+    a: "The cost depends on the number of pages, the design, custom features and integrations such as forms, CRMs or WooCommerce. We share a fixed-price proposal with clear deliverables before we start, with no hidden costs.",
+  },
+  {
+    q: "How long does it take to develop a WordPress website?",
+    a: "A typical 5–10 page business website takes around 3 to 6 weeks from kickoff to launch, covering design, development, content setup and testing. Larger sites, custom integrations and migrations take longer, and we agree a timeline in your proposal.",
+  },
+  {
+    q: "Can you redesign my existing WordPress website without losing SEO rankings?",
+    a: "Yes. We keep your existing URLs wherever possible, set up 301 redirects for any that change, and carry over page titles, meta descriptions and content, so search engines can transfer your rankings to the new design. We also check the site in Google Search Console after launch.",
+  },
+  {
+    q: "Do you provide WordPress website speed optimization?",
+    a: "Yes. For new and existing sites we optimize images, caching, fonts and scripts, remove unnecessary plugins, and improve Core Web Vitals. We measure speed before and after so you can see the difference; results depend on your hosting and content.",
+  },
+  {
+    q: "Will my website be secure?",
+    a: "We harden every WordPress site: secure configuration, limited admin access, firewall protection, trusted plugins only, and regular core and plugin updates. No website can be guaranteed 100% secure, which is why we recommend an ongoing maintenance plan with monitoring and backups.",
   },
   {
     q: "Will my team be able to update content easily without coding?",
-    a: "Absolutely. We build custom block patterns directly into the WordPress Gutenberg editor. Your marketing team can visually craft, edit, and reorganize landing pages using your exact design tokens without breaking layout integrity.",
+    a: "Yes. We build custom block patterns into the WordPress Gutenberg editor, so your team can create, edit and rearrange pages using your brand's design without breaking the layout.",
   },
   {
-    q: "Can you migrate our existing store or blog to modern WordPress?",
-    a: "Yes. We handle complete zero-downtime database migrations, preserving all historical blog posts, URLs, 301 redirects, customer accounts, and metadata.",
+    q: "Can you migrate my website from another CMS to WordPress?",
+    a: "Yes. We move your pages, blog posts, images and metadata, keep or redirect your existing URLs with 301 redirects, and plan the switchover to keep downtime to a minimum. What else can move, such as user accounts, depends on the platform you are moving from, and we confirm it before we start.",
   },
   {
     q: "Do you provide ongoing maintenance and security updates?",
-    a: "Yes. We offer continuous monthly growth and security pods covering managed WordPress core and plugin updates, automated off-site backups, and uptime monitoring.",
+    a: "Yes. Our monthly WordPress maintenance plans cover core, theme and plugin updates, off-site backups, uptime monitoring and security checks.",
   },
   {
-    q: "Can you integrate custom CRM, ERP, and payment APIs?",
-    a: "Yes. We regularly connect WordPress with custom REST APIs, GraphQL endpoints, HubSpot, Salesforce, Stripe, Razorpay, and enterprise inventory management backends.",
+    q: "Can you integrate CRM, ERP and payment systems?",
+    a: "Yes. We connect WordPress with REST and GraphQL APIs and tools such as HubSpot, Salesforce, Stripe and Razorpay, as well as inventory and business systems.",
   },
 ];
 
@@ -56,7 +72,7 @@ export default function WordPressFAQ() {
           </div>
 
           <h2 className="font-heading text-4xl sm:text-5xl text-[#0E1153] leading-tight mb-6">
-            Everything You Need to Know About Our WordPress Website Development Services
+            Frequently Asked Questions About WordPress Development
           </h2>
 
           <div className="p-6 bg-[#FFA800] border-2 border-[#0E1153] rounded-2xl shadow-[6px_6px_0px_#0E1153] w-full">
@@ -64,7 +80,7 @@ export default function WordPressFAQ() {
               Need a custom quote?
             </h4>
             <p className="font-sans text-xs text-[#0E1153]/90 leading-relaxed mb-4">
-              Have unique API requirements or a high-traffic WooCommerce store? Talk with our WordPress architect.
+              Have custom integrations or a large site to migrate? Talk with our WordPress team.
             </p>
             <Link
               href="/contact"

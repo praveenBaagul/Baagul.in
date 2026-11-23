@@ -8,7 +8,7 @@ export default function GraphicsDesignBannerAndPager() {
       <div className="w-full py-16 px-6 sm:px-12 lg:px-16 bg-[#E1E3F7] border-b-2 border-[#0E1153]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="font-heading text-xl sm:text-2xl lg:text-3xl font-bold max-w-xl text-[#0E1153] leading-snug">
-            We think big and have hands in all leading technology platforms to provide you wide array of services.
+            Need social media graphics, ad creatives or a brochure? Tell us what you need and we&apos;ll share a quote.
           </p>
 
           <div className="flex flex-wrap items-center gap-4">

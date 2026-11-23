@@ -16,32 +16,32 @@ interface FeatureItem {
 const features: FeatureItem[] = [
   {
     number: "01",
-    title: "Short-Form Reels & Shorts",
-    description: "Vertical edits for Instagram Reels, YouTube Shorts, and TikTok with hooks in the first 3 seconds.",
+    title: "Instagram Reels & Social Media Video Editing",
+    description: "Short-form vertical edits for Instagram Reels, YouTube Shorts and other social platforms, with a strong hook in the first 3 seconds.",
     badgeBg: "bg-[#0E7A63] text-[#FEF9ED]",
     formatId: "reels",
     formatLabel: "9:16 Phone Mockup",
   },
   {
     number: "02",
-    title: "YouTube & Long-Form Editing",
-    description: "Pacing, jump cuts, chapters, and retention-focused storytelling for long-form content.",
+    title: "YouTube Video Editing & Shorts Production",
+    description: "Pacing, jump cuts, chapters and retention-focused storytelling for YouTube videos, plus Shorts cut from your long-form content.",
     badgeBg: "bg-[#FFBA45] text-[#0E1153]",
     formatId: "youtube",
     formatLabel: "16:9 YouTube Mockup",
   },
   {
     number: "03",
-    title: "Ad Creatives & Promo Videos",
-    description: "Performance-ready video ads for Meta, YouTube, and Google in every aspect ratio.",
+    title: "Promotional Video Ads & Product Video Editing",
+    description: "Video ads for Meta, YouTube and Google in every aspect ratio, plus product demos and promotional videos.",
     badgeBg: "bg-[#CFE8DC] text-[#0E1153]",
     formatId: "ads",
     formatLabel: "Feed Ad Mockup",
   },
   {
     number: "04",
-    title: "Motion Graphics & Titles",
-    description: "Animated text, lower thirds, logo reveals, and branded transitions.",
+    title: "Motion Graphics & Animated Video Content",
+    description: "Kinetic typography, animated text, lower thirds, logo reveals and branded transitions.",
     badgeBg: "bg-[#E1E3F7] text-[#0E1153]",
     formatId: "motion",
     formatLabel: "NLE Suite Mockup",
@@ -80,16 +80,24 @@ export default function VideoEditingFeatures() {
 
             {/* Heading */}
             <h2 className="font-heading text-4xl sm:text-5xl lg:text-[54px] leading-[1.1] font-bold text-[#FEF9ED] mb-6">
-              Story-driven
+              Professional Video Editing
               <br />
               <span className="font-serif italic font-normal text-[#FFBA45]">
-                edits
+                for Brands &amp; Creators
               </span>
             </h2>
 
             {/* Description */}
             <p className="font-sans text-sm sm:text-base text-[#FEF9ED]/80 leading-relaxed mb-8 max-w-md">
-              Professionally edited videos for social media, YouTube, and ads that capture attention, boost engagement, and keep viewers watching. Click any capability to preview its live device mockup below.
+              Professionally edited videos for social media, YouTube, ads and corporate content that capture attention and keep viewers watching. Running video ads? Our{" "}
+              <Link href="/services/paid-promotions" className="font-bold text-[#FFBA45] underline underline-offset-2 hover:text-[#FEF9ED]">
+                paid promotions team
+              </Link>{" "}
+              can launch them, and our{" "}
+              <Link href="/services/graphics-design" className="font-bold text-[#FFBA45] underline underline-offset-2 hover:text-[#FEF9ED]">
+                graphic designers
+              </Link>{" "}
+              create matching static creatives. Click any capability to preview its device mockup below.
             </p>
 
             {/* Action Buttons */}

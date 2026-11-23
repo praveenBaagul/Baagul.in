@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function WordPressWhyChooseUs() {
   return (
@@ -12,12 +13,12 @@ export default function WordPressWhyChooseUs() {
 
         {/* Heading */}
         <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-[#0E1153] leading-tight mb-8">
-          <span>Powerful, Flexible &amp; </span>
+          <span>Why Choose BAAGUL for </span>
           <span className="inline-block bg-[#FFA800] text-[#0E1153] px-4 py-0.5 rounded-xl border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153]">
-            Scalable
+            WordPress
           </span>
           <br />
-          <span>WordPress Websites</span>
+          <span>Development?</span>
         </h2>
 
         {/* Highlighted Framed Editorial Box */}
@@ -26,7 +27,11 @@ export default function WordPressWhyChooseUs() {
             <span className="font-heading text-5xl font-bold text-[#0E1153] float-left mr-3 leading-none">
               A
             </span>
-            t Baagul, we combine exceptional design aesthetics with high-performance engineering to build WordPress websites that look stunning and convert reliably. Whether you need a bespoke corporate portal, an editorial publication, or a high-converting WooCommerce storefront, our custom architectures are engineered without code bloat, guaranteeing longevity, effortless content management, and rapid page loads.
+            t BAAGUL, we combine strong design with careful engineering to build WordPress websites that look great and are easy to run. Whether you need a corporate website, an editorial publication or a redesign of your current site, we build lean custom themes for fast pages and simple content management. Selling online? Our{" "}
+            <Link href="/services/e-commerce-solutions" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+              e-commerce development team
+            </Link>{" "}
+            builds WooCommerce and Shopify stores.
           </p>
         </div>
 
@@ -36,7 +41,11 @@ export default function WordPressWhyChooseUs() {
             We adhere strictly to WordPress core coding standards and modern PHP practices. Every theme is crafted from scratch with native Gutenberg blocks, ensuring your team has total editorial autonomy without reliance on fragile third-party page builders.
           </p>
           <p>
-            Security, mobile responsiveness, and Core Web Vitals optimization are embedded directly into our deployment pipeline, protecting your brand equity and providing search engines with clean semantic signals.
+            Security, mobile responsiveness and Core Web Vitals optimization are part of every build, giving search engines clean, well-structured pages. To grow organic traffic after launch, pair your site with our{" "}
+            <Link href="/services/seo-optimizations" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+              SEO optimization services
+            </Link>
+            .
           </p>
         </div>
       </div>

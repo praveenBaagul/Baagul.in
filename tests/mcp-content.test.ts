@@ -41,7 +41,7 @@ describe("generated content", () => {
   });
 
   it("has FAQs for every service whose page shows them", () => {
-    const withoutFaqSection = ["graphics-design", "paid-promotions"];
+    const withoutFaqSection: string[] = [];
     for (const slug of SERVICE_SLUGS) {
       const { faqs } = getService(slug)!;
       if (withoutFaqSection.includes(slug)) expect(faqs, slug).toEqual([]);

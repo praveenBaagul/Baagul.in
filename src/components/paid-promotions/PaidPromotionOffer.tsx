@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
+import Link from "next/link";
 
 function OfferVideoPlayer({
   src,
@@ -134,7 +135,7 @@ export default function PaidPromotionOffer() {
             <span>WHAT WE OFFER</span>
           </div>
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-[#0E1153]">
-            What We Offer
+            Performance Marketing Services for Business Growth
           </h2>
         </div>
 
@@ -183,7 +184,11 @@ export default function PaidPromotionOffer() {
                   <span>Platform-Specific Strategy</span>
                 </div>
                 <p className="font-sans text-xs sm:text-sm text-[#3E4945] leading-relaxed">
-                  Tailored video ratios and hooks formatted natively for YouTube horizontal sponsorships, Instagram Reels, and TikTok viral loops ensuring sub-second hook retention and algorithm reach.
+                  Video formats and opening hooks made for each platform: YouTube sponsorships, Instagram Reels and short-form video ads, produced with our{" "}
+                  <Link href="/services/video-editing" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+                    video editing team
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
@@ -241,7 +246,7 @@ export default function PaidPromotionOffer() {
             {/* Module Top Bar */}
             <div className="px-6 sm:px-8 py-4 bg-[#EDE8DC] border-b-2 border-[#0E1153] flex flex-wrap items-center justify-between gap-4">
               <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#0E1153]">
-                Product Promotion with Targeted Content
+                Google Ads, Meta Ads &amp; Lead Generation Campaigns
               </h3>
               <span className="px-3 py-1 rounded bg-[#FFA800] border border-[#0E1153] text-xs font-mono font-bold text-[#0E1153]">
                 PERFORMANCE ADS
@@ -263,10 +268,14 @@ export default function PaidPromotionOffer() {
               <div className="lg:col-span-4 flex flex-col">
                 <div className="flex items-center gap-2 mb-2 font-heading font-bold text-lg text-[#0E1153]">
                   <span className="w-2 h-2 rounded-full bg-[#FFA800]" />
-                  <span>Maximum Exposure</span>
+                  <span>Google Ads &amp; PPC Management</span>
                 </div>
                 <p className="font-sans text-xs sm:text-sm text-[#3E4945] leading-relaxed">
-                  Position your flagship products in front of qualified commercial shoppers through niche creator features, curated lifestyle lookbooks, and high-converting retargeting media buys.
+                  Search, Display, YouTube and LinkedIn campaigns built around leads or sales, sending visitors to focused{" "}
+                  <Link href="/services/web-design" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+                    campaign landing pages
+                  </Link>{" "}
+                  and retargeting people who showed interest.
                 </p>
               </div>
 
@@ -274,10 +283,13 @@ export default function PaidPromotionOffer() {
               <div className="lg:col-span-4 flex flex-col">
                 <div className="flex items-center gap-2 mb-2 font-heading font-bold text-lg text-[#0E1153]">
                   <span className="w-2 h-2 rounded-full bg-[#005F4C]" />
-                  <span>Customizable Campaigns</span>
+                  <span>Meta Ads &amp; E-Commerce Campaigns</span>
                 </div>
                 <p className="font-sans text-xs sm:text-sm text-[#3E4945] leading-relaxed">
-                  Whether launching a brand-new SKU or running seasonal flash sales, our dynamic promotion pods adjust bid parameters and creative angles in real time to sustain profitable ROAS.
+                  Facebook and Instagram campaigns for lead generation and{" "}
+                  <Link href="/services/e-commerce-solutions" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+                    online stores
+                  </Link>, from product launches to seasonal sales, with budgets, audiences and creatives adjusted to improve ROAS.
                 </p>
               </div>
             </div>

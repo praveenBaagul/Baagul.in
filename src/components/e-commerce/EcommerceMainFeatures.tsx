@@ -18,7 +18,7 @@ const mainFeatures: FeatureCard[] = [
   {
     number: "01",
     title: "Custom Online Store Design",
-    description: "Bespoke UI crafted around your category, aesthetic values, and target audience psychology.",
+    description: "Online store design built around your products, your brand and how your customers shop.",
     icon: "✏️",
     bgColor: "bg-[#FFFFFF]",
     textColor: "text-[#0E1153]",
@@ -30,7 +30,7 @@ const mainFeatures: FeatureCard[] = [
   {
     number: "02",
     title: "Mobile Responsiveness",
-    description: "Adaptive layouts guaranteeing frictionless thumb-navigation and fast loading on handhelds.",
+    description: "Mobile-first layouts with easy thumb navigation and fast-loading pages on phones.",
     icon: "📱",
     bgColor: "bg-[#CFE8DC]",
     textColor: "text-[#0E1153]",
@@ -42,7 +42,7 @@ const mainFeatures: FeatureCard[] = [
   {
     number: "03",
     title: "Shopping Cart & Checkout",
-    description: "Streamlined single-page checkouts, order bumps, upsells, and lightning-fast payment routing.",
+    description: "Streamlined checkout with upsells, order bumps and the payment methods your customers prefer.",
     icon: "🛒",
     bgColor: "bg-[#F5A800]",
     textColor: "text-[#0E1153]",
@@ -54,7 +54,7 @@ const mainFeatures: FeatureCard[] = [
   {
     number: "04",
     title: "Order & Shipping Management",
-    description: "Live logistics tracking, multi-courier API links, and automated customer order notifications.",
+    description: "Shipping and courier integrations, order tracking and automated order notifications for customers.",
     icon: "📦",
     bgColor: "bg-[#CFE8DC]",
     textColor: "text-[#0E1153]",
@@ -66,7 +66,7 @@ const mainFeatures: FeatureCard[] = [
   {
     number: "05",
     title: "Analytics & Reporting",
-    description: "In-depth cohort analytics, attribution modeling, and customer lifetime value reporting.",
+    description: "Sales, traffic and conversion reporting with e-commerce tracking, so you can see what sells.",
     icon: "📈",
     bgColor: "bg-[#F5A800]",
     textColor: "text-[#0E1153]",
@@ -78,7 +78,7 @@ const mainFeatures: FeatureCard[] = [
   {
     number: "06",
     title: "Scalability",
-    description: "Headless or modern monolithic architectures designed to handle millions in monthly throughput.",
+    description: "Store architecture that grows with your catalogue and traffic, from a first store to headless commerce.",
     icon: "🚀",
     bgColor: "bg-[#FFFFFF]",
     textColor: "text-[#0E1153]",
@@ -108,16 +108,20 @@ export default function EcommerceMainFeatures() {
 
             {/* Main Headline */}
             <h2 className="font-heading text-4xl sm:text-5xl lg:text-[46px] text-[#0E1153] leading-[1.12] mb-6 tracking-tight">
-              A user-friendly and
+              Custom E-Commerce
               <br />
-              branded storefront tailored
+              Website Development
               <br />
-              to your business.
+              Solutions
             </h2>
 
             {/* Subtext */}
             <p className="font-sans text-sm sm:text-base text-[#3E4945] leading-relaxed mb-8 max-w-md">
-              We reject off-the-shelf bloat. Every touchpoint is engineered from ground zero to support high basket sizes, eliminate checkout friction, and maintain pristine brand aesthetics.
+              A user-friendly, branded online store built around your products and customers, with a smooth path from product page to checkout. Need a business website without a store? See our{" "}
+              <Link href="/services/web-design" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+                website design and development services
+              </Link>
+              .
             </p>
 
             {/* Navy CTA Button with Yellow Shadow */}

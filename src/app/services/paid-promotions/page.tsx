@@ -9,30 +9,31 @@ import PaidPromotionOffer from "@/components/paid-promotions/PaidPromotionOffer"
 import PaidPromotionWhyChooseUs from "@/components/paid-promotions/PaidPromotionWhyChooseUs";
 import PaidPromotionProcess from "@/components/paid-promotions/PaidPromotionProcess";
 import PaidPromotionCTABanner from "@/components/paid-promotions/PaidPromotionCTABanner";
+import PaidPromotionFAQ from "@/components/paid-promotions/PaidPromotionFAQ";
 // import PaidPromotionSpecMatrix from "@/components/paid-promotions/PaidPromotionSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Performance Marketing Agency in Bangalore | Baagul",
+  title: "Performance Marketing Agency in Bangalore | BAAGUL",
   description:
-    "Performance marketing agency in Bangalore. Google Ads management and Meta Ads management services built around measurable leads and return on ad spend.",
+    "Grow your business with BAAGUL's performance marketing services in Bangalore. Google Ads, Meta Ads, PPC management, lead generation and sales campaigns.",
   alternates: { canonical: "/services/paid-promotions" },
   openGraph: {
-    title: "Performance Marketing Agency in Bangalore | Baagul",
+    title: "Performance Marketing Agency in Bangalore | BAAGUL",
     description:
-      "Performance marketing agency in Bangalore. Google Ads management and Meta Ads management services built around measurable leads and return on ad spend.",
+      "Grow your business with BAAGUL's performance marketing services in Bangalore. Google Ads, Meta Ads, PPC management, lead generation and sales campaigns.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Performance Marketing Agency in Bangalore | Baagul",
+    title: "Performance Marketing Agency in Bangalore | BAAGUL",
     description:
-      "Performance marketing agency in Bangalore. Google Ads management and Meta Ads management services built around measurable leads and return on ad spend.",
+      "Grow your business with BAAGUL's performance marketing services in Bangalore. Google Ads, Meta Ads, PPC management, lead generation and sales campaigns.",
   },
 };
 
 export default function PaidPromotionPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
-      <JsonLd data={serviceSchema({ name: "Paid Promotions & Media Buying", path: "/services/paid-promotions", description: metadata.description })} />
+      <JsonLd data={serviceSchema({ name: "Performance Marketing & Paid Advertising", path: "/services/paid-promotions", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero */}
@@ -41,11 +42,14 @@ export default function PaidPromotionPage() {
         {/* Section 2: What We Offer (3 Wide Alternating Rows) */}
         <PaidPromotionOffer />
 
-        {/* Section 3: Why Choose Baagul for Paid Promotions? (Midnight Navy #1A1F5E) */}
+        {/* Section 3: Why Choose BAAGUL for Performance Marketing (Midnight Navy #1A1F5E) */}
         <PaidPromotionWhyChooseUs />
 
         {/* Section 4: 5-Step Process (Consultation to Review & Feedback) */}
         <PaidPromotionProcess />
+
+        {/* FAQs (with FAQPage schema) */}
+        <PaidPromotionFAQ />
 
         {/* Section 5: CTA Banner (Amplify your brand's reach) */}
         <PaidPromotionCTABanner />

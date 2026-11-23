@@ -1,27 +1,5 @@
 import React from "react";
-
-const depthServices = [
-  {
-    title: "Custom Online Store Development",
-    description: "We build responsive and scalable online stores tailored to your brand, ensuring a seamless shopping experience across all devices.",
-    tag: "STOREFRONT",
-  },
-  {
-    title: "Secure Payment Integration",
-    description: "Our solutions include safe and reliable payment gateways, supporting multiple payment methods for smooth and trusted transactions.",
-    tag: "PAYMENTS",
-  },
-  {
-    title: "Product & Inventory Management",
-    description: "Easily manage products, categories, stock levels, and orders with smart dashboards designed to keep your business organized.",
-    tag: "INVENTORY",
-  },
-  {
-    title: "Conversion-Focused Design",
-    description: "We create user-friendly layouts and optimized checkout flows that reduce cart abandonment and boost sales.",
-    tag: "CRO & UI",
-  },
-];
+import Link from "next/link";
 
 export default function EcommerceServicesDepth() {
   return (
@@ -39,11 +17,11 @@ export default function EcommerceServicesDepth() {
               <span>TECHNICAL ARCHITECTURE STACK // MODULE: 03/SERVICES</span>
             </div>
             <h2 className="font-heading text-4xl sm:text-6xl text-[#FEF9ED]">
-              Our Services
+              Shopify, WooCommerce &amp; Custom E-Commerce Development
             </h2>
           </div>
           <p className="font-sans text-sm sm:text-base text-[#E7E2D6] max-w-md leading-relaxed">
-            We think big and have hands in all leading technology platforms to provide you wide array of services.
+            Storefronts, payments, inventory and automation, built and connected by one team.
           </p>
         </div>
 
@@ -57,14 +35,18 @@ export default function EcommerceServicesDepth() {
                 🏪
               </div>
               <h3 className="font-heading text-2xl font-bold mb-3 leading-snug">
-                Custom Online Store Development
+                Shopify &amp; WooCommerce Store Development
               </h3>
               <p className="font-sans text-xs sm:text-sm text-[#3E4945] leading-relaxed">
-                We build responsive and scalable online stores tailored to your brand, ensuring a seamless shopping experience across all devices.
+                Shopify development services and WooCommerce stores on WordPress, with custom themes and a smooth shopping experience on every device. For WordPress and CMS work beyond the store, see our{" "}
+                <Link href="/services/wordpress-development" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+                  WordPress development services
+                </Link>
+                .
               </p>
             </div>
             <div className="mt-8 pt-4 border-t border-[#0E1153]/15 text-[10px] font-mono font-bold text-[#005F4C]">
-              01 // STOREFRONT
+              01 // SHOPIFY &amp; WOOCOMMERCE
             </div>
           </div>
 
@@ -75,10 +57,10 @@ export default function EcommerceServicesDepth() {
                 💳
               </div>
               <h3 className="font-heading text-2xl font-bold mb-3 leading-snug">
-                Secure Payment Integration
+                Checkout &amp; Payment Gateway Integration
               </h3>
               <p className="font-sans text-xs sm:text-sm text-[#0E1153] leading-relaxed font-medium">
-                Our solutions include safe and reliable payment gateways, supporting multiple payment methods for smooth and trusted transactions.
+                Checkout optimization and secure payment gateways such as Razorpay, Stripe, PayU and Cashfree, supporting the payment methods your customers use.
               </p>
             </div>
             <div className="mt-8 pt-4 border-t border-[#0E1153]/20 text-[10px] font-mono font-bold text-[#0E1153]">
@@ -93,14 +75,14 @@ export default function EcommerceServicesDepth() {
                 📦
               </div>
               <h3 className="font-heading text-2xl font-bold mb-3 leading-snug">
-                Product &amp; Inventory Management
+                Inventory Management &amp; E-Commerce Automation
               </h3>
               <p className="font-sans text-xs sm:text-sm text-[#3E4945] leading-relaxed">
-                Easily manage products, categories, stock levels, and orders with smart dashboards designed to keep your business organized.
+                Inventory synchronization with your ERP or warehouse systems, shipping integrations, and post-purchase automation such as order emails and abandoned cart recovery.
               </p>
             </div>
             <div className="mt-8 pt-4 border-t border-[#0E1153]/15 text-[10px] font-mono font-bold text-[#005F4C]">
-              03 // INVENTORY
+              03 // INVENTORY &amp; AUTOMATION
             </div>
           </div>
 
@@ -111,14 +93,14 @@ export default function EcommerceServicesDepth() {
                 🎯
               </div>
               <h3 className="font-heading text-2xl font-bold mb-3 leading-snug">
-                Conversion-Focused Design
+                Headless E-Commerce Development with Next.js
               </h3>
               <p className="font-sans text-xs sm:text-sm text-[#3E4945] leading-relaxed">
-                We create user-friendly layouts and optimized checkout flows that reduce cart abandonment and boost sales.
+                Fast, custom storefronts built with Next.js on top of Shopify or Medusa, for brands that need full design freedom and performance.
               </p>
             </div>
             <div className="mt-8 pt-4 border-t border-[#0E1153]/15 text-[10px] font-mono font-bold text-[#005F4C]">
-              04 // CRO ENGINE
+              04 // HEADLESS
             </div>
           </div>
 

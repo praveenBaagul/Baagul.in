@@ -150,6 +150,18 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
       {
         question: "Can you redesign or vectorize an existing logo?",
         answer: "Yes. We can rebuild, clean up, and vectorize legacy logos, bringing them into modern vector precision while keeping your existing brand equity."
+      },
+      {
+        question: "How much does logo design cost in Bangalore?",
+        answer: "The cost depends on what you need: a standalone logo, a logo with brand guidelines, or a complete brand identity system with stationery and social media kits. We share a fixed quote with clear deliverables before we start, so there are no surprises."
+      },
+      {
+        question: "Do you design logos for startups and small businesses?",
+        answer: "Yes. We work with startups and small businesses as well as established corporate brands. For new businesses, we focus on a strong, flexible logo and the essential brand assets you need to launch, which can grow into a full identity system later."
+      },
+      {
+        question: "What is included in your brand identity design service?",
+        answer: "Beyond the logo itself, brand identity design covers your color palette, typography, logo usage rules, and a brand guidelines document, plus applications such as business cards, letterheads, and social media templates, so your brand looks consistent everywhere."
       }
     ]
   },
@@ -231,10 +243,43 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
       },
       {
         title: "Review & Delivery",
-        description: "Present the work, finalize assets, and deliver polished results."
+        description: "Present the work, refine it with your feedback, and deliver print-ready and web-ready files."
       }
     ],
-    faqs: []
+    faqs: [
+      {
+        question: "What graphic design services do you offer?",
+        answer: "We design social media graphics, advertising creatives, brochures, flyers, one-pagers, posters, packaging, exhibition graphics, and corporate presentations and pitch decks. For logos and complete brand identities, see our logo design service."
+      },
+      {
+        question: "Do you design social media graphics and templates?",
+        answer: "Yes. We create posts, carousels, stories and cover images for platforms such as Instagram, LinkedIn, Facebook and X, and can build reusable templates so your team can publish consistent content."
+      },
+      {
+        question: "Can you design ad creatives for Meta, Google and LinkedIn?",
+        answer: "Yes. We design ad creative sets sized for each placement, along with promotional banners. If you also need the campaigns planned and managed, our paid promotions team can run them."
+      },
+      {
+        question: "How much do graphic design services cost?",
+        answer: "The cost depends on the number and type of designs, and whether you need a one-off project or ongoing support. We share a fixed quote with clear deliverables before we start, so there are no surprises."
+      },
+      {
+        question: "Which file formats will I receive?",
+        answer: "We agree the formats in your quote. Printed work is delivered as print-ready files and digital work as web-ready images sized for each platform. Editable source files can be included when agreed."
+      },
+      {
+        question: "How long does a graphic design project take?",
+        answer: "It depends on the scope. A set of social media posts or ad creatives is quicker than a multi-page brochure or a full presentation. We agree a delivery schedule in your quote before work begins."
+      },
+      {
+        question: "Are revisions included?",
+        answer: "Yes. Every project includes review rounds, so you can share feedback before the files are finalised. The number of revision rounds is set out in your quote."
+      },
+      {
+        question: "Can you work with our existing brand guidelines?",
+        answer: "Yes. We follow your existing logo, colours and typography so every design stays consistent with your brand. If you don't have guidelines yet, we can create them as part of a brand identity project."
+      }
+    ]
   },
   "e-commerce-solutions": {
     process: [
@@ -257,28 +302,40 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
     ],
     faqs: [
       {
-        question: "What ecommerce platforms do you work with?",
-        answer: "We specialize in Shopify, WooCommerce (WordPress), and fully bespoke headless e-commerce builds (Next.js with Medusa or Shopify Storefront API). We select the platform based purely on your SKU volume, transaction concurrency, and operational workflows."
+        question: "What e-commerce platforms do you work with?",
+        answer: "We build on Shopify, WooCommerce (WordPress) and custom headless e-commerce with Next.js on Medusa or the Shopify Storefront API. We recommend a platform based on your product catalogue, order volume and how your team works."
       },
       {
-        question: "How long does it take to build an ecommerce website?",
-        answer: "A standard branded storefront sprint typically completes within 3 to 4 weeks. High-complexity headless builds with ERP pipelines and multi-location logistics integration take between 6 to 8 weeks."
+        question: "Shopify or WooCommerce: which is better for my online store?",
+        answer: "Shopify is a hosted platform that is quick to launch and easy to run, with a monthly subscription. WooCommerce runs on WordPress, gives you more control over hosting, content and customisation, and suits businesses that already use WordPress. We explain the trade-offs for your business before you decide."
       },
       {
-        question: "Will my ecommerce store be mobile-friendly?",
-        answer: "Yes. Every storefront is engineered mobile-first with touch-optimized 1-click cart flows, instant image compression, and responsive checkout sheets."
+        question: "How much does e-commerce website development cost?",
+        answer: "The cost depends on the platform, the number of products and pages, custom features, and integrations such as payment gateways, shipping or ERP systems. We share a fixed-price proposal with clear deliverables before we start, with no hidden costs."
+      },
+      {
+        question: "How long does it take to build an e-commerce website?",
+        answer: "A standard branded storefront typically takes 3 to 4 weeks. Complex headless builds with ERP and multi-location logistics integrations take 6 to 8 weeks."
+      },
+      {
+        question: "Can you migrate my existing online store to a new platform?",
+        answer: "Yes. We plan the migration with you, move your products and content, and set up redirects from old URLs so you keep your existing search rankings. What else can move, such as customer accounts and order history, depends on the platforms involved, and we confirm it before we start."
+      },
+      {
+        question: "Will my e-commerce store be mobile-friendly?",
+        answer: "Yes. Every storefront is designed mobile-first, with touch-friendly navigation, optimized images and a responsive checkout."
       },
       {
         question: "Do you integrate payment gateways and shipping systems?",
-        answer: "Yes. We configure multi-rail checkout gateways including Razorpay, Stripe, PayU, and Cashfree, along with shipping automation via Shiprocket, Delhivery, and custom WMS APIs."
+        answer: "Yes. We integrate payment gateways including Razorpay, Stripe, PayU and Cashfree, and shipping services such as Shiprocket and Delhivery, or your own warehouse system through its API."
       },
       {
-        question: "Can you help with SEO and performance optimization?",
-        answer: "Every store includes semantic schema markup, optimized product taxonomy, automated Google Merchant Center feeds, and sub-second Core Web Vitals out of the box."
+        question: "Can you help with e-commerce SEO and site speed?",
+        answer: "Yes. We build stores with a clean product and category structure, product schema markup and fast-loading pages, and can set up Google Merchant Center product feeds. For ongoing organic growth, our SEO optimization services cover keyword research, content and technical SEO."
       },
       {
-        question: "Do you provide post-launch support and maintenance?",
-        answer: "Yes. We offer continuous monthly growth pods covering security patches, conversion rate optimization (CRO), speed audits, and seasonal sales campaign management."
+        question: "Do you provide e-commerce website maintenance and support?",
+        answer: "Yes. Our monthly support plans cover security updates, speed checks, conversion rate optimization and help with seasonal sales campaigns."
       }
     ]
   },
@@ -303,55 +360,104 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
     ],
     faqs: [
       {
-        question: "Why should I choose a custom WordPress website instead of a pre-made theme?",
-        answer: "Pre-made themes are overloaded with unnecessary features, slow code, and third-party dependencies that destroy Core Web Vitals and expose security vulnerabilities. Our custom-coded WordPress sites include only the exact features you require, ensuring sub-second load times and effortless editing."
+        question: "Why choose a custom WordPress website instead of a pre-made theme?",
+        answer: "Pre-made themes often bundle features you don't need, extra code and third-party dependencies that slow pages down and add security risk. A custom WordPress theme includes only what your site needs, which keeps it faster, easier to edit and simpler to maintain."
       },
       {
-        question: "Will my website be fast and secure against hacking attempts?",
-        answer: "Yes. Every WordPress website we build is hardened with enterprise security directives, XML-RPC disablement, secure database table prefixes, and zero vulnerability plugins. Combined with proper caching and clean PHP code, your site easily scores 90+ on Google PageSpeed Insights."
+        question: "How much does WordPress website development cost in Bangalore?",
+        answer: "The cost depends on the number of pages, the design, custom features and integrations such as forms, CRMs or WooCommerce. We share a fixed-price proposal with clear deliverables before we start, with no hidden costs."
+      },
+      {
+        question: "How long does it take to develop a WordPress website?",
+        answer: "A typical 5–10 page business website takes around 3 to 6 weeks from kickoff to launch, covering design, development, content setup and testing. Larger sites, custom integrations and migrations take longer, and we agree a timeline in your proposal."
+      },
+      {
+        question: "Can you redesign my existing WordPress website without losing SEO rankings?",
+        answer: "Yes. We keep your existing URLs wherever possible, set up 301 redirects for any that change, and carry over page titles, meta descriptions and content, so search engines can transfer your rankings to the new design. We also check the site in Google Search Console after launch."
+      },
+      {
+        question: "Do you provide WordPress website speed optimization?",
+        answer: "Yes. For new and existing sites we optimize images, caching, fonts and scripts, remove unnecessary plugins, and improve Core Web Vitals. We measure speed before and after so you can see the difference; results depend on your hosting and content."
+      },
+      {
+        question: "Will my website be secure?",
+        answer: "We harden every WordPress site: secure configuration, limited admin access, firewall protection, trusted plugins only, and regular core and plugin updates. No website can be guaranteed 100% secure, which is why we recommend an ongoing maintenance plan with monitoring and backups."
       },
       {
         question: "Will my team be able to update content easily without coding?",
-        answer: "Absolutely. We build custom block patterns directly into the WordPress Gutenberg editor. Your marketing team can visually craft, edit, and reorganize landing pages using your exact design tokens without breaking layout integrity."
+        answer: "Yes. We build custom block patterns into the WordPress Gutenberg editor, so your team can create, edit and rearrange pages using your brand's design without breaking the layout."
       },
       {
-        question: "Can you migrate our existing store or blog to modern WordPress?",
-        answer: "Yes. We handle complete zero-downtime database migrations, preserving all historical blog posts, URLs, 301 redirects, customer accounts, and metadata."
+        question: "Can you migrate my website from another CMS to WordPress?",
+        answer: "Yes. We move your pages, blog posts, images and metadata, keep or redirect your existing URLs with 301 redirects, and plan the switchover to keep downtime to a minimum. What else can move, such as user accounts, depends on the platform you are moving from, and we confirm it before we start."
       },
       {
         question: "Do you provide ongoing maintenance and security updates?",
-        answer: "Yes. We offer continuous monthly growth and security pods covering managed WordPress core and plugin updates, automated off-site backups, and uptime monitoring."
+        answer: "Yes. Our monthly WordPress maintenance plans cover core, theme and plugin updates, off-site backups, uptime monitoring and security checks."
       },
       {
-        question: "Can you integrate custom CRM, ERP, and payment APIs?",
-        answer: "Yes. We regularly connect WordPress with custom REST APIs, GraphQL endpoints, HubSpot, Salesforce, Stripe, Razorpay, and enterprise inventory management backends."
+        question: "Can you integrate CRM, ERP and payment systems?",
+        answer: "Yes. We connect WordPress with REST and GraphQL APIs and tools such as HubSpot, Salesforce, Stripe and Razorpay, as well as inventory and business systems."
       }
     ]
   },
   "paid-promotions": {
     process: [
       {
-        title: "Consultation",
-        description: "We discuss your brand values, target audience, budget, and campaign goals to define the best promotion strategy."
+        title: "Goals & Budget",
+        description: "We discuss your business goals, target customers, advertising budget and what a lead or sale is worth to you, to set clear campaign targets."
       },
       {
-        title: "Content Development",
-        description: "We formulate campaign concepts, creator partnerships, video scripts, and custom trackable offer links."
+        title: "Audience Research & Strategy",
+        description: "We research your audience, keywords and competitors, then choose the platforms and campaign structure: Google, Meta, LinkedIn or YouTube."
       },
       {
-        title: "Production",
-        description: "Creators record, edit, and produce high-resolution assets aligning with your brand tone and regulatory guidelines."
+        title: "Creatives & Landing Pages",
+        description: "Ad copy, designs and videos, creator content where it fits, and landing pages planned to turn clicks into enquiries and sales."
       },
       {
-        title: "Promotion & Distribution",
-        description: "Scheduled rollout across targeted channels with algorithmic boost budgets to maximize early momentum."
+        title: "Launch & Tracking",
+        description: "Campaigns go live with conversion tracking, pixels and analytics in place, so every lead and sale can be measured."
       },
       {
-        title: "Review & Feedback",
-        description: "In-depth analytics review assessing impressions, click-through rates, ROAS, and customer sentiment for ongoing scaling."
+        title: "Reporting & Optimization",
+        description: "Regular reports on spend, leads, sales, cost per acquisition and ROAS, with ongoing bid, audience and creative optimization."
       }
     ],
-    faqs: []
+    faqs: [
+      {
+        question: "What is performance marketing, and how does it work?",
+        answer: "Performance marketing is paid advertising measured by results such as leads, sales and cost per acquisition, rather than impressions alone. We run ads on platforms like Google and Meta, track what each campaign delivers, and move budget towards the ads and audiences that perform best."
+      },
+      {
+        question: "How much does performance marketing cost in Bangalore?",
+        answer: "There are two parts: your ad spend, which you pay to the platforms such as Google or Meta, and our management fee. Both depend on your goals, the platforms, the number of campaigns and the creatives you need. We share a fixed proposal with clear deliverables before we start."
+      },
+      {
+        question: "Do you manage Google Ads and Facebook Ads campaigns?",
+        answer: "Yes. We manage Google Ads campaigns across Search, Display and YouTube, Meta Ads on Facebook and Instagram, and LinkedIn Ads for B2B audiences, from setup and targeting to day-to-day optimization."
+      },
+      {
+        question: "Can performance marketing help generate leads and online sales?",
+        answer: "Yes, that is what it is built for. Results depend on your offer, budget, market and landing pages, so no agency can honestly guarantee a number of leads or sales. We set clear targets with you, test what works and keep improving campaigns based on the data."
+      },
+      {
+        question: "What is the difference between SEO and performance marketing?",
+        answer: "Performance marketing buys visibility: your ads can appear as soon as campaigns go live, and you pay for clicks or impressions while they run. SEO earns organic visibility that builds over time without paying per click. Many businesses use paid campaigns for immediate results while SEO grows in the background."
+      },
+      {
+        question: "Do you provide paid advertising for e-commerce websites?",
+        answer: "Yes. We run campaigns for online stores, including product promotions, retargeting and seasonal sale campaigns, with conversion tracking set up on your store so sales can be measured against ad spend."
+      },
+      {
+        question: "How do you measure campaign performance and ROAS?",
+        answer: "Before launch we set up conversion tracking with your analytics and the ad platforms' pixels. Our regular reports show spend, clicks, leads, sales, cost per acquisition and return on ad spend (ROAS), along with what we are changing next."
+      },
+      {
+        question: "Do you create the ad creatives and landing pages?",
+        answer: "Yes. Our graphic design, video and web teams create ad designs, promotional videos and campaign landing pages, and we work with creators for sponsored content where it suits your audience."
+      }
+    ]
   },
   "video-editing": {
     process: [
@@ -396,6 +502,18 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
       {
         question: "Do you offer monthly video editing packages?",
         answer: "Yes. Along with one-off projects, we offer monthly plans for creators and brands who publish regularly, with a fixed number of videos, consistent styling, and priority turnaround."
+      },
+      {
+        question: "How much do video editing services cost in Bangalore?",
+        answer: "The cost depends on the type and length of the video, the amount of footage, motion graphics and subtitles, and how many videos you need. We offer per-project pricing and monthly plans, and share a clear quote before we start."
+      },
+      {
+        question: "Do you provide video editing for Instagram Reels and YouTube Shorts?",
+        answer: "Yes. We edit vertical 9:16 short-form videos for Instagram Reels and YouTube Shorts, with strong opening hooks, captions, music and sound effects. We can also cut Shorts and Reels from your long-form videos. Short-form reels are usually delivered within 24–48 hours."
+      },
+      {
+        question: "Can you edit video advertisements for Google, Facebook, and Instagram?",
+        answer: "Yes. We edit video ads for YouTube and Google, Facebook and Instagram in the aspect ratios each placement needs, such as 9:16, 4:5, 1:1 and 16:9, with captions, clear calls to action and hook variations for testing. Our paid promotions team can also run the campaigns."
       }
     ]
   },
@@ -421,7 +539,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
     faqs: [
       {
         question: "Should I build a native (Swift/Kotlin) app or cross-platform (Flutter/React Native)?",
-        answer: "It depends on your core requirements. If your app requires heavy hardware access, custom AR/CoreML computing, or zero-compromise platform ergonomics, native Swift and Kotlin are ideal. For 90% of business, marketplace, SaaS, and content apps, Flutter or React Native provides equivalent 60 FPS performance while cutting development and maintenance costs by almost half."
+        answer: "It depends on your requirements. If your app needs heavy hardware access, custom AR or on-device machine learning, or the most platform-specific feel, native Swift and Kotlin are the better fit. For most business, marketplace, SaaS and content apps, Flutter or React Native delivers smooth performance from a single codebase, which usually reduces development and maintenance effort compared with building two separate native apps."
       },
       {
         question: "How long does it take to design, develop, and launch an app?",
@@ -429,7 +547,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
       },
       {
         question: "Do you handle the Apple App Store and Google Play Store approvals?",
-        answer: "Yes, fully. We manage certificate generation, provisioning profiles, privacy manifest configurations, store listing metadata, screenshots, and compliance verification. We maintain a 100% store approval track record and guide you through the developer account registration process."
+        answer: "Yes. We manage certificates, provisioning profiles, privacy manifests, store listing details, screenshots and compliance checks, and guide you through developer account registration. Final approval is always Apple's and Google's decision, but reviewing every release against their policies before submission reduces the risk of rejection, and we handle any reviewer feedback."
       },
       {
         question: "Can you build the backend APIs and cloud infrastructure as well?",
@@ -441,7 +559,27 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
       },
       {
         question: "What maintenance and post-launch support do you offer?",
-        answer: "We offer continuous maintenance packages covering annual iOS/Android OS updates, dependency upgrades, bug fixes, performance monitoring via Sentry, and ongoing feature rollouts to ensure your app stays fast and 5-star rated."
+        answer: "We offer ongoing maintenance packages covering annual iOS and Android OS updates, dependency upgrades, bug fixes, performance monitoring via Sentry and new feature releases, so your app stays fast and up to date."
+      },
+      {
+        question: "How much does mobile app development cost in Bangalore?",
+        answer: "The cost depends on the platforms, the number of screens and features, design complexity, backend and integrations such as payments, and whether you start with an MVP. We share a fixed-scope proposal with clear milestones and deliverables before development begins."
+      },
+      {
+        question: "Do you develop both Android and iOS applications?",
+        answer: "Yes. We build native Android apps in Kotlin, native iOS apps in Swift, and cross-platform apps with React Native or Flutter that run on both from one codebase. We recommend the approach that suits your features, budget and timeline."
+      },
+      {
+        question: "Can you develop an MVP app for my startup?",
+        answer: "Yes. We help you choose the core features, design a clickable prototype and build a focused MVP you can launch, test with real users and grow. A focused MVP generally takes 6 to 10 weeks from discovery to store submission."
+      },
+      {
+        question: "What technologies do you use for mobile app development?",
+        answer: "Swift and SwiftUI for iOS, Kotlin and Jetpack Compose for Android, React Native with TypeScript and Flutter for cross-platform apps, and Node.js, Python, PostgreSQL and cloud platforms such as AWS, Google Cloud and Supabase for backends."
+      },
+      {
+        question: "Can you redesign or upgrade an existing mobile app?",
+        answer: "Yes. We start with a review of your current app's code, design and analytics, then plan a redesign, performance improvements, new features or a move to a newer technology stack. Whether we improve the existing code or rebuild depends on its condition, and we explain the trade-offs first."
       }
     ]
   }

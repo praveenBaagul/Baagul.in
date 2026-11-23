@@ -12,9 +12,9 @@ export default function LogoDesignWhyChooseUs() {
           </div>
 
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-[#FEF9ED] leading-tight mb-6">
-            <span>Your Brand Deserves a Logo That </span>
+            <span>Why Businesses Choose Baagul for </span>
             <span className="inline-block bg-[#FFA800] text-[#0E1153] px-4 py-1 rounded-xl border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] mt-2">
-              Speaks
+              Logo Design
             </span>
           </h2>
 

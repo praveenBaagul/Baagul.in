@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function EcommerceWhyChooseUs() {
   return (
@@ -15,12 +16,13 @@ export default function EcommerceWhyChooseUs() {
           </div>
 
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-[#0E1153] leading-tight mb-4">
-            Your Business Deserves an Ecommerce Solution That{" "}
+            Why Choose BAAGUL for{" "}
             <span className="relative inline-block mt-1">
               <span className="bg-[#FFBA45] text-[#0E1153] px-3 py-0.5 rounded-[2px] border-2 border-[#0E1153] drop-shadow-[4px_4px_0px_#0E1153] inline-block font-heading">
-                &lt;Drives Growth&gt;
+                &lt;E-Commerce&gt;
               </span>
-            </span>
+            </span>{" "}
+            Development?
           </h2>
         </div>
 
@@ -32,13 +34,21 @@ export default function EcommerceWhyChooseUs() {
               <span className="font-heading text-5xl font-bold text-[#0E1153] float-left mr-3 leading-none">
                 A
               </span>
-              t Baagul, we believe an ecommerce website is more than just an online store — it&apos;s the backbone of your digital business. As a trusted ecommerce solutions company in Bangalore, we create powerful, conversion-focused online stores that are designed to attract customers, increase sales, and scale with your business.
+              t BAAGUL, we believe an e-commerce website is more than an online store: it&apos;s the backbone of your digital business. As an e-commerce development company in Bangalore, we build conversion-focused online stores designed to attract customers, increase sales and scale with your business.
             </p>
             <p>
-              Our approach blends strategy, user experience, and technology to build ecommerce platforms that are fast, secure, and optimized for performance.
+              Our approach blends strategy, user experience and technology to build e-commerce websites that are fast, secure and easy for your team to manage.
             </p>
             <p>
-              We work closely with you to understand your products, target audience, and growth goals before crafting a tailored ecommerce solution that fits your brand perfectly. From intuitive design and seamless checkout systems to mobile optimization and payment gateway integration, we ensure every element works together to maximize conversions.
+              We work closely with you to understand your products, audience and growth goals before choosing the right platform. From intuitive design and seamless checkout to mobile optimization and payment gateway integration, every element works together. After launch, our{" "}
+              <Link href="/services/seo-optimizations" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+                SEO optimization services
+              </Link>{" "}
+              help your products get found in search, and{" "}
+              <Link href="/services/paid-promotions" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+                paid promotions
+              </Link>{" "}
+              drive traffic and sales to your online store.
             </p>
           </div>
 

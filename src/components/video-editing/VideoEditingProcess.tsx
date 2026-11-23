@@ -54,7 +54,7 @@ export default function VideoEditingProcess() {
           </div>
 
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-[56px] leading-[1.1] text-[#FEF9ED] mb-4">
-            Our 4-Step Video Editing
+            Our Professional Video Editing
             <br />
             <span className="font-serif italic font-normal text-[#FFBA45]">
               Process

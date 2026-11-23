@@ -17,28 +17,28 @@ const items: AccordionItem[] = [
   },
   {
     id: "02",
-    title: "Custom UX/UI Design",
-    desc: "Bespoke design tokens, distinctive Figma-to-WordPress translations, intuitive page hierarchies, and frictionless navigation pathways that retain users.",
+    title: "WordPress Website Design & Redesign",
+    desc: "Custom designs built from Figma into WordPress, or a redesign of your existing WordPress website that keeps your content, URLs and search rankings in place.",
   },
   {
     id: "03",
     title: "Clean Typography & Layouts",
-    desc: "Thoughtful type scale, proper font subsets with zero render-blocking requests, and accessible WCAG contrast standards built right into theme styles.",
+    desc: "A clear type scale, optimized web fonts and accessible colour contrast built into your theme styles.",
   },
   {
     id: "04",
     title: "Secure Architecture",
-    desc: "Hardened wp-config configurations, automated vulnerability monitoring, XML-RPC disablement, enterprise Cloudflare WAF routing, and role-based access.",
+    desc: "Hardened WordPress configuration, vulnerability monitoring, firewall protection, XML-RPC disabled where it is not needed, and role-based access for your team.",
   },
   {
     id: "05",
     title: "Performance Optimization",
-    desc: "Native asset minification, Redis object caching, AVIF image formats, and custom block stylesheets that pass Google Core Web Vitals with 99+ PageSpeed scores.",
+    desc: "Asset minification, object caching, modern image formats and lean block styles, tuned to meet Google's Core Web Vitals.",
   },
   {
     id: "06",
     title: "WooCommerce Integration",
-    desc: "Tailored product grids, frictionless multi-step checkouts, customized payment gateways, and rapid cart transactions built for high-volume order flow.",
+    desc: "WooCommerce product pages, checkout and payment gateway setup for online stores that run on WordPress.",
   },
 ];
 
@@ -59,11 +59,15 @@ export default function WordPressDeliverables() {
           </div>
 
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-[#FEF9ED] leading-tight mb-6">
-            Unique Web Designs, online solutions, and brand guidelines that define your business.
+            Custom WordPress Website Development Services
           </h2>
 
           <p className="font-sans text-sm sm:text-base text-[#FEF9ED]/80 leading-relaxed mb-8">
-            We move away from bloated page builders. Our WordPress architectures are custom-coded from the ground up to ensure instantaneous load times, seamless editor autonomy, and scalable digital foundations.
+            We build WordPress websites on custom themes and native Gutenberg blocks rather than heavy page builders, so pages load fast and your team can edit content easily. For custom websites built without WordPress, see our{" "}
+            <Link href="/services/web-design" className="font-bold text-[#FFA800] underline underline-offset-2 hover:text-[#FEF9ED]">
+              website design and development services
+            </Link>
+            .
           </p>
 
           <Link
@@ -80,7 +84,7 @@ export default function WordPressDeliverables() {
               <span className="w-2.5 h-2.5 rounded-full bg-[#00A86B]" />
               <span>GUTENBERG &amp; HEADLESS READY</span>
             </div>
-            <span className="text-[#FFA800]">100% CLEAN CODE</span>
+            <span className="text-[#FFA800]">CUSTOM-CODED THEMES</span>
           </div>
         </div>
 

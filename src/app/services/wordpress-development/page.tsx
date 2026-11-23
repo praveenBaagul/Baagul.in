@@ -15,27 +15,27 @@ import WordPressServicePager from "@/components/wordpress-development/WordPressS
 import WordPressSpecMatrix from "@/components/wordpress-development/WordPressSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "WordPress Development Services in Bangalore | Baagul",
+  title: "WordPress Development Company in Bangalore | BAAGUL",
   description:
-    "WordPress development services in Bangalore: WordPress website development, custom CMS development, Gutenberg block themes and WooCommerce stores.",
+    "BAAGUL offers WordPress development services in Bangalore. Get custom websites, redesigns, migration, speed optimization and maintenance solutions.",
   alternates: { canonical: "/services/wordpress-development" },
   openGraph: {
-    title: "WordPress Development Services in Bangalore | Baagul",
+    title: "WordPress Development Company in Bangalore | BAAGUL",
     description:
-      "WordPress development services in Bangalore: WordPress website development, custom CMS development, Gutenberg block themes and WooCommerce stores.",
+      "BAAGUL offers WordPress development services in Bangalore. Get custom websites, redesigns, migration, speed optimization and maintenance solutions.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WordPress Development Services in Bangalore | Baagul",
+    title: "WordPress Development Company in Bangalore | BAAGUL",
     description:
-      "WordPress development services in Bangalore: WordPress website development, custom CMS development, Gutenberg block themes and WooCommerce stores.",
+      "BAAGUL offers WordPress development services in Bangalore. Get custom websites, redesigns, migration, speed optimization and maintenance solutions.",
   },
 };
 
 export default function WordPressDevelopmentPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
-      <JsonLd data={serviceSchema({ name: "WordPress & CMS Development", path: "/services/wordpress-development", description: metadata.description })} />
+      <JsonLd data={serviceSchema({ name: "WordPress Development Services", path: "/services/wordpress-development", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero */}
@@ -50,7 +50,7 @@ export default function WordPressDevelopmentPage() {
         {/* Section 4: 4-Step Process (Deep Green #005F4C) */}
         <WordPressProcess />
 
-        {/* Section 5: Why Choose Us (Powerful, Flexible & Scalable WordPress Websites) */}
+        {/* Section 5: Why Choose BAAGUL for WordPress Development */}
         <WordPressWhyChooseUs />
 
         {/* Section 6: Some of Our Works Case Studies */}

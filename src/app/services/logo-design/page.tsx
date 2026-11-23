@@ -14,27 +14,27 @@ import LogoDesignServicePager from "@/components/logo-design/LogoDesignServicePa
 import LogoDesignSpecMatrix from "@/components/logo-design/LogoDesignSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Logo Design Company in Bangalore | Baagul",
+  title: "Logo Design & Brand Identity Services in Bangalore | Baagul",
   description:
-    "Logo design company in Bangalore offering professional logo design services, custom business logo design and complete brand identity systems.",
+    "Professional logo design services in Bangalore by Baagul. Get custom business logos, brand identity design, vector files and brand guidelines.",
   alternates: { canonical: "/services/logo-design" },
   openGraph: {
-    title: "Logo Design Company in Bangalore | Baagul",
+    title: "Logo Design & Brand Identity Services in Bangalore | Baagul",
     description:
-      "Logo design company in Bangalore offering professional logo design services, custom business logo design and complete brand identity systems.",
+      "Professional logo design services in Bangalore by Baagul. Get custom business logos, brand identity design, vector files and brand guidelines.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Logo Design Company in Bangalore | Baagul",
+    title: "Logo Design & Brand Identity Services in Bangalore | Baagul",
     description:
-      "Logo design company in Bangalore offering professional logo design services, custom business logo design and complete brand identity systems.",
+      "Professional logo design services in Bangalore by Baagul. Get custom business logos, brand identity design, vector files and brand guidelines.",
   },
 };
 
 export default function LogoDesignPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
-      <JsonLd data={serviceSchema({ name: "Logo Design", path: "/services/logo-design", description: metadata.description })} />
+      <JsonLd data={serviceSchema({ name: "Logo Design & Brand Identity", path: "/services/logo-design", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero & 3 KPI Cards */}

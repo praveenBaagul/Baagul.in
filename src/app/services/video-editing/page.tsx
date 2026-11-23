@@ -14,20 +14,20 @@ import VideoEditingServicePager from "@/components/video-editing/VideoEditingSer
 // import VideoEditingSpecMatrix from "@/components/video-editing/VideoEditingSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Professional Video Editing Services | Baagul",
+  title: "Video Editing Services in Bangalore | BAAGUL",
   description:
-    "Professional video editing services for YouTube videos, Instagram Reels, brand films and ads, with motion graphics, color grading and subtitles.",
+    "Professional video editing services in Bangalore by BAAGUL. Get YouTube editing, Instagram Reels, motion graphics, promotional videos and video ads.",
   alternates: { canonical: "/services/video-editing" },
   openGraph: {
-    title: "Professional Video Editing Services | Baagul",
+    title: "Video Editing Services in Bangalore | BAAGUL",
     description:
-      "Professional video editing services for YouTube videos, Instagram Reels, brand films and ads, with motion graphics, color grading and subtitles.",
+      "Professional video editing services in Bangalore by BAAGUL. Get YouTube editing, Instagram Reels, motion graphics, promotional videos and video ads.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Video Editing Services | Baagul",
+    title: "Video Editing Services in Bangalore | BAAGUL",
     description:
-      "Professional video editing services for YouTube videos, Instagram Reels, brand films and ads, with motion graphics, color grading and subtitles.",
+      "Professional video editing services in Bangalore by BAAGUL. Get YouTube editing, Instagram Reels, motion graphics, promotional videos and video ads.",
   },
 };
 
@@ -35,7 +35,7 @@ export default function VideoEditingPage() {
   return (
     <div className="min-h-screen bg-[#FEF9ED] text-[#0E1153] flex flex-col font-sans selection:bg-[#FFBA45] selection:text-[#0E1153]">
       {/* Site-wide Header */}
-      <JsonLd data={serviceSchema({ name: "Video Editing", path: "/services/video-editing", description: metadata.description })} />
+      <JsonLd data={serviceSchema({ name: "Video Editing Services", path: "/services/video-editing", description: metadata.description })} />
       <Header />
 
       {/* Main Page Sections */}

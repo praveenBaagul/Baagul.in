@@ -71,13 +71,13 @@ export default function VideoEditingHero() {
               </span>
               {" "}
               <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
-                Professional Video Editing Services
+                Professional Video Editing Services in Bangalore
               </span>
             </h1>
 
             {/* Description */}
             <p className="font-sans text-sm sm:text-base text-[#121A4A]/80 leading-relaxed max-w-xl mb-8">
-              At Baagul.in, our professional video editing services turn raw footage into scroll-stopping stories. From Instagram Reels editing and YouTube video editing to brand films and ad creatives, our editors craft clean cuts, motion graphics, color grades, and sound that hold attention and reflect your brand&apos;s voice.
+              At BAAGUL, our professional video editing services turn raw footage into scroll-stopping stories. From Instagram Reels and YouTube video editing to corporate films, product videos and video ads, our editors craft clean cuts, motion graphics, color grades and sound that hold attention and reflect your brand&apos;s voice.
             </p>
 
             {/* CTA Group */}
@@ -109,6 +109,7 @@ export default function VideoEditingHero() {
                 <video
                   ref={videoRef}
                   src="/assets/video/baagul-video-editing-promo.mp4"
+                  aria-label="BAAGUL video editing showreel"
                   autoPlay
                   loop
                   muted

@@ -40,11 +40,11 @@ export default function WordPressProcess() {
           </div>
 
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-[#FEF9ED] leading-tight mb-4">
-            Our 4-Step Website Development Process
+            Our WordPress Website Development Process
           </h2>
 
           <p className="font-sans text-xs sm:text-sm text-[#FEF9ED]/75 leading-relaxed">
-            From initial strategy to high-performance launch: a proven, structured methodology for robust web delivery.
+            Four stages from your requirements to a tested, live WordPress website.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function WordPressProcess() {
               </div>
 
               <div className="pt-3 border-t border-[#0E1153]/15 font-mono text-[10px] font-bold text-[#005F4C] uppercase">
-                PHASE 0{step.number} // COMPLETE
+                {`PHASE ${step.number} // COMPLETE`}
               </div>
             </div>
           ))}

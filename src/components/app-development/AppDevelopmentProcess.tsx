@@ -54,15 +54,15 @@ export default function AppDevelopmentProcess() {
           </div>
 
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-[56px] leading-[1.1] text-[#FEF9ED] mb-4">
-            Our 4-Step Mobile App
+            Our Mobile App Development
             <br />
             <span className="font-serif italic font-normal text-[#FFBA45]">
-              Lifecycle
+              Process
             </span>
           </h2>
 
           <p className="font-sans text-sm sm:text-base text-[#FEF9ED]/85 leading-relaxed max-w-xl mx-auto">
-            A transparent, milestone-driven engineering methodology taking your product from napkin sketch to verified app store deployment.
+            A clear, milestone-based process that takes your app from idea to App Store and Google Play launch.
           </p>
         </div>
 

@@ -15,27 +15,27 @@ import EcommerceServicePager from "@/components/e-commerce/EcommerceServicePager
 import EcommerceSpecMatrix from "@/components/e-commerce/EcommerceSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "E-commerce Website Development in Bangalore | Baagul",
+  title: "E-Commerce Website Development in Bangalore | BAAGUL",
   description:
-    "E-commerce website development in Bangalore: Shopify development services, WooCommerce stores and headless commerce with fast, secure checkout.",
+    "Build your online store with BAAGUL's e-commerce development services in Bangalore. Shopify, WooCommerce, custom storefronts and checkout optimization.",
   alternates: { canonical: "/services/e-commerce-solutions" },
   openGraph: {
-    title: "E-commerce Website Development in Bangalore | Baagul",
+    title: "E-Commerce Website Development in Bangalore | BAAGUL",
     description:
-      "E-commerce website development in Bangalore: Shopify development services, WooCommerce stores and headless commerce with fast, secure checkout.",
+      "Build your online store with BAAGUL's e-commerce development services in Bangalore. Shopify, WooCommerce, custom storefronts and checkout optimization.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "E-commerce Website Development in Bangalore | Baagul",
+    title: "E-Commerce Website Development in Bangalore | BAAGUL",
     description:
-      "E-commerce website development in Bangalore: Shopify development services, WooCommerce stores and headless commerce with fast, secure checkout.",
+      "Build your online store with BAAGUL's e-commerce development services in Bangalore. Shopify, WooCommerce, custom storefronts and checkout optimization.",
   },
 };
 
 export default function EcommerceSolutionsPage() {
   return (
     <div className="min-h-screen flex flex-col bg-canvas text-indigo-main antialiased selection:bg-marigold selection:text-indigo-main">
-      <JsonLd data={serviceSchema({ name: "E-Commerce Solutions", path: "/services/e-commerce-solutions", description: metadata.description })} />
+      <JsonLd data={serviceSchema({ name: "E-Commerce Website Development", path: "/services/e-commerce-solutions", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero */}

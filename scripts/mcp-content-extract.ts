@@ -21,13 +21,13 @@ const SERVICE_SOURCES: Record<string, { faq?: string; process?: string; processI
     processIsInlineJsx: true,
   },
   "guest-post": { faq: "guest-post/GuestPostFAQ.tsx", process: "guest-post/GuestPostProcess.tsx" },
-  "graphics-design": { process: "graphics-design/GraphicsDesignProcess.tsx" },
+  "graphics-design": { faq: "graphics-design/GraphicsDesignFAQ.tsx", process: "graphics-design/GraphicsDesignProcess.tsx" },
   "e-commerce-solutions": { faq: "e-commerce/EcommerceFAQ.tsx", process: "e-commerce/EcommerceProcess.tsx" },
   "wordpress-development": {
     faq: "wordpress-development/WordPressFAQ.tsx",
     process: "wordpress-development/WordPressProcess.tsx",
   },
-  "paid-promotions": { process: "paid-promotions/PaidPromotionProcess.tsx" },
+  "paid-promotions": { faq: "paid-promotions/PaidPromotionFAQ.tsx", process: "paid-promotions/PaidPromotionProcess.tsx" },
   "video-editing": { faq: "video-editing/VideoEditingFAQ.tsx", process: "video-editing/VideoEditingProcess.tsx" },
   "app-development": {
     faq: "app-development/AppDevelopmentFAQ.tsx",

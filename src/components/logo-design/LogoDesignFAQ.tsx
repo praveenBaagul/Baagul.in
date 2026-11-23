@@ -49,6 +49,27 @@ const faqs: FAQItem[] = [
     leftBorderColor: "border-l-[#FFA800]",
     shadowColor: "shadow-[6px_6px_0px_#FFA800]",
   },
+  {
+    id: 5,
+    q: "How much does logo design cost in Bangalore?",
+    a: "The cost depends on what you need: a standalone logo, a logo with brand guidelines, or a complete brand identity system with stationery and social media kits. We share a fixed quote with clear deliverables before we start, so there are no surprises.",
+    leftBorderColor: "border-l-[#1A1F5E]",
+    shadowColor: "shadow-[6px_6px_0px_#1A1F5E]",
+  },
+  {
+    id: 6,
+    q: "Do you design logos for startups and small businesses?",
+    a: "Yes. We work with startups and small businesses as well as established corporate brands. For new businesses, we focus on a strong, flexible logo and the essential brand assets you need to launch, which can grow into a full identity system later.",
+    leftBorderColor: "border-l-[#005F4C]",
+    shadowColor: "shadow-[6px_6px_0px_#005F4C]",
+  },
+  {
+    id: 7,
+    q: "What is included in your brand identity design service?",
+    a: "Beyond the logo itself, brand identity design covers your color palette, typography, logo usage rules, and a brand guidelines document, plus applications such as business cards, letterheads, and social media templates, so your brand looks consistent everywhere.",
+    leftBorderColor: "border-l-[#FFA800]",
+    shadowColor: "shadow-[6px_6px_0px_#FFA800]",
+  },
 ];
 
 export default function LogoDesignFAQ() {

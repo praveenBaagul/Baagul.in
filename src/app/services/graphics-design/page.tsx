@@ -8,32 +8,33 @@ import GraphicsDesignHero from "@/components/graphics-design/GraphicsDesignHero"
 import GraphicsDesignFeatures from "@/components/graphics-design/GraphicsDesignFeatures";
 import GraphicsDesignServicesGrid from "@/components/graphics-design/GraphicsDesignServicesGrid";
 import GraphicsDesignProcess from "@/components/graphics-design/GraphicsDesignProcess";
+import GraphicsDesignFAQ from "@/components/graphics-design/GraphicsDesignFAQ";
 import GraphicsDesignEnquiry from "@/components/graphics-design/GraphicsDesignEnquiry";
 import GraphicsDesignBannerAndPager from "@/components/graphics-design/GraphicsDesignBannerAndPager";
 import GraphicsDesignSpecMatrix from "@/components/graphics-design/GraphicsDesignSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Graphic Design Services in Bangalore | Baagul",
+  title: "Graphic Design Services in Bangalore | BAAGUL",
   description:
-    "Graphic design services in Bangalore: social media graphic design, marketing collateral and brand assets from a full-service graphic design agency.",
+    "Creative graphic design services in Bangalore by BAAGUL. Get professional social media graphics, ad creatives, brochures and marketing designs.",
   alternates: { canonical: "/services/graphics-design" },
   openGraph: {
-    title: "Graphic Design Services in Bangalore | Baagul",
+    title: "Graphic Design Services in Bangalore | BAAGUL",
     description:
-      "Graphic design services in Bangalore: social media graphic design, marketing collateral and brand assets from a full-service graphic design agency.",
+      "Creative graphic design services in Bangalore by BAAGUL. Get professional social media graphics, ad creatives, brochures and marketing designs.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Graphic Design Services in Bangalore | Baagul",
+    title: "Graphic Design Services in Bangalore | BAAGUL",
     description:
-      "Graphic design services in Bangalore: social media graphic design, marketing collateral and brand assets from a full-service graphic design agency.",
+      "Creative graphic design services in Bangalore by BAAGUL. Get professional social media graphics, ad creatives, brochures and marketing designs.",
   },
 };
 
 export default function GraphicsDesignPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF9ED] text-[#0E1153] antialiased selection:bg-[#FFA800] selection:text-[#0E1153]">
-      <JsonLd data={serviceSchema({ name: "Graphic Design", path: "/services/graphics-design", description: metadata.description })} />
+      <JsonLd data={serviceSchema({ name: "Graphic Design Services", path: "/services/graphics-design", description: metadata.description })} />
       <Header />
       <main className="flex-1 flex flex-col">
         {/* Section 1: Hero & 3 Progress Bars */}
@@ -47,6 +48,9 @@ export default function GraphicsDesignPage() {
 
         {/* Section 4: 4-Step Process Timeline (Forest Green #005F4C) */}
         <GraphicsDesignProcess />
+
+        {/* FAQs (with FAQPage schema) */}
+        <GraphicsDesignFAQ />
 
         {/* Section 5: Enquiry Now Interactive Form Section (Midnight Navy #1A1F5E) */}
         {/* <GraphicsDesignEnquiry /> */}

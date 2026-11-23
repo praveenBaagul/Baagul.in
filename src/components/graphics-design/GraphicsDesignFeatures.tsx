@@ -8,6 +8,8 @@ interface SketchCard {
   iconShape: string;
   iconColor: string;
   symbol: string;
+  /** Links the card to the matching service page. */
+  href?: string;
 }
 
 const sketchCards: SketchCard[] = [
@@ -18,6 +20,7 @@ const sketchCards: SketchCard[] = [
     iconShape: "rounded-full",
     iconColor: "text-[#0E1153]",
     symbol: "●",
+    href: "/services/logo-design",
   },
   {
     id: "02",
@@ -50,6 +53,7 @@ const sketchCards: SketchCard[] = [
     iconShape: "rounded-lg",
     iconColor: "text-[#0E1153]",
     symbol: "▣",
+    href: "/services/web-design",
   },
   {
     id: "06",
@@ -72,11 +76,23 @@ export default function GraphicsDesignFeatures() {
           </div>
 
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-[#0E1153] leading-tight mb-6">
-            Unique logos, color palettes, and brand guidelines that define your business.
+            Creative Graphic Design for Social Media, Ads &amp; Marketing
           </h2>
 
           <p className="font-sans text-sm sm:text-base text-[#3E4945] leading-relaxed mb-8">
-            From high-conversion ad creatives and promotional banners to packaging and brand collateral, we design graphics that capture attention and convert.
+            From social media posts and ad creatives to brochures, packaging and presentations, we design graphics that are consistent with your brand and built for where they will be seen. Need a new identity first? Our{" "}
+            <Link href="/services/logo-design" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+              logo and brand identity design
+            </Link>{" "}
+            team can help. We also create the visuals for{" "}
+            <Link href="/services/paid-promotions" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+              paid advertising campaigns
+            </Link>{" "}
+            and the graphics for{" "}
+            <Link href="/services/web-design" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+              website design projects
+            </Link>
+            .
           </p>
 
           <Link
@@ -90,24 +106,33 @@ export default function GraphicsDesignFeatures() {
 
         {/* Right Column (7 cols) - 2x3 Grid of 6 Sketch Sticky Cards */}
         <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {sketchCards.map((card) => (
-            <div
-              key={card.id}
-              className="p-6 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[5px_5px_0px_#0E1153] flex flex-col items-center justify-center text-center min-h-[170px] transition-transform hover:-translate-y-1 hover:rotate-1"
-            >
-              <div
-                className={`w-12 h-12 ${card.iconBg} ${card.iconColor} border-2 border-[#0E1153] ${card.iconShape} flex items-center justify-center text-xl font-black mb-3 shadow-[2px_2px_0px_#0E1153]`}
-              >
-                <span>{card.symbol}</span>
+          {sketchCards.map((card) => {
+            const className = "p-6 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[5px_5px_0px_#0E1153] flex flex-col items-center justify-center text-center min-h-[170px] transition-transform hover:-translate-y-1 hover:rotate-1";
+            const content = (
+              <>
+                <div
+                  className={`w-12 h-12 ${card.iconBg} ${card.iconColor} border-2 border-[#0E1153] ${card.iconShape} flex items-center justify-center text-xl font-black mb-3 shadow-[2px_2px_0px_#0E1153]`}
+                >
+                  <span>{card.symbol}</span>
+                </div>
+                <h3 className="font-heading text-sm sm:text-base font-bold text-[#0E1153]">
+                  {card.title}
+                </h3>
+                <span className="text-[10px] font-mono text-[#3E4945] mt-1 font-bold">
+                  MODULE {card.id}
+                </span>
+              </>
+            );
+            return card.href ? (
+              <Link key={card.id} href={card.href} className={className}>
+                {content}
+              </Link>
+            ) : (
+              <div key={card.id} className={className}>
+                {content}
               </div>
-              <h3 className="font-heading text-sm sm:text-base font-bold text-[#0E1153]">
-                {card.title}
-              </h3>
-              <span className="text-[10px] font-mono text-[#3E4945] mt-1 font-bold">
-                MODULE 0{card.id}
-              </span>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

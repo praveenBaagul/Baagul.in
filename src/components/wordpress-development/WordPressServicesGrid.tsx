@@ -14,8 +14,8 @@ interface ServiceCard {
 const cards: ServiceCard[] = [
   {
     number: "01",
-    title: "Custom Theme Development",
-    description: "Bespoke, lightweight WordPress themes hand-coded with modern PHP, clean HTML5 semantics, and native Gutenberg block patterns.",
+    title: "Custom WordPress Themes & Gutenberg Development",
+    description: "Lightweight WordPress themes coded with modern PHP and semantic HTML, with custom Gutenberg blocks and patterns your team can reuse.",
     bgColor: "bg-[#005F4C]",
     textColor: "text-[#FEF9ED]",
     iconBg: "bg-[#FFFFFF]",
@@ -23,8 +23,8 @@ const cards: ServiceCard[] = [
   },
   {
     number: "02",
-    title: "Speed & Core Web Vitals",
-    description: "Rigorous performance engineering ensuring sub-second Largest Contentful Paint (LCP), minimal Cumulative Layout Shift, and fast interaction.",
+    title: "WordPress Speed, Security & Performance Optimization",
+    description: "Caching, image and code optimization to improve loading speed and Core Web Vitals, plus security hardening for new and existing WordPress websites.",
     bgColor: "bg-[#FFA800]",
     textColor: "text-[#0E1153]",
     iconBg: "bg-[#0E1153]",
@@ -32,8 +32,8 @@ const cards: ServiceCard[] = [
   },
   {
     number: "03",
-    title: "WooCommerce & E-Commerce",
-    description: "Custom digital storefronts, friction-free checkout flows, subscription engines, and automated order fulfillment pipelines.",
+    title: "WordPress Migration & Website Maintenance",
+    description: "Moving your website to WordPress or to a new host with redirects in place, then keeping it updated, backed up and monitored every month.",
     bgColor: "bg-[#CFE8DC]",
     textColor: "text-[#0E1153]",
     iconBg: "bg-[#FFFFFF]",
@@ -41,8 +41,8 @@ const cards: ServiceCard[] = [
   },
   {
     number: "04",
-    title: "API & Headless Integrations",
-    description: "Decoupled headless architectures pairing WordPress backend content management with high-speed Next.js frontend presentation layers.",
+    title: "WordPress Customization & Integrations",
+    description: "Custom post types, CRM, payment and API integrations, and headless WordPress paired with a Next.js frontend when you need it.",
     bgColor: "bg-[#FFFFFF]",
     textColor: "text-[#0E1153]",
     iconBg: "bg-[#EDE8DC]",
@@ -62,11 +62,11 @@ export default function WordPressServicesGrid() {
               <span>CAPABILITIES // 04 MODULES</span>
             </div>
             <h2 className="font-heading text-4xl sm:text-5xl text-[#0E1153]">
-              Our Services
+              WordPress Development, Optimization &amp; Maintenance
             </h2>
           </div>
           <p className="font-sans text-xs sm:text-sm text-[#3E4945] max-w-sm leading-relaxed">
-            From custom full-site editing themes to headless API architectures, we craft digital platforms built to convert and scale.
+            From custom themes and Gutenberg blocks to speed optimization, migration and ongoing maintenance.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export default function WordPressServicesGrid() {
               </div>
 
               <div className="pt-4 border-t border-current/20 flex items-center justify-between font-mono text-[11px] font-bold uppercase">
-                <span>SERVICE REF: 0{card.number}</span>
+                <span>SERVICE REF: {card.number}</span>
                 <Link href="/contact" className="hover:underline flex items-center gap-1">
                   <span>DISCUSS PROJECT</span>
                   <span>→</span>

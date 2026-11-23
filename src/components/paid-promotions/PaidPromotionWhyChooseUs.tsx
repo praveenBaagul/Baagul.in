@@ -1,29 +1,43 @@
 import React from "react";
+import Link from "next/link";
 
 interface Benefit {
   num: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
 }
 
 const benefits: Benefit[] = [
   {
     num: "01",
-    title: "Expert Content Creators",
+    title: "Google Ads & Meta Ads Management",
     description:
-      "Our team consists of experienced content creators, videographers, and strategists who understand the nuances of online engagement.",
+      "We plan, run and optimize campaigns on Google Search, Display and YouTube, Facebook, Instagram and LinkedIn, built around your goals for leads or sales.",
   },
   {
     num: "02",
-    title: "Comprehensive Solutions",
-    description:
-      "From ideation and scripting to shooting, editing, and distribution, we handle everything in-house, ensuring high-quality production and consistency in messaging.",
+    title: "Creatives & Landing Pages In-House",
+    description: (
+      <>
+        Ad designs from our{" "}
+        <Link href="/services/graphics-design" className="font-bold text-[#FFA800] underline underline-offset-2 hover:text-[#FEF9ED]">
+          graphic design
+        </Link>{" "}
+        team, promotional videos from our{" "}
+        <Link href="/services/video-editing" className="font-bold text-[#FFA800] underline underline-offset-2 hover:text-[#FEF9ED]">
+          video editors
+        </Link> and creator partners, and landing pages from our{" "}
+        <Link href="/services/web-design" className="font-bold text-[#FFA800] underline underline-offset-2 hover:text-[#FEF9ED]">
+          web team
+        </Link>, so your ads and pages work together.
+      </>
+    ),
   },
   {
     num: "03",
-    title: "Analytics and Reporting",
+    title: "Conversion Tracking & Reporting",
     description:
-      "We don't just create content; we measure its success. With detailed analytics, we'll track the performance of your campaigns and ensure that you're getting the return on investment you expect.",
+      "We set up conversion tracking before launch and report on spend, leads, sales, cost per acquisition and ROAS, so you can see exactly what your budget delivers.",
   },
 ];
 
@@ -48,9 +62,9 @@ export default function PaidPromotionWhyChooseUs() {
 
         {/* Headline */}
         <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-[#FEF9ED] leading-tight mb-16">
-          <span>Why Choose Baagul for </span>
+          <span>Why Choose BAAGUL for Performance </span>
           <span className="inline-block bg-[#FFA800] text-[#0E1153] px-5 py-1 rounded-[4px] border-2 border-[#0E1153] shadow-[5px_5px_0px_#0E1153] mt-2">
-            Paid Promotions?
+            Marketing?
           </span>
         </h2>
 

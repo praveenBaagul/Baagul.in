@@ -16,11 +16,11 @@ export default function VideoEditingWhyChooseUs() {
 
         {/* Heading */}
         <h2 className="font-heading text-4xl sm:text-5xl lg:text-[54px] leading-[1.12] text-[#0E1153] max-w-4xl mb-12">
-          <span>Tell Better Stories with </span>
+          <span>Why Choose BAAGUL for </span>
           <span className="bg-[#FFBA45] text-[#0E1153] px-3 py-0.5 rounded border-2 border-[#0E1153] shadow-[3px_3px_0px_#0E1153] inline-block font-normal">
-            Professional
+            Video Editing
           </span>
-          <span> Video Editing</span>
+          <span>?</span>
         </h2>
 
         {/* Editorial Layout: Long Copy with Drop-Cap */}
@@ -34,11 +34,17 @@ export default function VideoEditingWhyChooseUs() {
                 <span className="float-left text-6xl sm:text-7xl font-heading font-bold text-[#0E7A63] leading-none pr-3 pt-1">
                   A
                 </span>
-                t Baagul, we help brands, creators, and businesses turn raw footage into videos that people actually watch. In today&apos;s fast-scrolling digital world, you have only a few seconds to capture attention — and great editing makes the difference. Our video editing services are designed to keep viewers engaged, communicate your message clearly, and make your brand look its best on every platform.
+                t BAAGUL, we help brands, creators, and businesses turn raw footage into videos that people actually watch. In today&apos;s fast-scrolling digital world, you have only a few seconds to capture attention — and great editing makes the difference. Our video editing services are designed to keep viewers engaged, communicate your message clearly, and make your brand look its best on every platform.
               </p>
 
               <p className="font-sans text-base sm:text-lg text-[#121A4A]/85 leading-relaxed mt-6 text-justify">
-                From short-form reels and YouTube videos to corporate films and video ads, we handle every part of post-production — cutting, pacing, motion graphics, color grading, sound design, and subtitles. Every edit is tailored to your audience, platform, and brand style, with clear communication and revision rounds until you are happy with the result. Whether you are a creator publishing weekly content or a company launching a new campaign, we deliver consistent, high-quality videos on time so you can focus on growing your business.
+                From short-form reels and YouTube videos to corporate films and video ads, we handle every part of post-production — cutting, pacing, motion graphics, color grading, sound design, and subtitles. Every edit is tailored to your audience, platform, and brand style, with clear communication and revision rounds until you are happy with the result. Whether you are a creator publishing weekly content or a company launching a new campaign, we deliver consistent, high-quality videos on time so you can focus on growing your business. We also edit video for{" "}
+                <Link href="/services/web-design" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+                  landing pages and websites
+                </Link>, and well-titled, captioned videos support your{" "}
+                <Link href="/services/seo-optimizations" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+                  SEO
+                </Link> on YouTube and Google.
               </p>
             </div>
 
@@ -66,7 +72,7 @@ export default function VideoEditingWhyChooseUs() {
 
               <div className="bg-[#FFBA45] border-2 border-[#0E1153] rounded-xl p-5 shadow-[4px_4px_0px_#0E1153]">
                 <span className="text-[10px] font-mono uppercase font-bold text-[#0E1153] tracking-wider block mb-1">
-                  REVISION GUARANTEE
+                  REVISIONS INCLUDED
                 </span>
                 <p className="font-sans text-xs text-[#0E1153] font-semibold">
                   Clear pricing, revision rounds included, and full ownership of your final video files.

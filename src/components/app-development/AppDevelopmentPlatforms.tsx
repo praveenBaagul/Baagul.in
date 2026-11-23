@@ -18,14 +18,14 @@ const platforms: PlatformTier[] = [
     title: "iOS & iPadOS Native",
     subtitle: "Pure Swift & SwiftUI Architecture",
     description:
-      "Crafted exclusively for iPhone and iPad with buttery 120Hz ProMotion support, CoreAnimation, FaceID, and strict Apple App Store guidelines adherence.",
+      "Built for iPhone and iPad with smooth ProMotion animations, CoreAnimation, Face ID and Apple App Store guidelines in mind.",
     stack: ["Swift", "SwiftUI", "Combine", "CoreData", "WidgetKit"],
     bgColor: "bg-[#CFE8DC]",
     features: [
       "120Hz ProMotion animation support",
       "Dynamic Island & WidgetKit integrations",
       "Keychain & Biometric security protocols",
-      "App Store review approval assurance",
+      "App Store guideline review before submission",
     ],
   },
   {
@@ -34,7 +34,7 @@ const platforms: PlatformTier[] = [
     title: "Android Native",
     subtitle: "Modern Kotlin & Jetpack Compose",
     description:
-      "Engineered for the vast Android multi-device ecosystem with declarative UI, dynamic theming, background workers, and memory-optimized profiling.",
+      "Built for the wide range of Android devices with declarative UI, dynamic theming, background workers and memory profiling.",
     stack: ["Kotlin", "Jetpack Compose", "Coroutines", "Room DB", "WorkManager"],
     bgColor: "bg-[#FFBA45]",
     features: [
@@ -50,14 +50,14 @@ const platforms: PlatformTier[] = [
     title: "Flutter & React Native",
     subtitle: "Single Codebase, Native Execution",
     description:
-      "Maximize development velocity and maintain 90%+ code parity between iOS and Android while retaining genuine native rendering and 60 FPS fluidity.",
+      "Build for iOS and Android from one codebase, with most code shared between platforms and native rendering for a smooth feel.",
     stack: ["Flutter", "Dart", "React Native", "TypeScript", "Skia Engine"],
     bgColor: "bg-[#E1E3F7]",
     features: [
-      "90%+ shared code between platforms",
+      "Most code shared between platforms",
       "Skia accelerated custom graphics",
       "Shared business logic & API caching",
-      "Halved maintenance & feature parity time",
+      "One codebase to maintain for both platforms",
     ],
   },
   {
@@ -66,12 +66,12 @@ const platforms: PlatformTier[] = [
     title: "Progressive Web Apps",
     subtitle: "Installable Web Applications",
     description:
-      "Deliver native-like app experiences directly via the browser with zero app-store download friction, background sync, and instant home screen installation.",
+      "App-like experiences in the browser, with no app-store download, background sync and home screen installation.",
     stack: ["Next.js", "Service Workers", "Web Push", "IndexedDB", "Manifest"],
     bgColor: "bg-[#FEF9ED]",
     features: [
-      "Zero installation friction via URLs",
-      "Full offline operation & caching",
+      "Open instantly from a link, no install needed",
+      "Offline support & caching",
       "Native Web Push notifications",
       "Cross-platform desktop & mobile support",
     ],
@@ -93,15 +93,15 @@ export default function AppDevelopmentPlatforms() {
           </div>
 
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-[54px] leading-[1.1] text-[#0E1153] mb-4">
-            Platforms We Architect &amp;
+            Android, iOS &amp;
             <br />
             <span className="font-serif italic font-normal text-[#0E7A63]">
-              Bring to Life
+              Cross-Platform App Development
             </span>
           </h2>
 
           <p className="font-sans text-sm sm:text-base text-[#121A4A]/80 leading-relaxed max-w-2xl mx-auto">
-            Whether you need pure native muscle for hardware-intensive computing or rapid cross-platform deployment, our technology choices are calibrated for maximum performance and user delight.
+            Native Android and iOS apps for hardware-heavy features, or React Native and Flutter cross-platform apps to launch on both stores from one codebase. We recommend the right approach for your product.
           </p>
         </div>
 

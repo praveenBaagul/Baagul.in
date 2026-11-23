@@ -25,7 +25,7 @@ const steps: Step[] = [
   {
     num: "04",
     title: "Review & Delivery",
-    desc: "Present the work, finalize assets, and deliver polished results.",
+    desc: "Present the work, refine it with your feedback, and deliver print-ready and web-ready files.",
   },
 ];
 
@@ -41,12 +41,12 @@ export default function GraphicsDesignProcess() {
               <span>PRODUCTION PIPELINE</span>
             </div>
             <h2 className="font-heading text-4xl sm:text-5xl text-[#FEF9ED] leading-tight">
-              Our 4-Step Graphic Design Process
+              Our Graphic Design Process
             </h2>
           </div>
 
           <p className="font-sans text-xs sm:text-sm text-[#FEF9ED]/80 max-w-sm leading-relaxed">
-            From preliminary brief to final production assets: an iterative, client-centered design workflow.
+            Four steps from your brief to final, ready-to-use design files, with your feedback built in.
           </p>
         </div>
 

@@ -18,11 +18,11 @@
 - [Logo Design & Visual Identity](https://baagul.in/services/logo-design): Comprehensive branding, typographic hierarchies, color geometry, and vector asset guidelines.
 - [Guest Posts & PR](https://baagul.in/services/guest-post): Guest posting services, blogger outreach and digital PR on relevant publications with genuine audiences.
 - [Graphic Designing](https://baagul.in/services/graphics-design): Conversion-optimized creative assets, digital campaign collateral, and print marketing systems.
-- [E-Commerce Solutions](https://baagul.in/services/e-commerce-solutions): Headless commerce architectures, frictionless checkout flows, and catalog conversion optimization.
-- [WordPress & CMS Development](https://baagul.in/services/wordpress-development): Enterprise WordPress engineering, custom Gutenberg blocks, and secure headless CMS solutions.
-- [Paid Promotions & Media Buying](https://baagul.in/services/paid-promotions): High-ROAS Google Ads, Meta Ads, and programmatic acquisition campaigns driven by real-time analytics.
-- [Video Editing & Motion Graphics](https://baagul.in/services/video-editing): Dynamic promotional edits, social media video reels, and cinematic brand storytelling.
-- [App Development](https://baagul.in/services/app-development): Scalable cross-platform iOS and Android mobile applications built with React Native and modern APIs.
+- [E-Commerce Solutions](https://baagul.in/services/e-commerce-solutions): E-commerce website development: Shopify, WooCommerce and headless Next.js stores, checkout and payment integration.
+- [WordPress & CMS Development](https://baagul.in/services/wordpress-development): Custom WordPress websites, redesigns, Gutenberg themes, migration, speed optimization and maintenance.
+- [Paid Promotions & Media Buying](https://baagul.in/services/paid-promotions): Performance marketing: Google Ads and PPC, Meta Ads, LinkedIn Ads, lead generation and sales campaigns with conversion tracking.
+- [Video Editing & Motion Graphics](https://baagul.in/services/video-editing): Video editing for YouTube, Instagram Reels and Shorts, video ads, corporate videos and motion graphics.
+- [App Development](https://baagul.in/services/app-development): Android, iOS, React Native and Flutter app development, from UI/UX prototypes and MVPs to App Store launch and maintenance.
 
 ## Studio Details
 

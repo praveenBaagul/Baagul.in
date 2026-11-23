@@ -50,12 +50,12 @@ export default function EcommerceHero() {
               </span>
               {" "}
               <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#FEF9ED]/85">
-                E-commerce Website Development in Bangalore
+                E-Commerce Website Development Services in Bangalore
               </span>
             </h1>
 
             <p className="font-sans text-lg sm:text-xl text-[rgba(191,201,195,0.9)] max-w-xl leading-relaxed mb-8">
-              Building secure, scalable, and high-performing online stores that convert — from Shopify development services to custom WooCommerce builds.
+              Secure, scalable online stores built to sell: Shopify development, WooCommerce stores, custom e-commerce websites and headless commerce.
             </p>
 
             {/* Action CTAs */}
@@ -133,7 +133,7 @@ export default function EcommerceHero() {
               <div className="relative w-full aspect-[1170/885] drop-shadow-[0_25px_45px_rgba(0,0,0,0.7)]">
                 <Image
                   src="/assets/ecommerce-animated-dashboard.svg"
-                  alt="Baagul Studio E-Commerce Live Analytics Dashboard - Tablet & Mobile Interactive Experience"
+                  alt="E-commerce store dashboard on tablet and mobile, built by BAAGUL"
                   fill
                   priority
                   unoptimized

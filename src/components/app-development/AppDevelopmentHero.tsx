@@ -53,7 +53,7 @@ export default function AppDevelopmentHero() {
 
             {/* Description */}
             <p className="font-sans text-sm sm:text-base text-[#121A4A]/80 leading-relaxed max-w-xl mb-8">
-              At Baagul.in, we engineer high-performance mobile applications for iOS, Android, and cross-platform ecosystems. From native Android and iOS app development in Swift &amp; Kotlin to fluid Flutter &amp; React Native app development, we transform visionary ideas into flagship app store products built for scale.
+              At BAAGUL, we build custom mobile apps for Android and iOS, for startups and growing businesses. From native app development in Swift &amp; Kotlin to React Native &amp; Flutter cross-platform apps, we take your idea from UI/UX prototype to App Store and Google Play launch.
             </p>
 
             {/* CTA Group */}
@@ -80,7 +80,7 @@ export default function AppDevelopmentHero() {
               <div className="relative w-full aspect-[819/1024]">
                 <Image
                   src="/assets/app-development-hero-poster.jpg"
-                  alt="App Development - Build High-Performance, User-Friendly Mobile Apps for iOS & Android"
+                  alt="Mobile app development for Android and iOS by BAAGUL"
                   fill
                   priority
                   unoptimized
@@ -98,11 +98,11 @@ export default function AppDevelopmentHero() {
           
           <div className="flex items-center justify-between gap-4 mb-6">
             <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#0E1153]">
-              Engineering Benchmarks
+              What We Build For
             </h3>
             <div className="hidden sm:block flex-1 border-t-2 border-[#0E1153]/20 mx-4" />
             <span className="font-mono text-xs uppercase tracking-widest text-[#0E1153]/70 font-bold whitespace-nowrap">
-              APP PERFORMANCE
+              CAPABILITIES
             </span>
           </div>
 
@@ -112,15 +112,15 @@ export default function AppDevelopmentHero() {
             <div className="bg-[#CFE8DC] border-2 border-[#0E1153] rounded-2xl p-6 shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between hover:-translate-y-1 transition-transform">
               <div className="flex items-center justify-between mb-4">
                 <span className="font-heading text-4xl sm:text-5xl font-bold text-[#0E1153]">
-                  99.9%
+                  2
                 </span>
                 <span className="px-2.5 py-1 bg-white border border-[#0E1153] rounded font-mono text-[10px] font-bold text-[#0E1153]">
-                  CRASH FREE
+                  PLATFORMS
                 </span>
               </div>
               <div>
                 <span className="font-mono text-xs uppercase font-bold text-[#0E1153] tracking-wider block mb-3">
-                  STABLE PRODUCTION SESSIONS
+                  ANDROID &amp; iOS FROM ONE TEAM
                 </span>
                 {/* Horizontal Capsule Progress Bar */}
                 <div className="h-3 w-full bg-[#FEF9ED] border-2 border-[#0E1153] rounded-full overflow-hidden p-0.5">
@@ -133,15 +133,15 @@ export default function AppDevelopmentHero() {
             <div className="bg-[#FFBA45] border-2 border-[#0E1153] rounded-2xl p-6 shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between hover:-translate-y-1 transition-transform">
               <div className="flex items-center justify-between mb-4">
                 <span className="font-heading text-4xl sm:text-5xl font-bold text-[#0E1153]">
-                  60 FPS
+                  MVP
                 </span>
                 <span className="px-2.5 py-1 bg-white border border-[#0E1153] rounded font-mono text-[10px] font-bold text-[#0E1153]">
-                  ZERO JANK
+                  TO SCALE
                 </span>
               </div>
               <div>
                 <span className="font-mono text-xs uppercase font-bold text-[#0E1153] tracking-wider block mb-3">
-                  FLUID UI &amp; NATIVE GESTURES
+                  STARTUP MVPS &amp; BUSINESS APPS
                 </span>
                 {/* Horizontal Capsule Progress Bar */}
                 <div className="h-3 w-full bg-[#FEF9ED] border-2 border-[#0E1153] rounded-full overflow-hidden p-0.5">
@@ -154,15 +154,15 @@ export default function AppDevelopmentHero() {
             <div className="bg-[#E1E3F7] border-2 border-[#0E1153] rounded-2xl p-6 shadow-[6px_6px_0px_#0E1153] flex flex-col justify-between hover:-translate-y-1 transition-transform">
               <div className="flex items-center justify-between mb-4">
                 <span className="font-heading text-4xl sm:text-5xl font-bold text-[#0E1153]">
-                  &lt;1.2s
+                  API
                 </span>
                 <span className="px-2.5 py-1 bg-white border border-[#0E1153] rounded font-mono text-[10px] font-bold text-[#0E1153]">
-                  BOOT TIME
+                  CONNECTED
                 </span>
               </div>
               <div>
                 <span className="font-mono text-xs uppercase font-bold text-[#0E1153] tracking-wider block mb-3">
-                  INSTANT COLD START &amp; CACHING
+                  BACKEND, PAYMENTS &amp; PUSH
                 </span>
                 {/* Horizontal Capsule Progress Bar */}
                 <div className="h-3 w-full bg-[#FEF9ED] border-2 border-[#0E1153] rounded-full overflow-hidden p-0.5">

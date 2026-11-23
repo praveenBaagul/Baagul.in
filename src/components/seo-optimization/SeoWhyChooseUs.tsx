@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function SeoWhyChooseUs() {
   return (
@@ -47,7 +48,11 @@ export default function SeoWhyChooseUs() {
             </p>
 
             <p>
-              Our process is backed by deep analytics, continuous crawl monitoring, and ethical, white-hat strategies that secure lasting organic dominance across Google, Bing, and AI search engines.
+              Our process is backed by deep analytics, continuous crawl monitoring, and ethical, white-hat strategies that secure lasting organic dominance across Google, Bing, and AI search engines. If your site runs on WordPress, our{" "}
+              <Link href="/services/wordpress-development" className="font-bold text-[#005F4C] underline underline-offset-2 hover:text-[#0E1153]">
+                WordPress development team
+              </Link>{" "}
+              can take care of speed and technical fixes.
             </p>
 
             {/* Founder / Team attribution tag */}

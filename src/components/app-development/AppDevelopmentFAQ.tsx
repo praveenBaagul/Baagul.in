@@ -15,7 +15,7 @@ const faqs: FAQItem[] = [
   {
     id: "01",
     question: "Should I build a native (Swift/Kotlin) app or cross-platform (Flutter/React Native)?",
-    answer: "It depends on your core requirements. If your app requires heavy hardware access, custom AR/CoreML computing, or zero-compromise platform ergonomics, native Swift and Kotlin are ideal. For 90% of business, marketplace, SaaS, and content apps, Flutter or React Native provides equivalent 60 FPS performance while cutting development and maintenance costs by almost half.",
+    answer: "It depends on your requirements. If your app needs heavy hardware access, custom AR or on-device machine learning, or the most platform-specific feel, native Swift and Kotlin are the better fit. For most business, marketplace, SaaS and content apps, Flutter or React Native delivers smooth performance from a single codebase, which usually reduces development and maintenance effort compared with building two separate native apps.",
   },
   {
     id: "02",
@@ -25,7 +25,7 @@ const faqs: FAQItem[] = [
   {
     id: "03",
     question: "Do you handle the Apple App Store and Google Play Store approvals?",
-    answer: "Yes, fully. We manage certificate generation, provisioning profiles, privacy manifest configurations, store listing metadata, screenshots, and compliance verification. We maintain a 100% store approval track record and guide you through the developer account registration process.",
+    answer: "Yes. We manage certificates, provisioning profiles, privacy manifests, store listing details, screenshots and compliance checks, and guide you through developer account registration. Final approval is always Apple's and Google's decision, but reviewing every release against their policies before submission reduces the risk of rejection, and we handle any reviewer feedback.",
   },
   {
     id: "04",
@@ -40,7 +40,32 @@ const faqs: FAQItem[] = [
   {
     id: "06",
     question: "What maintenance and post-launch support do you offer?",
-    answer: "We offer continuous maintenance packages covering annual iOS/Android OS updates, dependency upgrades, bug fixes, performance monitoring via Sentry, and ongoing feature rollouts to ensure your app stays fast and 5-star rated.",
+    answer: "We offer ongoing maintenance packages covering annual iOS and Android OS updates, dependency upgrades, bug fixes, performance monitoring via Sentry and new feature releases, so your app stays fast and up to date.",
+  },
+  {
+    id: "07",
+    question: "How much does mobile app development cost in Bangalore?",
+    answer: "The cost depends on the platforms, the number of screens and features, design complexity, backend and integrations such as payments, and whether you start with an MVP. We share a fixed-scope proposal with clear milestones and deliverables before development begins.",
+  },
+  {
+    id: "08",
+    question: "Do you develop both Android and iOS applications?",
+    answer: "Yes. We build native Android apps in Kotlin, native iOS apps in Swift, and cross-platform apps with React Native or Flutter that run on both from one codebase. We recommend the approach that suits your features, budget and timeline.",
+  },
+  {
+    id: "09",
+    question: "Can you develop an MVP app for my startup?",
+    answer: "Yes. We help you choose the core features, design a clickable prototype and build a focused MVP you can launch, test with real users and grow. A focused MVP generally takes 6 to 10 weeks from discovery to store submission.",
+  },
+  {
+    id: "10",
+    question: "What technologies do you use for mobile app development?",
+    answer: "Swift and SwiftUI for iOS, Kotlin and Jetpack Compose for Android, React Native with TypeScript and Flutter for cross-platform apps, and Node.js, Python, PostgreSQL and cloud platforms such as AWS, Google Cloud and Supabase for backends.",
+  },
+  {
+    id: "11",
+    question: "Can you redesign or upgrade an existing mobile app?",
+    answer: "Yes. We start with a review of your current app's code, design and analytics, then plan a redesign, performance improvements, new features or a move to a newer technology stack. Whether we improve the existing code or rebuild depends on its condition, and we explain the trade-offs first.",
   },
 ];
 
@@ -69,7 +94,7 @@ export default function AppDevelopmentFAQ() {
             </div>
 
             <h2 className="font-heading text-4xl sm:text-5xl leading-[1.1] text-[#0E1153] mb-4">
-              Everything You Need to Know
+              Frequently Asked Questions About Mobile App Development
             </h2>
 
             <p className="font-sans text-sm text-[#121A4A]/80 leading-relaxed mb-8">
