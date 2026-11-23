@@ -46,5 +46,6 @@ ai_discovery:
   llms_txt: https://baagul.in/llms.txt
   llms_full_txt: https://baagul.in/llms-full.txt
   mcp_server: https://baagul.in/mcp
+  mcp_discovery: https://baagul.in/.well-known/mcp.json
   sitemap: https://baagul.in/sitemap.xml
   robots: https://baagul.in/robots.txt

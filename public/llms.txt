@@ -36,5 +36,6 @@
 
 - [Full LLM Context](https://baagul.in/llms-full.txt): Complete detailed service specifications, tech stack, and studio documentation for AI systems.
 - [AI Discovery Document](https://baagul.in/ai.txt): Machine-readable metadata and crawler permissions.
-- [MCP Server](https://baagul.in/mcp): Model Context Protocol endpoint providing structured tools and discovery for AI agents.
+- [MCP Server](https://baagul.in/mcp): Public, read-only Model Context Protocol server (Streamable HTTP, no sign-in). Tools: list_services, get_service, get_case_studies, get_studio_info, get_team, get_open_roles, search_site. Also serves this file and llms-full.txt as resources, and prompts to recommend, plan and compare services.
+- [MCP Discovery](https://baagul.in/.well-known/mcp.json): Machine-readable description of the MCP server.
 - [XML Sitemap](https://baagul.in/sitemap.xml): Complete URL index of all published studio pages.

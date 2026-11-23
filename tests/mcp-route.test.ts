@@ -36,11 +36,10 @@ describe("POST /mcp", () => {
       id: 1,
       result: {
         protocolVersion: "2025-06-18",
-        capabilities: { tools: {} },
+        capabilities: { tools: {}, resources: {}, prompts: {} },
         serverInfo: { name: "baagul-mcp" },
       },
     });
-    expect(json.result.capabilities.resources).toBeUndefined();
   });
 
   it("falls back to its newest version for an unknown one", async () => {
@@ -62,7 +61,15 @@ describe("POST /mcp", () => {
   it("lists tools without leaking internals", async () => {
     const { json } = await post(rpc("tools/list"));
     const names = json.result.tools.map((tool: { name: string }) => tool.name);
-    expect(names).toEqual(["list_services", "get_service", "get_case_studies", "get_studio_info"]);
+    expect(names).toEqual([
+      "list_services",
+      "get_service",
+      "get_case_studies",
+      "get_studio_info",
+      "get_team",
+      "get_open_roles",
+      "search_site",
+    ]);
     for (const tool of json.result.tools) {
       expect(tool.inputSchema.type).toBe("object");
       expect(tool.run).toBeUndefined();
@@ -93,7 +100,7 @@ describe("POST /mcp", () => {
   });
 
   it("rejects an unknown method", async () => {
-    const { json } = await post(rpc("resources/list"));
+    const { json } = await post(rpc("completion/complete"));
     expect(json.error.code).toBe(-32601);
   });
 
@@ -169,7 +176,10 @@ describe("GET /mcp", () => {
   it("describes itself as JSON to everything else", async () => {
     const response = await get("*/*");
     expect(response.status).toBe(200);
-    expect((await response.json()).tools).toHaveLength(4);
+    const body = await response.json();
+    expect(body.tools).toHaveLength(7);
+    expect(body.resources).toHaveLength(2);
+    expect(body.prompts).toHaveLength(3);
   });
 });
 

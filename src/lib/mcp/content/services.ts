@@ -1,8 +1,10 @@
 import { SITE_URL } from "@/lib/site";
+import { SERVICE_DETAILS } from "./generated";
+import type { ServiceDetails } from "./types";
 
 /**
- * What the MCP server tells AI clients about Baagul. This is the single source
- * for the tools in ./server.ts. Keep it in step with the service pages.
+ * The service catalogue. Summaries and deliverables are written here; process
+ * steps and FAQs come from the service pages through ./generated.ts.
  */
 
 export interface Service {
@@ -86,31 +88,24 @@ export const SERVICES: Service[] = [
   },
 ];
 
-export const CASE_STUDIES = [
-  {
-    client: "PropFirm Coupons",
-    url: "https://propfirm.coupons",
-    description: "Real-time proprietary trading challenge discounts and comparison platform. Engineered with Next.js, sub-second TTFB, and technical SEO structure that captured top Google rankings for commercial prop firm query variants.",
-  },
-  {
-    client: "Advocate Khevana Dagli",
-    url: `${SITE_URL}/services/seo-optimizations/client-success-stories`,
-    description: "Legal practice brand authority and high-intent SEO architecture covering criminal, divorce, and civil litigation in Mumbai, driving top-tier organic inquiry growth.",
-  },
-  {
-    client: "SEO Neo Backlinks Campaign",
-    url: `${SITE_URL}/services/guest-post`,
-    description: "Contextual high-DA editorial outreach and verified backlink portfolio engineering, elevating domain authority and competitive rankings.",
-  },
-];
+export const SERVICE_SLUGS = SERVICES.map((service) => service.slug);
 
-export const STUDIO_INFO = {
-  name: "Baagul LLP",
-  tagline: "Architectural Digital Marketing & Web Engineering Studio",
-  headquarters: "2nd Floor Hustlehub Tech Park, HSR Layout, Bengaluru, Karnataka 560102, India",
-  email: "support@baagul.in",
-  phone: "+91 62056 97634",
-  website: SITE_URL,
-  contact_page: `${SITE_URL}/contact`,
-  operating_hours: "Monday - Friday, 09:30 AM - 06:30 PM IST",
-};
+export type DetailedService = Service & ServiceDetails;
+
+export function getService(slug: unknown): DetailedService | undefined {
+  const service = SERVICES.find((candidate) => candidate.slug === slug);
+  if (!service) return undefined;
+  return { ...service, ...(SERVICE_DETAILS[service.slug] ?? { process: [], faqs: [] }) };
+}
+
+/** Looks up several slugs. Returns the ones that are not services in `unknown`. */
+export function getServices(slugs: string[]) {
+  const found: DetailedService[] = [];
+  const unknown: string[] = [];
+  for (const slug of slugs) {
+    const service = getService(slug);
+    if (service) found.push(service);
+    else unknown.push(slug);
+  }
+  return { found, unknown };
+}

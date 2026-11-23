@@ -143,6 +143,7 @@ All web systems engineered by Baagul adhere to rigorous technical guidelines:
 - **Standard LLM Summary**: `https://baagul.in/llms.txt`
 - **Complete Context**: `https://baagul.in/llms-full.txt`
 - **AI Crawler Discovery**: `https://baagul.in/ai.txt`
-- **MCP Server Endpoint**: `https://baagul.in/mcp`
+- **MCP Server Endpoint**: `https://baagul.in/mcp` (Streamable HTTP, read-only, no sign-in; tools for services, FAQs, team, job openings and site search)
+- **MCP Discovery**: `https://baagul.in/.well-known/mcp.json`
 - **XML Sitemap**: `https://baagul.in/sitemap.xml`
 - **Robots Policy**: `https://baagul.in/robots.txt`

@@ -1,0 +1,14 @@
+{
+  "name": "baagul-mcp",
+  "title": "Baagul LLP",
+  "description": "Public, read-only Model Context Protocol server for Baagul LLP, a digital marketing and web engineering studio in Bengaluru, India: services with delivery process and FAQs, case studies, team, job openings, site search, llms.txt resources and prompts.",
+  "version": "1.2.0",
+  "endpoint": "https://baagul.in/mcp",
+  "transport": "streamable-http",
+  "protocolVersions": ["2025-11-25", "2025-06-18", "2025-03-26", "2024-11-05"],
+  "authentication": "none",
+  "capabilities": ["tools", "resources", "prompts"],
+  "documentation": "https://baagul.in/mcp",
+  "contact": "support@baagul.in",
+  "website": "https://baagul.in"
+}

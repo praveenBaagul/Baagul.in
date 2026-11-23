@@ -16,7 +16,8 @@
     "db:migrate": "prisma migrate dev",
     "postinstall": "node scripts/fix-permissions.js && prisma generate",
     "automation": "tsx --env-file-if-exists=.env scripts/automation.ts",
-    "templates": "tsx --env-file-if-exists=.env scripts/templates.ts"
+    "templates": "tsx --env-file-if-exists=.env scripts/templates.ts",
+    "mcp:sync": "tsx scripts/sync-mcp-content.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",

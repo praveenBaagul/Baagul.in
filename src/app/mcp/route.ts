@@ -2,7 +2,10 @@ import type { NextRequest } from "next/server";
 import { clientIp } from "@/lib/enquiries/http";
 import { renderHtmlDocumentation } from "@/lib/mcp/docs-page";
 import { checkMcpRateLimit } from "@/lib/mcp/rate-limit";
-import { handleBody, SERVER_INFO, SUPPORTED_PROTOCOL_VERSIONS, TOOLS } from "@/lib/mcp/server";
+import { PROMPT_LIST } from "@/lib/mcp/prompts";
+import { RESOURCE_TEMPLATES, RESOURCES } from "@/lib/mcp/resources";
+import { handleBody, SERVER_INFO, SUPPORTED_PROTOCOL_VERSIONS } from "@/lib/mcp/server";
+import { TOOLS } from "@/lib/mcp/tools";
 import { SITE_URL } from "@/lib/site";
 
 const MAX_BODY_BYTES = 64 * 1024;
@@ -44,11 +47,15 @@ export async function GET(request: NextRequest) {
       transport: "streamable-http",
       protocolVersions: SUPPORTED_PROTOCOL_VERSIONS,
       tools: TOOLS,
+      resources: RESOURCES,
+      resourceTemplates: RESOURCE_TEMPLATES,
+      prompts: PROMPT_LIST,
       endpoints: {
         mcp: `${SITE_URL}/mcp`,
         llms: `${SITE_URL}/llms.txt`,
         llms_full: `${SITE_URL}/llms-full.txt`,
         ai: `${SITE_URL}/ai.txt`,
+        discovery: `${SITE_URL}/.well-known/mcp.json`,
         sitemap: `${SITE_URL}/sitemap.xml`,
       },
     },
@@ -81,7 +88,7 @@ export async function POST(request: NextRequest) {
     return rpcError(413, -32600, "Request body too large.");
   }
 
-  const { status, body } = handleBody(raw);
+  const { status, body } = await handleBody(raw);
   if (body === undefined) return new Response(null, { status, headers: CORS_HEADERS });
   return Response.json(body, { status, headers: CORS_HEADERS });
 }

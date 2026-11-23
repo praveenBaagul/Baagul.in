@@ -8,7 +8,11 @@
  * lib/enquiries/rate-limit.ts instead.
  */
 
-export const MCP_RATE_LIMIT = { requests: 60, windowSeconds: 60 } as const;
+/**
+ * Generous on purpose: hosted assistants send many users' requests from a few
+ * shared addresses, and each request here is cheap to serve.
+ */
+export const MCP_RATE_LIMIT = { requests: 300, windowSeconds: 60 } as const;
 
 const MAX_TRACKED_CLIENTS = 10_000;
 

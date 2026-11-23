@@ -94,6 +94,11 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  // The MCP server reads these at request time; make sure every host bundles them.
+  outputFileTracingIncludes: {
+    "/mcp": ["./public/llms.txt", "./public/llms-full.txt"],
+    "/api/mcp": ["./public/llms.txt", "./public/llms-full.txt"],
+  },
   partialPrefetching: true,
   experimental: {
     agentUpgrade: "security",

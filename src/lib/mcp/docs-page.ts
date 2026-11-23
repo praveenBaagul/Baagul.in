@@ -1,5 +1,32 @@
 import { SITE_URL } from "@/lib/site";
-import { TOOLS } from "./server";
+import { PROMPT_LIST } from "./prompts";
+import { RESOURCE_TEMPLATES, RESOURCES } from "./resources";
+import { SERVER_INFO } from "./server";
+import { TOOLS } from "./tools";
+
+/** Structured data so search engines read this page as an API provided by Baagul. */
+const apiSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  name: "Baagul LLP MCP Server",
+  description: "Public, read-only Model Context Protocol server with Baagul LLP services, team, job openings and site search.",
+  url: `${SITE_URL}/mcp`,
+  documentation: `${SITE_URL}/mcp`,
+  version: SERVER_INFO.version,
+  isAccessibleForFree: true,
+  provider: { "@type": "ProfessionalService", "@id": `${SITE_URL}/#organization`, name: "Baagul", url: SITE_URL },
+});
+
+const list = (items: { name: string; description: string }[]) =>
+  items
+    .map(
+      (item) => `
+          <li>
+            <div class="tool-name">${item.name}</div>
+            <div class="tool-desc">${item.description}</div>
+          </li>`
+    )
+    .join("");
 
 export function renderHtmlDocumentation() {
   return `<!DOCTYPE html>
@@ -8,7 +35,9 @@ export function renderHtmlDocumentation() {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Baagul MCP Server · Model Context Protocol Endpoint</title>
-  <meta name="description" content="Model Context Protocol (MCP) server endpoint for Baagul LLP. Access tools for services, case studies, and studio information directly from AI clients." />
+  <meta name="description" content="Connect Claude, ChatGPT, Cursor or any MCP client to Baagul LLP: read-only tools for services, delivery process, FAQs, team, job openings and site search." />
+  <link rel="canonical" href="${SITE_URL}/mcp" />
+  <script type="application/ld+json">${JSON.stringify(apiSchema())}</script>
   <style>
     :root {
       --bg: #092e20;
@@ -160,6 +189,7 @@ export function renderHtmlDocumentation() {
         <a href="${SITE_URL}/llms.txt">llms.txt</a>
         <a href="${SITE_URL}/llms-full.txt">llms-full.txt</a>
         <a href="${SITE_URL}/ai.txt">ai.txt</a>
+        <a href="${SITE_URL}/.well-known/mcp.json">mcp.json</a>
       </div>
     </header>
 
@@ -190,16 +220,23 @@ export function renderHtmlDocumentation() {
     </section>
 
     <section class="card">
-      <h2>Available Tools</h2>
-      <ul>
-        ${TOOLS.map(
-          (tool) => `
-          <li>
-            <div class="tool-name">${tool.name}</div>
-            <div class="tool-desc">${tool.description}</div>
-          </li>
-        `
-        ).join("")}
+      <h2>Tools</h2>
+      <ul>${list(TOOLS)}
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Resources</h2>
+      <ul>${list([
+        ...RESOURCES.map((resource) => ({ name: resource.uri, description: resource.description })),
+        ...RESOURCE_TEMPLATES.map((template) => ({ name: template.uriTemplate, description: template.description })),
+      ])}
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Prompts</h2>
+      <ul>${list(PROMPT_LIST)}
       </ul>
     </section>
 
