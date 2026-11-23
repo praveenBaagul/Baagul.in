@@ -20,12 +20,24 @@ const faqs: FAQItem[] = [
     a: "Technical site fixes and schema enhancements usually reflect in Google Search Console within 14–28 days. Measurable organic ranking jumps and customer conversion momentum typically compound strongly between months 2 and 4 as search engines index your updated topical clusters.",
   },
   {
+    q: "How much do SEO services in Bangalore cost?",
+    a: "SEO pricing depends on your website's size, your competition, and how many services you need, such as technical SEO, content, local SEO, or link building. Most clients work with us on a monthly plan, and we share a fixed proposal with clear deliverables before any work begins, with no hidden costs.",
+  },
+  {
+    q: "What does an SEO audit include?",
+    a: "Our SEO audit reviews crawling and indexing, site speed and Core Web Vitals, on-page elements like titles and headings, structured data, content gaps, and your backlink profile. You get a prioritized list of fixes ranked by impact, so you know exactly what to tackle first.",
+  },
+  {
     q: "What is the difference between on-page and off-page SEO?",
     a: "On-page SEO involves optimizing elements directly on your site, such as HTML headings, content semantics, internal linking, and Core Web Vitals speed. Off-page SEO focuses on external authority signals, including digital PR, niche citations, and high-domain backlinks.",
   },
   {
     q: "Do you provide local SEO services?",
     a: "Yes. We configure and optimize your Google Business Profile, implement local schema markups, standardize NAP (Name, Address, Phone) citations, and craft localized landing pages to dominate your area's local map pack.",
+  },
+  {
+    q: "Do you offer e-commerce SEO services?",
+    a: "Yes. For Shopify, WooCommerce, and custom online stores, we optimize category and product pages, add product schema for rich results, fix duplicate URLs from filters and variants, and speed up page loads so more shoppers find and buy from you through Google.",
   },
   {
     q: "Will SEO guarantee first-page rankings?",

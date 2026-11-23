@@ -38,6 +38,7 @@ export default function WordPressHero() {
               <span className="inline-block bg-[#FFA800] text-[#0E1153] px-4 py-1 rounded-xl border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] mt-2">
                 Development
               </span>
+              {" "}
               <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
                 WordPress Development Services in Bangalore
               </span>

@@ -13,21 +13,21 @@ interface DeliverableItem {
 const deliverables: DeliverableItem[] = [
   {
     id: "01",
-    title: "On-Page Optimization",
+    title: "On-Page SEO Services",
     tag: "MODULE 01",
     description:
       "Meta title/description optimization, semantic heading taxonomy (H1-H6), internal linking silos, and rich structured data markup.",
   },
   {
     id: "02",
-    title: "Keyword & Intent Research",
+    title: "Keyword Research Services",
     tag: "MODULE 02",
     description:
       "In-depth keyword gap analysis, high-commercial intent discovery, competitor SERP volatility tracking, and programmatic query clustering.",
   },
   {
     id: "03",
-    title: "Technical SEO Architecture",
+    title: "Technical SEO Services",
     tag: "MODULE 03",
     description:
       "Server log analysis, XML sitemaps, robots.txt management, canonical deduplication, and Core Web Vitals (LCP, CLS, INP) performance.",
@@ -41,7 +41,7 @@ const deliverables: DeliverableItem[] = [
   },
   {
     id: "05",
-    title: "Local & Multi-Location Domination",
+    title: "Local SEO Services in Bangalore",
     tag: "MODULE 05",
     description:
       "Google Business Profile optimization, localized citation networks, local schema implementation, and geo-targeted landing pages.",
@@ -52,6 +52,20 @@ const deliverables: DeliverableItem[] = [
     tag: "MODULE 06",
     description:
       "Google Search Console & GA4 multi-touch revenue attribution, automated rank telemetry, crawl budget tracking, and monthly executive summaries.",
+  },
+  {
+    id: "07",
+    title: "E-commerce SEO Services",
+    tag: "MODULE 07",
+    description:
+      "Category and product page optimization, product schema, faceted navigation and duplicate-URL control, and site speed fixes for Shopify, WooCommerce, and custom stores.",
+  },
+  {
+    id: "08",
+    title: "SEO Consulting Services",
+    tag: "MODULE 08",
+    description:
+      "Strategy sessions, SEO audits, and roadmaps for in-house teams, plus SEO guidance for site migrations and redesigns so you keep the rankings you have earned.",
   },
 ];
 
@@ -75,11 +89,11 @@ export default function SeoDeliverables() {
           </div>
 
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-[#0E1153] leading-tight mb-6">
-            Data-driven campaigns across SEO, social media, and ads that boost visibility, drive traffic, and generate measurable results.
+            Professional SEO Services for Growing Businesses
           </h2>
 
           <p className="font-sans text-sm sm:text-base text-[#3E4945] leading-relaxed mb-8">
-            We unite code-level crawl optimization, semantic JSON-LD entity structures, and authoritative content strategies to ensure your website outranks competitors across high-commercial queries with durable search compounding.
+            Data-driven search engine optimization services that boost visibility, bring in qualified traffic, and generate measurable leads. We combine technical fixes, structured data, and authoritative content so your website outranks competitors on the searches your customers actually make.
           </p>
 
           <Link
@@ -105,9 +119,9 @@ export default function SeoDeliverables() {
         <div className="lg:col-span-7 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-2xl shadow-[8px_8px_0px_#0E1153] overflow-hidden">
           {/* Header Banner */}
           <div className="px-6 py-4 bg-[#FFBA45] border-b-2 border-[#0E1153] flex items-center justify-between">
-            <h3 className="font-heading text-lg font-bold text-[#0E1153]">
+            <p className="font-heading text-lg font-bold text-[#0E1153]">
               Overview &amp; Deliverables
-            </h3>
+            </p>
             <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-[#0E1153]/80">
               FULL-CYCLE EXECUTION
             </span>

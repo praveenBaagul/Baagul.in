@@ -67,6 +67,7 @@ export default function PaidPromotionHero() {
               <span className="inline-block bg-[#FFA800] text-[#0E1153] px-5 py-1 rounded-[4px] border-2 border-[#0E1153] shadow-[5px_5px_0px_#0E1153] mt-2">
                 Promotion
               </span>
+              {" "}
               <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
                 Performance Marketing Agency in Bangalore
               </span>

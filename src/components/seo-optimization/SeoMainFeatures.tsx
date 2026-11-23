@@ -12,12 +12,15 @@ interface ExecutionCard {
   tagBg: string;
   tagText: string;
   icon: string;
+  /** Where the card's link goes, and its label. Defaults to the contact page. */
+  href?: string;
+  linkLabel?: string;
 }
 
 const cards: ExecutionCard[] = [
   {
     number: "01",
-    title: "Website Audit & Analysis",
+    title: "SEO Audit & Website Analysis",
     description:
       "Comprehensive evaluation of your technical architecture, crawling efficiency, indexation barriers, Core Web Vitals, and backlink profile health.",
     bgColor: "bg-[#FFFFFF]",
@@ -56,7 +59,7 @@ const cards: ExecutionCard[] = [
   },
   {
     number: "04",
-    title: "Content & Link Building",
+    title: "Off-Page SEO & Link Building",
     description:
       "Authority-building editorial campaigns, digital PR placements, high-DA brand mentions, and conversion-optimized informational topic clusters.",
     bgColor: "bg-[#E1E3F7]",
@@ -66,6 +69,8 @@ const cards: ExecutionCard[] = [
     tagBg: "bg-[#0E1153]",
     tagText: "text-[#FEF9ED]",
     icon: "🔗",
+    href: "/services/guest-post",
+    linkLabel: "EXPLORE GUEST POSTS & PR",
   },
 ];
 
@@ -81,7 +86,7 @@ export default function SeoMainFeatures() {
               <span>CORE ARCHITECTURE // 04 PILLARS</span>
             </div>
             <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-[#FEF9ED] leading-tight">
-              Technical &amp; Organic Execution
+              Technical SEO, On-Page SEO &amp; Link Building
             </h2>
           </div>
 
@@ -122,14 +127,14 @@ export default function SeoMainFeatures() {
               {/* Bottom Action Row */}
               <div className="pt-4 border-t border-[#0E1153]/20 flex items-center justify-between">
                 <span className={`px-2.5 py-1 rounded text-[11px] font-mono font-bold uppercase ${card.tagBg} ${card.tagText} border border-[#0E1153]/30`}>
-                  DELIVERABLE SPEC: 0{card.number}
+                  DELIVERABLE SPEC: {card.number}
                 </span>
 
                 <Link
-                  href="/contact"
+                  href={card.href ?? "/contact"}
                   className="inline-flex items-center gap-1 font-mono text-xs font-bold uppercase tracking-wider hover:underline"
                 >
-                  <span>LEARN MORE</span>
+                  <span>{card.linkLabel ?? "LEARN MORE"}</span>
                   <span>→</span>
                 </Link>
               </div>

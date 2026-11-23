@@ -42,6 +42,14 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
       {
         question: "Do you provide SEO optimization with web design?",
         answer: "Yes. Technical SEO foundation is built into our core codebase — including clean semantic HTML5 markup, automated XML sitemaps, JSON-LD structured schema, and Core Web Vitals optimization."
+      },
+      {
+        question: "Why do you build websites with Next.js and React?",
+        answer: "Next.js and React give you fast page loads, search-friendly pages that Google can crawl easily, and reusable components that make future changes quicker and cheaper. Your site can grow from a marketing website into a full web application without starting over."
+      },
+      {
+        question: "Do you offer website redesign services?",
+        answer: "Yes. If your current site is slow, outdated, or not generating leads, we redesign and rebuild it on Next.js and React. We audit your existing pages first, keep the content that already ranks, and set up 301 redirects from old URLs so you don't lose search visibility."
       }
     ]
   },
@@ -74,12 +82,24 @@ export const SERVICE_DETAILS: Record<string, ServiceDetails> = {
         answer: "Technical site fixes and schema enhancements usually reflect in Google Search Console within 14–28 days. Measurable organic ranking jumps and customer conversion momentum typically compound strongly between months 2 and 4 as search engines index your updated topical clusters."
       },
       {
+        question: "How much do SEO services in Bangalore cost?",
+        answer: "SEO pricing depends on your website's size, your competition, and how many services you need, such as technical SEO, content, local SEO, or link building. Most clients work with us on a monthly plan, and we share a fixed proposal with clear deliverables before any work begins, with no hidden costs."
+      },
+      {
+        question: "What does an SEO audit include?",
+        answer: "Our SEO audit reviews crawling and indexing, site speed and Core Web Vitals, on-page elements like titles and headings, structured data, content gaps, and your backlink profile. You get a prioritized list of fixes ranked by impact, so you know exactly what to tackle first."
+      },
+      {
         question: "What is the difference between on-page and off-page SEO?",
         answer: "On-page SEO involves optimizing elements directly on your site, such as HTML headings, content semantics, internal linking, and Core Web Vitals speed. Off-page SEO focuses on external authority signals, including digital PR, niche citations, and high-domain backlinks."
       },
       {
         question: "Do you provide local SEO services?",
         answer: "Yes. We configure and optimize your Google Business Profile, implement local schema markups, standardize NAP (Name, Address, Phone) citations, and craft localized landing pages to dominate your area's local map pack."
+      },
+      {
+        question: "Do you offer e-commerce SEO services?",
+        answer: "Yes. For Shopify, WooCommerce, and custom online stores, we optimize category and product pages, add product schema for rich results, fix duplicate URLs from filters and variants, and speed up page loads so more shoppers find and buy from you through Google."
       },
       {
         question: "Will SEO guarantee first-page rankings?",

@@ -9,6 +9,7 @@ import WebDesignMetricsStrip from "@/components/web-design/WebDesignMetricsStrip
 import WebDesignFeatures from "@/components/web-design/WebDesignFeatures";
 import WebDesignServicesList from "@/components/web-design/WebDesignServicesList";
 import WebDesignProcess from "@/components/web-design/WebDesignProcess";
+import WebDesignTechStack from "@/components/web-design/WebDesignTechStack";
 import WebDesignWhyChooseUs from "@/components/web-design/WebDesignWhyChooseUs";
 import WebDesignWorks from "@/components/web-design/WebDesignWorks";
 import WebDesignFAQ from "@/components/web-design/WebDesignFAQ";
@@ -16,20 +17,20 @@ import WebDesignServicePager from "@/components/web-design/WebDesignServicePager
 import WebDesignSpecMatrix from "@/components/web-design/WebDesignSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Website Development Company in Bangalore | Baagul",
+  title: "Web Design & Development Company in Bangalore | Baagul",
   description:
-    "Website development company in Bangalore offering web design services and custom website development: fast, responsive, SEO-ready sites on Next.js.",
+    "Baagul offers website design and development services in Bangalore: custom, responsive, SEO-friendly websites built with Next.js and React.",
   alternates: { canonical: "/services/web-design" },
   openGraph: {
-    title: "Website Development Company in Bangalore | Baagul",
+    title: "Web Design & Development Company in Bangalore | Baagul",
     description:
-      "Website development company in Bangalore offering web design services and custom website development: fast, responsive, SEO-ready sites on Next.js.",
+      "Baagul offers website design and development services in Bangalore: custom, responsive, SEO-friendly websites built with Next.js and React.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Website Development Company in Bangalore | Baagul",
+    title: "Web Design & Development Company in Bangalore | Baagul",
     description:
-      "Website development company in Bangalore offering web design services and custom website development: fast, responsive, SEO-ready sites on Next.js.",
+      "Baagul offers website design and development services in Bangalore: custom, responsive, SEO-friendly websites built with Next.js and React.",
   },
 };
 
@@ -53,6 +54,9 @@ export default function WebDesignPage() {
 
         {/* Section 5: 4-Step Process (DEFINE, DESIGN, DEVELOP, TEST) */}
         <WebDesignProcess />
+
+        {/* Section 5b: Next.js & React Website Development */}
+        <WebDesignTechStack />
 
         {/* Section 6: Why Choose Us (Your Business Deserves a Website That Converts) */}
         <WebDesignWhyChooseUs />

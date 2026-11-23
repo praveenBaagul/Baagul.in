@@ -14,20 +14,20 @@ import SeoServicePager from "@/components/seo-optimization/SeoServicePager";
 import SeoSpecMatrix from "@/components/seo-optimization/SeoSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "SEO Services in Bangalore | SEO Company | Baagul",
+  title: "SEO Services in Bangalore | SEO Company & Agency | Baagul",
   description:
-    "SEO services in Bangalore from an SEO company focused on leads: technical, on-page and local search engine optimization services that grow revenue.",
+    "Boost your website visibility with Baagul's SEO services in Bangalore. We offer technical SEO, keyword research, on-page SEO and local SEO solutions.",
   alternates: { canonical: "/services/seo-optimizations" },
   openGraph: {
-    title: "SEO Services in Bangalore | SEO Company | Baagul",
+    title: "SEO Services in Bangalore | SEO Company & Agency | Baagul",
     description:
-      "SEO services in Bangalore from an SEO company focused on leads: technical, on-page and local search engine optimization services that grow revenue.",
+      "Boost your website visibility with Baagul's SEO services in Bangalore. We offer technical SEO, keyword research, on-page SEO and local SEO solutions.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Services in Bangalore | SEO Company | Baagul",
+    title: "SEO Services in Bangalore | SEO Company & Agency | Baagul",
     description:
-      "SEO services in Bangalore from an SEO company focused on leads: technical, on-page and local search engine optimization services that grow revenue.",
+      "Boost your website visibility with Baagul's SEO services in Bangalore. We offer technical SEO, keyword research, on-page SEO and local SEO solutions.",
   },
 };
 

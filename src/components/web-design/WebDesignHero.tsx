@@ -36,8 +36,9 @@ export default function WebDesignHero() {
               <span className="inline-block bg-[#FFBA45] text-[#0E1153] px-6 py-1 rounded-[4px] border-2 border-[#0E1153] shadow-[5px_5px_0px_#0E1153] mt-2 font-heading">
                 —Design—
               </span>
+              {" "}
               <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
-                Website Development Company in Bangalore
+                Website Design &amp; Development Company in Bangalore
               </span>
             </h1>
 

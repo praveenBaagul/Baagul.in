@@ -48,6 +48,7 @@ export default function EcommerceHero() {
                   &lt;Solutions&gt;
                 </span>
               </span>
+              {" "}
               <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#FEF9ED]/85">
                 E-commerce Website Development in Bangalore
               </span>

@@ -45,6 +45,7 @@ export default function AppDevelopmentHero() {
                   Development
                 </span>
               </span>
+              {" "}
               <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
                 Mobile App Development Company in Bangalore
               </span>

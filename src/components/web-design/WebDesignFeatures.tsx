@@ -13,14 +13,14 @@ interface DeliverableCard {
 const cards: DeliverableCard[] = [
   {
     number: "01",
-    title: "Responsive & Mobile-First",
-    desc: "Fluid typography and adaptive grid frameworks that adapt flawlessly to mobile, tablet, and ultra-wide screens.",
+    title: "Responsive Website Design",
+    desc: "Mobile-first layouts with fluid typography and adaptive grids that work flawlessly on phones, tablets, and ultra-wide screens.",
     bgColor: "bg-[#FFFFFF]",
     textColor: "text-[#0E1153]",
   },
   {
     number: "02",
-    title: "Clean UI / UX Concept",
+    title: "UI/UX Web Design",
     desc: "Intuitive interaction design, minimal cognitive friction, and intentional layouts engineered around user intent.",
     bgColor: "bg-[#FFFFFF]",
     textColor: "text-[#0E1153]",
@@ -35,7 +35,7 @@ const cards: DeliverableCard[] = [
   },
   {
     number: "04",
-    title: "Fast Loading Speed",
+    title: "Fast-Loading Websites",
     desc: "Sub-second LCP, minimal CLS, and Next.js server-side caching resulting in 99+ PageSpeed scores.",
     bgColor: "bg-[#E1E3F7]",
     textColor: "text-[#0E1153]",
@@ -67,7 +67,7 @@ export default function WebDesignFeatures() {
           </div>
 
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-[#0E1153] leading-tight mb-6">
-            Unique Web Design, color palettes, and brand guidelines that define your business.
+            Custom Website Design &amp; Development Services
           </h2>
 
           <div className="p-4 bg-[#FFFFFF] border-2 border-[#0E1153] rounded-xl shadow-[4px_4px_0px_#0E1153] mb-8">
@@ -98,7 +98,7 @@ export default function WebDesignFeatures() {
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-[10px] font-mono font-bold uppercase">
-                    FEATURE 0{card.number}
+                    FEATURE {card.number}
                   </span>
                   <span className="font-mono text-xs font-bold opacity-40">
                     {card.number}

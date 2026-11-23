@@ -12,9 +12,9 @@ export default function WebDesignWhyChooseUs() {
             </span>
 
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E1153] leading-tight mb-4">
-              <span>Your Business Deserves a Website That </span>
+              <span>SEO-Friendly, High-Performance Websites That </span>
               <span className="inline-block bg-[#0E1153] text-[#FEF9ED] px-3 py-0.5 rounded shadow-[3px_3px_0px_#FFFFFF] mt-1">
-                —Converts—
+                —Convert—
               </span>
             </h2>
 

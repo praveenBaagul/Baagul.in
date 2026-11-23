@@ -37,6 +37,16 @@ const faqs: FAQItem[] = [
     q: "Do you provide SEO optimization with web design?",
     a: "Yes. Technical SEO foundation is built into our core codebase — including clean semantic HTML5 markup, automated XML sitemaps, JSON-LD structured schema, and Core Web Vitals optimization.",
   },
+  {
+    id: 5,
+    q: "Why do you build websites with Next.js and React?",
+    a: "Next.js and React give you fast page loads, search-friendly pages that Google can crawl easily, and reusable components that make future changes quicker and cheaper. Your site can grow from a marketing website into a full web application without starting over.",
+  },
+  {
+    id: 6,
+    q: "Do you offer website redesign services?",
+    a: "Yes. If your current site is slow, outdated, or not generating leads, we redesign and rebuild it on Next.js and React. We audit your existing pages first, keep the content that already ranks, and set up 301 redirects from old URLs so you don't lose search visibility.",
+  },
 ];
 
 export default function WebDesignFAQ() {
@@ -87,7 +97,7 @@ export default function WebDesignFAQ() {
             <div>
               <div className="flex items-center justify-between pb-3 mb-6 border-b border-[#0E1153]/15">
                 <span className="px-2.5 py-1 rounded bg-[#CFE8DC] text-[#005F4C] text-[10px] font-mono font-bold uppercase">
-                  QUESTION 0{activeIdx + 1} // ANSWER
+                  QUESTION 0{activeIdx + 1} {"//"} ANSWER
                 </span>
                 <span className="w-7 h-7 rounded-full bg-[#FFA800] border border-[#0E1153] flex items-center justify-center font-bold text-xs">
                   ✓

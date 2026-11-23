@@ -37,6 +37,7 @@ export default function ServicesHero() {
             <span className="font-serif italic font-normal text-peacock tracking-normal">
               Traffic and Conversions
             </span>
+            {" "}
             <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-indigo-main/80">
               Digital Marketing, Web Development &amp; Creative Services in Bangalore
             </span>

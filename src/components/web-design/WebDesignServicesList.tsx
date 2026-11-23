@@ -7,13 +7,16 @@ interface WideServiceCard {
   title: string;
   description: string;
   badge: string;
+  /** Where the card's link goes, and its label. Defaults to the contact page. */
+  href?: string;
+  linkLabel?: string;
 }
 
 const wideServices: WideServiceCard[] = [
   {
     id: "01",
     tag: "MODULE 01 // ENTERPRISE",
-    title: "Corporate Website Design",
+    title: "Corporate Website Development",
     description: "Multi-page bespoke digital platforms for consultancies, tech startups, and enterprise firms designed for credibility and investor confidence.",
     badge: "BESPOKE ARCHITECTURE",
   },
@@ -23,6 +26,8 @@ const wideServices: WideServiceCard[] = [
     title: "E-Commerce Websites",
     description: "High-converting online retail storefronts with custom 1-click checkout funnels, dynamic inventory sync, and speed optimization.",
     badge: "CONVERSION ENGINES",
+    href: "/services/e-commerce-solutions",
+    linkLabel: "EXPLORE E-COMMERCE SOLUTIONS",
   },
   {
     id: "03",
@@ -37,6 +42,15 @@ const wideServices: WideServiceCard[] = [
     title: "Graphics & Brand Design",
     description: "Distinct visual design systems, custom iconography, custom vector illustrations, and comprehensive brand guidelines.",
     badge: "BRAND IDENTITY",
+    href: "/services/graphics-design",
+    linkLabel: "EXPLORE GRAPHIC DESIGN",
+  },
+  {
+    id: "05",
+    tag: "MODULE 05 // REBUILD",
+    title: "Website Redesign Services",
+    description: "Already have a site that feels dated, loads slowly, or doesn't bring in leads? We rebuild it on a modern stack, keep the content that already ranks, and redirect old URLs to protect your search visibility.",
+    badge: "REDESIGN & MIGRATION",
   },
 ];
 
@@ -52,7 +66,7 @@ export default function WebDesignServicesList() {
               <span>DIGITAL CAPABILITIES</span>
             </div>
             <h2 className="font-heading text-4xl sm:text-5xl text-[#0E1153]">
-              Our Services
+              Business Website Development Services
             </h2>
           </div>
 
@@ -83,10 +97,10 @@ export default function WebDesignServicesList() {
                 </p>
 
                 <Link
-                  href="/contact"
+                  href={service.href ?? "/contact"}
                   className="font-mono text-xs font-bold text-[#005F4C] hover:underline flex items-center gap-1.5"
                 >
-                  <span>REQUEST SPECIFICATION</span>
+                  <span>{service.linkLabel ?? "REQUEST SPECIFICATION"}</span>
                   <span>→</span>
                 </Link>
               </div>

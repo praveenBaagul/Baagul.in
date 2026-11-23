@@ -12,9 +12,9 @@ export default function SeoWhyChooseUs() {
           </div>
 
           <h2 className="font-heading text-4xl sm:text-6xl text-[#0E1153] leading-tight mb-4">
-            <span>Rank Higher.</span>
+            <span>Why Businesses Choose</span>
             <br />
-            <span>Get Found.</span>
+            <span>Baagul for SEO</span>
           </h2>
 
           <div className="inline-block mt-2">
