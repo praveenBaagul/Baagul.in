@@ -133,6 +133,7 @@ export default function SeoClientsGrid() {
                       <Image
                         src={client.imageSrc}
                         alt={client.imageAlt || client.name}
+                        title={client.imageAlt || client.name}
                         fill
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, 500px"

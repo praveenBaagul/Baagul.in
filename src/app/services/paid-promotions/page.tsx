@@ -15,18 +15,18 @@ import PaidPromotionFAQ from "@/components/paid-promotions/PaidPromotionFAQ";
 export const metadata: Metadata = {
   title: "Performance Marketing Agency in Bangalore | BAAGUL",
   description:
-    "Grow your business with BAAGUL's performance marketing services in Bangalore. Google Ads, Meta Ads, PPC management, lead generation and sales campaigns.",
+    "Grow your business with BAAGUL's performance marketing in Bangalore: Google Ads, Meta Ads, PPC management, lead generation and sales campaigns.",
   alternates: { canonical: "/services/paid-promotions" },
   openGraph: {
     title: "Performance Marketing Agency in Bangalore | BAAGUL",
     description:
-      "Grow your business with BAAGUL's performance marketing services in Bangalore. Google Ads, Meta Ads, PPC management, lead generation and sales campaigns.",
+      "Grow your business with BAAGUL's performance marketing in Bangalore: Google Ads, Meta Ads, PPC management, lead generation and sales campaigns.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Performance Marketing Agency in Bangalore | BAAGUL",
     description:
-      "Grow your business with BAAGUL's performance marketing services in Bangalore. Google Ads, Meta Ads, PPC management, lead generation and sales campaigns.",
+      "Grow your business with BAAGUL's performance marketing in Bangalore: Google Ads, Meta Ads, PPC management, lead generation and sales campaigns.",
   },
 };
 

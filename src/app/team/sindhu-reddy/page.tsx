@@ -6,12 +6,12 @@ import SindhuProfileCard from "@/components/team/SindhuProfileCard";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Sindhu Reddy - SEO Manager | Baagul LLP",
+  title: "Sindhu Reddy - SEO Manager in Bengaluru | Baagul LLP",
   description:
     "Official practitioner profile, technical bio, and verified credentials for Sindhu Reddy, SEO Manager at Baagul LLP in Bengaluru.",
   alternates: { canonical: "/team/sindhu-reddy" },
   openGraph: {
-    title: "Sindhu Reddy - SEO Manager | Baagul LLP",
+    title: "Sindhu Reddy - SEO Manager in Bengaluru | Baagul LLP",
     description:
       "Official practitioner profile, technical bio, and verified credentials for Sindhu Reddy, SEO Manager at Baagul LLP in Bengaluru.",
     url: `${SITE_URL}/team/sindhu-reddy`,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sindhu Reddy - SEO Manager | Baagul LLP",
+    title: "Sindhu Reddy - SEO Manager in Bengaluru | Baagul LLP",
     description:
       "Official practitioner profile, technical bio, and verified credentials for Sindhu Reddy, SEO Manager at Baagul LLP in Bengaluru.",
     images: [`${SITE_URL}/assets/sindhu-reddy.png`],

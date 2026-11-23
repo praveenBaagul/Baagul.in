@@ -46,6 +46,7 @@ export default function WebDesignWorks() {
                 <Image
                   src="/assets/seo-neo-backlinks-webdesign.jpg"
                   alt="SEO Neo Backlinks website homepage"
+                  title="SEO Neo Backlinks website homepage"
                   fill
                   sizes="(max-width: 1024px) 100vw, 700px"
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-500"

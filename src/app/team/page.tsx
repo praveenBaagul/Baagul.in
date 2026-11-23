@@ -10,20 +10,20 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "About Us & Leadership Team | Baagul LLP",
+  title: "About BAAGUL & Our Leadership Team | Baagul LLP",
   description:
-    "Learn about Baagul, an architectural web engineering and performance marketing studio in HSR Layout, Bengaluru. Meet our senior team of engineers, SEO architects, and craft directors.",
+    "Learn about BAAGUL, a web engineering and performance marketing studio in HSR Layout, Bengaluru, and meet our engineers, SEO and design experts.",
   alternates: { canonical: "/team" },
   openGraph: {
-    title: "About Us & Leadership Team | Baagul LLP",
+    title: "About BAAGUL & Our Leadership Team | Baagul LLP",
     description:
-      "Learn about Baagul, an architectural web engineering and performance marketing studio in HSR Layout, Bengaluru. Meet our senior team of engineers, SEO architects, and craft directors.",
+      "Learn about BAAGUL, a web engineering and performance marketing studio in HSR Layout, Bengaluru, and meet our engineers, SEO and design experts.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Us & Leadership Team | Baagul LLP",
+    title: "About BAAGUL & Our Leadership Team | Baagul LLP",
     description:
-      "Learn about Baagul, an architectural web engineering and performance marketing studio in HSR Layout, Bengaluru. Meet our senior team of engineers, SEO architects, and craft directors.",
+      "Learn about BAAGUL, a web engineering and performance marketing studio in HSR Layout, Bengaluru, and meet our engineers, SEO and design experts.",
   },
 };
 

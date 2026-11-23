@@ -6,12 +6,12 @@ import KishoreProfileCard from "@/components/team/KishoreProfileCard";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Kishore V - Digital Marketing Manager | Baagul LLP Credentials",
+  title: "Kishore V - Digital Marketing Manager | Baagul LLP",
   description:
     "Official practitioner profile, executive bio, and verified credentials for Kishore V, Digital Marketing Manager at Baagul LLP in Bengaluru.",
   alternates: { canonical: "/docs/kishore" },
   openGraph: {
-    title: "Kishore V - Digital Marketing Manager | Baagul LLP Credentials",
+    title: "Kishore V - Digital Marketing Manager | Baagul LLP",
     description:
       "Official practitioner profile, executive bio, and verified credentials for Kishore V, Digital Marketing Manager at Baagul LLP in Bengaluru.",
     url: `${SITE_URL}/docs/kishore`,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kishore V - Digital Marketing Manager | Baagul LLP Credentials",
+    title: "Kishore V - Digital Marketing Manager | Baagul LLP",
     description:
       "Official practitioner profile, executive bio, and verified credentials for Kishore V, Digital Marketing Manager at Baagul LLP in Bengaluru.",
     images: [`${SITE_URL}/assets/kishore.png`],

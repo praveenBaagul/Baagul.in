@@ -29,6 +29,7 @@ export default function EcommerceCaseStudySpotlight() {
               <Image
                 src="/assets/e49c5.png"
                 alt="Mysore Silk Co editorial e-commerce website showcase"
+                title="Mysore Silk Co editorial e-commerce website showcase"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />

@@ -82,6 +82,7 @@ export default function SeoWorks() {
                   <Image
                     src={w.imgSrc}
                     alt={w.title}
+                    title={w.title}
                     fill
                     className="object-cover"
                   />

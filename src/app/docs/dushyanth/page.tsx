@@ -6,12 +6,12 @@ import DushyanthProfileCard from "@/components/team/DushyanthProfileCard";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Dushyanth Kumar - Full Stack AI Developer | Baagul LLP Credentials",
+  title: "Dushyanth Kumar - Full Stack AI Developer | Baagul LLP",
   description:
     "Official practitioner profile, technical bio, and verified credentials for Dushyanth Kumar, Full Stack AI Developer at Baagul LLP in Bengaluru.",
   alternates: { canonical: "/docs/dushyanth" },
   openGraph: {
-    title: "Dushyanth Kumar - Full Stack AI Developer | Baagul LLP Credentials",
+    title: "Dushyanth Kumar - Full Stack AI Developer | Baagul LLP",
     description:
       "Official practitioner profile, technical bio, and verified credentials for Dushyanth Kumar, Full Stack AI Developer at Baagul LLP in Bengaluru.",
     url: `${SITE_URL}/docs/dushyanth`,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dushyanth Kumar - Full Stack AI Developer | Baagul LLP Credentials",
+    title: "Dushyanth Kumar - Full Stack AI Developer | Baagul LLP",
     description:
       "Official practitioner profile, technical bio, and verified credentials for Dushyanth Kumar, Full Stack AI Developer at Baagul LLP in Bengaluru.",
     images: [`${SITE_URL}/assets/dushyanth-kumar.png`],

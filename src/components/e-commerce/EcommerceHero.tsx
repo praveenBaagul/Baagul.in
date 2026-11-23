@@ -134,6 +134,7 @@ export default function EcommerceHero() {
                 <Image
                   src="/assets/ecommerce-animated-dashboard.svg"
                   alt="E-commerce store dashboard on tablet and mobile, built by BAAGUL"
+                  title="E-commerce store dashboard on tablet and mobile, built by BAAGUL"
                   fill
                   priority
                   unoptimized

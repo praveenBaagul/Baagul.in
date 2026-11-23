@@ -42,6 +42,7 @@ export default function LogoDesignShowcase() {
                 <Image
                   src="/assets/propfirm-coupons.jpg"
                   alt="propfirm.coupons Logo Identity"
+                  title="propfirm.coupons Logo Identity"
                   fill
                   sizes="(max-width: 640px) 100vw, 384px"
                   className="object-cover"
@@ -67,6 +68,7 @@ export default function LogoDesignShowcase() {
                 <Image
                   src="/assets/aeroshield-logo.jpg"
                   alt="AeroShield Cybersecurity Logo Identity"
+                  title="AeroShield Cybersecurity Logo Identity"
                   fill
                   sizes="(max-width: 640px) 100vw, 384px"
                   className="object-cover"
@@ -95,6 +97,7 @@ export default function LogoDesignShowcase() {
                 <Image
                   src="/assets/vanguard-health-logo.jpg"
                   alt="Vanguard Health Labs Logo Identity"
+                  title="Vanguard Health Labs Logo Identity"
                   fill
                   sizes="(max-width: 640px) 100vw, 220px"
                   className="object-cover"
@@ -119,6 +122,7 @@ export default function LogoDesignShowcase() {
                 <Image
                   src="/assets/solaria-energy-logo.jpg"
                   alt="Solaria Energy Logo Identity"
+                  title="Solaria Energy Logo Identity"
                   fill
                   sizes="(max-width: 640px) 100vw, 220px"
                   className="object-cover"
@@ -143,6 +147,7 @@ export default function LogoDesignShowcase() {
                 <Image
                   src="/assets/lumina-software-logo.jpg"
                   alt="Lumina Software Logo Identity"
+                  title="Lumina Software Logo Identity"
                   fill
                   sizes="(max-width: 640px) 100vw, 220px"
                   className="object-cover"

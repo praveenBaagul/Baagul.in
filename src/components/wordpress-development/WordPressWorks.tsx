@@ -76,6 +76,7 @@ export default function WordPressWorks() {
                 <Image
                   src={project.imageSrc}
                   alt={project.title}
+                  title={project.title}
                   fill
                   className="object-cover"
                 />

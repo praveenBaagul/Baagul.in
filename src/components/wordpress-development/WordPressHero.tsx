@@ -75,6 +75,7 @@ export default function WordPressHero() {
                 <Image
                   src="/assets/wordpress-hero-clean.jpg"
                   alt="WordPress development by BAAGUL: custom themes, migration and CMS customization"
+                  title="WordPress development by BAAGUL: custom themes, migration and CMS customization"
                   fill
                   priority
                   unoptimized

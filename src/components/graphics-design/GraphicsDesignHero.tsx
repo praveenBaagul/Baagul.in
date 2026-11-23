@@ -100,6 +100,7 @@ export default function GraphicsDesignHero() {
                 <Image
                   src="/assets/creative-design-process-hero.jpg"
                   alt="Creative Design Process - From the first idea to the final masterpiece"
+                  title="Creative Design Process - From the first idea to the final masterpiece"
                   fill
                   priority
                   className="object-cover object-center"

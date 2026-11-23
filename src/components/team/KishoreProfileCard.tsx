@@ -53,6 +53,7 @@ export default function KishoreProfileCard() {
             <Image
               src="/assets/baagul-brand-logo.png"
               alt="Baagul LLP"
+              title="Baagul LLP"
               width={140}
               height={40}
               className="h-8 sm:h-9 w-auto object-contain"

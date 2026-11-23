@@ -103,6 +103,7 @@ export default function GuestPostHero() {
                 <Image
                   src="/assets/guest-post-hero-poster.jpg"
                   alt="Guest posting services and digital PR by BAAGUL"
+                  title="Guest posting services and digital PR by BAAGUL"
                   fill
                   priority
                   className="object-cover object-center"

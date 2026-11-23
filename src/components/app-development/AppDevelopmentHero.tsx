@@ -81,6 +81,7 @@ export default function AppDevelopmentHero() {
                 <Image
                   src="/assets/app-development-hero-poster.jpg"
                   alt="Mobile app development for Android and iOS by BAAGUL"
+                  title="Mobile app development for Android and iOS by BAAGUL"
                   fill
                   priority
                   unoptimized

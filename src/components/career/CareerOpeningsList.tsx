@@ -63,6 +63,7 @@ export default function CareerOpeningsList() {
                   <Image
                     src={role.imageSrc}
                     alt={role.title}
+                    title={role.title}
                     fill
                     className="object-cover"
                   />

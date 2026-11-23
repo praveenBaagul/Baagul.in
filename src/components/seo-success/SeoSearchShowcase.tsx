@@ -182,6 +182,7 @@ export default function SeoSearchShowcase() {
                     <Image
                       src={item.imageSrc}
                       alt={item.title}
+                      title={item.title}
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 400px"
@@ -279,6 +280,7 @@ export default function SeoSearchShowcase() {
                   <Image
                     src={selectedItem.imageSrc}
                     alt={selectedItem.title}
+                    title={selectedItem.title}
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 800px"

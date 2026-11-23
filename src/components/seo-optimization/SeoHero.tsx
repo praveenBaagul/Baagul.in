@@ -49,6 +49,7 @@ export default function SeoHero() {
             <Image
               src="/assets/google-search-console-performance.jpg"
               alt="Google Search Console performance dashboard showing organic clicks, impressions, and ranking growth"
+              title="Google Search Console performance dashboard showing organic clicks, impressions, and ranking growth"
               fill
               priority
               className="object-cover object-top"

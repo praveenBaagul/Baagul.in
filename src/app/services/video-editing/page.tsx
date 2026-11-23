@@ -14,18 +14,18 @@ import VideoEditingServicePager from "@/components/video-editing/VideoEditingSer
 // import VideoEditingSpecMatrix from "@/components/video-editing/VideoEditingSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Video Editing Services in Bangalore | BAAGUL",
+  title: "Professional Video Editing Services in Bangalore | BAAGUL",
   description:
     "Professional video editing services in Bangalore by BAAGUL. Get YouTube editing, Instagram Reels, motion graphics, promotional videos and video ads.",
   alternates: { canonical: "/services/video-editing" },
   openGraph: {
-    title: "Video Editing Services in Bangalore | BAAGUL",
+    title: "Professional Video Editing Services in Bangalore | BAAGUL",
     description:
       "Professional video editing services in Bangalore by BAAGUL. Get YouTube editing, Instagram Reels, motion graphics, promotional videos and video ads.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Video Editing Services in Bangalore | BAAGUL",
+    title: "Professional Video Editing Services in Bangalore | BAAGUL",
     description:
       "Professional video editing services in Bangalore by BAAGUL. Get YouTube editing, Instagram Reels, motion graphics, promotional videos and video ads.",
   },

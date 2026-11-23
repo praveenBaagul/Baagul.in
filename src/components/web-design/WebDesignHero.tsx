@@ -69,6 +69,7 @@ export default function WebDesignHero() {
                 <Image
                   src="/assets/web-design-hero-illustration.jpg"
                   alt="Web Design That Works - Beautiful Websites, Better User Experience, More Business Growth"
+                  title="Web Design That Works - Beautiful Websites, Better User Experience, More Business Growth"
                   fill
                   priority
                   className="object-cover object-center"

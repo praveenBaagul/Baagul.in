@@ -14,20 +14,20 @@ import GuestPostServicePager from "@/components/guest-post/GuestPostServicePager
 import GuestPostSpecMatrix from "@/components/guest-post/GuestPostSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Guest Posting Services & Digital PR | BAAGUL",
+  title: "Guest Posting Services & Digital PR Agency | BAAGUL",
   description:
-    "Grow your brand with BAAGUL's guest posting services, blogger outreach and digital PR. Get relevant editorial placements, quality content and reporting.",
+    "Grow your brand with BAAGUL's guest posting services, blogger outreach and digital PR. Get relevant editorial placements, quality content and reports.",
   alternates: { canonical: "/services/guest-post" },
   openGraph: {
-    title: "Guest Posting Services & Digital PR | BAAGUL",
+    title: "Guest Posting Services & Digital PR Agency | BAAGUL",
     description:
-      "Grow your brand with BAAGUL's guest posting services, blogger outreach and digital PR. Get relevant editorial placements, quality content and reporting.",
+      "Grow your brand with BAAGUL's guest posting services, blogger outreach and digital PR. Get relevant editorial placements, quality content and reports.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Guest Posting Services & Digital PR | BAAGUL",
+    title: "Guest Posting Services & Digital PR Agency | BAAGUL",
     description:
-      "Grow your brand with BAAGUL's guest posting services, blogger outreach and digital PR. Get relevant editorial placements, quality content and reporting.",
+      "Grow your brand with BAAGUL's guest posting services, blogger outreach and digital PR. Get relevant editorial placements, quality content and reports.",
   },
 };
 

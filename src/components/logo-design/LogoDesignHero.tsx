@@ -67,6 +67,7 @@ export default function LogoDesignHero() {
                 <Image
                   src="/assets/logo-design-hero-poster.jpg"
                   alt="Logo Design & Visual Brand Identity - Baagul Studio"
+                  title="Logo Design & Visual Brand Identity - Baagul Studio"
                   fill
                   priority
                   unoptimized

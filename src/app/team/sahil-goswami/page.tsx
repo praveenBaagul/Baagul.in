@@ -8,12 +8,12 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Sahil Goswami - Video Editing & Graphic Design | Baagul LLP",
   description:
-    "Official practitioner profile, creative portfolio bio, and verified credentials for Sahil Goswami, Video Editing & Graphic Design Lead at Baagul LLP in Bengaluru.",
+    "Profile, creative bio and verified credentials of Sahil Goswami, Video Editing & Graphic Design Lead at Baagul LLP in Bengaluru.",
   alternates: { canonical: "/team/sahil-goswami" },
   openGraph: {
     title: "Sahil Goswami - Video Editing & Graphic Design | Baagul LLP",
     description:
-      "Official practitioner profile, creative portfolio bio, and verified credentials for Sahil Goswami, Video Editing & Graphic Design Lead at Baagul LLP in Bengaluru.",
+      "Profile, creative bio and verified credentials of Sahil Goswami, Video Editing & Graphic Design Lead at Baagul LLP in Bengaluru.",
     url: `${SITE_URL}/team/sahil-goswami`,
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sahil Goswami - Video Editing & Graphic Design | Baagul LLP",
     description:
-      "Official practitioner profile, creative portfolio bio, and verified credentials for Sahil Goswami, Video Editing & Graphic Design Lead at Baagul LLP in Bengaluru.",
+      "Profile, creative bio and verified credentials of Sahil Goswami, Video Editing & Graphic Design Lead at Baagul LLP in Bengaluru.",
     images: [`${SITE_URL}/assets/sahil-placeholder.png`],
   },
 };
