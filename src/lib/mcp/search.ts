@@ -10,7 +10,7 @@ import {
   TEAM,
   TEAM_PAGE_URL,
 } from "./content";
-import { readPublicText } from "./resources";
+import { readAiFile } from "@/lib/ai-files";
 
 /**
  * Keyword search over everything the MCP server knows. The index is small
@@ -125,7 +125,7 @@ async function buildDocuments(): Promise<SearchDocument[]> {
   });
 
   try {
-    documents.push(...sectionsOf(await readPublicText("llms-full.txt")));
+    documents.push(...sectionsOf(await readAiFile("llms-full.txt")));
   } catch {
     // The structured content above is still searchable without the file.
   }

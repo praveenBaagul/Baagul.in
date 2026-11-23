@@ -20,7 +20,7 @@ function fixPermissions(dir) {
 }
 
 const root = path.join(__dirname, "..");
-["src", "public", "prisma", "scripts"].forEach((folder) => {
+["src", "public", "content", "prisma", "scripts"].forEach((folder) => {
   fixPermissions(path.join(root, folder));
 });
 

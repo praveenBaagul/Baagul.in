@@ -1,18 +1,16 @@
-import { readFile } from "node:fs/promises";
-import path from "node:path";
+import { readAiFile, type AiFile } from "@/lib/ai-files";
 import { SITE_URL } from "@/lib/site";
 import { getService } from "./content";
 
 /**
  * MCP resources:
- * - the site's llms.txt files, read from public/ so the website and the MCP
- *   server always hand out the same text;
+ * - the site's llms.txt files, read from content/ (see lib/ai-files.ts) so the
+ *   website and the MCP server always hand out the same text;
  * - one JSON document per service, through the baagul://service/{slug} template.
  */
 
 interface FileResource {
-  /** File name inside public/. */
-  file: string;
+  file: AiFile;
   name: string;
   title: string;
   description: string;
@@ -59,19 +57,6 @@ export const RESOURCE_TEMPLATES = [
   },
 ];
 
-const cache = new Map<string, Promise<string>>();
-
-/** Reads a file from public/ once per server process. A failed read is retried next time. */
-export function readPublicText(file: string): Promise<string> {
-  let text = cache.get(file);
-  if (!text) {
-    text = readFile(path.join(process.cwd(), "public", file), "utf8");
-    text.catch(() => cache.delete(file));
-    cache.set(file, text);
-  }
-  return text;
-}
-
 /** Returns null when the URI is not one of ours. */
 export async function readResource(uri: unknown) {
   if (typeof uri !== "string") return null;
@@ -84,5 +69,5 @@ export async function readResource(uri: unknown) {
 
   const resource = FILE_RESOURCES.find((candidate) => uriFor(candidate) === uri);
   if (!resource) return null;
-  return { contents: [{ uri, mimeType: MARKDOWN, text: await readPublicText(resource.file) }] };
+  return { contents: [{ uri, mimeType: MARKDOWN, text: await readAiFile(resource.file) }] };
 }

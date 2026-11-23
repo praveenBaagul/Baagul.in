@@ -81,11 +81,6 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        // Plain-text files for AI crawlers. They contain non-ASCII characters (·, ₹).
-        source: "/:file(llms\\.txt|llms-full\\.txt|ai\\.txt)",
-        headers: [{ key: "Content-Type", value: "text/plain; charset=utf-8" }],
-      },
-      {
         source: "/(.*)",
         headers: [
           {
@@ -108,10 +103,15 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  // The MCP server reads these at request time; make sure every host bundles them.
+  // These routes read content/*.txt at request time; make sure every host bundles them.
+  // The text files are served by route handlers rather than from public/ so that
+  // they keep charset=utf-8 (see src/lib/ai-files.ts).
   outputFileTracingIncludes: {
-    "/mcp": ["./public/llms.txt", "./public/llms-full.txt"],
-    "/api/mcp": ["./public/llms.txt", "./public/llms-full.txt"],
+    "/mcp": ["./content/*.txt"],
+    "/api/mcp": ["./content/*.txt"],
+    "/llms.txt": ["./content/*.txt"],
+    "/llms-full.txt": ["./content/*.txt"],
+    "/ai.txt": ["./content/*.txt"],
   },
   partialPrefetching: true,
   experimental: {

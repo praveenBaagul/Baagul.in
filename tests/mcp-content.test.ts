@@ -149,7 +149,7 @@ describe("resources", () => {
   it("reads a file resource with the same text the website serves", async () => {
     const { result: list } = await request("resources/list");
     const { result } = await request("resources/read", { uri: list.resources[1].uri });
-    expect(result.contents[0].text).toBe(readFileSync("public/llms-full.txt", "utf8"));
+    expect(result.contents[0].text).toBe(readFileSync("content/llms-full.txt", "utf8"));
   });
 
   it("offers a service template and reads through it", async () => {

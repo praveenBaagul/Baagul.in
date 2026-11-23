@@ -1,5 +1,8 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
+import { GET as aiTxt } from "@/app/ai.txt/route";
+import { GET as llmsFullTxt } from "@/app/llms-full.txt/route";
+import { GET as llmsTxt } from "@/app/llms.txt/route";
 import robots from "@/app/robots";
 import sitemap from "@/app/sitemap";
 import { SERVICES } from "@/lib/mcp/content/services";
@@ -62,11 +65,27 @@ describe("next.config", () => {
     expect(pattern.test("wwwxbaagul.in")).toBe(false);
   });
 
-  it("serves the AI text files as UTF-8", async () => {
-    const headers = await nextConfig.headers!();
-    const text = headers.find((rule) => rule.source.includes("llms"));
-    expect(text?.headers).toContainEqual({ key: "Content-Type", value: "text/plain; charset=utf-8" });
-    for (const file of ["llms.txt", "llms-full.txt", "ai.txt"]) expect(text!.source).toContain(file.replace(".", "\\."));
+});
+
+describe("AI text files", () => {
+  const files = [
+    ["llms.txt", llmsTxt],
+    ["llms-full.txt", llmsFullTxt],
+    ["ai.txt", aiTxt],
+  ] as const;
+
+  // The host serves public/ files itself and drops the charset, so these are
+  // served by route handlers from content/ instead.
+  it("serves llms.txt, llms-full.txt and ai.txt as UTF-8 from content/", async () => {
+    for (const [file, handler] of files) {
+      const response = await handler();
+      expect(response.headers.get("content-type"), file).toBe("text/plain; charset=utf-8");
+      expect(await response.text(), file).toBe(readFileSync(`content/${file}`, "utf8"));
+    }
+  });
+
+  it("are not also in public/, where they would bypass the routes", () => {
+    for (const [file] of files) expect(existsSync(`public/${file}`), file).toBe(false);
   });
 });
 
