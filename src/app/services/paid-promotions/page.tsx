@@ -12,20 +12,20 @@ import PaidPromotionCTABanner from "@/components/paid-promotions/PaidPromotionCT
 // import PaidPromotionSpecMatrix from "@/components/paid-promotions/PaidPromotionSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Paid Promotions & Performance Media Buying | Baagul Studio",
+  title: "Performance Marketing Agency in Bangalore | Baagul",
   description:
-    "Data-driven Google Ads, Meta PPC, and performance media buying campaigns engineered for maximum return on ad spend (ROAS).",
+    "Performance marketing agency in Bangalore. Google Ads management and Meta Ads management services built around measurable leads and return on ad spend.",
   alternates: { canonical: "/services/paid-promotions" },
   openGraph: {
-    title: "Paid Promotions & Performance Media Buying | Baagul Studio",
+    title: "Performance Marketing Agency in Bangalore | Baagul",
     description:
-      "Data-driven Google Ads, Meta PPC, and performance media buying campaigns engineered for maximum return on ad spend (ROAS).",
+      "Performance marketing agency in Bangalore. Google Ads management and Meta Ads management services built around measurable leads and return on ad spend.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paid Promotions & Performance Media Buying | Baagul Studio",
+    title: "Performance Marketing Agency in Bangalore | Baagul",
     description:
-      "Data-driven Google Ads, Meta PPC, and performance media buying campaigns engineered for maximum return on ad spend (ROAS).",
+      "Performance marketing agency in Bangalore. Google Ads management and Meta Ads management services built around measurable leads and return on ad spend.",
   },
 };
 

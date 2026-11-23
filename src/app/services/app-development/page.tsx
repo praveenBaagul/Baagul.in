@@ -13,20 +13,20 @@ import AppDevelopmentServicePager from "@/components/app-development/AppDevelopm
 // import AppDevelopmentSpecMatrix from "@/components/app-development/AppDevelopmentSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Mobile App Development Studio in Bengaluru | Baagul",
+  title: "Mobile App Development Company in Bangalore | Baagul",
   description:
-    "Custom iOS, Android, Flutter, and React Native mobile app development. High-performance native engineering and 60 FPS interfaces.",
+    "Mobile app development company in Bangalore building Android and iOS apps with React Native, Flutter and native code. Fast, polished, launch-ready.",
   alternates: { canonical: "/services/app-development" },
   openGraph: {
-    title: "Mobile App Development Studio in Bengaluru | Baagul",
+    title: "Mobile App Development Company in Bangalore | Baagul",
     description:
-      "Custom iOS, Android, Flutter, and React Native mobile app development. High-performance native engineering and 60 FPS interfaces.",
+      "Mobile app development company in Bangalore building Android and iOS apps with React Native, Flutter and native code. Fast, polished, launch-ready.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile App Development Studio in Bengaluru | Baagul",
+    title: "Mobile App Development Company in Bangalore | Baagul",
     description:
-      "Custom iOS, Android, Flutter, and React Native mobile app development. High-performance native engineering and 60 FPS interfaces.",
+      "Mobile app development company in Bangalore building Android and iOS apps with React Native, Flutter and native code. Fast, polished, launch-ready.",
   },
 };
 

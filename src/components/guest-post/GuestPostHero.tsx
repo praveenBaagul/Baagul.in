@@ -31,10 +31,13 @@ export default function GuestPostHero() {
               <span className="inline-block bg-[#FFA800] text-[#0E1153] px-5 py-1 rounded-xl border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] mt-2">
                 Posts &amp; PR
               </span>
+              <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#FEF9ED]/85">
+                Guest Posting &amp; Digital PR Services
+              </span>
             </h1>
 
             <p className="font-sans text-base sm:text-lg text-[#FEF9ED]/90 max-w-xl leading-relaxed mb-8">
-              At Baagul, we design with purpose — creating visual assets that engage, and distinct identities. From custom brand identity to bespoke marketing collateral, we help your business stand out and convey authority to your audience.
+              At Baagul, our guest posting services place your brand on high-authority industry publications. We pair guest post outreach with digital PR services to earn natural backlinks, editorial mentions, and qualified referral traffic.
             </p>
 
             {/* CTA Button */}

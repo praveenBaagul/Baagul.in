@@ -18,13 +18,16 @@ export default function SeoHero() {
           <span className="inline-block bg-[#FFBA45] text-[#0E1153] px-4 py-1 rounded-lg border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153]">
             Optimization
           </span>
+          <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
+            SEO Services in Bangalore
+          </span>
         </h1>
 
         {/* Subtitle / Paragraph */}
         <p className="font-sans text-base sm:text-lg text-[#3E4945] max-w-3xl leading-relaxed mb-8">
-          All-in-one organic search architecture that converts impressions into high-margin paying clients. 
-          Whether you are dominating local map packs or ranking #1 for high-commercial terms, 
-          we build durable authority that survives search algorithm updates.
+          As an SEO company in Bangalore, we turn impressions into high-margin paying clients.
+          Our search engine optimization services cover technical, on-page, and local SEO. Whether you are
+          dominating local map packs or ranking for high-commercial terms, we build durable authority that survives algorithm updates.
         </p>
 
         {/* CTA Button */}

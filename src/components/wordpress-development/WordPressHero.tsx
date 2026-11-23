@@ -38,10 +38,13 @@ export default function WordPressHero() {
               <span className="inline-block bg-[#FFA800] text-[#0E1153] px-4 py-1 rounded-xl border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] mt-2">
                 Development
               </span>
+              <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
+                WordPress Development Services in Bangalore
+              </span>
             </h1>
 
             <p className="font-sans text-base sm:text-lg text-[#3E4945] max-w-xl leading-relaxed mb-8">
-              Custom, high-speed WordPress architectures and bespoke block themes that pass Core Web Vitals with 99+ PageSpeed scores, zero bloat, and enterprise-grade security.
+              Custom WordPress website development, bespoke block themes, and custom CMS development that pass Core Web Vitals with 99+ PageSpeed scores, zero bloat, and enterprise-grade security.
             </p>
 
             {/* CTA Buttons */}

@@ -48,10 +48,13 @@ export default function EcommerceHero() {
                   &lt;Solutions&gt;
                 </span>
               </span>
+              <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#FEF9ED]/85">
+                E-commerce Website Development in Bangalore
+              </span>
             </h1>
 
             <p className="font-sans text-lg sm:text-xl text-[rgba(191,201,195,0.9)] max-w-xl leading-relaxed mb-8">
-              Building secure, scalable, and high-performing online stores that convert.
+              Building secure, scalable, and high-performing online stores that convert — from Shopify development services to custom WooCommerce builds.
             </p>
 
             {/* Action CTAs */}

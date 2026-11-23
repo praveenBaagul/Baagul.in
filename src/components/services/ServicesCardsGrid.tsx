@@ -77,7 +77,7 @@ export default function ServicesCardsGrid() {
                     Website Design &amp; Development
                   </h4>
                   <p className="font-sans text-xs sm:text-sm text-indigo-dark/90 leading-relaxed mb-4">
-                    Modern, fast, responsive websites built to turn visitors into customers through speed, semantic brand architecture, and seamless scrollability.
+                    Website development and web design services in Bangalore: modern, fast, responsive sites built to turn visitors into customers.
                   </p>
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2">
@@ -148,7 +148,7 @@ export default function ServicesCardsGrid() {
                 E-Commerce Solutions
               </h4>
               <p className="font-sans text-xs sm:text-sm text-slate-text leading-relaxed mb-6">
-                Building friction-less, scalable, and high-performing online stores that convert via Shopify Plus / WooCommerce and speed-optimized checkout architectures.
+                E-commerce website development for scalable, high-performing online stores on Shopify and WooCommerce, with speed-optimized checkout.
               </p>
 
               {/* Tags */}
@@ -198,7 +198,7 @@ export default function ServicesCardsGrid() {
                 WordPress &amp; CMS Development
               </h4>
               <p className="font-sans text-xs sm:text-sm text-slate-text leading-relaxed mb-6">
-                Bespoke headless WordPress architectures and native Gutenberg block patterns engineered for bulletproof editorial speed and sub-second caching.
+                WordPress development services and custom CMS development: headless WordPress and Gutenberg block themes built for editorial speed.
               </p>
 
               {/* Tags */}
@@ -243,7 +243,7 @@ export default function ServicesCardsGrid() {
                 App Development
               </h4>
               <p className="font-sans text-xs sm:text-sm text-slate-text leading-relaxed mb-6 max-w-xl">
-                Cross-platform mobile applications built with React Native and Native performance. Fluid 60fps animations, background sync, biometric security, and offline resilience.
+                Mobile app development for Android and iOS with React Native and native code. Fluid 60fps animations, background sync, biometric security, and offline resilience.
               </p>
 
               {/* Tags */}
@@ -323,7 +323,7 @@ export default function ServicesCardsGrid() {
                     SEO Optimization
                   </h4>
                   <p className="font-sans text-xs sm:text-sm text-indigo-dark/90 leading-relaxed mb-4">
-                    Boosting your online visibility with proven strategies for higher search rankings, technical site health, semantic indexing, and search intent.
+                    SEO services in Bangalore that boost your visibility with proven strategies for higher rankings, technical site health, and search intent.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {["Technical Audits", "Core Web Vitals", "SERP Dominance"].map((tag) => (
@@ -389,7 +389,7 @@ export default function ServicesCardsGrid() {
                 Guest Posts &amp; PR
               </h4>
               <p className="font-sans text-xs sm:text-sm text-slate-text leading-relaxed mb-6">
-                Publishing top editorial content on top websites to build authority, earn natural high-DA backlinks, and capture qualified affiliate-grade traffic.
+                Guest posting and digital PR services that place your brand on top publications to build authority, earn natural backlinks, and capture qualified traffic.
               </p>
 
               {/* Tags */}
@@ -437,7 +437,7 @@ export default function ServicesCardsGrid() {
                 Paid Promotions &amp; Media Buying
               </h4>
               <p className="font-sans text-xs sm:text-sm text-slate-text leading-relaxed mb-6 max-w-2xl">
-                Hyper-targeted acquisition campaigns across search and social channels for predictable ROI, algorithmic bidding, real-time attribution, and lower Customer Acquisition Cost (CAC).
+                Performance marketing across Google Ads and Meta Ads for predictable ROI, real-time attribution, and lower Customer Acquisition Cost (CAC).
               </p>
               <div className="flex flex-wrap gap-2">
                 {["Meta & Google Ads", "Funnel Design", "ROAS Tracking", "Performance Buy"].map((tag) => (
@@ -540,7 +540,7 @@ export default function ServicesCardsGrid() {
                     Logo Design
                   </h4>
                   <p className="font-sans text-xs sm:text-sm text-indigo-dark/90 leading-relaxed mb-4">
-                    Crafting unique, memorable logos that define and elevate your brand identity across physical and digital touchpoints.
+                    Professional logo design services in Bangalore: unique, memorable logos that elevate your brand identity across physical and digital touchpoints.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {["Brand Identity", "Vector Assets", "Design Styleguide"].map((tag) => (
@@ -587,7 +587,7 @@ export default function ServicesCardsGrid() {
                 Graphic Designing
               </h4>
               <p className="font-sans text-xs sm:text-sm text-slate-text leading-relaxed mb-6">
-                Designing high-impact visuals that capture attention and strengthen your brand identity across paid banners, collateral, and marketing funnels.
+                Graphic design services for high-impact visuals, from social media graphics and paid banners to collateral and marketing funnels.
               </p>
 
               {/* Tags */}
@@ -635,7 +635,7 @@ export default function ServicesCardsGrid() {
                 Video Editing
               </h4>
               <p className="font-sans text-xs sm:text-sm text-slate-text leading-relaxed mb-6 max-w-2xl">
-                Dynamic motion design, cinematic brand spots, and scroll-stopping short-form video editing engineered to capture attention within 3 seconds, complete with kinetic typography and sound mastering.
+                Professional video editing for YouTube, Instagram Reels, and cinematic brand spots, engineered to capture attention within 3 seconds, with motion graphics and sound mastering.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["Social Reels", "Motion Graphics", "4K Rendering", "Short Form Focus"].map((tag) => (

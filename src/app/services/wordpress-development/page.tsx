@@ -15,20 +15,20 @@ import WordPressServicePager from "@/components/wordpress-development/WordPressS
 import WordPressSpecMatrix from "@/components/wordpress-development/WordPressSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "WordPress & Headless CMS Development | Baagul Bengaluru",
+  title: "WordPress Development Services in Bangalore | Baagul",
   description:
-    "Enterprise headless WordPress architectures, bespoke Gutenberg block themes, and high-performance WooCommerce storefronts.",
+    "WordPress development services in Bangalore: WordPress website development, custom CMS development, Gutenberg block themes and WooCommerce stores.",
   alternates: { canonical: "/services/wordpress-development" },
   openGraph: {
-    title: "WordPress & Headless CMS Development | Baagul Bengaluru",
+    title: "WordPress Development Services in Bangalore | Baagul",
     description:
-      "Enterprise headless WordPress architectures, bespoke Gutenberg block themes, and high-performance WooCommerce storefronts.",
+      "WordPress development services in Bangalore: WordPress website development, custom CMS development, Gutenberg block themes and WooCommerce stores.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WordPress & Headless CMS Development | Baagul Bengaluru",
+    title: "WordPress Development Services in Bangalore | Baagul",
     description:
-      "Enterprise headless WordPress architectures, bespoke Gutenberg block themes, and high-performance WooCommerce storefronts.",
+      "WordPress development services in Bangalore: WordPress website development, custom CMS development, Gutenberg block themes and WooCommerce stores.",
   },
 };
 

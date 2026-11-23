@@ -15,20 +15,20 @@ import EcommerceServicePager from "@/components/e-commerce/EcommerceServicePager
 import EcommerceSpecMatrix from "@/components/e-commerce/EcommerceSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "E-Commerce Solutions & Store Development | Baagul Studio",
+  title: "E-commerce Website Development in Bangalore | Baagul",
   description:
-    "High-converting online store engineering, custom checkout flows, payment gateway integrations, and headless commerce architectures.",
+    "E-commerce website development in Bangalore: Shopify development services, WooCommerce stores and headless commerce with fast, secure checkout.",
   alternates: { canonical: "/services/e-commerce-solutions" },
   openGraph: {
-    title: "E-Commerce Solutions & Store Development | Baagul Studio",
+    title: "E-commerce Website Development in Bangalore | Baagul",
     description:
-      "High-converting online store engineering, custom checkout flows, payment gateway integrations, and headless commerce architectures.",
+      "E-commerce website development in Bangalore: Shopify development services, WooCommerce stores and headless commerce with fast, secure checkout.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "E-Commerce Solutions & Store Development | Baagul Studio",
+    title: "E-commerce Website Development in Bangalore | Baagul",
     description:
-      "High-converting online store engineering, custom checkout flows, payment gateway integrations, and headless commerce architectures.",
+      "E-commerce website development in Bangalore: Shopify development services, WooCommerce stores and headless commerce with fast, secure checkout.",
   },
 };
 

@@ -45,11 +45,14 @@ export default function AppDevelopmentHero() {
                   Development
                 </span>
               </span>
+              <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
+                Mobile App Development Company in Bangalore
+              </span>
             </h1>
 
             {/* Description */}
             <p className="font-sans text-sm sm:text-base text-[#121A4A]/80 leading-relaxed max-w-xl mb-8">
-              At Baagul.in, we engineer high-performance mobile applications for iOS, Android, and cross-platform ecosystems. From intuitive UX and native Swift &amp; Kotlin architectures to fluid Flutter &amp; React Native codebases, we transform visionary ideas into flagship app store products built for scale.
+              At Baagul.in, we engineer high-performance mobile applications for iOS, Android, and cross-platform ecosystems. From native Android and iOS app development in Swift &amp; Kotlin to fluid Flutter &amp; React Native app development, we transform visionary ideas into flagship app store products built for scale.
             </p>
 
             {/* CTA Group */}

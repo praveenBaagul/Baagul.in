@@ -40,10 +40,13 @@ export default function LogoDesignHero() {
               <span className="inline-block bg-[#FFA800] text-[#0E1153] px-5 py-1 rounded-xl border-2 border-[#0E1153] shadow-[4px_4px_0px_#0E1153] mt-2">
                 Design
               </span>
+              <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
+                Logo Design Company in Bangalore
+              </span>
             </h1>
 
             <p className="font-sans text-base sm:text-lg text-[#3E4945] max-w-xl leading-relaxed mb-8">
-              At Baagul, we craft timeless and distinct visual identities. From memorable marks to cohesive brand guidelines, we design logos that convey authority and leave an indelible impression.
+              At Baagul, we craft timeless and distinct visual identities. Our professional logo design services cover everything from custom business logo design to cohesive brand guidelines, creating logos that convey authority and leave an indelible impression.
             </p>
 
             {/* CTA Button */}

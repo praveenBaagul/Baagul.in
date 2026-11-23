@@ -14,20 +14,20 @@ import LogoDesignServicePager from "@/components/logo-design/LogoDesignServicePa
 import LogoDesignSpecMatrix from "@/components/logo-design/LogoDesignSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Logo Design & Brand Identity Studio in Bengaluru | Baagul",
+  title: "Logo Design Company in Bangalore | Baagul",
   description:
-    "Timeless visual brand identities, custom vector marks, and comprehensive design systems engineered for growing businesses.",
+    "Logo design company in Bangalore offering professional logo design services, custom business logo design and complete brand identity systems.",
   alternates: { canonical: "/services/logo-design" },
   openGraph: {
-    title: "Logo Design & Brand Identity Studio in Bengaluru | Baagul",
+    title: "Logo Design Company in Bangalore | Baagul",
     description:
-      "Timeless visual brand identities, custom vector marks, and comprehensive design systems engineered for growing businesses.",
+      "Logo design company in Bangalore offering professional logo design services, custom business logo design and complete brand identity systems.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Logo Design & Brand Identity Studio in Bengaluru | Baagul",
+    title: "Logo Design Company in Bangalore | Baagul",
     description:
-      "Timeless visual brand identities, custom vector marks, and comprehensive design systems engineered for growing businesses.",
+      "Logo design company in Bangalore offering professional logo design services, custom business logo design and complete brand identity systems.",
   },
 };
 

@@ -14,20 +14,20 @@ import VideoEditingServicePager from "@/components/video-editing/VideoEditingSer
 // import VideoEditingSpecMatrix from "@/components/video-editing/VideoEditingSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Video Editing & Motion Graphics in Bengaluru | Baagul Studio",
+  title: "Professional Video Editing Services | Baagul",
   description:
-    "Professional video editing for reels, YouTube, brand films, and ads — with motion graphics, color grading, sound design, and subtitles.",
+    "Professional video editing services for YouTube videos, Instagram Reels, brand films and ads, with motion graphics, color grading and subtitles.",
   alternates: { canonical: "/services/video-editing" },
   openGraph: {
-    title: "Video Editing & Motion Graphics in Bengaluru | Baagul Studio",
+    title: "Professional Video Editing Services | Baagul",
     description:
-      "Professional video editing for reels, YouTube, brand films, and ads — with motion graphics, color grading, sound design, and subtitles.",
+      "Professional video editing services for YouTube videos, Instagram Reels, brand films and ads, with motion graphics, color grading and subtitles.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Video Editing & Motion Graphics in Bengaluru | Baagul Studio",
+    title: "Professional Video Editing Services | Baagul",
     description:
-      "Professional video editing for reels, YouTube, brand films, and ads — with motion graphics, color grading, sound design, and subtitles.",
+      "Professional video editing services for YouTube videos, Instagram Reels, brand films and ads, with motion graphics, color grading and subtitles.",
   },
 };
 

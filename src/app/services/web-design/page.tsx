@@ -16,20 +16,20 @@ import WebDesignServicePager from "@/components/web-design/WebDesignServicePager
 import WebDesignSpecMatrix from "@/components/web-design/WebDesignSpecMatrix";
 
 export const metadata: Metadata = {
-  title: "Website Design & Development · Baagul Studio Bengaluru",
+  title: "Website Development Company in Bangalore | Baagul",
   description:
-    "Pixel-perfect Next.js & React web applications with fluid interactions, accessible semantic code, and sub-second loading speeds.",
+    "Website development company in Bangalore offering web design services and custom website development: fast, responsive, SEO-ready sites on Next.js.",
   alternates: { canonical: "/services/web-design" },
   openGraph: {
-    title: "Website Design & Development · Baagul Studio Bengaluru",
+    title: "Website Development Company in Bangalore | Baagul",
     description:
-      "Pixel-perfect Next.js & React web applications with fluid interactions, accessible semantic code, and sub-second loading speeds.",
+      "Website development company in Bangalore offering web design services and custom website development: fast, responsive, SEO-ready sites on Next.js.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Website Design & Development · Baagul Studio Bengaluru",
+    title: "Website Development Company in Bangalore | Baagul",
     description:
-      "Pixel-perfect Next.js & React web applications with fluid interactions, accessible semantic code, and sub-second loading speeds.",
+      "Website development company in Bangalore offering web design services and custom website development: fast, responsive, SEO-ready sites on Next.js.",
   },
 };
 

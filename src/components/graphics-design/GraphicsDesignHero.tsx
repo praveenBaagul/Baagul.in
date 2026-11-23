@@ -22,11 +22,14 @@ export default function GraphicsDesignHero() {
               <span className="inline-block bg-[#FFBA45] text-[#0E1153] px-6 py-1 rounded-[4px] border-2 border-[#0E1153] shadow-[6px_6px_0px_#0E1153] mt-2">
                 —Design—
               </span>
+              <span className="block mt-5 font-sans text-base sm:text-lg font-bold tracking-normal leading-snug text-[#0E1153]/80">
+                Graphic Design Services in Bangalore
+              </span>
             </h1>
 
             {/* Paragraph with bold highlights */}
             <p className="font-sans text-base sm:text-lg text-[#3E4945] max-w-xl leading-relaxed mb-8">
-              At <strong className="text-[#0E1153] font-bold">Baagul.in</strong>, we craft visuals that do more than look good — they <strong className="text-[#0E1153] font-bold">communicate</strong>, <strong className="text-[#0E1153] font-bold">convert</strong>, and <strong className="text-[#0E1153] font-bold">connect</strong>. Whether you&apos;re building a brand from scratch or refreshing your identity, our design solutions are tailored to reflect your vision and resonate with your audience.
+              At <strong className="text-[#0E1153] font-bold">Baagul.in</strong>, we craft visuals that do more than look good — they <strong className="text-[#0E1153] font-bold">communicate</strong>, <strong className="text-[#0E1153] font-bold">convert</strong>, and <strong className="text-[#0E1153] font-bold">connect</strong>. As a full-service graphic design agency, we handle everything from social media graphic design to marketing collateral, tailored to reflect your vision and resonate with your audience.
             </p>
 
             {/* Button */}

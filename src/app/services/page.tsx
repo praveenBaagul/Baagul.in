@@ -10,17 +10,17 @@ import ServicesCardsGrid from "@/components/services/ServicesCardsGrid";
 import ServicesCTABand from "@/components/services/ServicesCTABand";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing & Web Services in Bengaluru | Baagul",
-  description: "Explore Baagul Studio's digital marketing, web design, SEO optimization, and e-commerce growth architectures in Bengaluru.",
+  title: "Digital Marketing & Web Services in Bangalore | Baagul",
+  description: "Explore Baagul's digital marketing services in Bangalore: SEO, website and app development, performance marketing, branding, design and video editing.",
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Digital Marketing & Web Services in Bengaluru | Baagul",
-    description: "Explore Baagul Studio's digital marketing, web design, SEO optimization, and e-commerce growth architectures in Bengaluru.",
+    title: "Digital Marketing & Web Services in Bangalore | Baagul",
+    description: "Explore Baagul's digital marketing services in Bangalore: SEO, website and app development, performance marketing, branding, design and video editing.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing & Web Services in Bengaluru | Baagul",
-    description: "Explore Baagul Studio's digital marketing, web design, SEO optimization, and e-commerce growth architectures in Bengaluru.",
+    title: "Digital Marketing & Web Services in Bangalore | Baagul",
+    description: "Explore Baagul's digital marketing services in Bangalore: SEO, website and app development, performance marketing, branding, design and video editing.",
   },
 };
 
