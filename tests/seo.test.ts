@@ -1,5 +1,12 @@
 import { existsSync, readFileSync } from "node:fs";
-import { describe, expect, it } from "vitest";
+import { beforeAll, describe, expect, it, vi } from "vitest";
+
+const wordPressPosts = vi.hoisted(() => vi.fn());
+vi.mock("@/lib/wordpress-blog-posts", () => ({ fetchWordPressBlogPosts: wordPressPosts }));
+vi.mock("next/cache", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("next/cache")>()),
+  cacheLife: () => {},
+}));
 import { GET as aiTxt } from "@/app/ai.txt/route";
 import { GET as llmsFullTxt } from "@/app/llms-full.txt/route";
 import { GET as llmsTxt } from "@/app/llms.txt/route";
@@ -19,7 +26,36 @@ import { currentHashes } from "../scripts/sitemap-dates-lib";
 import nextConfig from "../next.config";
 
 describe("sitemap", () => {
-  const entries = sitemap();
+  let entries: Awaited<ReturnType<typeof sitemap>>;
+
+  beforeAll(async () => {
+    // The page entries below must not depend on the WordPress API being up.
+    wordPressPosts.mockRejectedValue(new Error("WordPress API unavailable"));
+    entries = await sitemap();
+  });
+
+  it("keeps every existing page entry when the WordPress API is unavailable", () => {
+    expect(entries.length).toBeGreaterThan(0);
+    // /blog is a page of this site, so it is listed even then; posts are not.
+    expect(entries.map((entry) => entry.url)).toContain("https://baagul.in/blog");
+    expect(entries.some((entry) => new URL(entry.url).pathname.startsWith("/blog/"))).toBe(false);
+  });
+
+  it("lists exactly the routes in the dates file, which is the fallback when src/app is unreadable", () => {
+    const routes = entries.map((entry) => new URL(entry.url).pathname.replace(/\/$/, "") || "/");
+    expect(routes).toEqual(Object.keys(SITEMAP_DATES).sort());
+  });
+
+  it("appends published posts after the existing entries, without listing /blog twice", async () => {
+    wordPressPosts.mockResolvedValueOnce([
+      { id: 1, slug: "hello-world", url: "https://baagul.in/blog/hello-world", titleHtml: "Hello", excerptHtml: "", publishedAt: "", lastModified: "2026-11-20T10:00:00.000Z" },
+    ]);
+    const merged = await sitemap();
+    expect(merged.slice(0, entries.length)).toEqual(entries);
+    expect(merged.slice(entries.length)).toEqual([
+      { url: "https://baagul.in/blog/hello-world", lastModified: "2026-11-20T10:00:00.000Z" },
+    ]);
+  });
 
   it("gives every route a lastModified date from the dates file", () => {
     const dates: Record<string, { lastModified: string }> = SITEMAP_DATES;

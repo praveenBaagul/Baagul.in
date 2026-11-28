@@ -23,6 +23,7 @@
   "dependencies": {
     "@prisma/client": "^6.19.3",
     "@tailwindcss/postcss": "^4.3.5",
+    "cheerio": "^1.2.0",
     "mysql2": "^3.24.6",
     "next": "^16.4.6",
     "pg": "^8.23.1",

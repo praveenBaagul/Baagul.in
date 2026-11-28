@@ -36,7 +36,16 @@ const SERVICE_SOURCES: Record<string, { faq?: string; process?: string; processI
 };
 
 const read = (relative: string) => readFileSync(path.join(ROOT, relative), "utf8").replace(/\r\n/g, "\n");
-const component = (relative: string) => read(`src/components/${relative}`);
+/**
+ * A component's source with whole-line `//` comments removed, so entries that
+ * are commented out on the page (e.g. a hidden team member) are not published.
+ * Only lines that start with `//` are dropped, so URLs inside strings are safe.
+ */
+const component = (relative: string) =>
+  read(`src/components/${relative}`)
+    .split("\n")
+    .filter((line) => !line.trimStart().startsWith("//"))
+    .join("\n");
 
 const STRING_LITERAL = `"(?:[^"\\\\]|\\\\.)*"|'(?:[^'\\\\]|\\\\.)*'`;
 

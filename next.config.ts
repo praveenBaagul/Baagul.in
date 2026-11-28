@@ -116,6 +116,10 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   experimental: {
     agentUpgrade: "security",
+    // Hostinger reports many CPUs but limited memory: by default the build
+    // started ~50 prerender workers and one was killed (SIGABRT). Four workers
+    // are plenty for this site's ~48 static pages.
+    cpus: 4,
   },
 };
 

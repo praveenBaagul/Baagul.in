@@ -1,7 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { MetadataRoute } from "next";
+import { cacheLife } from "next/cache";
 import { SITE_URL, SITEMAP_EXCLUDE, SITEMAP_OVERRIDES } from "@/lib/site";
+import { fetchWordPressBlogPosts } from "@/lib/wordpress-blog-posts";
 import SITEMAP_DATES from "@/lib/sitemap-dates.json";
 
 // Each route's lastModified is the day its content last changed, kept in
@@ -49,8 +51,53 @@ function defaults(route: string) {
   return { priority: 0.6, changeFrequency: "monthly" as const };
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = collectRoutes(APP_DIR)
+// WordPress blog entries (served under /blog by the reverse proxy). Cached so
+// the build and later revalidations reuse one API result. If the WordPress API
+// is unavailable, no blog entries are added, and a shorter lifetime retries soon.
+async function wordPressBlogEntries(): Promise<MetadataRoute.Sitemap> {
+  "use cache";
+  try {
+    const posts = await fetchWordPressBlogPosts({ all: true });
+    cacheLife("hours");
+    const site = process.env.BLOG_PUBLIC_ORIGIN || "https://baagul.in";
+    const blogHome = new URL(process.env.BLOG_TRAILING_SLASH === "1" ? "/blog/" : "/blog", site).href;
+    return [
+      { url: blogHome },
+      ...posts.map((post) => ({
+        url: post.url,
+        ...(post.lastModified ? { lastModified: post.lastModified } : {}),
+      })),
+    ];
+  } catch {
+    cacheLife("minutes");
+    return [];
+  }
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const existing = siteEntries();
+  const seen = new Set(existing.map(({ url }) => url));
+  const blog = (await wordPressBlogEntries()).filter(({ url }) => {
+    if (seen.has(url)) return false;
+    seen.add(url);
+    return true;
+  });
+  return [...existing, ...blog];
+}
+
+// The sitemap revalidates on the server. If the host runs the build without the
+// source tree, src/app cannot be read then, so fall back to the bundled dates
+// file, which has one entry per sitemap route (tests/seo.test.ts keeps them equal).
+function siteRoutes(): string[] {
+  try {
+    return collectRoutes(APP_DIR);
+  } catch {
+    return Object.keys(LAST_MODIFIED);
+  }
+}
+
+function siteEntries(): MetadataRoute.Sitemap {
+  const routes = siteRoutes()
     .filter((route) => !SITEMAP_EXCLUDE.includes(route));
 
   if (!routes.includes("/mcp")) {

@@ -613,13 +613,6 @@ export const TEAM_SOURCE: TeamMemberSource[] = [
     linkedinUrl: null
   },
   {
-    name: "Archana Kumari",
-    role: "Co-Founder",
-    focus: "Company Leadership · Operations",
-    profilePath: null,
-    linkedinUrl: null
-  },
-  {
     name: "Kishore V",
     role: "Digital Marketing Manager",
     focus: "Full-Funnel Growth · Performance Strategy",
@@ -687,13 +680,6 @@ export const TEAM_SOURCE: TeamMemberSource[] = [
     role: "Video Editor",
     focus: "Video Editing · Short-Form Content",
     profilePath: "/team/asif-s",
-    linkedinUrl: null
-  },
-  {
-    name: "Harishmitha C",
-    role: "UI/UX Designer",
-    focus: "UI/UX Design · Websites & Apps",
-    profilePath: null,
     linkedinUrl: null
   }
 ];

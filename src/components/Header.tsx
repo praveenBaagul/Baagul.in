@@ -82,6 +82,7 @@ export default function Header({ onNavClick }: HeaderProps) {
   const isServicesActive = pathname === "/services" || pathname.startsWith("/services/");
   const isTeamActive = pathname === "/team" || pathname.startsWith("/team");
   const isCareersActive = pathname === "/career" || pathname.startsWith("/career");
+  const isBlogActive = pathname === "/blog" || pathname.startsWith("/blog/");
   const isContactActive = pathname === "/contact";
 
   // Cleanup timeout on unmount
@@ -339,6 +340,12 @@ export default function Header({ onNavClick }: HeaderProps) {
             Careers
           </Link>
           <Link
+            href="/blog"
+            className={getNavLinkClass(isBlogActive)}
+          >
+            Blog
+          </Link>
+          <Link
             href="/contact"
             className={getNavLinkClass(isContactActive)}
           >
@@ -462,6 +469,13 @@ export default function Header({ onNavClick }: HeaderProps) {
             className={getMobileLinkClass(isCareersActive)}
           >
             Careers
+          </Link>
+          <Link
+            href="/blog"
+            onClick={() => setMobileMenuOpen(false)}
+            className={getMobileLinkClass(isBlogActive)}
+          >
+            Blog
           </Link>
           <Link
             href="/contact"
